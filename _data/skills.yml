@@ -1,0 +1,26 @@
+- name: Software Engineer
+  keywords:
+      - Java/Kotlin
+      - Rust/Haskell
+      - GUI Programming on JVM
+      - JNI Linkage
+      - Design Patterns
+      - Data Structure
+
+- name: Computer Scientist
+  keywords:
+      - Functional Programming
+      - Programming Languages Theory
+      - Parsing codes
+      - Lisp
+
+- name: Researcher
+  keywords:
+      - Language-Oriented Programming
+      - JetBrains MetaProgrammingSystem
+      - Projectional Editing
+
+- name: Mobile Developer
+  keywords:
+      - Android
+      - Kotlin on Android

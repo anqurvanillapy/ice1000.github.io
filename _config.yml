@@ -1,0 +1,81 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://ice1000.tech
+date_format: "ordinal"
+title: ice1000
+subtitle: "回首向来萧瑟处，也无风雨也无晴"
+description: "ice1000's blog"
+keywords: ice1000
+favicon: /favicon.ico
+timezone: Asia/ChengDu
+encoding: "utf-8"
+side_bar_repo_limit: 4
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Tesla Ice Zhang
+github_username: ice1000
+organization: Working Alone
+location: ChengDu, China
+email: ice1000kotlin@foxmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /categories/
+    label: Categories
+
+  -
+    href: /resume/
+    label: Resume
+
+  -
+    href: /links/
+    label: Links
+
+  -
+    href: /about/
+    label: About
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+# subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: ice1000/ice1000.github.io
+
