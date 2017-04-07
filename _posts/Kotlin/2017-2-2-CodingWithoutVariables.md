@@ -14,7 +14,7 @@ public class Java {
   public static void main(String[] args) {
     try {
       final JFrame frame = new JFrame("BoyNextDoor");
-      final BufferedImage image = ImageIO.read(new URL("http://ice1000.tech/assets/img/avatar.jpg"));
+      final BufferedImage image = ImageIO.read(new URL("http://ice1000.org/assets/img/avatar.jpg"));
       frame.setLayout(new BorderLayout());
       frame.add(new JPanel() {
         @Override
@@ -48,7 +48,7 @@ fun main(args: Array<String>) {
     add(object : JPanel() {
       override fun paintComponent(g: Graphics?) {
         super.paintComponent(g)
-        g?.drawImage(ImageIO.read(URL("http://ice1000.tech/assets/img/avatar.jpg"))
+        g?.drawImage(ImageIO.read(URL("https://avatars0.githubusercontent.com/u/16398479"))
             .apply { this@run.setSize(width, height) }, 0, 0, this)
       }
     }, BorderLayout.CENTER)
@@ -60,7 +60,7 @@ fun main(args: Array<String>) {
 
 看到没，我一个变量没使用，靠范型扩展（而且是标准库自带的范型扩展， Standard.kt 里面的）搞定了原本需要声明变量的地方。我觉得这是 Kotlin 很优雅的一个地方。
 
-至于范型扩展是啥，请看我[这篇博客](http://ice1000.tech/2016/10/17/LearnKotlin7/)，或者看这篇博客在[知乎专栏的转载](https://zhuanlan.zhihu.com/p/23071063)。
+至于范型扩展是啥，请看我[这篇博客](http://ice1000.org/2016/10/17/LearnKotlin7/)，或者看这篇博客在[知乎专栏的转载](https://zhuanlan.zhihu.com/p/23071063)。
 
 再者， Kotlin 摆脱了 Checked Exception 的魔咒。我再举个例子，我昨天在 JavaCodeGeeks 上面看到的教程里面是这么写 Hadoop 的 MapReduce 的：
 

@@ -12,7 +12,7 @@ description: Intro to lice for java developers
 ### 本文仅适用于 Lice 1.X
 
 本文大部分内容都是一本正经介绍语言，有少量的不易察觉的卖萌。<br/>
-—— by [千里冰封](http://ice1000.tech)
+—— by [千里冰封](http://ice1000.org)
 
 （第一次写这么长的技术文章啊）
 
