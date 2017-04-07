@@ -184,7 +184,8 @@ PrintlnSet:
 
 设置它对应的Concept为PrintlnSet。
 
-然后对那个红色的No Template使用**Alt+Enter**，然后选择，让它~~怀疑人生~~创建一个新的Template：
+然后对那个红色的No Template使用**Alt+Enter**，然后**选择class**，
+让它~~怀疑人生~~创建一个新的class的Template：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/1/7.png)
 
