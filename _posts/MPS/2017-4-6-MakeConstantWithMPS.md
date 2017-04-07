@@ -34,6 +34,8 @@ description: make a simple language with MPS
 ## 依赖
 
 + MPS 2017.1
++ 编译原理相关知识（起码你得知道啥是AST，Abstract Syntax Tree）
++ 阅读[上篇博客](http://ice1000.org/2017/03/18/TryShapeWithMPS/)
 
 上篇博客里使用的还是 2017.1 RC ， 现在已经出了正式版啦。
 
