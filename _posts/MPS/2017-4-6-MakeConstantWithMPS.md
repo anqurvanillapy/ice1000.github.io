@@ -124,6 +124,10 @@ MPS中，语言是由很多**Concept**组成的，这些**Concept**有各自的�
 
 ## 创造语言
 
+说下这个语言的设计：
+
+每个文件有一个PrintlnSet（类似容器），里面放一堆Println，每个Println对应一个输出。
+
 ### 导入一些东西
 
 对左边Logical View的**VerboseLang**使用**Alt+Enter**，
