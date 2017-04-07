@@ -16,15 +16,20 @@ description: make a simple language with MPS
 
 它没有工业价值，只有教学价值。
 
-## 为什么这么简单
+### 为什么这么简单
 
 因为这篇文章要引入很多关于MPS创建语言的新概念
 
-## 有哪些新概念
+### 有哪些新概念
 
 + Concept
 + Editor
 + Generator
+
+## 本文主要内容
+
++ Concept的定义
++ 如何开始破界神编辑
 
 ## 依赖
 
@@ -193,7 +198,7 @@ PrintlnSet:
 
 **编译一下。**
 
-我们右键右边的晾了很久的**sandbox**，创建一个PrintlnSet：
+我们右键左边的晾了很久的**sandbox**，创建一个PrintlnSet：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/1/9.png)
 
