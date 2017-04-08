@@ -12,7 +12,7 @@ description: make a simple language with MPS
 
 ## 准备工作
 
-+ 阅读并跟随[上一篇博客](http://ice1000.org/2017/04/06/MakeConstantWithMPS/)完成之前的工作。
++ 阅读并跟随[上一篇博客](http://ice1000.org/2017/04/06/MakeSimpleLangWithMPS/)完成之前的工作。
 + 学会用Java写Hello World
 
 ## 本文主要内容
