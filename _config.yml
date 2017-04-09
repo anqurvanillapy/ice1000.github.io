@@ -2,14 +2,14 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://ice1000.tech
+url: http://ice1000.org
 date_format: "ordinal"
 title: ice1000
 subtitle: "回首向来萧瑟处，也无风雨也无晴"
 description: "ice1000's blog"
 keywords: ice1000
 favicon: /favicon.ico
-timezone: Asia/ChengDu
+# timezone: Asia/ChengDu
 encoding: "utf-8"
 side_bar_repo_limit: 4
 
@@ -61,6 +61,7 @@ highlighter: rouge
 paginate: 8
 lsi: false
 quiet: false
+auto: true
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 gems:
