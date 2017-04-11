@@ -7,9 +7,9 @@ keywords: Life,ice1000
 description: About my middle school life
 ---
 
-[发知乎了，坐等嘲讽](https://zhuanlan.zhihu.com/p/26308184)
-
 最近心态上出了些问题，头有些混乱，主要症状为失眠，以及难以分心（注意力集中到很难转移的程度）。然后就是突然想说说我的生活。
+
+[发知乎了，坐等嘲讽](https://zhuanlan.zhihu.com/p/26308184)
 
 ## 关于同情心/道德心等类似物
 
