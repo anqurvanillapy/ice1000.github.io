@@ -226,7 +226,7 @@ MPS的Editor默认只有一个用来放元素的位置，叫做Editor的根元�
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/3/14.png)
 
 ```
-set: text: ***马赛克***马赛克***马赛克***!!!!
+set: text: Fuck you ZhiHu Editor!!!!
      text: My name is Van, I'm an artist.
      text: I'm a performance artist.
 ```
@@ -241,7 +241,7 @@ set: text: ***马赛克***马赛克***马赛克***!!!!
 
 ```
 set: 
-text: ***马赛克***马赛克***马赛克***!!!!
+text: Fuck you ZhiHu Editor!!!!
 text: My name is Van, I'm an artist.
 text: I'm a performance artist.
 ```
