@@ -18,6 +18,10 @@ To contact me please send an E-mail.
 
 View me on GitHub is also a good choice to know me better.
 
+## Subscribe
+
+To subscribe, see [feed.xml](../feed.xml).
+
 ## Personal Projects
 
 + [algo4j, an algorithm library for Java use, JNI implemented](https://github.com/ice1000/algo4j).
