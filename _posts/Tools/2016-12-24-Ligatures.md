@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: 连字及其在IDE中的使用
-category: Misc
+category: Tools
 tags: Misc
 keywords: ligature
 description: interesting

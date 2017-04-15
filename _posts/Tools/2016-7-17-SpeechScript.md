@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 逐字稿对演讲的好处
-category: Misc
+category: Tools
 tags: Zhuangbi
 keywords: Speech
 description: How to write a nice 404 page

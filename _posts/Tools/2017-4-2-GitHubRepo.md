@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 发布一个GitHub仓库时需要注意的东西
-category: Misc
+category: Tools
 tags: Misc
 keywords: rust
 description: How should I pulish my GitHub repo

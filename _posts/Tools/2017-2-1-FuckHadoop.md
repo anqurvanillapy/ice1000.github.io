@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fuck Hadoop 日了狗了
-category: Java
+category: Tools
 tags: Java
 keywords: Java,Hadoop
 description: Fuck Apache Hadoop
