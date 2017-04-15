@@ -4,6 +4,7 @@
 baseurl:
 url: http://ice1000.org
 date_format: "ordinal"
+name: 千里冰封的Blog
 title: ice1000
 subtitle: "回首向来萧瑟处，也无风雨也无晴"
 description: "ice1000's blog"
@@ -49,7 +50,7 @@ navs:
 # ---------------- #
 #       RSS        #
 # ---------------- #
-# subscribe_rss: /feed.xml
+subscribe_rss: /feed.xml
 
 # ---------------- #
 #      Jekyll      #
