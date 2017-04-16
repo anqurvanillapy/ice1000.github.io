@@ -20,7 +20,7 @@ Gradle是一款使用Kotlin（划掉）Groovy编写的JVM构建工具，其易�
 
 其实写这篇博客我是很犹豫的，因为我在知乎已经看到过有人描述过我想写的东西了，但是写的很粗略，所以我决定再写一次。
 
-现在的问题就是，很多人没有VPN。这就导致你不能用Proxifiler这种工具实现全局翻墙，
+现在的问题就是，很多人没有VPN。这就导致你不能用Proxifier这种工具实现全局翻墙，
 而像开灯这种行为又不能大幅影响命令行（作为一个有梯子的人，我是不清楚的，但是在我没有梯子的时候，那叫一个痛苦）。
 
 而他们面临着写Android项目的任务，想必很多人都体会过“只能在Android Studio里面构建，
@@ -55,7 +55,7 @@ gradle-wrapper.jar|和上面那个配套
 build.gradle|构建脚本，写编译的逻辑，依赖，各种你能想到的配置
 settings.gradle|指定工程名
 gradlew.bat|Windows下命令行构建时用的，一般不动它
-gradlew|*nux下命令行构建时用的，一般不动它
+gradlew|*nix下命令行构建时用的，一般不动它
 
 后两个文件随便找个Gradle项目（到处都是，不行也可以拿AS新建一个项目，自动加入）照抄即可，所以说我们要管的其实就四个文件。
 
@@ -87,7 +87,10 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-[版本]-bin.z
 distributionUrl=https\://services.gradle.org/distributions/gradle-3.0-bin.zip
 ```
 
-一般AS默认的是`2.1X`，我是不推荐的，已经过时很久啦。本文的教程适用于任何版本哦。
+早期AS默认的是`2.1X`，我是不推荐的，已经过时很久啦。
+根据知乎评论区提醒，AS 2.3已经将gradle升级到了3.3。
+
+不过本文的教程适用于任何版本哦。
 
 ### gradle-wrapper.jar
 
@@ -96,6 +99,12 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-3.0-bin.zip
 说一下以上两个文件的一般的获取方式（一般不直接写，而是找到现成的）：
 
 在GitHub上随便找个使用这个版本的Gradle的仓库，然后`download zip`，把它使用的这俩文件拿出来。
+
+还有一个方法，就是
+
+```batch
+gradlew wrapper --gradle-version=3.5
+```
 
 这里顺便提供一个[`3.0`版本的gradle wrapper的下载](https://www.jianguoyun.com/p/DaYFXnoQl_iYBhifkyo)，
 里面包含了properties文件和jar文件。
@@ -327,7 +336,7 @@ dependencies {
 
 然后我们在命令行运行（请一定要进行一次尝试！）：
 
-+ \*nux：
++ \*nix：
 
 ```shell
 chmod a+x gradlew
