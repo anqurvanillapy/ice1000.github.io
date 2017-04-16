@@ -270,7 +270,7 @@ dependencies {
 
 ### 引入来自JitPack的依赖
 
-[JitPack]()是一个免费的远端仓库，我们如果需要引入这个仓库的包的话，需要再加一句：
+[JitPack](https://jitpack.io)是一个免费的远端仓库，我们如果需要引入这个仓库的包的话，需要再加一句：
 
 ```groovy
 allprojects {
