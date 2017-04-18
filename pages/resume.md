@@ -11,6 +11,6 @@ permalink: /resume/
 Here's my resume, click to download:
 
 + [pdf](https://raw.githubusercontent.com/ice1000/resume/master/resume.pdf)
-+ [html(recommanded)](https://raw.githubusercontent.com/ice1000/resume/master/resume-html.md)
-+ [markdown](https://raw.githubusercontent.com/ice1000/resume/master/resume.md)
++ [markdown source code](https://raw.githubusercontent.com/ice1000/resume/master/resume.md)
 
+I'm available for intern at the moment, emails are welcomed.
