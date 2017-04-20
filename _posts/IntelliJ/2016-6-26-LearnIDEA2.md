@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 传教之IntelliJ IDEA第二章：快捷键（一）
-category: Java
+category: IntelliJ
 tags: Java, JetBrains
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio
 description: IntelliJ IDEA for beginners chapter 2, Useful Smart Keys

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IntelliJ IDEA进阶教程： IDEA中工程的基本概念 上
-category: Java
+category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio
 description: IDEA advance chapter 3

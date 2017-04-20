@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IntelliJ IDEA进阶教程： IDE背景图片
-category: Java
+category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio
 description: IDEA advance chapter 2

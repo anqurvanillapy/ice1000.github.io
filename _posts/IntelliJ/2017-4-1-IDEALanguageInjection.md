@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IntelliJ IDEA进阶教程： 语言注入
-category: Java
+category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio,JUnit
 description: IDEA advance chapter 5

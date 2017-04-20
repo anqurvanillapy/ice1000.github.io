@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 传教之IntelliJ IDEA第四章：集成版本控制系统
-category: Java
+category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio,Git,GitHub
 description: IDEA for beginners chapter 4

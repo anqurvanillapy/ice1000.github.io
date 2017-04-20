@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 传教之IntelliJ IDEA第三章：代码补全中的小技巧
-category: Java
+category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA,IntelliJ,IntelliJ IDEA,NetBeans
 description: IntelliJ IDEA for beginners chapter 3, some code completing tricks

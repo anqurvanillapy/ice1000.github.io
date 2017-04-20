@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 传教之IntelliJ IDEA第一章：IntelliJ IDEA的下载与安装
-category: Java
+category: IntelliJ
 tags: Java, IntelliJ IDEA, JetBrains
 keywords: Java,IDEA,IntelliJ,PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,
 description: IntelliJ IDEA for beginners chapter 1, About IDEA
