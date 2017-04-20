@@ -9,6 +9,16 @@ description: first stackoverflow answer
 
 第一次在StackOverflow上回答问题，第一次凭借自己的力量修复某语言标准库的bug，第一次给那么重量级的仓库投pull request...
 
+## 后来的补充
+
+Tk维护者[告诉我](https://github.com/ruby/tk/pull/8)那个bug是已经修复了的（在另一个地方处理了空指针），
+只不过修复发生在Ruby/Tk 2.3发布之后。
+
+你可以通过gem 'tk'来获得更新后的修复了这个bug的版本。
+
+不过我在[StackOverflow](http://stackoverflow.com/questions/43011258/ruby-tks-canvas-and-shapes-are-bugging-out/)
+上给的解法是适用的，不想更新的话就可以用我的解法。
+
 ## 又发生什么了
 
 就是在湛兮同学用我的[FriceEngine-Ruby](https://github.com/icela/FriceEngine-Ruby)的时候遇到了一个问题：
