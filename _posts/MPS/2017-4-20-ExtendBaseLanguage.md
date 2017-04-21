@@ -39,6 +39,8 @@ description: extending java in mps
 
 > 我写个yacc file……哦，写个bnf两分钟都不到。
 
+这个故事未完待续，你们可以围观我们俩傻逼撕
+
 ## 这次说什么
 
 在这篇教程中，我们将模块化我们的Generator，并使我们能在`BaseLanguage`当中写我们的语言的代码。
