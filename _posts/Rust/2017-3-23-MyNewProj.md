@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 新个人项目简介：项目管理器
-category: Misc
-tags: Misc
+category: Rust
+tags: Rust
 keywords: rust
 description: new proj, proj_manager
 ---

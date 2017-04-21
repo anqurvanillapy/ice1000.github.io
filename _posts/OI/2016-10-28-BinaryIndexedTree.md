@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: 树状数组离散化 
-category: NOIP
+category: OI
 tags: Misc, NOIP
 keywords: NOIP, OI, algorithm
 description: 这个世界到底怎么了

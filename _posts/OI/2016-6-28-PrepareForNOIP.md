@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: NOIP学习路线 
-category: NOIP
+category: OI
 tags: Misc, NOIP
 keywords: NOIP, OI, algorithm
 description: Preparation for NOIP

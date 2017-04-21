@@ -1,8 +1,8 @@
 ---
 layout: post
 title: （翻译）从编程语言的角度看深度学习
-category: Misc
-tags: Scala
+category: Scala
+tags: Scala,NN,ML,DL,PLT
 keywords: DeepLearning,Scala,Kotlin,Java
 description: (Translation) See DL from PL's point of view
 ---

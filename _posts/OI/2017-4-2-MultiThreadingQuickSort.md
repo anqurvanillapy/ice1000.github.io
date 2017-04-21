@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: 多线程快排测试CPU性能
-category: NOIP
+category: OI
 tags: Misc, NOIP
 keywords: NOIP, OI
 description: Multi-threading quick sort
