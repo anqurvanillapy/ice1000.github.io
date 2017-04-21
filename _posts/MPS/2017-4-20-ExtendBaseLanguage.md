@@ -171,7 +171,7 @@ public class BaseLanguageClassUsedForTesting {
 注意，我们之前写`Println`这个Concept的时候，曾经为它起过一个alias叫`p`。
 我们要记住它，然后在`<no statement>`处，**Alt+Enter**，输入这个alias（我是`p`所以就输了`p`）：
 
-![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/9.png)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/10.png)
 
 然后你就惊喜地看到了我们之前写的Editor的东西出现在了这里！
 
