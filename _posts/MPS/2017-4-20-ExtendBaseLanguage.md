@@ -41,6 +41,20 @@ description: extending java in mps
 
 这个故事未完待续，你们可以围观我们俩傻逼撕
 
+## 更新
+
+[撕逼道具做好了，你们可以下载了看，我就不信他能做出这个](https://www.jianguoyun.com/p/DaB6-NQQl_iYBhiSzCo)
+
+下载之后改下Demo，我写丑了，但是语言没问题。
+
+预览效果，你也可以把下载的Demo改成这样：
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/12.png)
+
+运行结果：
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/13.png)
+
 ## 这次说什么
 
 在这篇教程中，我们将模块化我们的Generator，并使我们能在`BaseLanguage`当中写我们的语言的代码。
