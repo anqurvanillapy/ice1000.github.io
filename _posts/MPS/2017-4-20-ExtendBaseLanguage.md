@@ -17,44 +17,6 @@ description: extending java in mps
 众所周知，在MPS中，有一个语法和Java一样的内置语言叫做`BaseLanguage`，一般情况下，我们编写代码，
 让MPS把AST给map成`BaseLanguage`代码，然后编译为文本形式的Java代码。
 
-## 再说说MPS的好处
-
-今天又有人问我MPS解决了什么问题，然后我又听到了这样的言论：
-
-> 啥也没解决，就是给你了个非文本parser的parser generator。
-
-好吧我就随口说说，反正你们都觉得是垃圾。
-
-+ 不会编程的人不知道编程时很多细节，导致UI和程序员互肝
-+ 文本编辑器还得Parse你的代码，实现不一样的Parser可能结果不一样（参考IntelliJ Scala）太烂
-+ Parser处理不了有歧义的语法，MPS可以写出有歧义的代码
-+ MPS可以在代码里面画图表，画控件，文本的代码不行
-+ 一门语言的语法固定了，除非操编译器，否则不能加语言特性，MPS可以
-
-然后我说，
-
-> 要不是写教程，我做刚才那个东西只需要两分钟
-
-然后对方说，
-
-> 我写个yacc file……哦，写个bnf两分钟都不到。
-
-这个故事未完待续，你们可以围观我们俩傻逼撕
-
-## 更新
-
-[撕逼道具做好了，你们可以下载了看，我就不信他能做出这个](https://www.jianguoyun.com/p/DaB6-NQQl_iYBhiSzCo)
-
-下载之后改下Demo，我写丑了，但是语言没问题。
-
-预览效果，你也可以把下载的Demo改成这样：
-
-![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/12.png)
-
-运行结果：
-
-![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/13.png)
-
 ## 这次说什么
 
 在这篇教程中，我们将模块化我们的Generator，并使我们能在`BaseLanguage`当中写我们的语言的代码。
@@ -276,3 +238,51 @@ public class Ice1000 {
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/11.png)
 
+## 再说说MPS的好处
+
+今天又有人问我MPS解决了什么问题，然后我又听到了这样的言论：
+
+> 啥也没解决，就是给你了个非文本parser的parser generator。
+
+好吧我就随口说说，反正你们都觉得是垃圾。
+
++ 不会编程的人不知道编程时很多细节，导致UI和程序员互肝
++ 文本编辑器还得Parse你的代码，实现不一样的Parser可能结果不一样（参考IntelliJ Scala）太烂
++ Parser处理不了有歧义的语法，MPS可以写出有歧义的代码
++ MPS可以在代码里面画图表，画控件，文本的代码不行
++ 一门语言的语法固定了，除非操编译器，否则不能加语言特性，MPS可以
+
+然后我说，
+
+> 要不是写教程，我做刚才那个东西只需要两分钟
+
+然后对方说，
+
+> 我写个yacc file……哦，写个bnf两分钟都不到。
+
+这个故事未完待续，你们可以围观我们俩傻逼撕
+
+## 更新
+
+[撕逼道具做好了，你们可以下载了看，我就不信他能做出这个](https://www.jianguoyun.com/p/DaB6-NQQl_iYBhiSzCo)
+
+下载之后改下Demo，我写丑了，但是语言没问题。
+
+预览效果，你也可以把下载的Demo改成这样：
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/12.png)
+
+运行结果：
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/13.png)
+
+## 更新2
+
+最后我图个乐呵，把它弄成这样了：
+
+0. 字符串必须含Fuck子串不然报错
+0. 带图片
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/14.png)
+
+yacc选手，请继续你的表演。
