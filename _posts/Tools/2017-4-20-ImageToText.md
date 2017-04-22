@@ -105,7 +105,7 @@ fun main(args: Array<String>) {
 
 实验结果证明这图不是很适合做这个实验，我中间换成了这个：
 
-![](https://imgsa.baidu.com/baike/w%3D268/sign=9dca18bd593d26972ed30f5b6dfbb24f/d52a2834349b033b6693d9ad1dce36d3d539bda9.jpg)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/13/a.png)
 
 彩色滑稽别有一番风味啊。
 
@@ -162,7 +162,7 @@ fun main(args: Array<String>) {
 
 再看看这张图，你会爱上它的：
 
-![](https://imgsa.baidu.com/baike/w%3D268/sign=9dca18bd593d26972ed30f5b6dfbb24f/d52a2834349b033b6693d9ad1dce36d3d539bda9.jpg)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/13/a.png)
 
 ### 选择合适的字符
 
@@ -341,7 +341,7 @@ int main(const int argc, const char *argv[]) {
 
 我这里试了好几个图片：
 
-![](https://imgsa.baidu.com/baike/w%3D268/sign=4733e98d0b087bf47dec50efcad1575e/0b46f21fbe096b63ac82889605338744eaf8ac59.jpg)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/13/b.png)
 
 这张图稍微大了点，我们可以看到这样的效果：
 
@@ -412,7 +412,7 @@ int main(const int argc, const char *argv[]) {
 
 停不下来，我们再看看笑哭的表情：
 
-![](http://img.9553.com/upload/2014/1107/20141107042404877.png)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/13/c.png)
 
 ```
 "000000000000000000000000000000000000000000000000000000000000000
@@ -450,7 +450,7 @@ int main(const int argc, const char *argv[]) {
 
 还有这个
 
-![](http://img.9553.com/upload/2014/1107/20141107042428254.png)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/13/d.png)
 
 ```
 00       --0000-                              --000000-       0
