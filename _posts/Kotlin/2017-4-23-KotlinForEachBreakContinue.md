@@ -133,7 +133,7 @@ Process finished with exit code 0
 
 如何证明只有一次迭代？我使用jd-gui逆向了刚才的代码，结果：
 
-```kotlin
+```java
 public final class _5Kt
 {
   public static final void main(@NotNull String[] args)
