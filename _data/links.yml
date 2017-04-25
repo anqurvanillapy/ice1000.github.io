@@ -50,5 +50,8 @@
   url: https://blog.snbct.org
 
 - name: hex
-  url: http://nyanblog.net/
+  url: http://nyanblog.net
+
+- name: BennyHuo/KotlinCN
+  url: https://www.kotliner.cn
 
