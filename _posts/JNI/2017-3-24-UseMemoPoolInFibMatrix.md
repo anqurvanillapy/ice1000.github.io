@@ -347,3 +347,8 @@ All Hail Memory Pool!
 
 以上，是今天晚上我自嗨的全过程。
 
+## Gist
+
+代码我po到[我的gist](https://gist.github.com/ice1000/321dfcc156859ac33e3bc570c08d207e)上了。
+
+<script src="https://gist.github.com/ice1000/321dfcc156859ac33e3bc570c08d207e.js"></script>
