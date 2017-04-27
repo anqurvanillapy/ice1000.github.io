@@ -91,11 +91,9 @@ fun <A, B, C : Any> zipWith(op: (A, B) -> C) = { x: Sequence<A> ->
 然后写个那个破函数：
 
 ```kotlin
-fun generate() = {
-  zipWith { x: Int, y: Int -> x * y } (
-      generateSequence(0, Int::inc)
-  )
-}
+fun generate() = zipWith { x: Int, y: Int -> x * y } (
+    generateSequence(0, Int::inc)
+)
 ```
 
 对比Haskell的两行：
@@ -109,7 +107,7 @@ generate = zipWith (*) [0..]
 
 ```kotlin
 fun main(args: Array<String>) {
-  generate()()(sequenceOf(1, 1, 2, 3, 5, 8, 13, 21))
+  generate()(sequenceOf(1, 1, 2, 3, 5, 8, 13, 21))
       // .forEach(::println)
 }
 ```
