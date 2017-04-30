@@ -28,17 +28,17 @@ description: Why is this so f#cking small ?!
 
 现在你应该是这个状态。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/2.png)
 
 另外，我把我的桌面用于演示了。这是我的桌面图片原图，大小你可以在上面的截图看到，1.3MB，比较可怕。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/1.png)
 
 现在我们要压缩它。
 
 打开终端的话，win10用户可以这样打开。别的你只能自助了。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/3.png)
 
 ## 使用
 
@@ -56,11 +56,11 @@ cwebp -q 100 test.png -o test.webp
 
 然后看着奇迹发生吧，这是命令行的截图：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/4.png)
 
 再看看生成的图片的大小：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/5.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/webp/5.png)
 
 我非常一颗赛艇。这个图片格式是可以用于Android的，直接拖进去当成一个png用就行了。当然，chrome也支持打开。
 

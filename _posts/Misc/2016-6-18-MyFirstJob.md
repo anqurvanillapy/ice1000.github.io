@@ -90,7 +90,7 @@ description: My First Work Experence, very frustrating, it nearly drove me 2 dea
 
 大概这幅漫画就很好地描述了这个情景。[这里是出处](http://blog.xiqiao.info/category/programmers/page/12)
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/life/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/life/1.png)
 
 ## 我的心态变化：
 1. 占坑吧，看看他们能做成啥样

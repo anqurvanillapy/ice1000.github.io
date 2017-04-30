@@ -13,16 +13,16 @@ description: Learn kotlin 2 Hello World
 
 ## 说明
 
-由于辣鸡GitHub Pages不支持Kotlin代码渲染，本文出现的代码全部都是渲染成Swift的——不过貌似完美支持。嘿嘿。语法几乎都一样，除了函数声明关键字——Swift是func，Kotlin是fun。
+由于辣鸡GitHub Pages不支持Kotlin代码渲染，本文出现的代码全部都是渲染成Swift的——不过貌似完美支持。嘿嘿。语法几乎都一样，除了函数声明关键字——Swift是`func`，Kotlin是`fun`。
 
 ## 环境搭建
 
-请参考我[另一篇博客](http://ice1000.github.io/2016/6/26/LearnIDEA.html)，下载安装IntelliJ IDEA（我本来打算自己先做一个比较简单的Kotlin IDE，不过后来发现这个轮子好像很难制造。。QAQ）。
+请参考我[另一篇博客](http://ice1000.org/2016/6/26/LearnIDEA/)，下载安装IntelliJ IDEA（我本来打算自己先做一个比较简单的Kotlin IDE，不过后来发现这个轮子好像很难制造。。QAQ）。
 
 然后根据那篇博客的内容，创建一个新工程。只不过这次我们创建的新工程是一个Kotlin工程，所以要在创建工程的时候选择“Kotlin”。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/1.png" align="center"></p>
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/1.png)
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/2.png)
 
 创建好之后你会看到和之前那篇博客中类似的界面，不过IDEA这次没有为你自动创建那些代码。不过没关系，现在我们已经完成了工程的创建。
 
@@ -30,18 +30,18 @@ description: Learn kotlin 2 Hello World
 
 还记得我们是怎么创建第一个Java class的吗？同理，创建一个Kotlin File！
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/3.png)
 
 然后随便起个名字，这里就叫它Main.kt吧。如图所示。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/4.png)
 
 然后我们要在里面写代码了。这里说一下，任何Kotlin程序都是从一个main函数开始的。至于什么是main函数，你不用管。看完下文后你就会知道你该怎么做。至于为什么，要留到后期的学习中。
 
 等等，我们现在是要插入一个main函数，那么此时我们遇到的问题就是，每次都要输入一次main函数，很麻烦。
-还记得我在[另一篇博客](http://ice1000.github.io/2016/06/29/LearnIDEA3.html)中讲到的一个IDEA黑科技吗？此时你只需要输入**main**，第一个提示就是插入main函数。
+还记得我在[另一篇博客](http://ice1000.org/2016/06/29/LearnIDEA3/)中讲到的一个IDEA黑科技吗？此时你只需要输入**main**，第一个提示就是插入main函数。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/5.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/5.png)
 
 然后冰封就只能帮你到这了。
 
@@ -57,11 +57,11 @@ fun main(args: Array<String>) {
 
 然后点击main函数左边的Kotlin图标，选择 Run ，稍等片刻，然后你就能在下面的控制台内看到一个 Hello World 了。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/6.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/6.png)
 
 运行！然后你就看到了运行结果：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/7.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/7.png)
 
 赶紧祝贺自己吧，你已经写下了人生第一个程序。在编程界中，学习任何一门语言、任何一门技术，你的第一步必定是“Hello World”。这是编程界亘古不变的传统。你现在已经将这个伟大的入门仪式进行了一遍。
 

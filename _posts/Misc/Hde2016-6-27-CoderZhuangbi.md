@@ -122,7 +122,7 @@ GitHub -> Coding -> OS@China
 
 关于Cpp，这里有图为证：
 
-<p><img src="/../../../assets/images/life/0.png" align="center"></p>
+![](/../../../assets/images/life/0.png)
 
 ## 结束语
 

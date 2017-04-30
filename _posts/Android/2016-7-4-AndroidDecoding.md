@@ -28,7 +28,7 @@ description: How Decompile Android Applications
 
 不久后，冰封的损友群之一就出现了这样的消息：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/1.png)
 
 这名字，这大小……
 
@@ -36,13 +36,13 @@ description: How Decompile Android Applications
 
 我当时瞬间就想起了616惨案。这回轮到我欺负人家了。作为一个Android开发者，我自然是掌握着逆向工程技能的。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/2.png)
 
 这个人恬不知耻，竟然班门弄斧地发了所谓的截图，看起来好厉害的样子……
 
 不过我非常好奇这玩意代码是什么样的，而且两个apk，大小都不一样，内容应该不一样吧，于是我默默下载之后，打开了apktool……
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/3.png)
 
 我马上声明了自己要做的事。
 
@@ -50,21 +50,21 @@ description: How Decompile Android Applications
 
 当天晚上，我半夜把解包后的音频文件声音放出来，当时我想的是把声音开到最小应该没问题吧，结果声音本来就巨大，差点吵醒我那学数学竞赛的室友……
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/4.png)
 
 我回击了那个发apk的人。
 
 然后后来我实在忍不住，就去反编译了代码。这是解包出来的文件目录。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/5.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/5.png)
 
 我简直无力吐槽，连个multi dex都没有，易安卓果然辣鸡，药丸啊！
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/6.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/6.png)
 
 勇敢地逆向。至于我的逆向工具是什么，其实我不是特别想放出来，以后可能会有教程吧。长期关注博客，可能就会看到喔。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/7.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/7.png)
 
 ## 文件目录说明
 
@@ -138,7 +138,7 @@ public class 后台服务操作
 
 下面是简要截图。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/8.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/8.png)
 
 要想看到Material Design，肯定是不可能了。
 

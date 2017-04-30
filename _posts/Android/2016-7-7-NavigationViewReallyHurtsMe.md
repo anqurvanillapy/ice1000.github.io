@@ -53,7 +53,7 @@ dependencies {
 
 原本的导航栏：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/1.png)
 
 看起来还是比较正常……
 
@@ -61,19 +61,19 @@ dependencies {
 
 每次commit我都要诅咒 NavigationView……
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/2.png)
 
 再看看[GitHub上的commit记录](https://github.com/ice1000/PlasticApp/commits/master)，我简直要被我的怨念给腐蚀了……
 
 最后我把UI换成了在Toolbar里面放导航内容：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/3.png)
 
 整体颜色也换成了更Geek的黑色。看起来，感觉还是不错的。
 
 今天一整天都这么不顺……真是的，Studio也这么浮躁，让我很是担忧的电脑的内存……
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/0.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/0.png)
 
 不过今天还是有好消息的，那就是我的Kotlin插件不知道为什么，Kotlin1.0.3 Build成功了！
 
@@ -92,7 +92,7 @@ buildscript {
 
 其实事情是这样的，我上次解决问题之后，今天我的 1.0.2 再次出现了同样的错误——
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/1.png)
 
 [摔桌]
 

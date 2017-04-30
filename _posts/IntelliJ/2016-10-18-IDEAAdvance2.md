@@ -24,22 +24,22 @@ description: IDEA advance chapter 2
 
 IDE是[Project Rider](https://www.jetbrains.com/rider)，JetBrains系列的C# IDE。
 这是Sexy Editor的效果，只能让代码编辑画面变成图片：
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/1.jpg" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/1.jpg)
 
 这个插件叫Sexy Editor。它的设置界面长这样：
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/2.png)
 
 之前我一直都在用这个。直到我发现了自带的。
 
 可以通过IntelliJ IDEA自带的插件管理器找到它。不过我已经发现了更好的显示背景图片的方法，于是我就很果断地Uninstall了这个插件。不过我主观上还是很欣赏这个插件的。卸载只是因为找到了替代品。
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/4.png)
 
 来看看官方的图片背景插件吧。IDE是Project Rider。
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/3.jpg" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/3.jpg)
 
 这次又是IntelliJ IDEA了（不要吐槽我老是换IDE，我同时写Kotlin和C#你管我），
 官方的插件可以把整个IDE的画面变成图片。而且我曾经舍不得拿来用的低清图片放到这个插件来用，莫名其妙地变得谜之高清了：
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/5.jpg" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea6/5.jpg)
 
 这让我再一次认识到了IntelliJ IDEA系列的神奇。
 

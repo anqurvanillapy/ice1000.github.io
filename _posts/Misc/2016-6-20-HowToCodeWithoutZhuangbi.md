@@ -49,7 +49,7 @@ P.S.我写的游戏不是原生的，是RPG Maker做的。不过我是因为嫌�
 
 游戏未完成，截图：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/life/1.jpg" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/life/1.jpg)
 
 千里冰封就是我辣，不是主角哦。
 

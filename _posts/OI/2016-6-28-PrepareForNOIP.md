@@ -7,6 +7,8 @@ keywords: NOIP, OI, algorithm
 description: Preparation for NOIP
 ---
 
+黑历史预警。写这文的时候我还是个菜鸡 QAQ
+
 > [原文链接](https://www.zhihu.com/question/47942797/answer/108369927)
 
 最近遇到了不少想参加信息学竞赛的人。询问我一些很新手很新手的问题。说实话这些问题我还是可以回答，不过似乎他们都把我这个弱菜当成大神了。
@@ -19,7 +21,7 @@ description: Preparation for NOIP
 
 - 一颗强大的内心。五大竞赛没一个是简单的，别以为信息学竞赛就是啥纯粹是玩的东西，你可以找到乐趣，但是这不是游戏。
 - 父母支持。毕竟，不是哪个父母都愿意自己的孩子整天盯着电脑的。我父母就超级讨厌我刷题。这点和别的竞赛不一样。
-- 学习C/C++/Pascal中任意一门语言。个人推荐C/C++。我的选择是C with STL(大雾)。
+- 学习`C/C++/Pascal`中任意一门语言。个人推荐`C/C++`。我的选择是`C with STL`(大雾)。
 - 你需要学校的支持。如果你只是兴趣，不参加比赛，可以忽略。
 - 选择一个刷题网站。这里推荐[NOI官网题库](http://noi.openjudge.cn)
 
@@ -30,8 +32,8 @@ description: Preparation for NOIP
 熟悉到什么程度呢？我给个参考。当然这样是远远不够的。
 
 1. 基本类型，整数浮点字符。
-1. 条件分支，if else
-1. 选择分支，switch case
+1. 条件分支，`if else`
+1. 选择分支，`switch case`
 1. 特殊数据类型，数组、指针、联合、结构体。
 1. 输入输出，尤其是格式化
 1. 循环
@@ -88,29 +90,29 @@ OI圈子和别的一些圈子一样，是有很丰富的文化的。
 另外，我们有许多**黑话**，下面列举一些常见的：
 
 黑话|含义
-:--|--:
-OI|Olympic of Informatic，信息学竞赛
-AC|Accepted，指测试通过
-TLE|Time Limit Exceeded，超时
+:---|---:
+OI|`Olympic of Informatics`，信息学竞赛
+AC|`Accepted`，指测试通过
+TLE|`Time Limit Exceeded`，超时
 水题|很简单的题，不大需要动脑子
 水过|AC一道水题
 AK|将全部题AC，满分
 骗分|指通过不寻常的手段利用OI黑箱测试来获取一定分数
-打表|无算法，直接根据输入来输出对应的值，常见格式是一个大switch
+打表|无算法，直接根据输入来输出对应的值，常见格式是一个大`switch`
 NOIP|省级OI
 NOI|国家级OI
 IOI|世界级OI
 弱菜|我
 神犇|NOI金牌获奖者或参加IOI的选手
 爆0|一道题0分，没通过任何一个测试点
-OJ|Online Judge，在线评测网站，前文的NOI官网题库就是一个
+OJ|`Online Judge`，在线评测网站，前文的NOI官网题库就是一个
 人品|不出意外平安无事考试完成的概率
-P党|使用Pascal进行OI的人
-C党|使用C/C++进行OI的人
+P党|使用`Pascal`进行OI的人
+C党|使用`C/C++`进行OI的人
 OIer|参加OI的人
-DP|Dynamic Programming，动态规划
-DFS|Deep First Search，深度优先搜索
-BFS|Breadth First Search，广度优先搜索
+DP|`Dynamic Programming`，动态规划
+DFS|`Deep First Search`，深度优先搜索
+BFS|`Breadth First Search`，广度优先搜索
 
 
 可以从中充分看出OI和别的竞赛不同。毕竟OI有人品这个概念，因为你有可能死机卡机或者忘记保存代码。

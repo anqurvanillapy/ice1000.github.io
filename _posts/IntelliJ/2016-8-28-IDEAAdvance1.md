@@ -22,13 +22,13 @@ description: IDEA for beginners chapter 1
 ## 咋自定义
 首先我们打开设置，**Ctrl+Alt+S**。请事先关闭QQ快捷键。然后找到Editor目录下的Live Template选项。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/0.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/0.png)
 
 然后看到这里一大堆语言选项。我就选自己最熟悉的Kotlin啦。。。你们自便。点击左边的三角形，展开查看现在有哪些模板吧。我之前说过的psvm、main都在里面，还有fori、anonymous、lambda、ifn、inn等。
 
 任意点击其中一个，可以看到下面的模板代码。你可以看到很多变量，像宏一样。变量以美元符号夹在中间。首先试试修改模板内容，然后再在编辑器中键入模板内容，是不是发现了变化呢。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/1.png)
 
 那么我们新建一个。之前拿CLion写OI代码时发现没有main方法的补全真的是人生一大憾事，于是我准备自己造一个。点击最右边的绿色加号，你懂的，选Live Template。
 
@@ -44,15 +44,15 @@ int main(int argc, char *argv[]) {
 
 然后你会惊喜地发现，它说你没有定义可用范围。于是我们选那个蓝色的Define，然后在弹出窗口中选C和C++。然后你就看不到报错了。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/2.png)
 
 然后保存设置，回到编辑器，发现你已经可以插入main方法了。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/3.png)
 
 然后你惊喜地发现，你只是插入了一段代码，插入过后光标在最后。这样的体验是非常糟糕的。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea5/4.png)
 
 于是我们要学习那个美元符号。
 

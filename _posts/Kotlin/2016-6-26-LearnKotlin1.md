@@ -23,20 +23,20 @@ description: The way to learn kotlin
 
 Kotlin是一门基于JVM的编程语言，支持编译成Java平台的.class目标文件和JavaScript文件。支持Java字节码是因为这门语言本身基于Java，不过为了方便web开发和独立于JVM的运行，Kotlin团队也引入了JavaScript的编译。
 
-那么，Kotlin作为一门编程语言，有哪些特点呢？（；^ω^）
+那么，Kotlin作为一门编程语言，有哪些特点呢？（；\^ω\^）
 
-首先，它是一门面向对象(Object-Oriented )的语言。它和它的亲爸爸Java除了反射(Reflection)之外完美地兼容。也就是说，如果你曾经使用Java编写过一个工具类，不过你现在却更喜欢使用Kotlin编程，那么你完全可以在Kotlin里面像调用一个Kotlin类那样调用你曾经写过的Java类。反过来，你也可以让你那些仍然在使用Java的同事直接调用你通过Kotlin编写的类。
+首先，它是一门采用面向对象(Object-Oriented)风格的语言。它和它的亲爸爸Java除了反射(Reflection)之外完美地兼容。也就是说，如果你曾经使用Java编写过一个工具类，不过你现在却更喜欢使用Kotlin编程，那么你完全可以在Kotlin里面像调用一个Kotlin类那样调用你曾经写过的Java类。反过来，你也可以让你那些仍然在使用Java的同事直接调用你通过Kotlin编写的类。
 
 至于Kotlin和Java所不那么友好的地方，大概有以下几处：
 
 + 反射机制不同。
 + Kotlin支持把函数直接写在文件里(就如C语言一样)，而Java的一切的一切都在类中。
-+ Kotlin没有静态方法这个概念，却引入了object class和companion的概念。不过可以用单例模式来解决这个语言不兼容的问题。
-+ Kotlin目标文件的运行需要一个单独的jar包的支持，叫kotlin-runtime.jar，不过这个不大，体积不到1MB。而如果要使用反射的话，还需要包含另一个jar包，叫kotlin-reflection.jar，这个就比较大了，2MB左右。
++ Kotlin没有静态方法这个概念，却引入了`object`和`companion`的概念（就是OO的based on object形式）。
++ Kotlin目标文件的运行需要一个单独的jar包的支持，叫`kotlin-runtime.jar`，不过这个不大，体积不到1MB。而如果要使用反射的话，还需要包含另一个jar包，叫`kotlin-reflection.jar`，这个就比较大了，2MB左右。
 
 不过就如Java8引入了lambda一样，这门语言同样注重对于函数式编程的支持。它的优点是向下兼容到Java6，也就是说Kotlin目标文件可以直接在原生的mac电脑上运行(OS X预装JDK6)，并且你可以在里面使用lambda。
 
-它和Swift一样，拥有空指针保护(Null-Safety)的特性。每个变量必须保证时刻为非Null，否则需要用问号来标记。在与Java的互相继承中，Kotlin中被声明为非Null的变量在Java的参数表里会有@NotNull标记。
+它和Swift一样，拥有空指针保护(Null-Safety)的特性。每个变量必须保证时刻为非`Null`，否则需要用问号来标记。在与Java的互相继承中，Kotlin中被声明为非Null的变量在Java的参数表里会有@NotNull标记。
 
 插一句，Kotlin的语法和Swift其实特别像。只不过Swift的原生API的啰嗦程度又把原本的简洁给破坏了。。。这只是我个人观点。抛开鄙视链不谈我还是很喜欢Swift的。
 
@@ -93,10 +93,8 @@ Kotlin团队为用户考虑得非常周到，不仅仅出品了IDEA插件，还�
 
 顺带一提，我的项目[Dekoder]( https://github.com/ice1000/Dekoder)也被收录其中。(*´ڡ`●)
 
-另外，我知道有很多英语困难的朋友们，贴心的小可爱冰封也为你们准备了一个[经过自己一节计算机课粗糙翻译的awesome-kotlin](https://github.com/KotlinCN/awesome-kotlin)，目前还在翻译中，不过我有多懒你是知道的，况且我还有太多别的坑，所以欢迎志愿者参与维护，以及协助翻译。
+另外，我知道有很多英语困难的朋友们，贴心的小可爱冰封也为你们准备了一个[经过自己一节计算机课粗糙翻译的awesome-kotlin](https://github.com/KotlinCN/awesome-kotlin)，目前还在翻译中，不过我有多懒你是知道的，况且我还有太多别的坑，所以欢迎志愿者参与维护，以及协助翻译。欢迎pull request。
 
-冰封期待你的pull request。
-
-另外欢迎大家参考[我的知乎回答: Android开发Kotlin你目前遇到过哪些坑？](http://www.zhihu.com/question/36735834/answer/105409238)，里面有着冰封的血泪史，希望大家不要重蹈冰封的覆辙｡･ﾟ･(ﾉД`)･ﾟ･｡
+另外欢迎大家参考[我的知乎回答: Android开发Kotlin你目前遇到过哪些坑？](http://www.zhihu.com/question/36735834/answer/105409238)，里面有着我的血泪史，希望大家不要重蹈我的覆辙｡･ﾟ･(ﾉД\`)･ﾟ･｡
 
 最后啰嗦一句：anko是真的黑科技！

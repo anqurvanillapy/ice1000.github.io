@@ -27,19 +27,19 @@ description: IDEA for beginners chapter 4
 
 然后打开IntelliJ IDEA，并转到Settings界面。如下图所示，确保你已经开启了这两个插件。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/1.png)
 
 请忽略我诡异的线条……之前都是用的QQ截图，今天学校把机房的网断了，我就只有用Windows自带的截图工具，那东西比较猥琐，博客的push和commit都是靠的手机……心疼流量。
 
 **Ctrl+Alt+S**，打开设置。找到这个玩意，你需要它来设置你的Git路径。如图所示。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/2.png)
 
 在图中标出来Test按钮左边的输入框输入你的Git的安装路径。然后点击Test按钮。如果弹出一个成功的对话框，那么恭喜你，你配置成功了。
 
 接下来配置GitHub。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/3.png)
 
 把Login填成你的账号，Password填成你的密码。别的都可以照搬我的设置。
 
@@ -49,7 +49,7 @@ description: IDEA for beginners chapter 4
 
 + 你可以将你的一个本地项目直接推送到你的GitHub上。在这里可以找到这个选项。然后在弹出的窗口输入仓库名和介绍。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/4.png)
 
 如果你只是想开启版本控制系统而不是上传到GitHub，请选择上面的“Enable Version Control Integration”。
 
@@ -64,7 +64,7 @@ Ctrl+T | pull（拉取）
 <br/>
 + 你可以直接从GitHub上的仓库创建一个项目。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/5.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/5.png)
 
 ## 用户体验
 
@@ -90,25 +90,25 @@ i++
 
 + 你的改动会在行号旁边显示出来。有改动的地方，IDEA会为你标出来。这样你能清晰地看到你的改动记录（如果你合理使用Git的话）。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/6.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/6.png)
 
 下面的图片中清晰地标明了每个地方的作用。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/7.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/7.png)
 
 + 你可以在上面那个界面中双击你需要查看的文件，此时会弹出更改列表。非常清晰明了的修改说明。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/8.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/8.png)
 
 由于我的改动很简单，仅仅是两行代码的删除，看不出什么特别的地方，读者可以试试更奇怪的修改，IDEA绝对会给你一个惊喜。
 
 + 这是推送的界面。你的未推送的提交全部在这里了。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/9.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/9.png)
 
 另外，在这里也能查看更改记录，前文提到的很牛逼的改动说明就大概是这样的：（我当时正在封装一个网络连接信息获取的操作）
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/10.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/10.png)
 
 + 右边的文件目录树也会有变化，文件名的颜色会根据在Git中的情况变成相应的颜色：
 
@@ -127,7 +127,7 @@ i++
 
 版本控制有一个优点就是能帮你免除车祸。比如你重构你的主业务逻辑代码，发现写着写着你自己都不知道你在写什么了，完全是看着自己的代码一脸懵逼，此时你就需要使用版本控制来救你：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/11.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/11.png)
 
 它能让你回到上次提交的样子。
 

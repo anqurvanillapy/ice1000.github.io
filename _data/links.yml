@@ -46,7 +46,7 @@
 - name: colliot
   url: http://colliot.me
 
-- name: snbct
+- name: ZJU-snbct
   url: https://blog.snbct.org
 
 - name: hex
@@ -54,4 +54,7 @@
 
 - name: BennyHuo/KotlinCN
   url: https://www.kotliner.cn
+
+- name: Snakes
+  url: http://snakes.moe
 

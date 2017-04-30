@@ -15,7 +15,7 @@ description: make a game engine chapter 4
 
 首先我在第三篇中已经提到了，作为一个OIer我也遵循膜蛤的传统。昨天为了庆祝长者的生日，我使用新引入的粒子系统做了一个膜蛤向的游戏。截图如下，当时写出来的时候只有69行，一样的很少，不禁为自己的引擎的神奇感到惊叹。（又厚颜无耻地在表扬自己了）
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/1.png)
 
 这是通过Windows的截图工具截的图，是一个我随手画的图形射出我随手画的星星，击中了“长者の镜”会发出音效。音效是我从极乐净土前奏中剪出来的，wav格式，只有一秒左右。
 
@@ -28,7 +28,7 @@ WTF！？手动黑人问号！？
 ## 第二件事
 OIer日常膜蛤已经不是啥稀奇事，release里面放毒：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/0.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/0.png)
 
 然后有个看我文章的人下载了。。。
 
@@ -112,11 +112,11 @@ loopIf({ !paused && !stopped && refresh.ended()}) {
 ## 第五件事
 我一直对Java的性能很不自信，以为Java卡，Java慢，反正就是垃圾语言。所以我一开始给引擎固定的刷新率是40fps（我提供了API修改这个值），然后整个画面看起来有点卡，不过还行，起码看得过去。然后后来在和凯凯（3A）聊天时，提到了fps这个东西。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/5.jpg" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/5.jpg)
 
 凯凯是元火引擎的作者，元火是个C++引擎。我发现fps原来都是几百上千的，于是也想试试，看看Java（Kotlin）引擎性能怎么样。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/6.jpg" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/6.jpg)
 
 然后我把这个调到了1000fps，发现毫无卡顿，如丝般顺滑。。我当时就被这个流畅的画面惊艳到了，Java的渲染也没那么糟糕嘛。看来无论什么事都得试试才行啊。
 
@@ -137,13 +137,13 @@ loopIf({ !paused && !stopped && refresh.ended()}) {
 ## 顺带一提
 寒冰引擎的截图略扯淡，虽然画面很流畅，但是截图出来的效果是这样的：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/2.png)
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/3.png)
 
 谜之错位。更神奇的是，那个我吹了很多次的65行Flappy bird，我加了几行代码，让它在你死的时候截图，效果出来是这样的：
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/game/4/4.png)
 
 这个bird的力气真大，柱子都被你撞动了。当时看到图的时候真是戳笑点，哈哈。
 

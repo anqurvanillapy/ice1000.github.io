@@ -39,7 +39,7 @@ description: I met a greate bug of anko
 
 我的Kotlin编译器，发生了内部错误。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/1.png)
 
 这对于任何程序员来说，都是一个巨大的打击。我开始让自己保持冷静，不要慌张。遇到这种情况应该想办法，而不是自暴自弃。就算是帝球那样的聚聚也有编译失败的时候。~~当然，C++编译失败是很正常的事情。~~ 不过要是Java或者Kotlin编译失败，就有点离奇了。Java或者Kotlin本身工具链是很稳定的，要是出事了我猜十有八九是anko的锅。
 
@@ -57,11 +57,11 @@ description: I met a greate bug of anko
 
 首先挂上Lantern，下载插件自然是需要科学上网的，咳咳。中国真是啥都排斥，连RubyGems都排斥，我真是无语了。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/2.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/2.png)
 
 看图不说话，你们懂。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/3.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/3.png)
 
 我这都出车祸了，哪还敢选Early Access Program。只有老老实实选Stable。不过我平时倒是有选EAP的习惯，我的Android Studio、Android SDK和IntelliJ IDEA都是EAP。所以出车祸是必不可少的，因此也经常遇到问题。不过这次这个问题几乎是无解的，因为Kotlin本身就是小众的技术，要想找到哪个冷门bug的帮助，恐怕是难上加难啊。
 
@@ -69,11 +69,11 @@ description: I met a greate bug of anko
 
 看到提示重启Studio以使用插件，我兴高采烈地重启了Android Studio。
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/4.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/4.png)
 
 接下来发生了什么，我都已经在开头说明了。可以猜到，此时我真的是生无可恋。我坐在电脑面前唉声叹气，诅咒着别人的minGW……
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/5.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/5.png)
 
 就是它带来了这场灾祸。看着那熟悉的启动界面，真是又爱又恨。
 
@@ -83,7 +83,7 @@ description: I met a greate bug of anko
 
 期待着更新后的插件能够编译成功，并在虚拟机上运行——
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/1.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/1.png)
 
 [摔桌]
 
@@ -117,7 +117,7 @@ buildscript {
 
 ## 成功
 
-<p><img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/6.png" align="center"></p>
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/6.png)
 
 我几乎要从电脑面前跳起来了。
 
