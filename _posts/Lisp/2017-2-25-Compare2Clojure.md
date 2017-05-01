@@ -9,12 +9,12 @@ description: My first lisp with Clojure
 
 ## 为什么我这么快又发一篇
 
-+ 因为我刚刚看了40多页的 Programming Clojure
++ 因为我刚刚看了 40 多页的 Programming Clojure
 + 因为我发现 Lice 和 Clojure 很多设计是相似的，我很兴奋
 
 ## 为什么我的眼里常含泪水
 
-+ 因为 Markdown 钦定 Tab 为8空格
++ 因为 Markdown 钦定 Tab 为 8 空格
 + 我的代码变得根本不能看了
 
 ## 我还是说正事吧
@@ -23,7 +23,7 @@ description: My first lisp with Clojure
 
 因此，在写自己的 JVM Lisp 的时候，参考一门现有的 JVM Lisp 是非常有价值的。
 
-我今天趁着补课的时间看了40多页的 Programming Clojure （为什么我又废话了一遍），看到很多和我一样的设计：
+我今天趁着补课的时间看了 40 多页的 Programming Clojure （为什么我又废话了一遍），看到很多和我一样的设计：
 
 + repl 遇到 Exception 的时候只输出第一句，然后保存 Exception 类到一个特定的变量位置，给出一个 pst 函数来输出完成的栈帧信息（我之前也想起名为 pst ，但是我感觉 pst 这个名字太邪乎，陪审团？拍死他？当时采用了 show-full-message 这个名字。现在我又改成 pst 了。
 + println 返回 null 。我一开始也是这么干的，但是后来我给改成返回输出的字符串了。

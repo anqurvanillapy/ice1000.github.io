@@ -15,7 +15,7 @@ description: My first lisp
 
 根据[萧井陌聚聚的说法](https://www.zhihu.com/question/22482295/answer/23508622)：
 
-> 实现lisp语法的解释器(以后你可以拿这个金手指找别人约架...)
+> 实现 lisp 语法的解释器(以后你可以拿这个金手指找别人约架...)
 
 于是我去实现了一个 Lisp 语法的辣鸡语言的解释器。
 
@@ -25,7 +25,7 @@ description: My first lisp
 
 ## 为什么我的眼里常含泪水
 
-+ 因为 Markdown 钦定 Tab 为8空格
++ 因为 Markdown 钦定 Tab 为 8 空格
 + 我的代码变得根本不能看了
 
 ## 那么下面是正文
@@ -33,10 +33,10 @@ description: My first lisp
 Lisp 讲道理已经帮你手写好了语法树了，整个 parse 的过程也很简单，无非就是 String.substring() 的边界问题有点坑。
 我目前的语法设计有这么几个规则：
 
-+ 每个非空`()`都是一个函数调用，空`()`是null的字面量。
-+ `(a b c)`是一个函数调用，翻译成C风格就是`a(b, c)`。
++ 每个非空`()`都是一个函数调用，空`()`是 null 的字面量。
++ `(a b c)`是一个函数调用，翻译成 C 风格就是`a(b, c)`。
 + `true` `false` `null` 都是字面量
-+ 数字都是字面量，支持C风格的16进制 8进制和2进制。
++ 数字都是字面量，支持 C 风格的 16 进制 8 进制和 2 进制。
 
 可以先写字符串语法树：
 
@@ -85,7 +85,7 @@ val currentNodeStack = Stack<StringMiddleNode>()
 currentNodeStack.push(StringMiddleNode(1))
 var lineNumber = 1
 fun check(index: Int) {
-  // 检查一个Token是否合法，然后加入TokenList。
+  // 检查一个 Token 是否合法，然后加入 TokenList。
 }
 code.forEachIndexed { index, c ->
   when (c) {

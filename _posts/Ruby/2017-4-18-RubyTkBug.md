@@ -7,14 +7,14 @@ keywords: ruby, ruby/tk, tk, stackoverflow
 description: first stackoverflow answer
 ---
 
-第一次在StackOverflow上回答问题，第一次凭借自己的力量修复某语言标准库的bug，第一次给那么重量级的仓库投pull request...
+第一次在 StackOverflow 上回答问题，第一次凭借自己的力量修复某语言标准库的 bug ，第一次给那么重量级的仓库投 pull request...
 
 ## 后来的补充
 
-Tk维护者[告诉我](https://github.com/ruby/tk/pull/8)那个bug是已经修复了的（在另一个地方处理了空指针），
-只不过修复发生在Ruby/Tk 2.3发布之后。
+Tk 维护者[告诉我](https://github.com/ruby/tk/pull/8)那个 bug 是已经修复了的（在另一个地方处理了空指针），
+只不过修复发生在 Ruby/Tk 2.3 发布之后。
 
-你可以通过gem 'tk'来获得更新后的修复了这个bug的版本。
+你可以通过 gem 'tk'来获得更新后的修复了这个 bug 的版本。
 
 不过我在[StackOverflow](http://stackoverflow.com/questions/43011258/ruby-tks-canvas-and-shapes-are-bugging-out/)
 上给的解法是适用的，不想更新的话就可以用我的解法。
@@ -47,8 +47,8 @@ TkcRectangle.new @canvas, 0, 0,
                   'fill' => 'white'
 ```
 
-然后我仔细阅读了StackTrace，发现不是我的引擎的问题（废话，我早就在Ruby2.1下测试过了），
-是[Ruby Tk库](https://github.com/ruby/tk)的问题。
+然后我仔细阅读了 StackTrace ，发现不是我的引擎的问题（废话，我早就在 Ruby2.1 下测试过了），
+是[Ruby Tk 库](https://github.com/ruby/tk)的问题。
 
 位于源码的这个位置：
 
@@ -64,22 +64,22 @@ TkcRectangle.new @canvas, 0, 0,
 #...
 ```
 
-也就是说，Ruby2.3发布了有bug的代码。
+也就是说， Ruby2.3 发布了有 bug 的代码。
 
 但是我又不熟悉标准库的源码，于是就去股沟搜，发现了一个超过分的行为。
 
-我看到[那个bugs的帖子](https://bugs.ruby-lang.org/issues/12156)。
+我看到[那个 bugs 的帖子](https://bugs.ruby-lang.org/issues/12156)。
 
-楼主留了详细的信息。然后二楼是个系统消息，维护者被assign到这个bug，然后4个月后，维护者rejected。
+楼主留了详细的信息。然后二楼是个系统消息，维护者被 assign 到这个 bug ，然后 4 个月后，维护者 rejected。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/12/0.png)
 
-这什么意思。。话都不说一句就给rejected了。。。
+这什么意思。。话都不说一句就给 rejected 了。。。
 
-而且[StackOverflow上也有相应的问题](http://stackoverflow.com/questions/43011258/ruby-tks-canvas-and-shapes-are-bugging-out/)，
+而且[StackOverflow 上也有相应的问题](http://stackoverflow.com/questions/43011258/ruby-tks-canvas-and-shapes-are-bugging-out/)，
 但是却没有一个回答。
 
-于是我就去阅读了StackTrace，然后尝试修复它——**直接改标准库源码**。
+于是我就去阅读了 StackTrace ，然后尝试修复它——**直接改标准库源码**。
 
 我是不是胆子很大\~
 
@@ -102,24 +102,24 @@ end
 
 程序运行没有任何问题。
 
-用了Ruby才知道打开class/module的好处啊（逃
+用了 Ruby 才知道打开 class/module 的好处啊（逃
 
 所以说，要么就动态到极致，要么就静态~~，像某些语言，不仅元编程不行，语义还依赖于缩进，还要不要好好写代码了~~。
 
-紧接着我回到刚才StackOverflow那个问题，写了个[回答](http://stackoverflow.com/questions/43011258/ruby-tks-canvas-and-shapes-are-bugging-out/43476737#43476737)
+紧接着我回到刚才 StackOverflow 那个问题，写了个[回答](http://stackoverflow.com/questions/43011258/ruby-tks-canvas-and-shapes-are-bugging-out/43476737#43476737)
 。
 
-最后我在GitHub上找到了对应的代码，修改了这个bug，并提交了[一个pull request](https://github.com/ruby/tk/pull/8)。
+最后我在 GitHub 上找到了对应的代码，修改了这个 bug ，并提交了[一个 pull request](https://github.com/ruby/tk/pull/8)。
 虽然只改了一行代码，但是却从不能运行变成了可以运行，这还是很好的。
 
-不知道远在岛国的Ruby contributor会不会merge呢。。。。
+不知道远在岛国的 Ruby contributor 会不会 merge 呢。。。。
 
-顺便晒一下刚刚修复bug之后跑通的Demo，可以做到显示gif格式的静态图片（Tk库），
+顺便晒一下刚刚修复 bug 之后跑通的 Demo ，可以做到显示 gif 格式的静态图片（ Tk 库），
 以及文字，几何图形，和简单的动画。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/12/1.png)
 
-实现也就短短40行Ruby代码：
+实现也就短短 40 行 Ruby 代码：
 
 ```ruby
 require_relative '../src/engine'

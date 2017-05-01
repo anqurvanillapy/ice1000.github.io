@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用内存池消除可能出现的野指针delete操作
+title: 使用内存池消除可能出现的野指针 delete 操作
 category: JNI
 tags: Java
 keywords: Java,JNI,C++
@@ -9,7 +9,7 @@ description: JNI Tutorial
 
 ## 为什么我想到要干这个事情
 
-最近又一次构建了下项目[algo4j](https://github.com/ice1000/algo4j)，遇到一个比较麻烦的问题，就是之前写的那个矩阵乘法加速斐波那契数列求值的JNI函数老是让JVM崩溃，而且这个bug不能复现。
+最近又一次构建了下项目[algo4j](https://github.com/ice1000/algo4j)，遇到一个比较麻烦的问题，就是之前写的那个矩阵乘法加速斐波那契数列求值的 JNI 函数老是让 JVM 崩溃，而且这个 bug 不能复现。
 
 附一张面向运气编程时测试通过的爽图：
 
@@ -21,7 +21,7 @@ description: JNI Tutorial
 
 这薛定谔程序我也是醉了。
 
-我非常苦恼，而且看那个Process finished with exit code -多少多少多少，就感觉它多半又是delete了不该delete的东西——野指针。
+我非常苦恼，而且看那个 Process finished with exit code -多少多少多少，就感觉它多半又是 delete 了不该 delete 的东西——野指针。
 
 ## 不是很重要的前提知识
 
@@ -30,12 +30,12 @@ description: JNI Tutorial
 
 ## 内存池是啥
 
-内存池就是一个内存管理器，负责分配内存（就是通过它来管理矩阵对象的new和delete）。
+内存池就是一个内存管理器，负责分配内存（就是通过它来管理矩阵对象的 new 和 delete ）。
 
 ## 内存池怎么解决
 
-这样就不需要在一些函数中间delete（由于你可以把一个矩阵对象赋值给多个指针，delete其中一个之后，
-剩下的都变成了野指针，你再delete一次就GG了），而是在整个流程结束之后一次性完全delete，解决了内存分配的问题。
+这样就不需要在一些函数中间 delete （由于你可以把一个矩阵对象赋值给多个指针， delete 其中一个之后，
+剩下的都变成了野指针，你再 delete 一次就 GG 了），而是在整个流程结束之后一次性完全 delete ，解决了内存分配的问题。
 
 ## 内存池如何设计
 
@@ -73,11 +73,11 @@ private:
 
 原因：
 
-0. 使用了STL，作为一个拿MinGW编译C++端的垃圾，实在是受不了MinGW编译STL之后生成文件的大小。
+0. 使用了 STL ，作为一个拿 MinGW 编译 C++端的垃圾，实在是受不了 MinGW 编译 STL 之后生成文件的大小。
 0. 万一分配了大量没用到的内存呢
-0. 万一size()的实现是O(n)的呢（我问了指针，他说没有（因为STL要求O(1)），于是这条可以无视）
-0. ~~其实没那么多万一，反正垃圾MinGW，clang才是正义，不是很懂~~
-0. ~~就是不想用STL就是不想用STL~~
+0. 万一 size()的实现是 O(n)的呢（我问了指针，他说没有（因为 STL 要求 O(1)），于是这条可以无视）
+0. ~~其实没那么多万一，反正垃圾 MinGW ， clang 才是正义，不是很懂~~
+0. ~~就是不想用 STL 就是不想用 STL~~
 
 **数组才是正义！**
 
@@ -85,7 +85,7 @@ private:
 
 数组的大小是在创建的时候确定的，所以我们需要在一开始就确定我们大概需要多少个矩阵。我使用了一个奇技淫巧来查看矩阵的数量。
 
-由于这只是临时性的一个测试，我们就可以随便整点糟糕的东西，比如使用全局变量。我们先整个全局变量，并且每生成一个Matrix22对象就让它自增：
+由于这只是临时性的一个测试，我们就可以随便整点糟糕的东西，比如使用全局变量。我们先整个全局变量，并且每生成一个 Matrix22 对象就让它自增：
 
 ```cpp
 int num = 0;
@@ -98,7 +98,7 @@ algo4j_matrix::Matrix22::Matrix22() {
 }
 ```
 
-然后在矩阵斐波那契的函数里面加上num的初始化和输出：
+然后在矩阵斐波那契的函数里面加上 num 的初始化和输出：
 
 ```cpp
 auto algo4j_matrix::fib_matrix(jlong n, jlong mod) -> jlong {
@@ -118,7 +118,7 @@ auto algo4j_matrix::fib_matrix(jlong n, jlong mod) -> jlong {
 #include "stdio.h"
 ```
 
-然后编译一下，嗯没毛病。然后跑测试。我使用的是Run test with Coverage，使用的IntelliJ的控制台：
+然后编译一下，嗯没毛病。然后跑测试。我使用的是 Run test with Coverage ，使用的 IntelliJ 的控制台：
 
 ```
 1200 test cases: test passed
@@ -152,7 +152,7 @@ auto algo4j_matrix::fib_matrix(jlong n, jlong mod) -> jlong {
 Process finished with exit code 0
 ```
 
-我擦嘞？好像它没按顺序输出，多半是控制台IO的问题（IntelliJ的控制台有些时候有点奇怪），我试试把测试输出到文件：
+我擦嘞？好像它没按顺序输出，多半是控制台 IO 的问题（ IntelliJ 的控制台有些时候有点奇怪），我试试把测试输出到文件：
 
 ```cpp
 
@@ -169,7 +169,7 @@ auto algo4j_matrix::fib_matrix(jlong n, jlong mod) -> jlong {
 }
 ```
 
-然后发现似乎不是IO的问题：
+然后发现似乎不是 IO 的问题：
 
 ```
 3:3
@@ -215,13 +215,13 @@ auto algo4j_matrix::fib_matrix(jlong n, jlong mod) -> jlong {
 
 好，根据观察得出，所需矩阵的数量大约和斐波那契数项数成对数关系。我觉得这个关系可以作为深度学习探究的题材（滑稽）
 
-那么具体是多少呢？可以明显地看到数据有不稳定的波动，那么为了确保安全，应该是先求n的对数，然后加上一个与n有关的常数。至于参数是多少呢？
+那么具体是多少呢？可以明显地看到数据有不稳定的波动，那么为了确保安全，应该是先求 n 的对数，然后加上一个与 n 有关的常数。至于参数是多少呢？
 
-我也不知道。。。于是我随手撸了个工具来生成这个东西对应的函数图像（话说我才发现垃圾Windows的\r\n问题是多么坑，辣鸡Windows）。
+我也不知道。。。于是我随手撸了个工具来生成这个东西对应的函数图像（话说我才发现垃圾 Windows 的\r\n 问题是多么坑，辣鸡 Windows ）。
 
 ### 矩阵乘法斐波那契产生的矩阵数量，和项数的关系
 
-先上这个工具的代码，看不懂Kotlin的可以跳过（突然有种自己在做大数据研究的感觉）：
+先上这个工具的代码，看不懂 Kotlin 的可以跳过（突然有种自己在做大数据研究的感觉）：
 
 ```kotlin
 fun main(args: Array<String>) {
@@ -249,7 +249,7 @@ fun main(args: Array<String>) {
 
 ```
 
-我解释一下，就是读取文件里面的每个数对，然后以前一个数为横坐标（最左边是0，往右是正半轴），后一个数为纵坐标（最下面是0，往上是正半轴）
+我解释一下，就是读取文件里面的每个数对，然后以前一个数为横坐标（最左边是 0 ，往右是正半轴），后一个数为纵坐标（最下面是 0 ，往上是正半轴）
 
 然后显示出来是这个效果：
 
@@ -259,7 +259,7 @@ It's beautiful, it's beautiful, it's true~
 
 讲道理我也不知道为什么它会长成这个神奇的样子，这或许是一个新的关于斐波那契数列的奥秘吧。
 
-注意，这里为了视觉效果，将纵坐标按比例放大了20倍。
+注意，这里为了视觉效果，将纵坐标按比例放大了 20 倍。
 
 于是我们可以再绘制一个对数函数的派生函数的图像。我们先造一个这样的函数：
 
@@ -304,11 +304,11 @@ fun main(args: Array<String>) {
 
 ![不忍直视](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/4/3.png)
 
-于是我们可以再改改fun函数。我就不贴中间过程了，最终结果是（中间为了视觉效果，我对放大倍数进行多次调整）：
+于是我们可以再改改 fun 函数。我就不贴中间过程了，最终结果是（中间为了视觉效果，我对放大倍数进行多次调整）：
 
 ![比较好看](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/4/4.png)
 
-这时的log函数：
+这时的 log 函数：
 
 ```kotlin
 fun log(x: Int) = (Math.log(x.toDouble() + 1) * 3).toInt() + 4
@@ -335,9 +335,9 @@ Process finished with exit code 0
 
 完美！于是我们可以把这个公式用进刚才的内存池里了！
 
-首先写一个内存池，这里就不贴代码了，直接在[algo4j的GitHub仓库](https://github.com/ice1000/algo4j/blob/master/jni/global/matrix.cpp)就可以看到啦（链接给的是cpp文件，请参阅h文件哦）。
+首先写一个内存池，这里就不贴代码了，直接在[algo4j 的 GitHub 仓库](https://github.com/ice1000/algo4j/blob/master/jni/global/matrix.cpp)就可以看到啦（链接给的是 cpp 文件，请参阅 h 文件哦）。
 
-来看看这次编译之后跑出来的结果吧（我把之前的1200改成5000了）：
+来看看这次编译之后跑出来的结果吧（我把之前的 1200 改成 5000 了）：
 
 ![All Hail Memory Pool](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/4/5.png)
 
@@ -349,6 +349,6 @@ All Hail Memory Pool!
 
 ## Gist
 
-代码我po到[我的gist](https://gist.github.com/ice1000/321dfcc156859ac33e3bc570c08d207e)上了。
+代码我 po 到[我的 gist](https://gist.github.com/ice1000/321dfcc156859ac33e3bc570c08d207e)上了。
 
 <script src="https://gist.github.com/ice1000/321dfcc156859ac33e3bc570c08d207e.js"></script>

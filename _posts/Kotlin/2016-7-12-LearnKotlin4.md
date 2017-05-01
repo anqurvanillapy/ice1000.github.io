@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 如何让孩子爱上Kotlin第四章：基本类型
+title: 如何让孩子爱上 Kotlin 第四章：基本类型
 category: Kotlin
 tags: Essay
 keywords: Kotlin
 description: Learn kotlin 4 Variables
 ---
 
-好了我们继续学习Kotlin吧。
+好了我们继续学习 Kotlin 吧。
 
 上一节我们讲了变量与常量（最初发布的时候忘记讲常量了，请没看到的同学回溯一下），这次我们讲讲基本的数据类型。
 
-不知道有没有细心的读者发现我上一节讲常量声明的时候所声明的那个pi，我加了小数点：
+不知道有没有细心的读者发现我上一节讲常量声明的时候所声明的那个 pi ，我加了小数点：
 
 ```swift
 val pi = 3.1415926
@@ -23,7 +23,7 @@ val pi = 3.1415926
 
 大体来说，基本数据类型一般有以下几种：
 
-中文名|Kotlin中的符号|Java中的符号
+中文名|Kotlin 中的符号|Java 中的符号
 :---|:---:|---:
 整数|Int|int
 浮点数|Float|float
@@ -40,7 +40,7 @@ val int = 1415926
 val float = 3.1415926
 ```
 
-所谓布尔，就是你们曾经听说过的true和false，一个布尔的变量只有两种可能的值，就是true和false，分别表示真和假。比如
+所谓布尔，就是你们曾经听说过的 true 和 false ，一个布尔的变量只有两种可能的值，就是 true 和 false ，分别表示真和假。比如
 
 ```swift
 val bool1 = true
@@ -76,7 +76,7 @@ println(100 / 30.0)
 ```
 输出的结果是你想要的吗？
 
-想想为什么，读者可以通过阅读[这篇文章](http://www.educity.cn/it/sun/200912291014511906.htm)来了解原因。文章质量可能不高，我花了40秒随手找的。
+想想为什么，读者可以通过阅读[这篇文章](http://www.educity.cn/it/sun/200912291014511906.htm)来了解原因。文章质量可能不高，我花了 40 秒随手找的。
 
 ## 你学到了什么
 

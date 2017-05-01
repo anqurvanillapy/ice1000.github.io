@@ -25,7 +25,7 @@ description: JNI Tutorial End
 
 ### 参考资料向
 
-+ [如何获得C Linkage中符号的类型，并进行JNI类型检查？OpenJDK是如何实现这个功能的？](https://www.zhihu.com/question/52655861)，一个知乎问题，名义上还是我提的，有轮子和R大的回答
++ [如何获得 C Linkage 中符号的类型，并进行 JNI 类型检查？ OpenJDK 是如何实现这个功能的？](https://www.zhihu.com/question/52655861)，一个知乎问题，名义上还是我提的，有轮子和 R 大的回答
 + [IBM 良心文章，一堆 Best Practice](https://www.ibm.com/developerworks/java/library/j-jni/index.html)，和我自己总结的基本吻合，相见恨晚系列
 + [IBM 文章的辣鸡中文翻译，来自 Infoq](http://www.ibm.com/developerworks/cn/java/j-jni/)，我本来以为我可以去翻译结果看到了这个，虽然很烂但是它让我失去了翻译的欲望，因此更烂
 + [一位可爱的小姐姐的博客文章，讲解 CriticalNative](http://blog.hakugyokurou.net/?p=1758)
@@ -34,7 +34,7 @@ description: JNI Tutorial End
 
 研究 JNI 算是一件非常“非主流”的事情了，因为这方面的人都是这样学习的：
 
-听说了 JNI -> 想学 -> 自己做实验，发现确实快 -> 想深入学习 -> Google -> 发现文章只有一点点 -> 看完了，全是垃圾 -> 找官文/爆栈/上知乎提问 -> 自己踩坑 -> 顺便学了一堆附加技能，比如 Rust/定制JVM 等 -> 想写教程，发现内容太多，又懒 -> 放弃写教程
+听说了 JNI -> 想学 -> 自己做实验，发现确实快 -> 想深入学习 -> Google -> 发现文章只有一点点 -> 看完了，全是垃圾 -> 找官文/爆栈/上知乎提问 -> 自己踩坑 -> 顺便学了一堆附加技能，比如 Rust/定制 JVM 等 -> 想写教程，发现内容太多，又懒 -> 放弃写教程
 
 于是你并不能找到什么好的教程。
 

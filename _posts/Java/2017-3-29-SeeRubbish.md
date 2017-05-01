@@ -27,7 +27,7 @@ description: Really Bad Codes
 ```java
 tree.setCellRenderer(new IconNodeRenderer()); // 设置单元格描述
 DefaultTreeCellRenderer cellRenderer = (DefaultTreeCellRenderer) tree
-.getCellRenderer();// 获取该树的Renderer
+.getCellRenderer();// 获取该树的 Renderer
 ```
 
 什么仇什么怨，为什么在代码里面下毒？
@@ -51,7 +51,7 @@ Root.add(root2);// 定义二级节点
 我要不行了。。
 
 
-话说为什么我在写插件的过程中突然跑过来看这个？因为我想把Lice的AST Viewer嵌入插件中。
+话说为什么我在写插件的过程中突然跑过来看这个？因为我想把 Lice 的 AST Viewer 嵌入插件中。
 
 正在做，敬请期待。
 

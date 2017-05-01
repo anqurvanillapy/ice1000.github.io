@@ -9,11 +9,11 @@ description: NavigationView really hurts me
 
 今天真是太郁闷了……
 
-今天我又和一个Android开发中的事物互相伤害了，这次不是Kotlin也不是anko，是平时一直很老实的NavigationView……
+今天我又和一个 Android 开发中的事物互相伤害了，这次不是 Kotlin 也不是 anko ，是平时一直很老实的 NavigationView……
 
-这混蛋来自v7的Design包，是Google的Material Design支持包中的控件之一。启动一个NavigationView需要在外面套一个DrawerLayout。本来是一个很好看的侧滑菜单啊……为什么呢……
+这混蛋来自 v7 的 Design 包，是 Google 的 Material Design 支持包中的控件之一。启动一个 NavigationView 需要在外面套一个 DrawerLayout。本来是一个很好看的侧滑菜单啊……为什么呢……
 
-我以前有不少项目是使用了NavigationView的，比如[AIAndroid](https://github.com/ice1000/AIAndroid)，比如早期版本的PLasticApp，都是使用 NavigationView 作为导航控件的，怎知今天友谊的小船说翻就翻。
+我以前有不少项目是使用了 NavigationView 的，比如[AIAndroid](https://github.com/ice1000/AIAndroid)，比如早期版本的 PLasticApp ，都是使用 NavigationView 作为导航控件的，怎知今天友谊的小船说翻就翻。
 
 这谜之错误信息：
 
@@ -27,9 +27,9 @@ Caused by: java.lang.reflect.InvocationTargetException
 
 我当时的内心就是崩溃的。
 
-然后我开始bing，翻遍了 StackOverflow ，翻遍了各种博客，找到的方法都没用……
+然后我开始 bing ，翻遍了 StackOverflow ，翻遍了各种博客，找到的方法都没用……
 
-比如有的人说，把你的Build.gradle的Support包和Design包的版本改为一致。我当时还以为找到救星了，结果我看了看我的Gradle脚本：
+比如有的人说，把你的 Build.gradle 的 Support 包和 Design 包的版本改为一致。我当时还以为找到救星了，结果我看了看我的 Gradle 脚本：
 
 ```groovy
 dependencies {
@@ -59,23 +59,23 @@ dependencies {
 
 当时我的怨念极其强烈，简直要冲破机房的天花板了……
 
-每次commit我都要诅咒 NavigationView……
+每次 commit 我都要诅咒 NavigationView……
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/2.png)
 
-再看看[GitHub上的commit记录](https://github.com/ice1000/PlasticApp/commits/master)，我简直要被我的怨念给腐蚀了……
+再看看[GitHub 上的 commit 记录](https://github.com/ice1000/PlasticApp/commits/master)，我简直要被我的怨念给腐蚀了……
 
-最后我把UI换成了在Toolbar里面放导航内容：
+最后我把 UI 换成了在 Toolbar 里面放导航内容：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/3.png)
 
-整体颜色也换成了更Geek的黑色。看起来，感觉还是不错的。
+整体颜色也换成了更 Geek 的黑色。看起来，感觉还是不错的。
 
-今天一整天都这么不顺……真是的，Studio也这么浮躁，让我很是担忧的电脑的内存……
+今天一整天都这么不顺……真是的， Studio 也这么浮躁，让我很是担忧的电脑的内存……
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/nav/0.png)
 
-不过今天还是有好消息的，那就是我的Kotlin插件不知道为什么，Kotlin1.0.3 Build成功了！
+不过今天还是有好消息的，那就是我的 Kotlin 插件不知道为什么， Kotlin1.0.3 Build 成功了！
 
 ```groovy
 buildscript {
@@ -96,14 +96,14 @@ buildscript {
 
 [摔桌]
 
-然后我改成1.0.3……居然就成功了！
+然后我改成 1.0.3……居然就成功了！
 
 看来不是版本的问题啊……
 
-第二件好消息是新的PLastic完成了！
+第二件好消息是新的 PLastic 完成了！
 
 
 ## 你学到了什么
 
-+ 如何用Toolbar代替 NavigationView
-+ 上次的Kotlin编译器内部报错，原因其实是长得丑
++ 如何用 Toolbar 代替 NavigationView
++ 上次的 Kotlin 编译器内部报错，原因其实是长得丑

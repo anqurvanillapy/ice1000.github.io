@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 喜大普奔 GitHub一年连载达成
+title: 喜大普奔 GitHub 一年连载达成
 category: Misc
 tags: Misc,GitHub
 description: I Finally have contribution for a whole year!

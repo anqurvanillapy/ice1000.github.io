@@ -9,35 +9,35 @@ description: new proj, proj_manager
 
 ## 最近新写的玩具
 
-我这几天为了学习Rust（这是一门很好的语言，我觉得就语言本身来说，比Kotlin更吸引我，但是因为Kotlin是JetBrains的，所以我本命还是Kotlin），
+我这几天为了学习 Rust （这是一门很好的语言，我觉得就语言本身来说，比 Kotlin 更吸引我，但是因为 Kotlin 是 JetBrains 的，所以我本命还是 Kotlin ），
 写了个小玩具，叫[proj_manager](https://github.com/ice1000/proj_manager)。之所以起这个名字是因为：
 
-+ 项目名使用下划线是Rust规定的命名风格
-+ project_manager太长
++ 项目名使用下划线是 Rust 规定的命名风格
++ project_manager 太长
 
-也遇到了不少问题，写了不少幼稚的代码。不过Rust确实非常厉害，这也是我第一次在生产环境大量使用**模式匹配、Monad、代数数据类型（ADT）** 等东西，
-还有一些我通过Rust才第一次接触的**Ownership、Move、Borrow**等概念。这种感觉已经很久没有过了DA★ZE
-（我有一段时间没有这样集中地学习、练习一门全新的语言了，上次我大量学习Lisp的时候其实没有太多新概念，完全没有这次多），是一种非常美妙的感觉。
-学习新知识的感觉真是妙不可言DA★ZE！
+也遇到了不少问题，写了不少幼稚的代码。不过 Rust 确实非常厉害，这也是我第一次在生产环境大量使用**模式匹配、Monad、代数数据类型（ ADT ）** 等东西，
+还有一些我通过 Rust 才第一次接触的**Ownership、Move、Borrow**等概念。这种感觉已经很久没有过了 DA★ZE
+（我有一段时间没有这样集中地学习、练习一门全新的语言了，上次我大量学习 Lisp 的时候其实没有太多新概念，完全没有这次多），是一种非常美妙的感觉。
+学习新知识的感觉真是妙不可言 DA★ZE ！
 
-这也归功于送了我几本Rust书的打印版的[Glavo小可爱](https://github.com/Glavo)，我花下课和晚自习时间啃完了《Rust Primer》，
-写的也很不错，还是学姐审校的，解决了我以前在知乎上看教程时对于Deref等概念的困惑DA★ZE！感谢wayslog大佬DA★ZE！
+这也归功于送了我几本 Rust 书的打印版的[Glavo 小可爱](https://github.com/Glavo)，我花下课和晚自习时间啃完了《Rust Primer》，
+写的也很不错，还是学姐审校的，解决了我以前在知乎上看教程时对于 Deref 等概念的困惑 DA★ZE ！感谢 wayslog 大佬 DA★ZE ！
 
 回到正题，这个玩具是什么呢？
 
 ## 关于这个玩具
 
-其实这个玩具是我很早之前就想过要写东西，现在还非常不成熟，只不过已经具备的功能都是完好的。它是一个命令行工具，不支持参数而是支持指令DA★ZE。
+其实这个玩具是我很早之前就想过要写东西，现在还非常不成熟，只不过已经具备的功能都是完好的。它是一个命令行工具，不支持参数而是支持指令 DA★ZE。
 
-Windows用户可以在GitHub的release界面找到可执行exe下载，其它系统的用户可以自己使用Cargo构建DA★ZE。
+Windows 用户可以在 GitHub 的 release 界面找到可执行 exe 下载，其它系统的用户可以自己使用 Cargo 构建 DA★ZE。
 
 ## 使用方法
 
-先打开命令行，进入到你的项目所在的位置（顾名思义，Project Manager是帮助你管理你的项目的）DA★ZE。
+先打开命令行，进入到你的项目所在的位置（顾名思义， Project Manager 是帮助你管理你的项目的） DA★ZE。
 
-直接打开，会看到一个panic，或者在之后的版本看到一个错误提示。这时因为你没有配置文件的缘故。在当前目录下新建一个文件“proj_config”就可以了。
+直接打开，会看到一个 panic ，或者在之后的版本看到一个错误提示。这时因为你没有配置文件的缘故。在当前目录下新建一个文件“proj_config”就可以了。
 
-这个文件是proj_manager的配置文件，等会告诉你咋用DA★ZE。
+这个文件是 proj_manager 的配置文件，等会告诉你咋用 DA★ZE。
 
 也就是说你现在的文件目录是：
 
@@ -49,7 +49,7 @@ root:
   - .git(可选)
 ```
 
-好，然后重新运行这个程序，可以看到它进入了一个类似某解释性语言的repl的模式DA★ZE。根据提示先输入help，看看都有哪些指令。
+好，然后重新运行这个程序，可以看到它进入了一个类似某解释性语言的 repl 的模式 DA★ZE。根据提示先输入 help ，看看都有哪些指令。
 
 ```c
 Commands:
@@ -61,11 +61,11 @@ line           -- see how many lines of code is here in your project.
 git            -- print git status.
 ```
 
-这些命令都不带参数，使用非常非常无脑，对用户非常友好DA★ZE。~~其实是懒得整。~~
+这些命令都不带参数，使用非常非常无脑，对用户非常友好 DA★ZE。~~其实是懒得整。~~
 
-比如说我们输入data，可以看到配置信息。我们现在好像还没有配置所以你看不到什么东西。
+比如说我们输入 data ，可以看到配置信息。我们现在好像还没有配置所以你看不到什么东西。
 
-我们输入ls，可以看到它遍历了这个文件树，输出了每个文件的文件相对路径和识别到的语言：
+我们输入 ls ，可以看到它遍历了这个文件树，输出了每个文件的文件相对路径和识别到的语言：
 
 ```c
 .\.git\COMMIT_EDITMSG     => Language: Unknown
@@ -110,9 +110,9 @@ git            -- print git status.
 .\src\model.rs            => Language: Rust
 ```
 
-可以看到，由于Git的原因，它识别出了巨量的、你不想统计的文件DA★ZE。于是我引入了忽略功能，等会讲。
+可以看到，由于 Git 的原因，它识别出了巨量的、你不想统计的文件 DA★ZE。于是我引入了忽略功能，等会讲。
 
-我们输入line，可以看到它统计了代码行数：
+我们输入 line ，可以看到它统计了代码行数：
 
 ```c
 In .\.gitignore              => 12  lines, 6  per line.
@@ -132,8 +132,8 @@ In .\src\model.rs            => 92  lines, 17 per line.
 Total: 1350 lines of code.
 ```
 
-输入git可以查看一些基本信息（有哪些文件是改动了的，哪些改动暂存了的），以及自动运行`git gc`。
-这不会对你造成什么影响，但是会减少Git的哈希文件数量，方便压缩拷贝什么的：
+输入 git 可以查看一些基本信息（有哪些文件是改动了的，哪些改动暂存了的），以及自动运行`git gc`。
+这不会对你造成什么影响，但是会减少 Git 的哈希文件数量，方便压缩拷贝什么的：
 
 ```c
 Git root detected in project_manager.
@@ -150,19 +150,19 @@ Git gc finished.
 
 这些是截止本文发布时的基本指令，以后可能有更多。
 
-然后就是关于这个proj_config配置文件的说明了。
+然后就是关于这个 proj_config 配置文件的说明了。
 
 ## 配置
 
-语法采用键值对的形式，类似properties：
+语法采用键值对的形式，类似 properties ：
 
 ```c
 键:值
 ```
 
-注意冒号是半角。不理解的可以看下面的Sample DA★ZE。如果是不存在的键值，或者你压根就没按照格式写，那么该行会被当成注释DA★ZE。
+注意冒号是半角。不理解的可以看下面的 Sample DA★ZE。如果是不存在的键值，或者你压根就没按照格式写，那么该行会被当成注释 DA★ZE。
 
-首先是几个最基本的配置DA★ZE：
+首先是几个最基本的配置 DA★ZE ：
 
 键|值
 :---|---:
@@ -185,9 +185,9 @@ ign-sfx:class
 ign-sfx:d
 ```
 
-这就是我的项目自己在用的配置DA★ZE，忽略了扩展名为jar、class、o、exe的文件，忽略了.git和.idea目录，以及Cargo.lock。
+这就是我的项目自己在用的配置 DA★ZE ，忽略了扩展名为 jar、class、o、exe 的文件，忽略了.git 和.idea 目录，以及 Cargo.lock。
 
-项目名是project_manager。于是我们在更改配置为以上内容时，就可以通过data命令来查看数据：
+项目名是 project_manager。于是我们在更改配置为以上内容时，就可以通过 data 命令来查看数据：
 
 ```c
 Name:
@@ -207,7 +207,7 @@ Ignored Suffix:
         d
 ```
 
-使用ls和line指令，被忽略的文件不会被显示出来：
+使用 ls 和 line 指令，被忽略的文件不会被显示出来：
 
 ```c
 .\.gitignore              => Language: Git Ignore
@@ -227,7 +227,7 @@ Ignored Suffix:
 .\src\model.rs            => Language: Rust
 ```
 
-刚才那个被.git目录下的哈希文件污染的问题已经得到完美解决。但是，如果是Frice这种目录较长的项目，ls命令还是会遇到对齐的问题：
+刚才那个被.git 目录下的哈希文件污染的问题已经得到完美解决。但是，如果是 Frice 这种目录较长的项目， ls 命令还是会遇到对齐的问题：
 
 ```c
 .\.classpath                     => Language: Unknown
@@ -289,10 +289,10 @@ Ignored Suffix:
 
 键|值
 :---|---:
-idt-ls-1|ls命令的`=\>`左边对齐
-idt-line-1|line命令的`=\>`左边对齐
-idt-line-2|line命令的`lines`左边对齐
-idt-line-3|line命令的`per`左边对齐
+idt-ls-1|ls 命令的`=\>`左边对齐
+idt-line-1|line 命令的`=\>`左边对齐
+idt-line-2|line 命令的`lines`左边对齐
+idt-line-3|line 命令的`per`左边对齐
 
 举个例子，我们有：
 
@@ -302,7 +302,7 @@ idt-ls-1:60
 idt-line-3:3
 ```
 
-然后对Frice使用ls：
+然后对 Frice 使用 ls ：
 
 ```c
 .\.classpath                                                 => Language: Unknown
@@ -360,7 +360,7 @@ idt-line-3:3
 .\test\org\frice\game\XMLPreferenceTest.kt                   => Language: Kotlin
 ```
 
-使用line：
+使用 line ：
 
 ```c
 In .\.classpath                                                 => 8    lines, 38  per line.
@@ -419,5 +419,5 @@ In .\test\org\frice\game\XMLPreferenceTest.kt                   => 33   lines, 1
 Total: 4809 lines of code.
 ```
 
-快去愉快地玩耍吧！顺便求Rust聚聚帮我看看代码，初学者的代码是肯定会有大量的worst practise和naive codes，
-请一定指出来！我会整改的！（帮助萌新有概率收获女装照哦DA★ZE
+快去愉快地玩耍吧！顺便求 Rust 聚聚帮我看看代码，初学者的代码是肯定会有大量的 worst practise 和 naive codes ，
+请一定指出来！我会整改的！（帮助萌新有概率收获女装照哦 DA★ZE

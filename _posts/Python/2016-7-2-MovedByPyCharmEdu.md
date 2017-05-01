@@ -1,33 +1,33 @@
 ---
 layout: post
-title: 好东西推荐：PyCharm Edu
+title: 好东西推荐： PyCharm Edu
 category: Python
 tags: PyCharm, JetBrains, Python
 keywords: PyCharm,PyCharm Edu,JetBrains, Python
 description: PyCharm Edu is a really good tool
 ---
 
-今天在经过了对A*搜索的学习之后我感到身心俱疲，于是我想放松一下自己，就打开了电脑中尘封多年的 PyCharm Edu 最初我是出于对 JetBrains 的信仰而下载的 PyCharm Edu ，这次是真的要使用了，想学学 Python 。
+今天在经过了对 A*搜索的学习之后我感到身心俱疲，于是我想放松一下自己，就打开了电脑中尘封多年的 PyCharm Edu 最初我是出于对 JetBrains 的信仰而下载的 PyCharm Edu ，这次是真的要使用了，想学学 Python 。
 
 用过之后彻底被这款学习工具感动了，这才是一个编程教材应该有的样子！像什么博客、视频、书籍都弱爆了！想学 Python 的同学们， PyCharm Edu 绝对是你的不二之选！
 
-这再一次加深了我对 JetBrains 的信仰，在他的帮助下，我只花了二十分钟就掌握了 Python 的基本语法（虽然之前写过一点点，不过只会 Hello World）。
+这再一次加深了我对 JetBrains 的信仰，在他的帮助下，我只花了二十分钟就掌握了 Python 的基本语法（虽然之前写过一点点，不过只会 Hello World ）。
 
-下面我们来看看如何通过 PyCharm Edu 来学习Python。
+下面我们来看看如何通过 PyCharm Edu 来学习 Python。
 
 ## 依赖
 
 - PyCharm Edu
 - JDK
-- Python解释器
+- Python 解释器
 
-三个都是很好下载的东西，请大家前往官网下载。 PyCharm Edu 没有内置的 Python解释器，请单独下载！
+三个都是很好下载的东西，请大家前往官网下载。 PyCharm Edu 没有内置的 Python 解释器，请单独下载！
 
 ## 使用
 
-直接打开 PyCharm Edu，选择那个 Introduction to Python，就可以开始学习了。
+直接打开 PyCharm Edu ，选择那个 Introduction to Python ，就可以开始学习了。
 
-第一课就是Hello World，很传统哈哈，跟我的 Kotlin 教程一样。
+第一课就是 Hello World ，很传统哈哈，跟我的 Kotlin 教程一样。
 
 PyCharm Edu 的学习过程是这样的：
 
@@ -35,7 +35,7 @@ PyCharm Edu 的学习过程是这样的：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/pe/2.png)
 
-当你的结果是错误的时候， PyCharm Edu会告诉你你的错误原因（如果他知道的话），比如我第一次就没搞懂那个 remainder 是什么意思，然后 PyCharm Edu 就告诉我我应该取余，于是我顺便又背了一个单词—— remainder，余数……
+当你的结果是错误的时候， PyCharm Edu 会告诉你你的错误原因（如果他知道的话），比如我第一次就没搞懂那个 remainder 是什么意思，然后 PyCharm Edu 就告诉我我应该取余，于是我顺便又背了一个单词—— remainder ，余数……
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/pe/4.png)
 
@@ -63,7 +63,7 @@ PyCharm Edu 的学习过程是这样的：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/pe/8.png)
 
-为了确保你不在正当的学习中使用一些歪门邪道的小技巧， PyCharm Edu会检查你做题的方法，而不是仅仅单纯地检查你的输出结果（这一点和~~某学科竞赛~~NOIP比起来简直牛逼太多了），比如这道题它会限制你不删除某些特定字符。
+为了确保你不在正当的学习中使用一些歪门邪道的小技巧， PyCharm Edu 会检查你做题的方法，而不是仅仅单纯地检查你的输出结果（这一点和~~某学科竞赛~~NOIP 比起来简直牛逼太多了），比如这道题它会限制你不删除某些特定字符。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/pe/9.png)
 

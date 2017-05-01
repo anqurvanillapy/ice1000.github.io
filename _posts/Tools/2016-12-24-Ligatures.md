@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 连字及其在IDE中的使用
+title: 连字及其在 IDE 中的使用
 category: Tools
 tags: Misc
 keywords: ligature
@@ -44,6 +44,6 @@ description: interesting
 
 要使用这个效果，请在你的 JetBrains IDE 中打开 Settings -> Editor -> Color and Fonts -> Font ， Primary Font 选 Fira Code ，然后把下面的 enable ligature 勾上。
 
-顺便给出这个项目的[GitHub地址](https://github.com/kudakurage/LigatureSymbols)以及 Fira Code 这个字体的[GitHub地址](https://github.com/tonsky/FiraCode)。
+顺便给出这个项目的[GitHub 地址](https://github.com/kudakurage/LigatureSymbols)以及 Fira Code 这个字体的[GitHub 地址](https://github.com/tonsky/FiraCode)。
 
 一看 GitHub 才发现这神奇玩意竟然是 Clojure 写的。。。

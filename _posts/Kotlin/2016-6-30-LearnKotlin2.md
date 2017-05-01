@@ -1,45 +1,45 @@
 ---
 layout: post
-title: 如何让孩子爱上Kotlin第二章：Hello World
+title: 如何让孩子爱上 Kotlin 第二章： Hello World
 category: Kotlin
 tags: Kotlin
 keywords: Kotlin
 description: Learn kotlin 2 Hello World
 ---
 
-同学们，你们期待已久的Kotlin教程终于出现啦！
+同学们，你们期待已久的 Kotlin 教程终于出现啦！
 
 本教程不仅面向完全不会编程的新人，也面向有其他语言基础的程序员。不过比起某些教程，本教程可能相对较为简洁。
 
 ## 说明
 
-由于辣鸡GitHub Pages不支持Kotlin代码渲染，本文出现的代码全部都是渲染成Swift的——不过貌似完美支持。嘿嘿。语法几乎都一样，除了函数声明关键字——Swift是`func`，Kotlin是`fun`。
+由于辣鸡 GitHub Pages 不支持 Kotlin 代码渲染，本文出现的代码全部都是渲染成 Swift 的——不过貌似完美支持。嘿嘿。语法几乎都一样，除了函数声明关键字——Swift 是`func`， Kotlin 是`fun`。
 
 ## 环境搭建
 
-请参考我[另一篇博客](http://ice1000.org/2016/6/26/LearnIDEA/)，下载安装IntelliJ IDEA（我本来打算自己先做一个比较简单的Kotlin IDE，不过后来发现这个轮子好像很难制造。。QAQ）。
+请参考我[另一篇博客](http://ice1000.org/2016/6/26/LearnIDEA/)，下载安装 IntelliJ IDEA （我本来打算自己先做一个比较简单的 Kotlin IDE ，不过后来发现这个轮子好像很难制造。。QAQ ）。
 
-然后根据那篇博客的内容，创建一个新工程。只不过这次我们创建的新工程是一个Kotlin工程，所以要在创建工程的时候选择“Kotlin”。
+然后根据那篇博客的内容，创建一个新工程。只不过这次我们创建的新工程是一个 Kotlin 工程，所以要在创建工程的时候选择“Kotlin”。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/1.png)
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/2.png)
 
-创建好之后你会看到和之前那篇博客中类似的界面，不过IDEA这次没有为你自动创建那些代码。不过没关系，现在我们已经完成了工程的创建。
+创建好之后你会看到和之前那篇博客中类似的界面，不过 IDEA 这次没有为你自动创建那些代码。不过没关系，现在我们已经完成了工程的创建。
 
 ## 初体验
 
-还记得我们是怎么创建第一个Java class的吗？同理，创建一个Kotlin File！
+还记得我们是怎么创建第一个 Java class 的吗？同理，创建一个 Kotlin File ！
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/3.png)
 
-然后随便起个名字，这里就叫它Main.kt吧。如图所示。
+然后随便起个名字，这里就叫它 Main.kt 吧。如图所示。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/4.png)
 
-然后我们要在里面写代码了。这里说一下，任何Kotlin程序都是从一个main函数开始的。至于什么是main函数，你不用管。看完下文后你就会知道你该怎么做。至于为什么，要留到后期的学习中。
+然后我们要在里面写代码了。这里说一下，任何 Kotlin 程序都是从一个 main 函数开始的。至于什么是 main 函数，你不用管。看完下文后你就会知道你该怎么做。至于为什么，要留到后期的学习中。
 
-等等，我们现在是要插入一个main函数，那么此时我们遇到的问题就是，每次都要输入一次main函数，很麻烦。
-还记得我在[另一篇博客](http://ice1000.org/2016/06/29/LearnIDEA3/)中讲到的一个IDEA黑科技吗？此时你只需要输入**main**，第一个提示就是插入main函数。
+等等，我们现在是要插入一个 main 函数，那么此时我们遇到的问题就是，每次都要输入一次 main 函数，很麻烦。
+还记得我在[另一篇博客](http://ice1000.org/2016/06/29/LearnIDEA3/)中讲到的一个 IDEA 黑科技吗？此时你只需要输入**main**，第一个提示就是插入 main 函数。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/5.png)
 
@@ -55,7 +55,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-然后点击main函数左边的Kotlin图标，选择 Run ，稍等片刻，然后你就能在下面的控制台内看到一个 Hello World 了。
+然后点击 main 函数左边的 Kotlin 图标，选择 Run ，稍等片刻，然后你就能在下面的控制台内看到一个 Hello World 了。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/6.png)
 
@@ -86,7 +86,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-这样你会发现，那句println的作用就是把后面的括号加双引号里面的东西按行输出到下面的控制台中。很好，你已经掌握了函数“println()”的能量。接下来你还需要折腾，继续搞清楚那个双引号的作用。再改改你的代码吧：
+这样你会发现，那句 println 的作用就是把后面的括号加双引号里面的东西按行输出到下面的控制台中。很好，你已经掌握了函数“println()”的能量。接下来你还需要折腾，继续搞清楚那个双引号的作用。再改改你的代码吧：
 
 ```swift
 fun main(args: Array<String>) {
@@ -104,7 +104,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-你发现了吗？嘻嘻，233+666你应该能看懂是什么意思，没错，这是加法运算。不过当你加了双引号之后，结果就变得不一样了。
+你发现了吗？嘻嘻， 233+666 你应该能看懂是什么意思，没错，这是加法运算。不过当你加了双引号之后，结果就变得不一样了。
 
 我想你已经大概知道了那个双引号的作用。 如果你想深究这玩意，你可以搜索： 字符串 ，看看你的搜索结果吧。
 
@@ -113,7 +113,7 @@ fun main(args: Array<String>) {
 ```
 + 加法
 - 减法
-/ 除法（你可以试试除以0
+/ 除法（你可以试试除以 0
 * 乘法
 % 取余
 ```
@@ -124,7 +124,7 @@ fun main(args: Array<String>) {
 
 ## 你学会了什么
 
-- 创建、运行Kotlin工程
-- Kotlin的Hello World
+- 创建、运行 Kotlin 工程
+- Kotlin 的 Hello World
 - 双引号的作用之一
 - 五则基本运算

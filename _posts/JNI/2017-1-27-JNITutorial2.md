@@ -90,7 +90,7 @@ root
 
 就这么简单，把 libjni.dll 拷出来，重命名为 jni.dll ，剩下的又和上一篇教程同步了。
 
-祝你愉快。 JNI 的实际使用还可以参照我的算法库，这是一个活生生的例子 DAZE ，请点击[GitHub传送门](https://github.com/ice1000/algo4j)。喜欢的话给个 star 哟。
+祝你愉快。 JNI 的实际使用还可以参照我的算法库，这是一个活生生的例子 DAZE ，请点击[GitHub 传送门](https://github.com/ice1000/algo4j)。喜欢的话给个 star 哟。
 
 ## 你学到了什么
 

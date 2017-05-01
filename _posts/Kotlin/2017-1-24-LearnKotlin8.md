@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kotlin与Java交互技巧
+title: Kotlin 与 Java 交互技巧
 category: Kotlin
 tags: Essay
 keywords: Kotlin
@@ -18,7 +18,7 @@ description: Kotlin to Java
 
 ## null safety 
 
-这是 Kotlin 的一大精髓，但是却是 Java 没有的特性。于是JetBrains就选择了曲线救国的方式，那就是给那几个非 null 类型加上 annotation 。
+这是 Kotlin 的一大精髓，但是却是 Java 没有的特性。于是 JetBrains 就选择了曲线救国的方式，那就是给那几个非 null 类型加上 annotation 。
 
 比如如下 Kotlin 代码：
 
@@ -38,9 +38,9 @@ fun toString(obj: Object) = obj.toString()
 相当于如下 Java 代码：
 
 ```java
-// 这个 NotNull修饰的是返回值
+// 这个 NotNull 修饰的是返回值
 @NotNull
-// 这个 NotNull修饰的是参数 obj
+// 这个 NotNull 修饰的是参数 obj
 public String toString(@NotNull Object obj) {
 	return obj.toString();
 }
@@ -165,7 +165,7 @@ class Color {
 ```java
 class Caller {
 	public static void main(String[] args) {
-		Color.COMPANION.get基佬紫()
+		Color.COMPANION.get 基佬紫()
 	}
 }
 ```

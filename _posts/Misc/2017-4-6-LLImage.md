@@ -9,15 +9,15 @@ description: some images
 
 你们又不入教又不去死，我很为难啊
 
-+ JetBrains系列（还没有加入Rider和Gogland）
++ JetBrains 系列（还没有加入 Rider 和 Gogland ）
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/ll/jb.jpg)
 
-+ JVM语言系列
++ JVM 语言系列
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/ll/jvm.jpg)
 
-+ Lisp方言系列
++ Lisp 方言系列
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/ll/lisp.jpg)
 

@@ -31,7 +31,7 @@ JNI ， Java ~~Naive~~ Native Interface , 即 Java 原生代码接口，它将�
 ## 为什么不教 JNA
 
 为了追求运行效率，我们已经选择了放弃抽象，向 C++ 势力低头。
-因此，再为了抽象而选择丢弃一定性能的 JNA ，~~你还写个JB的JNI啊~~是不划算的。
+因此，再为了抽象而选择丢弃一定性能的 JNA ，~~你还写个 JB 的 JNI 啊~~是不划算的。
 
 ## 为什么不用 Go/Rust/D 写动态链接库
 
@@ -55,7 +55,7 @@ JNI ， Java ~~Naive~~ Native Interface , 即 Java 原生代码接口，它将�
 
 然后 JDK 安装目录下有一个叫 include 的目录，里面有几个 C++ 头文件，这个 include 目录还有一个子目录，似乎叫 win32 。
 现在把这些文件全部复制出来，放到一个地方。注意，把 include/win32 目录和 include 目录下的文件拷进同一个外部目录，这个外部目录是你的 MinGW 所在位置。
-对于 Dev Cpp 用户，它在 `[dev安装目录]/MinGW64/x86_64-w64-mingw32/include` 下。
+对于 Dev Cpp 用户，它在 `[dev 安装目录]/MinGW64/x86_64-w64-mingw32/include` 下。
 也就是说，把刚才那几个头文件拷入这里。再次强调，把 include/win32 和 include 目录下的头文件放到一起。
 （感觉像是个 flatmap ， 233 ）
 
@@ -262,7 +262,7 @@ fun main(args: Array<String>): Unit {
 
 本次最基本最简单的教程到这里 = =
 
-祝你愉快。 JNI 的实际使用还可以参照我的算法库，这是一个活生生的例子 DAZE ，请点击[GitHub传送门](https://github.com/ice1000/algo4j)。喜欢的话给个 star 哟。
+祝你愉快。 JNI 的实际使用还可以参照我的算法库，这是一个活生生的例子 DAZE ，请点击[GitHub 传送门](https://github.com/ice1000/algo4j)。喜欢的话给个 star 哟。
 
 ## 你学到了什么
 

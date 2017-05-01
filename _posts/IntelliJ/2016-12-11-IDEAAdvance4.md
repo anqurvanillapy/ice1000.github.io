@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IntelliJ IDEA进阶教程： 测试框架
+title: IntelliJ IDEA 进阶教程： 测试框架
 category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio,JUnit
@@ -8,21 +8,21 @@ description: IDEA advance chapter 4
 ---
 
 ## 依赖
-+ 一个JetBrains系的IDE
++ 一个 JetBrains 系的 IDE
 
 ## 测试是啥
 
-当你知道你在程序中使用了过多奇技淫巧时，你可能时常对你的程序会出现bug一事而感到担忧。
+当你知道你在程序中使用了过多奇技淫巧时，你可能时常对你的程序会出现 bug 一事而感到担忧。
 虽然像 Kotlin, Java, C# 等这种规律性强的语言可以通过**静态分析**工具（比如 IntelliJ 或者 Rider ）在编译前就完成复杂的检查，
 但是像 Ruby 这种动态元编程能力吊炸天的语言就不好办了。因此 RubyMine 也被迫“静态分析基本不报错”。
 
-所以Ruby这种东西啊，对动态的测试具有很强的依赖性。
+所以 Ruby 这种东西啊，对动态的测试具有很强的依赖性。
 测试就是开发者编写一段可执行的代码，调用自己写的“被测试”代码，然后进行一些输入，然后获取输出检验正确性。
-因为只有开发者知道自己想干嘛，IDE只知道代码结构。你的代码的语法错误IDE可以帮你纠正，但是逻辑错误就只能靠单元测试了。
+因为只有开发者知道自己想干嘛， IDE 只知道代码结构。你的代码的语法错误 IDE 可以帮你纠正，但是逻辑错误就只能靠单元测试了。
 
 于是我最近写 JNI 的东西，也遇到了需要单元测试的需求。。所以就顺便说说 IntelliJ 的单元测试框架吧。
 
-本例使用 JUnit4 ，当然IDEA也支持 TestNG-J ，在 IDE 中的操作都是一样的。
+本例使用 JUnit4 ，当然 IDEA 也支持 TestNG-J ，在 IDE 中的操作都是一样的。
 
 ## 首先你需要包（非必须）
 

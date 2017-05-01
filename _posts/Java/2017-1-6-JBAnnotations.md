@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用JetBrains注解库注释你的代码
+title: 使用 JetBrains 注解库注释你的代码
 category: Java
 tags: Java
 keywords: Java,JetBrains,annotations
@@ -17,13 +17,13 @@ description: JetBrains annotations library
 
 首先我们知道 Kotlin 解决了一个万年大问题—— null 。
 几乎每个代码量超过两千的项目，先做出原型后，前两次运行或单元测试，都死在 NullPointerException 上。
-Kotlin 从根本上解决了这个问题——它要求你在编译期处理所有可能为 null 的情况，这是语言级别的支持，比C#那种只提供一个语法糖的半吊子好得多。
+Kotlin 从根本上解决了这个问题——它要求你在编译期处理所有可能为 null 的情况，这是语言级别的支持，比 C#那种只提供一个语法糖的半吊子好得多。
 
 但是反观 Java ，就没这玩意。
 因此，伟大的 JetBrains 就搞了个注解库，然后通过在 IDE 里面提示你处理那些可能为 null 的值（毕竟你没法直接让编译器自己检查并提示）来解决这个问题
 （其实人家自己早就在用了，只是 Kotlin 也用到了这个注解库而已）。
 
-本次讲五个注解。我写的全限定名，因为把包名也写出来可以方便读者区分它和另外一套同名注解（sun的垃圾玩意）。还有一个很重要的注解 @Contract ，下一篇博客再讲。
+本次讲五个注解。我写的全限定名，因为把包名也写出来可以方便读者区分它和另外一套同名注解（ sun 的垃圾玩意）。还有一个很重要的注解 @Contract ，下一篇博客再讲。
 
 ### 第一个注解， @TestOnly
 

@@ -1,36 +1,36 @@
 ---
 layout: post
-title: Gradle其实是很好用的
+title: Gradle 其实是很好用的
 category: Java
 tags: Java,Gradle
 keywords: Java,Gradle
 description: Gradle is actually a nice tool
 ---
 
-Gradle是一款使用Kotlin（划掉）Groovy编写的JVM构建工具，其易用性和Maven接近，而由于它描述逻辑采用的是DSL而不是辣眼睛的xml，
-股沟也钦定他作为Android的指定构建工具。
+Gradle 是一款使用 Kotlin （划掉） Groovy 编写的 JVM 构建工具，其易用性和 Maven 接近，而由于它描述逻辑采用的是 DSL 而不是辣眼睛的 xml ，
+股沟也钦定他作为 Android 的指定构建工具。
 
-## 关于Gradle
+## 关于 Gradle
 
-由于Gradle的构建过程高度依赖网络，因此身在中国，~~在中国长城局域网的保护下的各位~~网络条件是很不好的。
+由于 Gradle 的构建过程高度依赖网络，因此身在中国，~~在中国长城局域网的保护下的各位~~网络条件是很不好的。
 
 这就导致，明明一个贼好用的构建工具，把绝大多数的开发者都给坑惨了。
 
-我作为一个在2017年1月对Gradle黑转粉的Gradle用户，在这里向同学们传授中国Gradle的正确使用方式。
+我作为一个在 2017 年 1 月对 Gradle 黑转粉的 Gradle 用户，在这里向同学们传授中国 Gradle 的正确使用方式。
 
 其实写这篇博客我是很犹豫的，因为我在知乎已经看到过有人描述过我想写的东西了，但是写的很粗略，所以我决定再写一次。
 
-现在的问题就是，很多人没有VPN。这就导致你不能用Proxifier这种工具实现全局翻墙，
+现在的问题就是，很多人没有 VPN。这就导致你不能用 Proxifier 这种工具实现全局翻墙，
 而像开灯这种行为又不能大幅影响命令行（作为一个有梯子的人，我是不清楚的，但是在我没有梯子的时候，那叫一个痛苦）。
 
-而他们面临着写Android项目的任务，想必很多人都体会过“只能在Android Studio里面构建，
+而他们面临着写 Android 项目的任务，想必很多人都体会过“只能在 Android Studio 里面构建，
 切到命令行之后`gradlew build`之后不知道它在下什么东西，反正就是不行”的感受。
 
-其实呀，你们只是不知道AS在build的过程中，使用了自己夹带的gradle。我们现在要拒绝夹带私货，走向自由。
+其实呀，你们只是不知道 AS 在 build 的过程中，使用了自己夹带的 gradle。我们现在要拒绝夹带私货，走向自由。
 
 ## 简要介绍
 
-首先我说明一下一个最普通的gradle项目的目录结构：
+首先我说明一下一个最普通的 gradle 项目的目录结构：
 
 ```yaml
 root:
@@ -44,20 +44,20 @@ root:
   - gradlew
 ```
 
-这6个文件缺一不可，一般使用Android Studio新建gradle项目的时候会给你弄齐。
+这 6 个文件缺一不可，一般使用 Android Studio 新建 gradle 项目的时候会给你弄齐。
 
 其中：
 
 文件|最主要功能
 :---|---:
-gradle-wrapper.properties|用于指定gradle版本号
+gradle-wrapper.properties|用于指定 gradle 版本号
 gradle-wrapper.jar|和上面那个配套
 build.gradle|构建脚本，写编译的逻辑，依赖，各种你能想到的配置
 settings.gradle|指定工程名
-gradlew.bat|Windows下命令行构建时用的，一般不动它
-gradlew|*nix下命令行构建时用的，一般不动它
+gradlew.bat|Windows 下命令行构建时用的，一般不动它
+gradlew|*nix 下命令行构建时用的，一般不动它
 
-后两个文件随便找个Gradle项目（到处都是，不行也可以拿AS新建一个项目，自动加入）照抄即可，所以说我们要管的其实就四个文件。
+后两个文件随便找个 Gradle 项目（到处都是，不行也可以拿 AS 新建一个项目，自动加入）照抄即可，所以说我们要管的其实就四个文件。
 
 ### settings.gradle
 
@@ -67,7 +67,7 @@ gradlew|*nix下命令行构建时用的，一般不动它
 rootProject.name = 'lice'
 ```
 
-就是指定项目名称的，`gradlew build`生成的jar包就是`[项目名称].jar`。
+就是指定项目名称的，`gradlew build`生成的 jar 包就是`[项目名称].jar`。
 
 ### gradle-wrapper.properties
 
@@ -81,24 +81,24 @@ zipStorePath=wrapper/dists
 distributionUrl=https\://services.gradle.org/distributions/gradle-[版本]-bin.zip
 ```
 
-其实也只有一行需要注意，就是最后一行里面的版本。本文采用的gradle版本是`3.0`，也就是说最后一行是：
+其实也只有一行需要注意，就是最后一行里面的版本。本文采用的 gradle 版本是`3.0`，也就是说最后一行是：
 
 ```properties
 distributionUrl=https\://services.gradle.org/distributions/gradle-3.0-bin.zip
 ```
 
-早期AS默认的是`2.1X`，我是不推荐的，已经过时很久啦。
-根据知乎评论区提醒，AS 2.3已经将gradle升级到了3.3。
+早期 AS 默认的是`2.1X`，我是不推荐的，已经过时很久啦。
+根据知乎评论区提醒， AS 2.3 已经将 gradle 升级到了 3.3。
 
 不过本文的教程适用于任何版本哦。
 
 ### gradle-wrapper.jar
 
-这个jar和上面的properties文件是配套的。
+这个 jar 和上面的 properties 文件是配套的。
 
 说一下以上两个文件的一般的获取方式（一般不直接写，而是找到现成的）：
 
-在GitHub上随便找个使用这个版本的Gradle的仓库，然后`download zip`，把它使用的这俩文件拿出来。
+在 GitHub 上随便找个使用这个版本的 Gradle 的仓库，然后`download zip`，把它使用的这俩文件拿出来。
 
 还有一个方法，就是
 
@@ -106,18 +106,18 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-3.0-bin.zip
 gradlew wrapper --gradle-version=3.5
 ```
 
-这里顺便提供一个[`3.0`版本的gradle wrapper的下载](https://www.jianguoyun.com/p/DaYFXnoQl_iYBhifkyo)，
-里面包含了properties文件和jar文件。
+这里顺便提供一个[`3.0`版本的 gradle wrapper 的下载](https://www.jianguoyun.com/p/DaYFXnoQl_iYBhifkyo)，
+里面包含了 properties 文件和 jar 文件。
 
 所以说现在只有`build.gradle`需要注意了。这也是全文的重点。
 
-### 如何配置build.gradle
+### 如何配置 build.gradle
 
 其实很简单，举个例子你们就民白了。
 
-## 给一个项目加上gradle支持
+## 给一个项目加上 gradle 支持
 
-一般情况下，Gradle默认的项目结构是：
+一般情况下， Gradle 默认的项目结构是：
 
 ```yaml
 root:
@@ -128,12 +128,12 @@ root:
       java:
         - 代码的包
       kotlin:
-        - Kotlin代码的包
+        - Kotlin 代码的包
     test:
       java:
         - 测试代码的包
       kotlin:
-        - Kotlin测试代码的包
+        - Kotlin 测试代码的包
   gradle:
     wrapper:
       - gradle-wrapper.properties
@@ -144,21 +144,21 @@ root:
   - gradlew.bat
 ```
 
-但是我们先不管，毕竟我要带你入坑，所以说我们要把一个原本不是这样目录结构的项目引入Gradle支持！
+但是我们先不管，毕竟我要带你入坑，所以说我们要把一个原本不是这样目录结构的项目引入 Gradle 支持！
 
-我们现在需要把这样一个项目加上gradle支持：
+我们现在需要把这样一个项目加上 gradle 支持：
 
 ```yaml
 root:
   demo:
-    - demo代码的包
+    - demo 代码的包
   src:
-    - 下面就是Java的package了，比如org/frice/dsl什么的
+    - 下面就是 Java 的 package 了，比如 org/frice/dsl 什么的
   test:
     - 测试代码的包
 ```
 
-很明显，这是个极其非主流的项目，它不符合Gradle的默认要求。
+很明显，这是个极其非主流的项目，它不符合 Gradle 的默认要求。
 
 这其实就是我的一个个人项目，为了简化教程，我把其中的一个子项目的构建给省略了。
 
@@ -171,9 +171,9 @@ root:
       - gradle-wrapper.properties
       - gradle-wrapper.jar
   demo:
-    - demo代码的包
+    - demo 代码的包
   src:
-    - 下面就是Java的package了，比如org/frice/dsl什么的
+    - 下面就是 Java 的 package 了，比如 org/frice/dsl 什么的
   test:
     - 测试代码的包
   - settings.gradle
@@ -189,27 +189,27 @@ root:
 :---|---:
 包名|org.frice
 项目名|dsl
-依赖、版本|JUnit 4.12 和JetBrains annotation 15.0
+依赖、版本|JUnit 4.12 和 JetBrains annotation 15.0
 版本|1.0
 语言|Java
-Java版本|1.6
+Java 版本|1.6
 源代码目录|`/src`
 测试代码目录|`/test`和`/demo`
 
-为什么选Java6呢？因为我这个项目其实是2%的Java加98%的Kotlin，那部分Java代码没有用到Java8的新特性，
+为什么选 Java6 呢？因为我这个项目其实是 2%的 Java 加 98%的 Kotlin ，那部分 Java 代码没有用到 Java8 的新特性，
 我就选个兼容性更好的吧。
 
-### 关于Kotlin的配置
+### 关于 Kotlin 的配置
 
-这里说下Kotlin的配置（因为我这个项目是Kotlin的），不用Kotlin的同学可以跳过：
+这里说下 Kotlin 的配置（因为我这个项目是 Kotlin 的），不用 Kotlin 的同学可以跳过：
 
-由于Kotlin的编译需要加个Kotlin编译器插件和一些库，所以需要一些额外配置：
+由于 Kotlin 的编译需要加个 Kotlin 编译器插件和一些库，所以需要一些额外配置：
 
 信息|这个例子中的值
 :---|---:
-Kotlin版本|1.1.1
+Kotlin 版本|1.1.1
 
-## 编写build.gradle
+## 编写 build.gradle
 
 首先我们根据如下模板填写我们的信息：
 
@@ -243,13 +243,13 @@ dependencies {
 }
 ```
 
-### 和Kotlin有关的信息
+### 和 Kotlin 有关的信息
 
-如果需要Kotlin支持，需要添加如下额外信息：
+如果需要 Kotlin 支持，需要添加如下额外信息：
 
 ```groovy
 buildscript {
-  ext.kotlin_version = '[Kotlin版本]'
+  ext.kotlin_version = '[Kotlin 版本]'
   dependencies {
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
   }
@@ -258,8 +258,8 @@ buildscript {
 apply plugin: 'kotlin'
 
 sourceSets {
-  main.kotlin.srcDirs += '[Kotlin源码目录]'
-  test.kotlin.srcDirs += '[Kotlin源码目录]'
+  main.kotlin.srcDirs += '[Kotlin 源码目录]'
+  test.kotlin.srcDirs += '[Kotlin 源码目录]'
 }
 
 dependencies {
@@ -268,7 +268,7 @@ dependencies {
 }
 ```
 
-### 引入来自JitPack的依赖
+### 引入来自 JitPack 的依赖
 
 [JitPack](https://jitpack.io)是一个免费的远端仓库，我们如果需要引入这个仓库的包的话，需要再加一句：
 
@@ -282,7 +282,7 @@ allprojects {
 
 ### 最后的结果
 
-根据我们此处的信息（再合并Kotlin、JitPack相关的依赖），应该这样填入：
+根据我们此处的信息（再合并 Kotlin、JitPack 相关的依赖），应该这样填入：
 
 ```groovy
 group 'org.frice'
@@ -336,7 +336,7 @@ dependencies {
 
 然后我们在命令行运行（请一定要进行一次尝试！）：
 
-+ \*nix：
++ \*nix ：
 
 ```shell
 chmod a+x gradlew
@@ -348,18 +348,18 @@ chmod a+x gradlew
 ./gradlew build
 ```
 
-然后你会发现它开始下载gradle的本体了。。。~~我们身处中国长城局域网，~~下载这个速度是极慢的。
+然后你会发现它开始下载 gradle 的本体了。。。~~我们身处中国长城局域网，~~下载这个速度是极慢的。
 
 **Ctrl+C**，把它停下吧。
 
 你可能已经意识到了，接下来我们要解决一个巨大的问题，就是下载包的问题。
 
-## 下载Gradle本体
+## 下载 Gradle 本体
 
-我们现在把灯打开（脑补丑八怪歌词），然后登陆[Gradle官网](https://gradle.org/)找到[下载页面](https://gradle.org/releases)
-下载对应版本的Gradle（或者你也可以从一些国内网站下载，比如CSDN）。
+我们现在把灯打开（脑补丑八怪歌词），然后登陆[Gradle 官网](https://gradle.org/)找到[下载页面](https://gradle.org/releases)
+下载对应版本的 Gradle （或者你也可以从一些国内网站下载，比如 CSDN ）。
 
-我们现在使用的是gradle 3.0（如果你是从我给的那个链接下载的Gradle wrapper的话），于是我们需要下载
+我们现在使用的是 gradle 3.0 （如果你是从我给的那个链接下载的 Gradle wrapper 的话），于是我们需要下载
 [这个](https://services.gradle.org/distributions/gradle-3.0-bin.zip)：
 
 https://services.gradle.org/distributions/gradle-3.0-bin.zip
@@ -378,10 +378,10 @@ https://services.gradle.org/distributions/gradle-3.0-bin.zip
 
 这个诡异的路径会被自动创建，你只要执行一次`gradlew build`它就会自动创建。因此我建议大家让它自己创建，免得打错。
 
-然后重新回到刚才的项目目录，执行[刚才说过的指令](#尝试命令行构建)，会看到它没有在下载了，而是开始unzip我们刚才下载的
+然后重新回到刚才的项目目录，执行[刚才说过的指令](#尝试命令行构建)，会看到它没有在下载了，而是开始 unzip 我们刚才下载的
 
-然后你就等编译吧，我自己的编译结果是这样的（为了模拟第一次配置（就是刚手动下载完gradle），
-我还特地删除了我本地已经解压好的包（但是我已经提前下载好Kotlin的Gradle插件了，这个也比较大，各位Kotlin猿请耐心等待！））：
+然后你就等编译吧，我自己的编译结果是这样的（为了模拟第一次配置（就是刚手动下载完 gradle ），
+我还特地删除了我本地已经解压好的包（但是我已经提前下载好 Kotlin 的 Gradle 插件了，这个也比较大，各位 Kotlin 猿请耐心等待！））：
 
 编译环境： Windows10 专业版
 

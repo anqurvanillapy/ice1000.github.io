@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JetBrains注解库，Contract注解
+title: JetBrains 注解库， Contract 注解
 category: Java
 tags: Java
 keywords: Java,JetBrains,annotations
@@ -244,4 +244,4 @@ public BigInt times(@NotNull BigInt anotherBigInt) {
 
 是不是很简单呢？其实有时 JetBrains IDE 还会给出建议，让你为你的方法加上这些注解哦。注解库也不大，就几十 kb 。
 
-祝你愉快。注解的实际使用还可以参照我的算法库，这是一个活生生的例子 DAZE ，请点击[GitHub传送门](https://github.com/ice1000/algo4j)。喜欢的话给个 star 哟。
+祝你愉快。注解的实际使用还可以参照我的算法库，这是一个活生生的例子 DAZE ，请点击[GitHub 传送门](https://github.com/ice1000/algo4j)。喜欢的话给个 star 哟。
