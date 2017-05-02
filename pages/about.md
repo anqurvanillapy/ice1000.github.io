@@ -25,7 +25,7 @@ To subscribe, see [feed.xml](../feed.xml).
 
 + [algo4j, an algorithm library for Java use, JNI implemented](https://github.com/ice1000/algo4j).
 + [Gen4DP, it generates dynamic programming code from given state translation equation](https://github.com/ice1000/Gen4DP).
-+ [Frice Engine, a simple, light, easy, cross-language game engine for education use](https://github.com/icela/FriceEngine).
++ [Frice Engine, a simple, light, easy, cross-language game engine for education usage](https://github.com/icela/FriceEngine).
 + [Frice Engine C# implementation](https://github.com/icela/FriceEngine-CSharp).
 + [A simple music player, materially designed](https://github.com/ice1000/Dekoder).
 + [An Android app, for playing kitiku music(German boy, Van, Billy, etc.)](https://github.com/ice1000/KitikuMaker).
@@ -50,21 +50,22 @@ To subscribe, see [feed.xml](../feed.xml).
 
 ### As far as I am concerned,
 
-+ Dynamic type is full of shit
++ Dynamic typing is full of shit
 + Prototype is a rubbish(but for some cases, it's good)
 + Comparing to metaprogramming, reflection really sucks
 + It is such great fun to teach others programming
 + One day, LOP will take the place of OOP
 + JVM is the most powerful runtime in the universe
 + Functional Programming and Object Oriented Programming will finally combined with each other
++ Dynamic scoping is not that bad
 
 ## Policy
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">
-<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png" />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
 </a>
 <br/>All the posts and blogs here are licensed under a 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">
-Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Generic License</a>.
