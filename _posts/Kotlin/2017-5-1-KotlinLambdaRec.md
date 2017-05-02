@@ -121,5 +121,11 @@ var lambda5: (Int) -> Int = { throw RuntimeException() }
 
 不要再乱说话了，将来报道上出了偏差，你们要负责任。
 
+## Gist
+
+估计要翻墙才能看到：
+
+<script src="https://gist.github.com/ice1000/c024efa6d46ef63111c95dee139a83e7.js"></script>
+
 **无 fuck 说**
 
