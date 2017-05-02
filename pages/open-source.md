@@ -6,7 +6,7 @@ description: My Projects
 permalink: /open-source/
 ---
 
-Here are only a part of my projects, which are under my personal account.
+Here are my personal projects.
 
 I have some larger projects whose whole toolchains were put into organizations.
 
@@ -15,7 +15,7 @@ Project|Description
 [Frice Engine](https://github.com/icela)|A simple, light, easy, **cross-language** game engine
 [Lice Language](https://github.com/lice-lang)|A Lisp dialect running on JVM<br/>perfectly works with other JVM Languages
 
-And others:
+And others which are under my personal account:
 
 {% if site.github.public_repositories != null %}
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse %}
