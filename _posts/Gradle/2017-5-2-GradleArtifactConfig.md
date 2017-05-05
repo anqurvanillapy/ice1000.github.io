@@ -106,7 +106,7 @@ jar {
   }
   from {
     configurations
-        .extraLibs
+        .artifact
         .collect { it.isDirectory() ? it : zipTree(it) }
   }
 }
