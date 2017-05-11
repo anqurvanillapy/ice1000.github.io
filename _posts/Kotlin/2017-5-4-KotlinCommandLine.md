@@ -9,7 +9,7 @@ description: Kotlin command line
 
 打开 IDE 是件很麻烦的事情，我们都喜欢命令行，但是怎么搭建 Kotlin 命令行环境呢？这是个非常严肃的问题。
 
-本文针对 Windows 。
+本文针对 Windows 。当然其他系统也不是不能用，仅供参考。
 
 ## 准备
 
