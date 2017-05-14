@@ -64,10 +64,11 @@ class Line(val a: Int, val b: Int, val c: Int) {
     // 这个求 a b c 的写法其实并不优雅，只是为了展示例子
     // 这个方法调用起来和构造方法语法完全相同
     // 但是这样写，可以在调用构造方法之前进行一些流程控制或者变量声明
-    operator fun invoke(one: Pair<Int, Int>, two: Pair<Int, Int>) {
+    operator fun invoke(one: Pair<Int, Int>, two: Pair<Int, Int>): Line {
       val a = two.second - one.second
       val b = one.first - two.first
       val c = two.first * one.second - one.first * two.second
+      return Line(a, b, c)
     }
   }
 }
@@ -83,6 +84,8 @@ fun main(args: Array<String>) {
 （by CharlieJiang）
 
 + 非常规函数的 JNI 声明，以及通过注解确保编译器不改名
+
+比如 getter setter 以及改名的函数。
 
 ```kotlin
 class A {
@@ -131,6 +134,8 @@ fun GameObject.destroy() {
 （by 千里冰封）
 
 + 代数数据类型模拟 Null safety
+
+这是个函数式编程的概念，这里用了 when+is 模拟模式匹配。
 
 这个我在讲的时候代码写错了，后来我想到了原因，是因为没加泛型的协变。
 
