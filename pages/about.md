@@ -7,6 +7,7 @@ comments: true
 menu: About
 permalink: /about/
 ---
+
 I am [ice1000](https://github.com/ice1000)，in Chinese is 千里冰封。
 
 I am a student, Otaku, big fan of JetBrains, programming for interest, working with JVM and CLR.
@@ -16,6 +17,10 @@ Welcome to join the [QQ group ProgramLeague](http://shang.qq.com/wpa/qunwpa?idke
 To contact me please send an [E-mail](mailto:ice1000@kotliner.cn).
 
 View me on [GitHub](https://github.com/ice1000) is also a good choice to know me better.
+
+### CodeWars
+
+[![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
 
 ## Subscribe
 
