@@ -60,6 +60,16 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 
 希望你继续坚持下去
 
+### 系列3
+
+> 编译到 JavaScript 是什么意思？
+
+> 编译到 JavaScript 有什么用？
+
+> JavaScript 是什么？
+
+扎心了
+
 ## 最后
 
 看到我平时吐槽、讨论技术的地方已经沦落到这种地步，一天 999\+ 看不到一句技术，我决定屏蔽几乎所有 Kotlin 群。
@@ -70,9 +80,24 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 我很好奇他们的月薪。
 
 我以后应该不需要再写什么 Kotlin 教程之类的了，[知乎专栏](https://zhuanlan.zhihu.com/ice1k)和
-[博客](http://ice1000.org/categories/#Kotlin)都写了那么多了。
+[博客](http://ice1000.org/categories/#Kotlin)都写了那么多了，培训班想必要开 Kotlin 课程了吧。
+
+不过我还是会继续*Kotlin on JVM Primer*这本书的撰写，作为合作作者之一。我也不会抛弃对 Kotlin 的热情。
+但是现在，由于谷歌爸爸的一番宣言，导致社区人数迅速增长，而随之带来的就一定是平均素质的降低。
+
+我现在都不知道是该高兴还是悲伤。
 
 说到对社区的贡献，我也有四个项目在[awesome-kotlin](https://kotlin.link/?q=ice)上，说不定以后他们会看到吧。
+
+## 回答一下 `Kotlin 的应用场景`
+
++ [编程语言](https://github.com/lice-lang/lice)
++ [Android 开发](https://github.com/ice1000/KitikuMaker)
++ [游戏引擎](https://github.com/icela/FriceEngine)
++ [单元测试](https://github.com/ice1000/algo4j)
++ 写书（暂不公开）
+
+以上每个领域我均使用了一个自己的项目回答你的问题。
 
 ## 最后发个搞笑大杂烩
 
@@ -84,7 +109,6 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 ![CSS](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/15/3.jpg)<br/>
 ![CSS](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/15/4.jpg)<br/>
 ![CSS](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/15/5.jpg)<br/>
-
 
 最后一个，祝你幸福：
 
