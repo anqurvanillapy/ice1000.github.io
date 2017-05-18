@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: 暂时不会再写关于 Kotlin 的东西了
 category: Kotlin
 tags: Kotlin
 keywords: Kotlin
@@ -81,6 +81,8 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 
 我以后应该不需要再写什么 Kotlin 教程之类的了，[知乎专栏](https://zhuanlan.zhihu.com/ice1k)和
 [博客](http://ice1000.org/categories/#Kotlin)都写了那么多了，培训班想必要开 Kotlin 课程了吧。
+
+而且 Kotlin 能玩的黑魔法我基本都玩过了，而且也在博客里面写了。你们想看就去看吧。
 
 不过我还是会继续*Kotlin on JVM Primer*这本书的撰写，作为合作作者之一。我也不会抛弃对 Kotlin 的热情。
 但是现在，由于谷歌爸爸的一番宣言，导致社区人数迅速增长，而随之带来的就一定是平均素质的降低。

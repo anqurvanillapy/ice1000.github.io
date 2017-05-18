@@ -49,7 +49,7 @@ Pair(1, 100).forEach(::println)
 
 没毛病老铁。
 
-然后你会发现，你在函数体内对 block 产生了(second - first)次调用，不论你怎么 return ，都只会跳出这个 block ，
+然后你会发现，你在函数体内对 block 产生了(second - first + 1)次调用，不论你怎么 return ，都只会跳出这个 block ，
 它并不影响你之后继续调用这个 block ，也就是说这个 for 循环不受 block 行为的影响。
 
 看起来无解了，那怎么办呢？
