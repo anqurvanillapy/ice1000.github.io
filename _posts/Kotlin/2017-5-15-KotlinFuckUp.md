@@ -69,6 +69,11 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 跟风来的基本都没啥水平，有水平的这时候也在啃官方文档或者看群里的大佬翻译的文档，而不是成天刷 QQ 。
 我很好奇他们的月薪。
 
+我以后应该不需要再写什么 Kotlin 教程之类的了，[知乎专栏](https://zhuanlan.zhihu.com/ice1k)和
+[博客](http://ice1000.org/categories/#Kotlin)都写了那么多了。
+
+说到对社区的贡献，我也有四个项目在[awesome-kotlin](https://kotlin.link/?q=ice)上，说不定以后他们会看到吧。
+
 ## 最后发个搞笑大杂烩
 
 其他早年一起研究 Kotlin 的群友也是惨：
@@ -85,3 +90,6 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 
 ![CSS](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/15/6.jpg)
 
+> 中国人的问题就是迷信权威
+
+我感觉我理解了几分当年鲁迅的感受。

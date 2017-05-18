@@ -18,10 +18,6 @@ To contact me please send an [E-mail](mailto:ice1000@kotliner.cn).
 
 View me on [GitHub](https://github.com/ice1000) is also a good choice to know me better.
 
-### CodeWars
-
-[![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
-
 ## Subscribe
 
 To subscribe, see [feed.xml](../feed.xml).
@@ -35,6 +31,17 @@ To subscribe, see [feed.xml](../feed.xml).
 + [A simple music player, materially designed](https://github.com/ice1000/Dekoder).
 + [An Android app, for playing kitiku music(German boy, Van, Billy, etc.)](https://github.com/ice1000/KitikuMaker).
 + [A Lisp running on JVM](https://github.com/lice-lang/lice).
+
+## Badges
+
+### CodeWars
+
+[![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
+
+### Awesome-Kotlin
+
+4 projects collected on : <br/>
+[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://kotlin.link/?q=ice).
 
 ## Contact
 
