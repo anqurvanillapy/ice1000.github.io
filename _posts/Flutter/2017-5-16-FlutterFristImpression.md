@@ -22,7 +22,7 @@ description: Greetings, Flutter!
 语言本身我就不作评价了，我自己的看法是，就拿 Kotlin 来说， Dart 和 Kotlin 的对我的开发流程和思维的影响的区别，
 相当于 Eclipse 和 IntelliJ IDEA 的区别。你们自己体会吧。
 
-在这里我拿 Dart 和全民的大众语言 Kotlin （想必大家都会了，这两天可是如火如荼呐）
+在这里我拿 Dart 和全民的大众语言 Kotlin （想必大家都会了，这两天可是如火如荼呐）作一个对比。
 
 ### 如何从 Kotlin 转向 Dart
 
