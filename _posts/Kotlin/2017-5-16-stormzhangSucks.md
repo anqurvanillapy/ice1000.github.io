@@ -35,11 +35,17 @@ Kotlin 也好，现在都不成熟，目前很少有成熟的商业项目在采�
 > Kotlin 也好，现在都不成熟，目前很少有成熟的商业项目在采用，最多也就有些大公司在一些实验性的某个模块采用下试试水，
 做做研究，而且还会有各种坑，所以建议大家老老实实掌握最基本的原生开发，这才是王道。
 
+我当时看到这里的时候非常不爽，为什么就说 Kotlin 不稳定了？你用过吗？你遇到了编译器的 bug 了吗？
+
 然后现在呢？股沟推了 Kotlin ，各路人士正在争先恐后入门 Kotlin ，然后开始教你写出形如这样的代码：
 
 ```kotlin
 object Main {
   var s: String? = null
+
+  init {
+    s = null
+  }
 
   @JvmStatic
   fun main(vararg args: String) {
@@ -51,7 +57,7 @@ object Main {
 
 这样的代码是非常不安全的，只要另外来个线程，反射把你的 s 改了，你就 GG 了。
 
-现在的 stormzhang 又开始一改自己的观点，[马上开始支持 Kotlin](https://zhuanlan.zhihu.com/p/26988211) 了：
+现在的 stormzhang 也开始一改自己的观点，[马上开始支持 Kotlin](https://zhuanlan.zhihu.com/p/26988211) 了：
 
 ```text
 作者：stormzhang
