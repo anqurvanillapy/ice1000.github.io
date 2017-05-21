@@ -10,7 +10,7 @@ permalink: /about/
 
 I am [ice1000](https://github.com/ice1000)，in Chinese is 千里冰封。
 
-I am a student, Otaku, big fan of JetBrains, programming for interest, working with JVM and CLR.
+I am a student, Otaku, big fan of JetBrains, programming for interest.
 
 Welcome to join the [QQ group ProgramLeague](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a).
 
@@ -38,10 +38,9 @@ To subscribe, see [feed.xml](../feed.xml).
 
 [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
 
-### Awesome-Kotlin
+### Awesome Kotlin
 
-4 projects collected on : <br/>
-[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://kotlin.link/?q=ice).
+4 projects collected on [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://kotlin.link/?q=ice).
 
 ## Contact
 
