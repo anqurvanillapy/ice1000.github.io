@@ -48,13 +48,9 @@ Click to see [my story](http://stackoverflow.com/story/ice1000).
 
 ### StackOverflow
 
-<a href="http://stackoverflow.com/users/7083401/ice1000">
-<img src="http://stackoverflow.com/users/flair/7083401.png"
-     width="208"
-     height="58"
-     alt="profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-     title="profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers" />
-</a>
+[![](http://stackoverflow.com/users/flair/7083401.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers")
+[![](http://stackoverflow.com/users/flair/7083401.png?theme=hotdog)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers")
+[![](http://stackoverflow.com/users/flair/7083401.png?theme=dark)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers")
 
 ## Contact
 
