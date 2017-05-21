@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Open Source Projects
-keywords: open-source,GitHub
+keywords: projects,GitHub
 description: My Projects
-permalink: /open-source/
+permalink: /projects/
 ---
 
 Here are my personal projects.
