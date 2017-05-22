@@ -98,3 +98,10 @@ Kotlin 团队为用户考虑得非常周到，不仅仅出品了 IDEA 插件，�
 另外欢迎大家参考[我的知乎回答: Android 开发 Kotlin 你目前遇到过哪些坑？](http://www.zhihu.com/question/36735834/answer/105409238)，里面有着我的血泪史，希望大家不要重蹈我的覆辙｡･ﾟ･(ﾉД\`)･ﾟ･｡
 
 最后啰嗦一句： anko 是真的黑科技！
+
+## 2017 年更新
+
+老博客真是黑历史呀，我现在已经有 4 个项目在 awesome Kotlin 了。
+
+另外，我翻译的 awesome Kotlin 已经早就过时了，新的 awesome Kotlin 现在不仅有 badge 和网站一应俱全，
+换成了基于 Kotlin 的 Web 技术搞的，还有 build.gradle.kts ，浑身都是 Kotlin 了。

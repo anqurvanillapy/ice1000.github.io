@@ -13,7 +13,7 @@ description: Learn kotlin 4 Variables
 
 不知道有没有细心的读者发现我上一节讲常量声明的时候所声明的那个 pi ，我加了小数点：
 
-```swift
+```kotlin
 val pi = 3.1415926
 ```
 
@@ -35,21 +35,21 @@ val pi = 3.1415926
 <br/>
 大概就是这些了，其中的整数你们已经见过了，是用来表示一个不带小数位的整数的，浮点数就是所谓的小数。比如
 
-```swift
+```kotlin
 val int = 1415926
 val float = 3.1415926
 ```
 
 所谓布尔，就是你们曾经听说过的 true 和 false ，一个布尔的变量只有两种可能的值，就是 true 和 false ，分别表示真和假。比如
 
-```swift
+```kotlin
 val bool1 = true
 val bool2 = false
 ```
 
 字符串就是一串字符，也就是一段文字。前面读者应该已经接触了一些了，比如：
 
-```swift
+```kotlin
 val string = "this is a String"
 val char = 'c'
 ```
@@ -62,7 +62,7 @@ val char = 'c'
 
 你可以试一试下面这段代码：
 
-```swift
+```kotlin
 println(100 / 30)
 ```
 
@@ -70,7 +70,7 @@ println(100 / 30)
 
 再试试：
 
-```swift
+```kotlin
 println(100.0 / 30)
 println(100 / 30.0)
 ```

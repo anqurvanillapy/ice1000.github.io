@@ -13,7 +13,7 @@ description: Learn kotlin 2 Hello World
 
 ## 说明
 
-由于辣鸡 GitHub Pages 不支持 Kotlin 代码渲染，本文出现的代码全部都是渲染成 Swift 的——不过貌似完美支持。嘿嘿。语法几乎都一样，除了函数声明关键字——Swift 是`func`， Kotlin 是`fun`。
+由于辣鸡 GitHub Pages 不支持 Kotlin 代码渲染，本文出现的代码全部都是渲染成 kotlin 的——不过貌似完美支持。嘿嘿。语法几乎都一样，除了函数声明关键字——kotlin 是`func`， Kotlin 是`fun`。
 
 ## 环境搭建
 
@@ -49,7 +49,7 @@ description: Learn kotlin 2 Hello World
 
 我们来写下这样一段代码：
 
-```swift
+```kotlin
 fun main(args: Array<String>) {
     println("Hello World")
 }
@@ -71,7 +71,7 @@ fun main(args: Array<String>) {
 
 任何与编程有关的事情都应该经历一个折腾的过程。试试将之前的代码修改一下，修改为
 
-```swift
+```kotlin
 fun main(args: Array<String>) {
     println("Hello ice1000")
 }
@@ -79,7 +79,7 @@ fun main(args: Array<String>) {
 
 或者
 
-```swift
+```kotlin
 fun main(args: Array<String>) {
     println("Hello ice1000")
     println("Hello iXinWei")
@@ -88,7 +88,7 @@ fun main(args: Array<String>) {
 
 这样你会发现，那句 println 的作用就是把后面的括号加双引号里面的东西按行输出到下面的控制台中。很好，你已经掌握了函数“println()”的能量。接下来你还需要折腾，继续搞清楚那个双引号的作用。再改改你的代码吧：
 
-```swift
+```kotlin
 fun main(args: Array<String>) {
     println(233)
     println("233")
@@ -97,7 +97,7 @@ fun main(args: Array<String>) {
 
 再改改：
 
-```swift
+```kotlin
 fun main(args: Array<String>) {
     println(233 + 666)
     println("233 + 666")
@@ -128,3 +128,7 @@ fun main(args: Array<String>) {
 - Kotlin 的 Hello World
 - 双引号的作用之一
 - 五则基本运算
+
+## 2017 年更新
+
+全面把 Kotlin 代码的高亮从 Swift 切到 Kotlin 。这个垃圾 Markdown 插件终于支持 Kotlin 了。

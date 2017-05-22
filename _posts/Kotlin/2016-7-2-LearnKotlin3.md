@@ -57,7 +57,7 @@ description: Learn kotlin 3 Variables
 
 把这个过程在数学上分析出来，你会发现可以这样写：
 
-```swift
+```kotlin
 a = 100
 a = a - 5 * 5
 a = a - 10 * 2
@@ -94,19 +94,19 @@ println(a)
 
 因为你知道 a 是一个变量， Kotlin 不知道啊！你得告诉她。
 
-```swift
+```kotlin
 var a = 0
 ```
 
 这样她就知道 a 是一个变量了，并且让它等于 0。同理，如果你需要另一个变量 b ，那么
 
-```swift
+```kotlin
 var b = 0
 ```
 
 同理。
 
-```swift
+```kotlin
 var a1 = 0
 var sb = 0
 var my_name = 0
@@ -120,7 +120,7 @@ var my_name = 0
 
 以下举几个**反例**。注意下面这些是**不合法**的命名！！
 
-```swift
+```kotlin
 var public = 0
 var in = 0
 var for = 0
@@ -130,7 +130,7 @@ var for = 0
 
 **反面**例子：
 
-```swift
+```kotlin
 var 2U = 0
 var @u = 0
 var ass we can = 0
@@ -138,7 +138,7 @@ var ass we can = 0
 
 另外，变量名是区分大小写的。比如
 
-```swift
+```kotlin
 var a = 0
 var A = 0
 ```
@@ -147,7 +147,7 @@ var A = 0
 
 变量搞清楚了，赋值也就简单了。
 
-```swift
+```kotlin
 var a = 0
 a = 100
 a = a / 20
@@ -156,7 +156,7 @@ println(a)
 
 另外，你可以声明多个变量。
 
-```swift
+```kotlin
 var a = 0
 var b = 0
 a = 5
@@ -169,7 +169,7 @@ println(b)
 
 上面的代码中 **前四行**可以简写成：
 
-```swift
+```kotlin
 var a = 5
 var b = 6
 ```
@@ -184,7 +184,7 @@ var b = 6
 
 你可以在 Kotlin 中声明常量。比如：
 
-```swift
+```kotlin
 val pi = 3.14159265358979
 ```
 

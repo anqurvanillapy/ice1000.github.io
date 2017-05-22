@@ -87,17 +87,19 @@ fun foo() {
 }
 ```
 
-以上代码在"http://try.kotlinlang.org"上编译通过。
+以上代码在 [try kotlin](http://try.kotlinlang.org) 上编译通过。
 
 所以啊， inline 博大精深。
 
 ## noinline 和 crossinline
 
-那么， noinline 和 crossinline 又是什么鬼呢。。。
+那么， `noinline` 和 `crossinline` 又是什么鬼呢。。。
 
-其实 inline 这种东西啊，在一些比较奇怪的时候，会有各种各样的问题啦。。比如各种东西的作用域啊。。Context 不一样啦。。。。所以 Kotlin 又弄了俩 inline 方法的 Lambda 参数的修饰符。
+其实 `inline` 这种东西啊，在一些比较奇怪的时候，会有各种各样的问题啦。。比如各种东西的作用域啊。。
+Context 不一样啦。。。。 Lambda 被传递到了其他地方导致不能 `inline` 啦。。
+所以 Kotlin 又弄了俩 `inline` 方法的 Lambda 参数的修饰符。
 
-注意， inline 是方法的修饰符， crossinline 和 noinline 是参数的修饰符，而且仅限参数！
+注意， `inline` 是方法的修饰符， `crossinline` 和 `noinline` 是参数的修饰符，而且仅限参数！
 
 其实理解起来很简单。请先仔细阅读上文中的代码。
 
@@ -111,9 +113,10 @@ inline fun test(f: () -> Unit) {
 }
 ```
 
-这玩意强制编译器把你的 inline 按照上述代码中方法 boyNextDoor 的样子处理（强制 inline ）。如果不能那样处理的话就给个 error ，不通过编译。很简单吧。
+`crossinline` 就是在你的 lambda 没有被普通地直接在上下文中调用而是被传到了其他地方，
+在这种情况下就不能做到 `inline` 。
 
-比如以下代码就不能通过编译：
+编译器会尽可能让你不 `crossinline` ，比如以下代码就不能通过编译：
 
 ```kotlin
 inline fun test(crossinline f: () -> Unit) {
@@ -123,7 +126,9 @@ inline fun test(crossinline f: () -> Unit) {
 }
 ```
 
-因为你进行了很不和谐的参数传递操作（其实只要是控制流都会出事），而如果把代码 inline 进去的话是不行的。。自己想想如果把这个方法直接写到原方法中的样子吧。你只能这样写：
+因为你没有进行不和谐的参数传递操作（把 Lambda 传到外面）。。
+
+只有下面这样，才可以 `crossinline` ：
 
 ```kotlin
 inline fun test(crossinline f: () -> Unit) {
@@ -133,7 +138,11 @@ inline fun test(crossinline f: () -> Unit) {
 
 ### noinline
 
-这玩意不让编译器把你的 inline 按照上述代码中方法 boyNextDoor 的样子处理。如果那样处理不能有任何效率/空间上的优化的话就给个 warning ，通过编译。很简单吧。
+这个东西告诉编译器，不要 `inline` 这个 Lambda 。有时就是做不到，所以使用 `noinline` 。
+
+我暂时找不到必须使用 `noinline` 的例子。所以就只有不必须的例子。
+
+你其实可以在任意时候使用 `noinline` 的：
 
 ```kotlin
 inline fun test(noinline f: () -> Unit) {
@@ -143,9 +152,11 @@ inline fun test(noinline f: () -> Unit) {
 
 以上代码你会收到一个可爱的 warning。
 
-因为这 inline 本来是个可以优化调用的操作，你非要写成这样就失去了 inline 的意义了（虽然不加 noinline 根本不过编译），所以警告一下啦。
+因为这 `inline` 本来是个可以优化调用的操作，你非要写成这样就失去了 `inline` 的意义了，所以警告一下啦。
 
-Kotlin 就是要求你写的清晰。为了节约你的时间和精力，她帮你推断类型。为了节约你的 debug 和 code Review 时间，她强制让你声明一些别的语言里面不强制的东西（比如任何数值类型必须显示 cast ，显示声明 infix ，显示声明 tailrec ， crossinline ， noinline 等等等等）。
+Kotlin 就是要求你写的清晰。为了节约你的时间和精力，她帮你推断类型。
+为了节约你的 debug 和 code Review 时间，她强制让你声明一些别的语言里面不强制的东西（比如任何数值类型必须显示 cast ，
+显示声明 `infix` ，显示声明 `tailrec` ， `crossinline` ， `noinline` 等等等等）。
 
 像某些语言的隐式转换啊，就是专门让别人在不开 debugger 的情况下看不懂你的代码的。。（逃
 
