@@ -138,7 +138,9 @@ inline fun test(crossinline f: () -> Unit) {
 
 ### noinline
 
-这个东西告诉编译器，不要 `inline` 这个 Lambda 。有时就是做不到，所以使用 `noinline` 。
+这个东西告诉编译器，不要 `inline` 这个 Lambda 。也就是说，依旧产生这个 Lambda 对象。但是函数还是可以内联。
+
+有时就是做不到，所以使用 `noinline` 。
 
 我暂时找不到必须使用 `noinline` 的例子。所以就只有不必须的例子。
 
