@@ -113,7 +113,7 @@ inline fun f(body: () -> Unit) {
 }
 ```
 
-`crossinline` 就是在你的 lambda 没有被普通地直接在上下文中调用而是被传到了其他地方，
+`crossinline` 就是在你的 lambda 没有被普通地直接在上下文中调用而是被传到了其他地方作为嵌套在内部的代码，
 在这种情况下就不能做到简单的 `inline` （会有上下文中的流程控制语句导致的问题）。
 
 比如下面这样，就必须 `crossinline` ：
@@ -128,7 +128,7 @@ inline fun f(crossinline body: () -> Unit) {
 
 这个东西告诉编译器，不要 `inline` 这个 Lambda 。也就是说，依旧产生这个 Lambda 对象。但是函数还是可以内联。
 
-有时就是做不到，所以使用 `noinline` 。比如：
+有时由于你需要把这个 Lambda 作为参数传到别的地方去，导致内联做不到，所以使用 `noinline` 。比如：
 
 ```kotlin
 inline fun test(f: () -> Unit) {
