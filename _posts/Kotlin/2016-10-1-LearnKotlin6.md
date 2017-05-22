@@ -105,34 +105,22 @@ Context 不一样啦。。。。 Lambda 被传递到了其他地方导致不能 
 
 ### crossinline
 
-考虑如下代码，这段代码是编译不过的。编译器会提示你加个 crossinline。
+考虑如下代码，这段代码是编译不过的。编译器会提示你加个 `crossinline`。
 
 ```kotlin
-inline fun test(f: () -> Unit) {
-	thread(f)
+inline fun f(body: () -> Unit) {
+  val f = Runnable { body() }
 }
 ```
 
 `crossinline` 就是在你的 lambda 没有被普通地直接在上下文中调用而是被传到了其他地方，
-在这种情况下就不能做到 `inline` 。
+在这种情况下就不能做到简单的 `inline` （会有上下文中的流程控制语句导致的问题）。
 
-编译器会尽可能让你不 `crossinline` ，比如以下代码就不能通过编译：
-
-```kotlin
-inline fun test(crossinline f: () -> Unit) {
-	thread(block = f)
-	// 你也可以这样写，下面这种写法也不能通过编译
-	// thread(f)
-}
-```
-
-因为你没有进行不和谐的参数传递操作（把 Lambda 传到外面）。。
-
-只有下面这样，才可以 `crossinline` ：
+比如下面这样，就必须 `crossinline` ：
 
 ```kotlin
-inline fun test(crossinline f: () -> Unit) {
-	thread({ f() })
+inline fun f(crossinline body: () -> Unit) {
+  val f = Runnable { body() }
 }
 ```
 
@@ -140,21 +128,37 @@ inline fun test(crossinline f: () -> Unit) {
 
 这个东西告诉编译器，不要 `inline` 这个 Lambda 。也就是说，依旧产生这个 Lambda 对象。但是函数还是可以内联。
 
-有时就是做不到，所以使用 `noinline` 。
-
-我暂时找不到必须使用 `noinline` 的例子。所以就只有不必须的例子。
-
-你其实可以在任意时候使用 `noinline` 的：
+有时就是做不到，所以使用 `noinline` 。比如：
 
 ```kotlin
-inline fun test(noinline f: () -> Unit) {
-    thread { f() }
+inline fun test(f: () -> Unit) {
+  thread(block = f)
+  // 你也可以这样写，下面这种写法也不能通过编译
+  // thread(f)
 }
 ```
 
-以上代码你会收到一个可爱的 warning。
+你就必须使用 `noinline` ：
 
-因为这 `inline` 本来是个可以优化调用的操作，你非要写成这样就失去了 `inline` 的意义了，所以警告一下啦。
+```kotlin
+inline fun test(noinline f: () -> Unit) {
+  thread(block = f)
+  // 你也可以这样写，下面这种写法也不能通过编译
+  // thread(f)
+}
+```
+
+不过其实你可以在任意时候使用 `noinline` 的：
+
+```kotlin
+inline fun test(noinline f: () -> Unit) {
+  f()
+}
+```
+
+以上两份代码你会收到一个可爱的 warning 。
+
+因为这 `inline` 本来是个可以优化调用（节约一个 Lambda 对象）的操作，你非要写成这样就失去了 `inline` 的意义了，所以警告一下啦。
 
 Kotlin 就是要求你写的清晰。为了节约你的时间和精力，她帮你推断类型。
 为了节约你的 debug 和 code Review 时间，她强制让你声明一些别的语言里面不强制的东西（比如任何数值类型必须显示 cast ，
