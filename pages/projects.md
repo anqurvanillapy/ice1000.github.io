@@ -47,14 +47,12 @@ Sub projects:
 
 <br/><br/>
 
-And others which are under my personal account:
-
 {% if site.github.public_repositories != null %}
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse %}
 
 <section class="container">
     <header class="text-center">
-        <h1>Open Source Projects</h1>
+        <h1>Other Projects</h1>
         <p class="lead">I have <span class="repo-count">{{ sorted_repos.size }}</span> projects on Github</p>
     </header>
     <div class="repo-list">
