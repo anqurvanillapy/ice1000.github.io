@@ -1,6 +1,9 @@
 - name: Eldath
   url: https://ray-eldath.github.io
 
+- name: Glavo
+  url: http://glavo.org
+
 - name: 77.
   url: https://ljason.cn
 
@@ -31,13 +34,10 @@
 - name: inszva
   url: http://blog.csdn.net/inszva
 
-- name: akiris 地獄通信
-  url: http://akiris.esy.es
-
 - name: xdd
   url: https://xdd.io
 
-- name: dram
+- name: dramforever
   url: http://dram.cf
 
 - name: lfkdsk
