@@ -7,8 +7,6 @@ keywords: Haskell,dfs,algorithm
 description: Functional depth-first search
 ---
 
-[发知乎啦](https://zhuanlan.zhihu.com/p/27154768)
-
 这篇博客主要说说我很早以前整出来的函数式 dfs ，老早就想写博客了但是现在才有空。本文应该是很简单的，因为我会先说一些预备知识，说不定你看完还能懂点 Haskell ，多好。
 
 ## 消除恐惧
@@ -307,3 +305,8 @@ Haskell|举例|Kotlin|举例
 + [Determining if a graph has a solution](https://www.codewars.com/kata/determining-if-a-graph-has-a-solution)
 
 反正都是 \<4kyu\> 的大水题（逃
+
+## 更新
+
+[发知乎啦](https://zhuanlan.zhihu.com/p/27154768)
+
