@@ -8,29 +8,17 @@ menu: About
 permalink: /about/
 ---
 
-I am [ice1000](https://github.com/ice1000)，in Chinese is 千里冰封。
+Hi there, this is ice1000，in Chinese is 千里冰封。
 
-I am a student, Otaku, big fan of JetBrains, programming for interest.
+I am a student, programming for interest.
 
 Welcome to join the [QQ group ProgramLeague](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a).
 
 To contact me please send an [E-mail](mailto:ice1000@kotliner.cn).
 
-View me on [GitHub](https://github.com/ice1000) is also a good choice to know me better.
-
 ## Story
 
 Click to see [my story](http://stackoverflow.com/story/ice1000).
-
-## Personal Projects
-
-+ [algo4j, an algorithm library for Java use, JNI implemented](https://github.com/ice1000/algo4j).
-+ [Gen4DP, it generates dynamic programming code from given state translation equation](https://github.com/ice1000/Gen4DP).
-+ [Frice Engine, a simple, light, easy, cross-language game engine for education usage](https://github.com/icela/FriceEngine).
-+ [Frice Engine C# implementation](https://github.com/icela/FriceEngine-CSharp).
-+ [A simple music player, materially designed](https://github.com/ice1000/Dekoder).
-+ [An Android app, for playing kitiku music(German boy, Van, Billy, etc.)](https://github.com/ice1000/KitikuMaker).
-+ [A Lisp running on JVM](https://github.com/lice-lang/lice).
 
 ## Badges
 
@@ -45,14 +33,12 @@ Click to see [my story](http://stackoverflow.com/story/ice1000).
 ### StackOverflow
 
 [![](http://stackoverflow.com/users/flair/7083401.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers")
-[![](http://stackoverflow.com/users/flair/7083401.png?theme=hotdog)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers")
-[![](http://stackoverflow.com/users/flair/7083401.png?theme=dark)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&amp;A for professional and enthusiast programmers")
 
-## Contact
+<!-- ## Contact -->
 
-{% for website in site.data.social %}
-* {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
-{% endfor %}
+<!-- {% for website in site.data.social %} -->
+<!-- * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }}) -->
+<!-- {% endfor %} -->
 
 ## Skill Keywords
 
@@ -64,18 +50,6 @@ Click to see [my story](http://stackoverflow.com/story/ice1000).
 {% endfor %}
 </div>
 {% endfor %}
-
-### As far as I am concerned,
-
-+ Dynamic typing is full of shit
-+ Prototype is a rubbish(but for some cases, it's good)
-+ Comparing to metaprogramming, reflection really sucks
-+ It is such great fun to teach others programming
-+ One day, LOP will take the place of OOP
-+ JVM is the most powerful runtime in the universe
-+ Functional Programming and Object Oriented Programming will finally combined with each other
-+ Dynamic scoping is not that bad
-
 
 ## Subscribe
 

@@ -91,3 +91,14 @@ Sub projects:
     </div>
 </section>
 {% endif %}
+
+## Old content
+
++ [algo4j, an algorithm library for Java use, JNI implemented](https://github.com/ice1000/algo4j).
++ [Gen4DP, it generates dynamic programming code from given state translation equation](https://github.com/ice1000/Gen4DP).
++ [Frice Engine, a simple, light, easy, cross-language game engine for education usage](https://github.com/icela/FriceEngine).
++ [Frice Engine C# implementation](https://github.com/icela/FriceEngine-CSharp).
++ [A simple music player, materially designed](https://github.com/ice1000/Dekoder).
++ [An Android app, for playing kitiku music(German boy, Van, Billy, etc.)](https://github.com/ice1000/KitikuMaker).
++ [A Lisp running on JVM](https://github.com/lice-lang/lice).
+

@@ -1,28 +1,32 @@
-- name: Software Engineer
+- name: Software Developing
   keywords:
       - Java/Kotlin
-      - Rust/Haskell
-      - GUI Programming on JVM
+      - Various Languages
       - JNI Linkage
       - Design Patterns
       - Data Structure
+#
 
-- name: Computer Scientist
+- name: Computer Science
   keywords:
-      - Functional Programming
       - Programming Languages Theory
       - Lisp
       - Haskell
+      - Compiler Theory
+      - JetBrains MPS
+#
 
-- name: Researcher
+- name: Concepts
   keywords:
+      - Functional Programming
       - Language-Oriented Programming
-      - JetBrains MetaProgrammingSystem
-      - Projectional Editing
+      - Structural Editing
+#
 
-- name: Mobile Developer
+- name: Mobile Developing
   keywords:
       - Android
       - Kotlin on Android
       - Fuchsia
       - Flutter
+#
