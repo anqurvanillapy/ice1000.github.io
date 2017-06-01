@@ -1,16 +1,5 @@
 <footer class="container">
 	<div class="site-footer" role="contentinfo">
-		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-			<img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a><br/>本作品由<a
-			xmlns:cc="http://creativecommons.org/ns#" href="http://ice1000.org" property="cc:attributionName"
-			rel="cc:attributionURL">ice1000</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎
-		4.0 国际许可协议</a>进行许可。<br/>
-		基于<a xmlns:dct="http://purl.org/dc/terms/" href="http://ice1000.org" rel="dct:source">http://ice1000.org</a>上的作品创作。
-		<script src="/assets/vendor/share.js/dist/js/share.min.js"></script>
-		<br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative
-		Commons Attribution 4.0 International License</a>.
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"></a>
-		<br/>
 		<br/>
 		<div class="copyright left mobile-block">
 			© 2017
@@ -29,8 +18,7 @@
 		<ul class="site-footer-links mobile-hidden">
 			{% for nav in site.navs %}
 			<li>
-				<a href="{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label
-					}}</a>
+				<a href="{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
 			</li>
 			{% endfor %}
 			<li><a href="{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
