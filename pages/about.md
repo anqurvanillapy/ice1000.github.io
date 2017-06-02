@@ -93,4 +93,4 @@ Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Generic License</a>.
 
 ## Special Thanks
 
-+ [mzlogin](mzlogin.github.io)
++ [mzlogin](https://mzlogin.github.io)
