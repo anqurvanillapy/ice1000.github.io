@@ -90,3 +90,7 @@ If you prefer to use rss reader, see [feed.xml](../feed.xml).
 <br/>All the posts and blogs here are licensed under a 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
 Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Generic License</a>.
+
+## Special Thanks
+
++ [mzlogin](mzlogin.github.io)
