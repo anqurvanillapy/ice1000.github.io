@@ -33,11 +33,30 @@ description: Greetings, Travis
 
 我才懒得写， [RTFM](https://docs.travis-ci.com/)
 
+流程大概就是先注册 Travis 账号，然后在仓库里面写个配置文件 `.travis.yml` ，然后在 Travis 网站上选这个项目，
+然后就可以等 build 了。 Travis 提供了一个 build 的 badge ，可以放在 README 里面装逼（雾
+
+可以让 Travis 自动测试，这样可以在别人发 pull request 的时候先通过 CI 的检验， CI 上编译测试通过了再 merge ，
+明显有安全感的多。
+
 ## 关于自动 release
 
 这里推荐先搭建本地的 Travis 环境（就是 Ruby 环境 \+ `gem install travis`）然后让它自己配置。
 
-这样不会泄露你的 GitHub Token 。教程见 [RTFM](https://docs.travis-ci.com/user/deployment/releases/)。
+这样不会泄露你的 GitHub Token 。教程见：
+
+> [RTFM](https://docs.travis-ci.com/user/deployment/releases/#Authenticating-with-an-Oauth-token)。
+
+### 注意
+
+一定要记得加上
+
+```yaml
+  on:
+    tags: true
+```
+
+否则你每次推送都会收到一个 release 。加上之后就只有在创建 release 的时候才会上传。
 
 ## Travis CI 的缺点
 
