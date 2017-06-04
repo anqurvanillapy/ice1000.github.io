@@ -106,7 +106,7 @@ for (j = i = 1; i <= n; ++i, ++j) {
 }
 ```
 
-这样就能正确离散化了，详见我[CodeVS 4163](https://github.com/ice1000/OI-codes/blob/master/codevs/4163.c)代码，这是[原题](www.codevs.cn/problem/4163)。
+这样就能正确离散化了，详见我[CodeVS 4163](https://github.com/ice1000/OI-codes/blob/master/codevs/4163.c)代码，这是[原题](https://www.codevs.cn/problem/4163)。
 
 话说我搜出来的题解全部都是错的，难道是一个人发了个错的然后所有人都抄他的？果然是版权大国啊，天朝真牛逼。
 
