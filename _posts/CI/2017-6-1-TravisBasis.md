@@ -41,11 +41,13 @@ description: Greetings, Travis
 
 ## 关于自动 release
 
+就是每次 push 之后它不是会帮你编译吗，你可以让它把目标文件(artifact)上传到 release 里面。
+
 这里推荐先搭建本地的 Travis 环境（就是 Ruby 环境 \+ `gem install travis`）然后让它自己配置。
 
 这样不会泄露你的 GitHub Token 。教程见：
 
-> [RTFM](https://docs.travis-ci.com/user/deployment/releases/#Authenticating-with-an-Oauth-token)。
+> [RTFM](https://docs.travis-ci.com/user/deployment/releases/#Authenticating-with-an-Oauth-token)
 
 ### 注意
 
@@ -56,7 +58,11 @@ description: Greetings, Travis
     tags: true
 ```
 
-否则你每次推送都会收到一个 release 。加上之后就只有在创建 release 的时候才会上传。
+否则你每次推送都会收到一个 artifact 。加上之后就只有在创建 release 的时候才会上传。
+
+于是就不需要在 release 的时候再上传目标文件了。
+
+还可以本地 debug build ，然后让 CI 跑 release build ，不需要编译二遍。
 
 ## Travis CI 的缺点
 
@@ -73,5 +79,5 @@ description: Greetings, Travis
 我部署了 Flutter 应用就是这样的，我先让 CI clone Flutter ，再编译 Flutter ，再下载 Android SDK ，再安装谷歌支持库，
 再用 Flutter 编译我的项目，整个过程不到 4 分钟。
 
-这个问题在 AppVeyor上得到了很好的解决， AppVeyor 非常非常快，但是它是 Windows 的，而且各种预装的依赖略有些迷醉。
+这个问题在 AppVeyor上得到了很好的解决， AppVeyor 非常非常快(触发和编译都快)，但是它是 Windows 的，而且各种预装的依赖略有些迷醉。
 我自己也在用，而且非常舒服，这里就先不说了。
