@@ -201,6 +201,76 @@ Lice > (for-each i (.. 1 15) (print (fib i) " "))
 
 很短对不对！
 
+## 2017 6 月更新
+
+现在的 Lice 步入 3.X 阶段，开始引入三种求值模型（ call by name, call by need, call by value ）的支持，也引入了 first class 的
+Lambda ，更新了很多，编译器的 API 也成熟了，这是最新的代码：
+
+```kotlin
+@SinceKotlin("1.1")
+typealias Mapper<T> = (T) -> T
+
+private var lambdaNameCounter = -100
+
+internal fun lambdaNameGen() = "\t${++lambdaNameCounter}"
+
+inline fun Any?.booleanValue() = this as? Boolean ?: (this != null)
+
+val defFunc = { name: String, params: ParamList, block: Mapper<Node>, body: Node ->
+  defineFunction(name, { ln, args ->
+    val backup = params.map { getFunction(it) }
+    if (args.size != params.size)
+      numberOfArgumentNotMatch(params.size, args.size, ln)
+    args
+        .map(block)
+        .forEachIndexed { index, obj ->
+          if (obj is SymbolNode) defineFunction(params[index], obj.function())
+          else defineFunction(params[index], { _, _ -> obj })
+        }
+    val ret = ValueNode(body.eval().o ?: Nullptr, ln)
+    backup.forEachIndexed { index, node ->
+      if (node != null) defineFunction(params[index], node)
+      else removeFunction(params[index])
+    }
+    ret
+  })
+}
+val definer = { funName: String, block: Mapper<Node> ->
+  defineFunction(funName, { meta, ls ->
+    if (ls.size < 2) tooFewArgument(2, ls.size, meta)
+    val name = (ls.first() as SymbolNode).name
+    val body = ls.last()
+    val params = ls
+        .subList(1, ls.size - 1)
+        .map { (it as? SymbolNode)?.name ?: InterpretException.notSymbol(meta) }
+    val override = isFunctionDefined(name)
+    defFunc(name, params, block, body)
+    return@defineFunction ValueNode(DefineResult(
+        "${if (override) "overridden" else "defined"}: $name"))
+  })
+}
+definer("def", { node -> ValueNode(node.eval().o ?: Nullptr) })
+definer("deflazy", { node -> LazyValueNode({ node.eval() }) })
+definer("defexpr", { it })
+val lambdaDefiner = { funName: String, mapper: Mapper<Node> ->
+  defineFunction(funName, { meta, ls ->
+    if (ls.isEmpty()) tooFewArgument(1, ls.size, meta)
+    val body = ls.last()
+    val params = ls
+        .subList(0, ls.size - 1)
+        .map { (it as? SymbolNode)?.name ?: typeMisMatch("Symbol", it.eval(), meta) }
+    val name = lambdaNameGen()
+    defFunc(name, params, mapper, body)
+    SymbolNode(this, name, meta)
+  })
+}
+lambdaDefiner("lambda", { node -> ValueNode(node.eval().o ?: Nullptr) })
+lambdaDefiner("lazy", { node -> LazyValueNode({ node.eval() }) })
+lambdaDefiner("expr", { it })
+```
+
+怎么样，漂亮不 （并不
+
 ## 真·结束
 
 下期讲值类型的隐式转换在解释性语言里的实现问题。
