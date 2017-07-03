@@ -134,11 +134,11 @@ var mod = 1000000007;
 
 ``` javascript
 fastPlus = (a, b, m) => {
-  var s = a + b;
-  if (s >= a && s >= b) return s % m;
-  if (a >= m && a > m - b) return fastPlus(a - m, b, m);
-  if (b >= m && b > m - a) return fastPlus(a, b - m, m);
-  return s;
+ var s = a + b;
+ if (s >= a && s >= b) return s % m;
+ if (a > m) return plus(a % m, b, m);
+ if (b > m) return plus(a, b % m, m);
+ return a - m + b;
 }
 ```
 
