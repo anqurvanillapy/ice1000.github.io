@@ -7,7 +7,7 @@ rm **/**/*~
 
 git add *
 git stage *
-git commit _posts/* * *.sh *.md -m "${REPLY}"
+git commit _posts/**/*.md * *.sh *.md -m "${REPLY}"
 
 git status
 
