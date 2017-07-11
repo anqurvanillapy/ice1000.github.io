@@ -14,4 +14,4 @@ git status
 git gc
 git push origin master
 
-echo "hia hia I`ve finished"
+echo "hia hia I have finished"
