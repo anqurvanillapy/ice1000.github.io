@@ -71,7 +71,7 @@ Rust:
 而 C\# 有一个让我很难受的地方是，标准的大括号写法是这样的：
 
 ```csharp
-public static void CSharpSucks()
+public static string CSharpSucks()
 {
   return "Yes you\'re right, I\'m sorry, I\'m so sorry";
 }
@@ -83,7 +83,7 @@ public static void CSharpSucks()
 你可能会说，C\# 有一个语法糖：
 
 ```csharp
-public static void CSharpSucks() => "Yes you\'re right, I\'m sorry, I\'m so sorry";
+public static string CSharpSucks() => "Yes you\'re right, I\'m sorry, I\'m so sorry";
 ```
 
 很遗憾， CodeWars 不支持这个版本的 C\# 。
