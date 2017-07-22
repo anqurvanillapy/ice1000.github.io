@@ -40,14 +40,14 @@ GitHub 对我来说是在自己没有工作的时候应该好好整出一个优�
 然后我把所有编译生成的*.class 文件全部上传（注意是编译生成的，如果你有手写的字节码当我没说），这就很智障了。
 你当用户是傻的啊。。。
 
-0. 如果是想 review 你的代码，不需要看也无法看*.class 的内容
-0. 大量的*.class 以及每次编译都导致的更新（因为你编译一次，对应的*.class 也会变）会让仓库变得巨大（因为 Git 等同对待二进制文件），每次 push 都会很慢
+0. 如果是想 review 你的代码，不需要看也无法看\*.class 的内容
+0. 大量的\*.class 以及每次编译都导致的更新（因为你编译一次，对应的\*.class 也会变）会让仓库变得巨大（因为 Git 等同对待二进制文件），每次 push 都会很慢
 0. 如果是想 clone 你的仓库，看见那巨大的仓库体积一般人都会知难而退
 0. 几乎每次增量编译都会影响到 Git 监控，虽然目前我没遇到过不过这一定会导致后期 git gc 和 git
 commit 很慢
 
-这已经是十分充分的理由了。所以， JVM 程序员把*.class ，*.apk 和*.jar 加入 gitignore 吧；
-Rust 程序员把 Cargo.lock 和*.exe 之类的加入 gitignore 吧；
+这已经是十分充分的理由了。所以， JVM 程序员把\*.class ，\*.apk 和\*.jar 加入 gitignore 吧；
+Rust 程序员把 Cargo.lock 和\*.exe 之类的加入 gitignore 吧；
 Gradle 用户把 build 目录和.gradle 目录加入 gitignore 吧。
 
 一般情况下，目标文件是放在 GitHub 的 release 界面的。
@@ -59,7 +59,7 @@ Gradle 用户把 build 目录和.gradle 目录加入 gitignore 吧。
 
 比如：
 
-+ 我写了一个音乐播放器，我上传了我拿来测试的一堆 wav/ape/flac 文件了，只上传代码就好。
++ 我写了一个音乐播放器，我上传了我拿来测试的一堆 wav/ape/flac 文件。
 + 我写了一个压缩工具，然后把我拿来测试的 100 多 mb 的文件上传上去了。
 + 我上传了.idea/workspace.xml
 + 我上传了测试用的.db 文件
@@ -71,6 +71,8 @@ Gradle 用户把 build 目录和.gradle 目录加入 gitignore 吧。
 举个例子，我要部署我的项目到某个 CI （持续集成）上去，然而我的项目用到了 JNI ，
 原本两部分（ CMake 和 Gradle ）是我手动分别编译，而且考虑到 CMake 设置编译器等各种猥琐流程，
 考虑种种因素，我觉得最好的 Solution 是把 JNI 的 dll/so/jnilib 分别上传到 Git 远端仓库，这样就只需要让 CI 自动构建 Gradle 的部分就好了（因为 CI 涉及测试的自动化）。
+
+事实上我已经成功地把 JNI 项目的构建部署到了 CI ，详见 [algo4j](https://github.com/ice1000/algo4j) 。
 
 #### 临时解决方案
 
