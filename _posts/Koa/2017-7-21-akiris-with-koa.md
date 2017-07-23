@@ -2,7 +2,7 @@
 layout: post
 title: Akiris 的 Koa 杂谈 1
 category: Koa
-tags: Essay
+tags: Essay, Koa
 keywords: Koa, JavaScript
 description: Akiris with Koa
 ---
@@ -21,7 +21,7 @@ description: Akiris with Koa
 
 环境（来自`package.json`）：
 
-```json
+```javascript
 "dependencies": {
   /* ... */
   "koa": "^2.3.0",
