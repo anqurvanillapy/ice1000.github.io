@@ -185,18 +185,18 @@ parseCode m s = case parse m s of
 --
 
 instance Functor Parser where
-  fmap f (Parser ps) = Parser $ \p -> [(f a, b) | (a, b) <- ps p]
+  fmap f (Parser ps) = Parser $ \p -> [ (f a, b) | (a, b) <- ps p ]
 --
 
 instance Applicative Parser where
   pure = return
   (Parser p1) <*> (Parser p2) = Parser $ \p ->
-    [(f a, s2) | (f, s1) <- p1 p, (a, s2) <- p2 s1]
+    [ (f a, s2) | (f, s1) <- p1 p, (a, s2) <- p2 s1 ]
 --
 
 instance Monad Parser where
   return a = Parser $ \s -> [(a, s)]
-  p >>= f  = Parser $ concatMap (\(a, s1) -> parse (f a) s1) . parse p
+  p >>= f  = Parser $ concatMap (\(a, s1) -> f a `parse` s1) . parse p
 --
 
 instance MonadPlus Parser where
