@@ -5,7 +5,7 @@ baseurl:
 url: http://ice1000.org
 date_format: "ordinal"
 name: "ice1000's Blog"
-title: ice1000 <> akiris
+title: ice1000 >>= akiris
 subtitle: "淡泊以明志 >>> 宁静而致远"
 description: "ice1000's blog"
 keywords: ice1000, Akiris, blog
@@ -17,10 +17,10 @@ side_bar_repo_limit: 6
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Tesla Ice Zhang <> Akiris Wu
+author: Tesla Ice Zhang >>= Akiris Wu
 github_username: ice1000
 github_username2: AkimotoAkari
-organization: Working Alone
+organization: Working Together
 location: ChengDu, China
 email: ice1000kotlin@foxmail.com
 
@@ -34,7 +34,7 @@ navs:
 
   -
     href: /categories/
-    label: Categories
+    label: Archieve
 
   -
     href: /resume/
