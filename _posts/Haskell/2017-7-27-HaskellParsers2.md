@@ -50,6 +50,13 @@ natP = read <$> some digitP
 
 digitP :: Parser Char
 digitP = satisfy isDigit
+
+tokenP :: Parser a -> Parser a
+tokenP p = do
+  a <- p
+  spaces0P
+  return a
+--
 ```
 
 # chainl1 与 chainr1
@@ -131,10 +138,10 @@ binOp sym func = do
 ```haskell
 -- | binary operators
 binOp :: String -> (b -> b -> b) -> Parser (b -> b -> b)
-binOp = (stringP s >>) . return
+binOp s = (stringP s >>) . return
 ```
 
-上面是 point-free 的版本。
+上面是半 point-free 的版本。
 
 这个函数的意思是：
 
