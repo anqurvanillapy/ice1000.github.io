@@ -129,7 +129,7 @@ p = do
 -- | binary operators
 binOp :: String -> (b -> b -> b) -> Parser (b -> b -> b)
 binOp sym func = do
-  sym
+  stringP sym
   return func
 ```
 
