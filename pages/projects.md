@@ -33,11 +33,13 @@ Sub projects:
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceEngine-DSL.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceEngine-DSL)
 [![Build Status](https://travis-ci.org/icela/FriceEngine-DSL.svg?branch=master)](https://travis-ci.org/icela/FriceEngine-DSL)
 [![Build status](https://ci.appveyor.com/api/projects/status/tne8wv0mofxgg31p/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/friceengine-dsl/branch/master)
+[![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine-DSL/total.svg?style=plastic)](https://github.com/icela/FriceEngine-DSL)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + CLR Version(C\#)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceEngine-CSharp.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceEngine-CSharp)
+[![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine-CSharp/total.svg?style=plastic)](https://github.com/icela/FriceEngine-CSharp)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Lisp Version(Racket)
@@ -59,6 +61,7 @@ Sub projects:
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceDesigner.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceDesigner)
 [![Build Status](https://travis-ci.org/icela/FriceDesigner.svg?branch=master)](https://travis-ci.org/icela/FriceDesigner)
+[![Github All Releases](https://img.shields.io/github/downloads/icela/FriceDesigner/total.svg?style=plastic)](https://github.com/icela/FriceDesigner)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 <br/><br/>
@@ -126,6 +129,7 @@ A simple tool generates game maps (using random numbers, running very fast (1s p
 [![JitPack](https://jitpack.io/v/ice1000/algo4j.svg)](https://jitpack.io/#ice1000/algo4j)
 [![Gitter](https://badges.gitter.im/ice1000/algo4j.svg)](https://gitter.im/ice1000/algo4j)
 [![Stories in Ready](https://badge.waffle.io/ice1000/algo4j.png?label=In%20Progress&title=In%20Progress)](http://waffle.io/ice1000/algo4j)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 An algorithm library for Java use, JNI implement, supports:
 
