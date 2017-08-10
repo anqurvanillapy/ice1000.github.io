@@ -31,6 +31,7 @@ Sub projects:
 + Kotlin DSL
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceEngine-DSL.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceEngine-DSL)
+[![](https://jitpack.io/v/icela/FriceEngine-DSL.svg)](https://jitpack.io/#icela/FriceEngine-DSL)
 [![Build Status](https://travis-ci.org/icela/FriceEngine-DSL.svg?branch=master)](https://travis-ci.org/icela/FriceEngine-DSL)
 [![Build status](https://ci.appveyor.com/api/projects/status/tne8wv0mofxgg31p/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/friceengine-dsl/branch/master)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine-DSL/total.svg?style=plastic)](https://github.com/icela/FriceEngine-DSL)
@@ -115,7 +116,11 @@ Sub projects:
 # Standalone
 
 ## [map-gen](https://github.com/ice1000/map-gen)
+
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/map-gen.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/map-gen)
+[![Build Status](https://travis-ci.org/ice1000/map-gen.svg?branch=master)](https://travis-ci.org/ice1000/map-gen)
+[![Build status](https://ci.appveyor.com/api/projects/status/55fg1mec292o8gex/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/map-gen/branch/master)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 A simple tool generates game maps (using random numbers, running very fast (1s per image)).
 
@@ -137,6 +142,11 @@ An algorithm library for Java use, JNI implement, supports:
 + algorithms like the O(log(n)) fibonacci algorithm, dijkstra, spfa, bellman-ford, kruskal, fast powers, sorting(8 ways, a multi-threading quick sort is included), etc;
 + win32 apis like message boxes, beeping, getting power status (Windows only)
 + tools like big integers (usually faster than the standard `java.math.BigInteger`)
+
+## [Notepad++ extension](https://github.com/ice1000/NppExtension)
+
+[![GitHub stars](https://img.shields.io/github/stars/ice1000/NppExtension.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/NppExtension)
+[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 
 ## [Dekoder](https://github.com/ice1000/Dekoder)
 
