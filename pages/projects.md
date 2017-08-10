@@ -25,7 +25,7 @@ Sub projects:
 [![CodeShip](https://codeship.com/projects/a1d7bc60-0a30-0135-8b3c-6ed4d7e33e57/status?branch=master)](https://app.codeship.com/projects/214712)
 [![](https://jitpack.io/v/icela/FriceEngine.svg)](https://jitpack.io/#icela/FriceEngine)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine/total.svg?style=plastic)](https://github.com/icela/FriceEngine)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceEngine.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 
 + Kotlin DSL
@@ -35,35 +35,35 @@ Sub projects:
 [![Build Status](https://travis-ci.org/icela/FriceEngine-DSL.svg?branch=master)](https://travis-ci.org/icela/FriceEngine-DSL)
 [![Build status](https://ci.appveyor.com/api/projects/status/tne8wv0mofxgg31p/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/friceengine-dsl/branch/master)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine-DSL/total.svg?style=plastic)](https://github.com/icela/FriceEngine-DSL)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceEngine-DSL.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + CLR Version(C\#)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceEngine-CSharp.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceEngine-CSharp)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine-CSharp/total.svg?style=plastic)](https://github.com/icela/FriceEngine-CSharp)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceEngine-CSharp.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Lisp Version(Racket)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceEngine-Racket.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceEngine-Racket)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceEngine-Racket.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Ruby Version(Ruby)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceEngine-Ruby.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceEngine-Ruby)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceEngine-Ruby.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Demos (for various languages)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceDemo.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceDemo)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceDemo.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Designer (Kotlin with JavaFX)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceDesigner.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceDesigner)
 [![Build Status](https://travis-ci.org/icela/FriceDesigner.svg?branch=master)](https://travis-ci.org/icela/FriceDesigner)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceDesigner/total.svg?style=plastic)](https://github.com/icela/FriceDesigner)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/icela/FriceDesigner.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 <br/><br/>
 
@@ -82,7 +82,7 @@ Sub projects:
 [![Gitter](https://badges.gitter.im/lice-lang/lice.svg)](https://gitter.im/lice-lang/lice)
 [![Dependency Status](https://www.versioneye.com/user/projects/58df5b1c24ef3e00425cf73f/badge.svg)](https://www.versioneye.com/user/projects/58df5b1c24ef3e00425cf73f)
 [![Github All Releases](https://img.shields.io/github/downloads/lice-lang/lice/total.svg?style=plastic)](https://github.com/lice-lang/lice)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 
 + REPL (Kotlin JVM) by [@Glavo](https://github.com/Glavo)
@@ -92,24 +92,25 @@ Sub projects:
 [![Build status](https://ci.appveyor.com/api/projects/status/2u8x5i2ctnvl0bhl?svg=true)](https://ci.appveyor.com/project/ice1000/lice-repl)
 [![Dependency Status](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a/badge.svg?style=square)](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a)
 [![Github All Releases](https://img.shields.io/github/downloads/lice-lang/lice-repl/total.svg?style=plastic)](https://github.com/lice-lang/lice-repl)
+[![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice-repl.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Android REPL (Kotlin Android)
 
 [![GitHub stars](https://img.shields.io/github/stars/lice-lang/lice-android.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/lice-android)
 [![Build Status](https://travis-ci.org/lice-lang/lice-android.svg?branch=master)](https://travis-ci.org/lice-lang/lice-android)
 [![Build status](https://ci.appveyor.com/api/projects/status/rwq2ky3xjysf2gy6?svg=true)](https://ci.appveyor.com/project/ice1000/lice-android)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice-android.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Github All Releases](https://img.shields.io/github/downloads/lice-lang/lice-android/total.svg?style=plastic)](https://github.com/lice-lang/lice-android)
 
 + Examples and library (Lice)
 
 [![GitHub stars](https://img.shields.io/github/stars/lice-lang/lice-library.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/lice-library)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice-library.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Language Reference
 
 [![GitHub stars](https://img.shields.io/github/stars/lice-lang/lice-reference.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/lice-reference)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice-reference.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 <br/><br/>
 
@@ -120,7 +121,7 @@ Sub projects:
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/map-gen.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/map-gen)
 [![Build Status](https://travis-ci.org/ice1000/map-gen.svg?branch=master)](https://travis-ci.org/ice1000/map-gen)
 [![Build status](https://ci.appveyor.com/api/projects/status/55fg1mec292o8gex/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/map-gen/branch/master)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/ice1000/map-gen.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 A simple tool generates game maps (using random numbers, running very fast (1s per image)).
 
