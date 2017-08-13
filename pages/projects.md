@@ -34,6 +34,8 @@ Sub projects:
 [![](https://jitpack.io/v/icela/FriceEngine-DSL.svg)](https://jitpack.io/#icela/FriceEngine-DSL)
 [![Build Status](https://travis-ci.org/icela/FriceEngine-DSL.svg?branch=master)](https://travis-ci.org/icela/FriceEngine-DSL)
 [![Build status](https://ci.appveyor.com/api/projects/status/tne8wv0mofxgg31p/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/friceengine-dsl/branch/master)
+[![CircleCI](https://circleci.com/gh/icela/FriceEngine-DSL.svg?style=svg)](https://circleci.com/gh/icela/FriceEngine-DSL)
+[![Codeship Status for icela/FriceEngine-DSL](https://app.codeship.com/projects/02ce9100-61f9-0135-bc9e-7aecbc4a3d79/status?branch=master)](https://app.codeship.com/projects/239720)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceEngine-DSL/total.svg?style=plastic)](https://github.com/icela/FriceEngine-DSL)
 [![License: GPL v3](https://img.shields.io/github/license/icela/FriceEngine-DSL.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
@@ -62,6 +64,9 @@ Sub projects:
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceDesigner.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceDesigner)
 [![Build Status](https://travis-ci.org/icela/FriceDesigner.svg?branch=master)](https://travis-ci.org/icela/FriceDesigner)
+[![Build status](https://ci.appveyor.com/api/projects/status/qbkbo8o59837nbbn/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/fricedesigner/branch/master)
+[![CircleCI](https://circleci.com/gh/icela/FriceDesigner.svg?style=svg)](https://circleci.com/gh/icela/FriceDesigner)
+[![Codeship Status for icela/FriceDesigner](https://app.codeship.com/projects/b0e917b0-61fa-0135-d48c-76c7a8899292/status?branch=master)](https://app.codeship.com/projects/239721)
 [![Github All Releases](https://img.shields.io/github/downloads/icela/FriceDesigner/total.svg?style=plastic)](https://github.com/icela/FriceDesigner)
 [![License: GPL v3](https://img.shields.io/github/license/icela/FriceDesigner.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
@@ -78,6 +83,7 @@ Sub projects:
 [![Build Status](https://travis-ci.org/lice-lang/lice.svg?branch=master)](https://travis-ci.org/lice-lang/lice)
 [![Build status](https://ci.appveyor.com/api/projects/status/7d6lyinb0xr6hagn?svg=true)](https://ci.appveyor.com/project/ice1000/lice/branch/master)
 [![CircleCI](https://circleci.com/gh/lice-lang/lice/tree/master.svg?style=svg)](https://circleci.com/gh/lice-lang/lice/tree/master)
+[![Codeship Status for lice-lang/lice](https://app.codeship.com/projects/2e71d680-61fd-0135-bc9e-7aecbc4a3d79/status?branch=master)](https://app.codeship.com/projects/239723)
 [![JitPack](https://jitpack.io/v/lice-lang/lice.svg)](https://jitpack.io/#lice-lang/lice)
 [![Gitter](https://badges.gitter.im/lice-lang/lice.svg)](https://gitter.im/lice-lang/lice)
 [![Dependency Status](https://www.versioneye.com/user/projects/58df5b1c24ef3e00425cf73f/badge.svg)](https://www.versioneye.com/user/projects/58df5b1c24ef3e00425cf73f)
@@ -90,6 +96,8 @@ Sub projects:
 [![GitHub stars](https://img.shields.io/github/stars/lice-lang/lice-repl.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/lice-repl)
 [![Build Status](https://travis-ci.org/lice-lang/lice-repl.svg?branch=master)](https://travis-ci.org/lice-lang/lice-repl)
 [![Build status](https://ci.appveyor.com/api/projects/status/2u8x5i2ctnvl0bhl?svg=true)](https://ci.appveyor.com/project/ice1000/lice-repl)
+[![CircleCI](https://circleci.com/gh/lice-lang/lice-repl.svg?style=svg)](https://circleci.com/gh/lice-lang/lice-repl)
+[![Codeship Status for lice-lang/lice-repl](https://app.codeship.com/projects/9ccb04a0-61fd-0135-bc9e-7aecbc4a3d79/status?branch=master)](https://app.codeship.com/projects/239724)
 [![Dependency Status](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a/badge.svg?style=square)](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a)
 [![Github All Releases](https://img.shields.io/github/downloads/lice-lang/lice-repl/total.svg?style=plastic)](https://github.com/lice-lang/lice-repl)
 [![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice-repl.svg)](http://www.gnu.org/licenses/gpl-3.0)
