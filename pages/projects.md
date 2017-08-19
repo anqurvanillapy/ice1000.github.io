@@ -129,6 +129,7 @@ Sub projects:
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/map-gen.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/map-gen)
 [![Build Status](https://travis-ci.org/ice1000/map-gen.svg?branch=master)](https://travis-ci.org/ice1000/map-gen)
 [![Build status](https://ci.appveyor.com/api/projects/status/55fg1mec292o8gex/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/map-gen/branch/master)
+[![Codeship Status for ice1000/map-gen](https://app.codeship.com/projects/cabe15e0-64c3-0135-828f-6e0a19b12a6f/status?branch=master)](https://app.codeship.com/projects/240494)
 [![License: GPL v3](https://img.shields.io/github/license/ice1000/map-gen.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 A simple tool generates game maps (using random numbers, running very fast (1s per image)).
