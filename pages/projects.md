@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: clean_post
 title: Open Source Projects
 keywords: projects,GitHub
 description: My Projects
@@ -7,10 +7,6 @@ permalink: /projects/
 ---
 
 Here are my personal projects.
-
-# Series
-
-I have some larger projects whose whole toolchains were put into organizations.
 
 ## [Frice Engine](https://github.com/icela)
 A simple, light, easy, **cross-language** game engine.<br/>
@@ -122,8 +118,6 @@ Sub projects:
 
 <br/><br/>
 
-# Standalone
-
 ## [map-gen](https://github.com/ice1000/map-gen)
 
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/map-gen.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/map-gen)
@@ -133,6 +127,8 @@ Sub projects:
 [![License: GPL v3](https://img.shields.io/github/license/ice1000/map-gen.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 A simple tool generates game maps (using random numbers, running very fast (1s per image)).
+
+<br/><br/>
 
 ## [algo4j](https://github.com/ice1000/algo4j)
 
@@ -153,17 +149,43 @@ An algorithm library for Java use, JNI implement, supports:
 + win32 apis like message boxes, beeping, getting power status (Windows only)
 + tools like big integers (usually faster than the standard `java.math.BigInteger`)
 
+<br/><br/>
+
 ## [Notepad++ extension](https://github.com/ice1000/NppExtension)
 
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/NppExtension.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/NppExtension)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
+
+Syntax highlighting extension for Notepad\+\+, including language supports for `Lice`, `Rust`, `Scala`, `Kotlin`.
+
+<br/><br/>
+
+## [Kt2Dart](https://github.com/ice1000/Kt2Dart)
+
+[![GitHub stars](https://img.shields.io/github/stars/ice1000/Kt2Dart.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/Kt2Dart)
+[![Build status](https://ci.appveyor.com/api/projects/status/38gy6t4offcp39jb?svg=true)](https://ci.appveyor.com/project/ice1000/kt2dart)
+[![License: GPL v3](https://img.shields.io/github/license/ice1000/Kt2Dart.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
+This is a transpiler which consumes [Kotlin](https://kotlinlang.org) codes and convert them into [Dart](https://www.dartlang.org/),
+written in Haskell.
+I create this because I want to **Make [Flutter](https://flutter.io) Great Again**.
+
+Flutter, written in Dart, is an awesome mobile developing framework. But Dart is **too** weak, for the dynamic typing and null-unsafety.
+Kotlin is much more powerful, with strong static analyze and lots of awesome features.
+If we can combine the **beautiful** flutter and the **powerful/safe** Kotlin, our world will be peaceful forever.
+
+Also, since your dart codes are transpiled from Kotlin, you can use [Sound Dart](https://www.dartlang.org/guides/language/sound-dart)
+(the term `Strong Dart` refers to the same thing) compiler to compile the generated Dart codes.
+You may find it better to use Kotlin's JavaScript mode (to enable the use of the `dynamic` type).
+
+<br/><br/>
 
 ## [Dekoder](https://github.com/ice1000/Dekoder)
 
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/Dekoder.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/Dekoder)
 [![Build Status](https://travis-ci.org/ice1000/Dekoder.svg?branch=master)](https://travis-ci.org/ice1000/Dekoder)
 [![Build status](https://ci.appveyor.com/api/projects/status/e1oo252bbps4ffs2/branch/master?svg=true)](https://ci.appveyor.com/project/ice1000/dekoder/branch/master)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/github/license/ice1000/Dekoder.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 A simple music player (supports mp3/wav and more), materially designed.
 
@@ -213,14 +235,4 @@ A simple music player (supports mp3/wav and more), materially designed.
     </div>
 </section>
 {% endif %}
-
-## Old content
-
-+ [algo4j, an algorithm library for Java use, JNI implemented](https://github.com/ice1000/algo4j).
-+ [Gen4DP, it generates dynamic programming code from given state translation equation](https://github.com/ice1000/Gen4DP).
-+ [Frice Engine, a simple, light, easy, cross-language game engine for education usage](https://github.com/icela/FriceEngine).
-+ [Frice Engine C# implementation](https://github.com/icela/FriceEngine-CSharp).
-+ [A simple music player, materially designed](https://github.com/ice1000/Dekoder).
-+ [An Android app, for playing kitiku music(German boy, Van, Billy, etc.)](https://github.com/ice1000/KitikuMaker).
-+ [A Lisp running on JVM](https://github.com/lice-lang/lice).
 
