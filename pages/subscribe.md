@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-description: About
+title: Subscribe
+description: Subscription
 keywords: ice1000
 comments: true
 menu: About
@@ -36,4 +36,4 @@ FeedBurner</a></p></form>
 For more information, see [feed burner page](feeds.feedburner.com/Ice1000).
 <p><a href="https://feedburner.google.com" target="_blank"><img src="//feedburner.google.com/fb/images/pub/powered_by_fb.gif" alt="Powered by FeedBurner" style="border:0"/></a></p>
 
-If you prefer to use rss reader, see [feed.xml](../feed.xml).
+If you prefer to use rss reader, see [![](https://img.shields.io/badge/Feed-RSS-ff69b4.svg)](../feed.xml).

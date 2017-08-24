@@ -13,7 +13,9 @@ Hi there, this is ice1000，in Chinese is 千里冰封。 I am a student, progra
 [![](https://img.shields.io/badge/QQ%20Group-ProgramLeague-yellowgreen.svg)](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
 [![](https://img.shields.io/badge/Contact-E--mail-orange.svg)](mailto:ice1000@kotliner.cn)
 [![](https://img.shields.io/badge/StackOverflow-Developer%20Story-lightgrey.svg)](http://stackoverflow.com/story/ice1000)
-[![](https://img.shields.io/badge/Resume-Download-brightgreen.svg)](../resume)
+[![](https://img.shields.io/badge/Resume-Downloads-brightgreen.svg)](../resume)
+[![](https://img.shields.io/badge/Subscribe-In%20Many%20Ways-ff69b4.svg)](../subscribe)
+[![](https://img.shields.io/badge/Feed-RSS-ff69b4.svg)](../feed.xml)
 
 [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
 
