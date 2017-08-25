@@ -1,10 +1,10 @@
 ---
-layout: post  
-title: 各种奇奇怪怪的下载链接
+layout: post
+title: 如何写好技术文章
 category: Misc
 tags: Misc
 keywords: ice1000
-description: Things for downloading
+description: A zhihu answer
 ---
 
 这是搬运的一篇我的破乎回答，题主是魔理沙。
