@@ -87,16 +87,16 @@ Sub projects:
 [![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 
-+ REPL (Kotlin JVM) by [@Glavo](https://github.com/Glavo)
++ REPL + Development Kit (Kotlin JVM) by [@Glavo](https://github.com/Glavo)
 
-[![GitHub stars](https://img.shields.io/github/stars/lice-lang/lice-repl.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/lice-repl)
-[![Build Status](https://travis-ci.org/lice-lang/lice-repl.svg?branch=master)](https://travis-ci.org/lice-lang/lice-repl)
-[![Build status](https://ci.appveyor.com/api/projects/status/2u8x5i2ctnvl0bhl?svg=true)](https://ci.appveyor.com/project/ice1000/lice-repl)
-[![CircleCI](https://circleci.com/gh/lice-lang/lice-repl.svg?style=svg)](https://circleci.com/gh/lice-lang/lice-repl)
-[![Codeship Status for lice-lang/lice-repl](https://app.codeship.com/projects/9ccb04a0-61fd-0135-bc9e-7aecbc4a3d79/status?branch=master)](https://app.codeship.com/projects/239724)
+[![GitHub stars](https://img.shields.io/github/stars/lice-lang/ldk.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/ldk)
+[![Build Status](https://travis-ci.org/lice-lang/ldk.svg?branch=master)](https://travis-ci.org/lice-lang/ldk)
+[![Build status](https://ci.appveyor.com/api/projects/status/2u8x5i2ctnvl0bhl?svg=true)](https://ci.appveyor.com/project/ice1000/ldk)
+[![CircleCI](https://circleci.com/gh/lice-lang/ldk.svg?style=svg)](https://circleci.com/gh/lice-lang/ldk)
+[![Codeship Status for lice-lang/ldk](https://app.codeship.com/projects/9ccb04a0-61fd-0135-bc9e-7aecbc4a3d79/status?branch=master)](https://app.codeship.com/projects/239724)
 [![Dependency Status](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a/badge.svg?style=square)](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a)
-[![Github All Releases](https://img.shields.io/github/downloads/lice-lang/lice-repl/total.svg?style=plastic)](https://github.com/lice-lang/lice-repl)
-[![License: GPL v3](https://img.shields.io/github/license/lice-lang/lice-repl.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![Github All Releases](https://img.shields.io/github/downloads/lice-lang/ldk/total.svg?style=plastic)](https://github.com/lice-lang/ldk)
+[![License: GPL v3](https://img.shields.io/github/license/lice-lang/ldk.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Android REPL (Kotlin Android)
 
