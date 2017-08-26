@@ -91,8 +91,8 @@ Sub projects:
 
 [![GitHub stars](https://img.shields.io/github/stars/lice-lang/ldk.svg?style=social&label=Star&style=plastic)](https://github.com/lice-lang/ldk)
 [![Build Status](https://travis-ci.org/lice-lang/ldk.svg?branch=master)](https://travis-ci.org/lice-lang/ldk)
-[![Build status](https://ci.appveyor.com/api/projects/status/2u8x5i2ctnvl0bhl?svg=true)](https://ci.appveyor.com/project/ice1000/ldk)
-[![CircleCI](https://circleci.com/gh/lice-lang/ldk.svg?style=svg)](https://circleci.com/gh/lice-lang/ldk)
+[![Build status](https://ci.appveyor.com/api/projects/status/2u8x5i2ctnvl0bhl?svg=true)](https://ci.appveyor.com/project/ice1000/lice-repl)
+[![CircleCI](https://circleci.com/gh/lice-lang/lice-repl.svg?style=svg)](https://circleci.com/gh/lice-lang/lice-repl)
 [![Codeship Status for lice-lang/ldk](https://app.codeship.com/projects/9ccb04a0-61fd-0135-bc9e-7aecbc4a3d79/status?branch=master)](https://app.codeship.com/projects/239724)
 [![Dependency Status](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a/badge.svg?style=square)](https://www.versioneye.com/user/projects/58df675124ef3e003fcb0b0a)
 [![Github All Releases](https://img.shields.io/github/downloads/lice-lang/ldk/total.svg?style=plastic)](https://github.com/lice-lang/ldk)
