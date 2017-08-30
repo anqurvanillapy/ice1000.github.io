@@ -4,7 +4,7 @@ title: Subscribe
 description: Subscription
 keywords: ice1000
 comments: true
-menu: About
+menu: Subscribe
 permalink: /subscribe/
 ---
 
