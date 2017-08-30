@@ -17,7 +17,13 @@ Hi there, this is ice1000，in Chinese is 千里冰封。 I am a student, progra
 [![](https://img.shields.io/badge/Subscribe-In%20Many%20Ways-ff69b4.svg)](../subscribe)
 [![](https://img.shields.io/badge/Feed-RSS-ff69b4.svg)](../feed.xml)
 
+## CodeWars stuffs
+
 [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
+
+### [About me on CodeWars](./codewars/)
+
+## StackExchange Sites
 
 [![](http://stackoverflow.com/users/flair/7083401.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 [![](https://gamedev.stackexchange.com/users/flair/106607.png)](https://gamedev.stackexchange.com/users/106607/ice1000 "profile for ice1000 at Game Development Stack Exchange, Q&A for professional and independent game developers")
