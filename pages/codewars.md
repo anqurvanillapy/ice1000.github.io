@@ -30,7 +30,7 @@ Completing Katas primarily in Haskell, one of the principals of Gensokyo (a clan
 [![](https://img.shields.io/badge/CodeWars-Escape%20the%20Mines%20or%20die!-red.svg)](https://www.codewars.com/kata/5933d213cff4acb19300006c)<br/>
 [![](https://img.shields.io/badge/CodeWars-Very%20Naive%20Subarray-red.svg)](https://www.codewars.com/kata/5988a7747a43212f2e000052)<br/>
 [![](https://img.shields.io/badge/CodeWars-BF%20basics%20%234%3A%20Sort%20the%20input-red.svg)](https://www.codewars.com/kata/596f90c2f468ae8daa00002f)<br/>
-[![](https://img.shields.io/badge/CodeWars-BF%20basics%20%234%3A%20Words%20counter-red.svg)](https://www.codewars.com/kata/596f90c2f468ae8daa00002f)
+[![](https://img.shields.io/badge/CodeWars-BF%20basics%20%237%3A%20Words%20counter-red.svg)](https://www.codewars.com/kata/5985a7b9911b68632500001f)
 
 ### easy
 
