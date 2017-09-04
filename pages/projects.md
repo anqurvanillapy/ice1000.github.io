@@ -141,6 +141,7 @@ A simple tool generates game maps (using random numbers, running very fast (1s p
 [![JitPack](https://jitpack.io/v/ice1000/algo4j.svg)](https://jitpack.io/#ice1000/algo4j)
 [![Gitter](https://badges.gitter.im/ice1000/algo4j.svg)](https://gitter.im/ice1000/algo4j)
 [![Stories in Ready](https://badge.waffle.io/ice1000/algo4j.png?label=In%20Progress&title=In%20Progress)](http://waffle.io/ice1000/algo4j)
+[![codecov](https://codecov.io/gh/ice1000/algo4j/branch/master/graph/badge.svg)](https://codecov.io/gh/ice1000/algo4j)
 [![License: LGPL v3](https://img.shields.io/github/license/ice1000/algo4j.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
 An algorithm library for Java use, JNI implement, supports:
