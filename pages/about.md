@@ -33,7 +33,6 @@ Hi there, this is ice1000，in Chinese is 千里冰封。 I am a student, progra
 [![](https://codegolf.stackexchange.com/users/flair/70943.png)](https://codegolf.stackexchange.com/users/70943/ice1000 "profile for ice1000 at Programming Puzzles & Code Golf Stack Exchange, Q&A for programming puzzle enthusiasts and code golfers")
 [![](https://askubuntu.com/users/flair/721173.png)](https://askubuntu.com/users/721173/ice1000 "profile for ice1000 at Ask Ubuntu, Q&A for Ubuntu users and developers")
 
-
 ## Awesome Kotlin
 
 4 projects collected on [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://kotlin.link/?q=ice).
