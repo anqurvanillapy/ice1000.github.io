@@ -8,6 +8,8 @@ menu: Links
 permalink: /links-cn/
 ---
 
+[English](../links)
+
 > 欢迎访问我的朋友们的网站。
 
 {% for link in site.data.links_cn %}
