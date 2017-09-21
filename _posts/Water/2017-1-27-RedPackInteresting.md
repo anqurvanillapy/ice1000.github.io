@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  玩坏 QQ 红包系列，你们真的太有才了
-category: Misc
+category: Water
 tags: Misc
 keywords: QQ
 description: You guys are so f#cking interesting

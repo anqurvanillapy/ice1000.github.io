@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 喜大普奔 GitHub 一年连载达成
-category: Misc
+category: Water
 tags: Misc,GitHub
 description: I Finally have contribution for a whole year!
 ---

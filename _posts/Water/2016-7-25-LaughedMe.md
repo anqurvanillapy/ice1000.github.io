@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 笑死我了
-category: Misc
+category: Water
 tags: Misc
 description: Some extremely interesting jpgs
 ---
