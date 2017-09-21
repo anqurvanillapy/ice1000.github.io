@@ -1,30 +1,30 @@
 ---
 layout: page
-title: About
-description: About
+title: 关于
+description: 关于
 keywords: ice1000
 comments: true
-menu: About
-permalink: /about/
+menu: 关于
+permalink: /about-cn/
 ---
 
-[简体中文](../about-cn/)
+[English](../about/)
 
-Hi there, this is ice1000，in Chinese is 千里冰封。 I am a student, programming for interest.
+你好，我是千里冰封。我是一个学生，因兴趣而编程。
 
-[![](https://img.shields.io/badge/QQ%20Group-ProgramLeague-yellowgreen.svg)](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
-[![](https://img.shields.io/badge/Contact-E--mail-orange.svg)](mailto:ice1000@kotliner.cn)
-[![](https://img.shields.io/badge/Resume-Downloads-brightgreen.svg)](../resume)
-[![](https://img.shields.io/badge/Subscribe-In%20Many%20Ways-ff69b4.svg)](../subscribe)
-[![](https://img.shields.io/badge/Feed-RSS-ff69b4.svg)](../feed.xml)
+[![](https://img.shields.io/badge/QQ%20群-ProgramLeague-yellowgreen.svg)](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
+[![](https://img.shields.io/badge/联系-电子邮件-orange.svg)](mailto:ice1000@kotliner.cn)
+[![](https://img.shields.io/badge/简历-下载-brightgreen.svg)](../resume)
+[![](https://img.shields.io/badge/订阅-多途径-ff69b4.svg)](../subscribe)
+[![](https://img.shields.io/badge/订阅-RSS-ff69b4.svg)](../feed.xml)
 
-## CodeWars stuffs
+## CodeWars 相关
 
 [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
 
-### [About me on CodeWars](../codewars/)
+### [我在 CodeWars 上的一些踪迹](../codewars-cn/)
 
-## StackExchange Sites
+## StackExchange 网站
 
 [![](https://img.shields.io/badge/StackOverflow-Developer%20Story-lightgrey.svg)](http://stackoverflow.com/story/ice1000)
 
@@ -36,7 +36,7 @@ Hi there, this is ice1000，in Chinese is 千里冰封。 I am a student, progra
 
 ## Awesome Kotlin
 
-4 projects collected on [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://kotlin.link/?q=ice).
+4 个项目被 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://kotlin.link/?q=ice) 收录。
 
 <!-- ## Contact -->
 
@@ -45,16 +45,16 @@ Hi there, this is ice1000，in Chinese is 千里冰封。 I am a student, progra
 <!-- {% endfor %} -->
 
 
-## Blog Policy
+## 博客政策
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/协议-知识共享署名--非商业性使用--禁止演绎%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
 </a>
-<br/>All the posts and blogs here are licensed under a 
+<br/>所有这个网站的博客和文章都采用
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Generic License</a>.
+知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>。
 
-## Special Thanks
+## 特别感谢
 
 + [mzlogin](https://mzlogin.github.io)
