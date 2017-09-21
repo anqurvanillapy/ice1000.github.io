@@ -8,6 +8,8 @@ menu: CodeWars
 permalink: /codewars/
 ---
 
+[简体中文](../codewars-cn/)
+
 ## Me on CodeWars
 
 [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)

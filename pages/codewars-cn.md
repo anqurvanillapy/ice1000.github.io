@@ -8,11 +8,13 @@ menu: CodeWars
 permalink: /codewars-cn/
 ---
 
+[English](../codewars/)
+
 ## 我在 CodeWars
 
 [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
 
-主要使用 Haskell 做题，Gensokyo （一个 clan）主要成员之一。
+主要使用 Haskell 做题， Gensokyo （一个 clan）主要成员之一。
 
 ## 我的 Kata
 
