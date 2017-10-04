@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 做了四张图片，太好玩了
-category: Misc
-tags: Misc
-keywords: Misc
+category: Water
+tags: Water
+keywords: Water
 description: some images
 ---
 
