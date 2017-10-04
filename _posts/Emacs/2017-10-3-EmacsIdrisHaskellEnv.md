@@ -80,7 +80,7 @@ $ source ~/.bashrc
 
 ## 搞懂啥是 emacsclient
 
-其实是因为我使用了 linum-mode 这个插件，导致每次 Emacs 打开都特别慢 ~~ ，正好应了古人那句 EMACS == Emacs Makes A Computer Slower ~~。
+其实是因为我使用了 linum-mode 这个插件，导致每次 Emacs 打开都特别慢 ~~，正好应了古人那句 EMACS == Emacs Makes A Computer Slower~~ 。
 因此我将会采用 Emacs Daemon 来加速 Emacs 启动。
 这个东西的原理就是先开个 Emacs 进程，在后台运行，把插件啥的都加载好，蓝后每次使用 Emacs 的时候启动一个客户端，连上这个后台进程就是了。
 于是就可以超级快了。
