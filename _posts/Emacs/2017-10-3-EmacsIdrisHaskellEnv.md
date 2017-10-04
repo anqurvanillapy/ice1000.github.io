@@ -44,21 +44,6 @@ $ sudo apt-get install ghc-8.2.2
 $ sudo apt-get install cabal-install-1.24
 ```
 
-### 配置 Cabal
-
-根据上面给出的 tuna 源的指示进行操作。
-这对于 Haskell 来说不是必须的，但却是非常非常非常建议的。
-Idris 用户请确保完成这一步。
-
-### 编译 Idris
-
-直接输指令就行：
-
-```shell
-cabal-1.24 update
-cabal-1.24 install idris
-```
-
 ## 配置
 
 打开你的 `~/.bashrc` ，加入下面的配置：
@@ -76,6 +61,21 @@ export PATH=~/.cabal/bin:/opt/ghc/bin:/opt/cabal/bin:$PATH
 
 ```shell
 $ source ~/.bashrc
+```
+
+### 配置 Cabal
+
+根据上面给出的 tuna 源的指示进行操作。
+这对于 Haskell 来说不是必须的，但却是非常非常非常建议的。
+Idris 用户请确保完成这一步。
+
+### 编译 Idris
+
+直接输指令就行：
+
+```shell
+cabal-1.24 update
+cabal-1.24 install idris
 ```
 
 ## 搞懂啥是 emacsclient
