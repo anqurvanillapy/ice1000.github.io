@@ -120,6 +120,8 @@ $ emacs --daemon
 
 ## 配置 Emacs
 
+把下面的东西原封不动地抄进 `~/.emacs` 里面。
+
 ```elisp
 (require 'package)
 (setq package-archives
