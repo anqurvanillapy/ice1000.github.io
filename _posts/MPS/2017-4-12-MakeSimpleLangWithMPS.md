@@ -24,7 +24,7 @@ description: make a simple language with MPS
 
 + 阅读[上上篇博客](http://ice1000.org/2017/04/06/MakeSimpleLangWithMPS/)并完成对应的工作
 + 阅读[上一篇博客](http://ice1000.org/2017/04/07/MakeSimpleLangWithMPS/)并完成对应的任务
-+ 英文输入法（就是**Ctrl+Space**没有被占用的输入法）
++ 英文输入法（就是<kbd>Ctrl</kbd>+<kbd>Space</kbd>没有被占用的输入法）
 
 ## 本文主要内容
 
@@ -108,7 +108,7 @@ Concept 有接口 Concept 来实现组件化，所以 Editor 也可以组件化�
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/3/1.png)
 
-我们可以直接创建一个最最简单的 Editor ，先在那一片姨妈红中**Ctrl+Space**，选择
+我们可以直接创建一个最最简单的 Editor ，先在那一片姨妈红中<kbd>Ctrl</kbd>+<kbd>Space</kbd>，选择
 
 ```
 {content}
@@ -157,7 +157,7 @@ MPS 的 Editor 默认只有一个用来放元素的位置，叫做 Editor 的根
 
 我们需要一个 Editor 元素的**集合**。
 
-于是我们在那一片姨妈红中**Ctrl+Space**，然后输入一个减号，选择**collection (indent)**：
+于是我们在那一片姨妈红中<kbd>Ctrl</kbd>+<kbd>Space</kbd>，然后输入一个减号，选择**collection (indent)**：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/3/2.png)
 
@@ -172,7 +172,7 @@ MPS 的 Editor 默认只有一个用来放元素的位置，叫做 Editor 的根
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/3/7.png)
 
 然后我们在这个元素中再放入 `{content}`
-（注意不能直接输入 `{content}` ，必须使用**Ctrl+Space**后代码补全里面给出的 `{content}`）。
+（注意不能直接输入 `{content}` ，必须使用<kbd>Ctrl</kbd>+<kbd>Space</kbd>后代码补全里面给出的 `{content}`）。
 最终的样子应该是这样：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/3/8.png)

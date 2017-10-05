@@ -85,7 +85,7 @@ root:
 
 ## 准备工作
 
-你需要一个纯英语输入的输入法。目的是，等会你需要大量使用`Ctrl+Space`这个快捷键，一般情况下中文输入法会冲突。
+你需要一个纯英语输入的输入法。目的是，等会你需要大量使用<kbd>Ctrl</kbd>+<kbd>Space</kbd>这个快捷键，一般情况下中文输入法会冲突。
 
 ## 将这门语言导入 MPS
 
@@ -140,7 +140,7 @@ ShapeLang 是等会我们用来编程的东西， baseLanguage 是 Java 的 MPS 
 <kbd>Ctrl</kbd>+F9|构建项目。是增量的
 <kbd>Shift</kbd>+F10|运行刚才运行过的文件
 
-可以试试`Ctrl+Space`的功能：弹出补全。
+可以试试<kbd>Ctrl</kbd>+<kbd>Space</kbd>的功能：弹出补全。
 
 ![completion](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/0/8.png)
 
@@ -150,11 +150,11 @@ ShapeLang 是等会我们用来编程的东西， baseLanguage 是 Java 的 MPS 
 << ... >>
 ```
 
-处使用`Ctrl+Space`，可以看到弹出一些补全。当然，我们也可以直接使用类似`Live Template`的功能：在编辑区输入`rect/circle/square/text`，你可以看到弹出了一堆东西，根据你的直觉填写相应的信息。回车之后可以输入下一个东西，建议广泛使用`Ctrl+Space`，以及`Tab`。
+处使用<kbd>Ctrl</kbd>+<kbd>Space</kbd>，可以看到弹出一些补全。当然，我们也可以直接使用类似`Live Template`的功能：在编辑区输入`rect/circle/square/text`，你可以看到弹出了一堆东西，根据你的直觉填写相应的信息。回车之后可以输入下一个东西，建议广泛使用`Ctrl+Space`，以及`Tab`。
 
 ![completion](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/0/9.png)
 
-好了，现在构建这个项目。`Ctrl+F9`。
+好了，现在构建这个项目。<kbd>Ctrl</kbd>+<kbd>F9</kbd>。
 
 ![completion](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/0/10.png)
 

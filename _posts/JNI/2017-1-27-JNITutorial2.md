@@ -75,7 +75,7 @@ add_library(
 target_link_libraries(jni)
 ```
 
-然后 **Ctrl+F9** 编译，编译后你的目录应该是这样：
+然后 <kbd>Ctrl</kbd>+<kbd>F9</kbd> 编译，编译后你的目录应该是这样：
 
 ```yml
 root

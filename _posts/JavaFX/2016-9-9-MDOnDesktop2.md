@@ -29,7 +29,7 @@ description: Use Material Design on desktop 2
 
 我上次写的博客中有一个问题没有 mention 到，就是 fxml 在 IDEA 里面报错的问题（<? impoort com.jfoenix.controls.* ?>）。这时你需要进行一次这样的配置：
 
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/2.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/2.png)
 
 然后就没问题辣。
 
@@ -39,7 +39,7 @@ description: Use Material Design on desktop 2
 
 选中按钮，看到右边的属性编辑器。这是一个 GUI 的属性编辑器，零基础学习。比如，先把按钮设置为 Raised。等会再告诉你们是什么意思。
 
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/0.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/0.png)
 
 然后我们继续编辑，设置一些奇怪的属性。下面是一些属性的介绍，别的读者可以自行研究。这几个是常用的。
 
@@ -53,21 +53,21 @@ Text Fill|文本颜色
 Text Alignment|文本对齐方式
 UnderLine|是否有下划线
 
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/1.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/1.png)
 
 然后我们保存，跑一下程序。可以看到，按钮的样式改变了。
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/3.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/3.png)
 
 这里特别要提一下这两个属性，非常好玩非常常用的。
 
 Specific 栏下面的 Default Button ，如果勾选，可以看到按钮颜色变深了。并且在选中这个属性之后，按钮将会变成默认按钮，也就是说当 GUI 窗口没有任何操作，而用户按下回车时，这个按钮将被按下。
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/4.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/4.png)
 
 然后是这个属性， Node 栏下面的 Effect ，顾名思义就是特效。像我这种 hentai 就选了个反射（ reflection ），可以看到，按钮有了倒影。
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/5.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/5.png)
 
 地板真光滑，不禁脑补了下很多 MMD 里面的极其光滑的地板。咳咳。运行之后可以看到更牛逼的动画，按下按钮之后下面的倒影会往下滑一些。
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/6.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/6.png)
 
 然后我们可以开始写 CSS 了。先在工程里面创建一个 CSS 文件，写个设置背景颜色和旋转角度的 CSS （这个不能在可视化编辑器里面设置，简直坑死我了）：
 
@@ -79,12 +79,12 @@ Specific 栏下面的 Default Button ，如果勾选，可以看到按钮颜色�
 ```
 
 然后找到这里， JavaFX CSS 项下面的 Style Sheet ，找到 CSS 文件的路径。
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/7.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/7.png)
 
 选中刚才编辑好的 CSS ，你可以看到它发生了变化。和我们之前想的一模一样。跑一下试试。
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/8.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx2/8.png)
 
-还有很多属性可以设置，具体请使用快捷键**Ctrl+6**查看 CSS Analyzer ，里面列出了所有可以设置的属性。
+还有很多属性可以设置，具体请使用快捷键<kbd>Ctrl</kbd>+<kbd>6</kbd>查看 CSS Analyzer ，里面列出了所有可以设置的属性。
 
 好了，这里是关于颜值的设定。下一篇讲事件处理。
 

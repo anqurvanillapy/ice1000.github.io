@@ -32,7 +32,7 @@ description: IDEA for beginners chapter 4
 请忽略我诡异的线条……之前都是用的 QQ 截图，今天学校把机房的网断了，我就只有用 Windows 自带的截图工具，
 那东西比较猥琐，博客的 push 和 commit 都是靠的手机……心疼流量。
 
-**<kbd>Ctrl</kbd>+Alt+S**，打开设置。找到这个玩意，你需要它来设置你的 Git 路径。如图所示。
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>，打开设置。找到这个玩意，你需要它来设置你的 Git 路径。如图所示。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/2.png)
 

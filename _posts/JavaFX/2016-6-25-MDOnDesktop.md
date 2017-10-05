@@ -44,7 +44,7 @@ description: Use Material Design on desktop
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx1/1.png)![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx1/2.png)
 
-+ 打开 JavaFX Scene Builder ，按下快捷键**Ctrl+O**并打开你刚刚在 IDEA 中创建工程文件的地方，找到 src 目录，并打开，选择刚刚你已经看到了的、IDEA 自动生成的 Sample.fxml ，并打开它。
++ 打开 JavaFX Scene Builder ，按下快捷键<kbd>Ctrl</kbd>+<kbd>O</kbd>并打开你刚刚在 IDEA 中创建工程文件的地方，找到 src 目录，并打开，选择刚刚你已经看到了的、IDEA 自动生成的 Sample.fxml ，并打开它。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx1/3.png)
 
@@ -68,11 +68,11 @@ description: Use Material Design on desktop
 
 是不是一股中国高中教材里的 Visual basic 的感觉。没错，这个非常类似 VB ，不过基于 Java 让它拥有更大的能量。
 
-+ **Ctrl+S** 保存。现在我们转移到 IntelliJ IDEA。Scene Builder 先别忙关掉，留着我们待会还要用。
++ <kbd>Ctrl</kbd>+<kbd>S</kbd> 保存。现在我们转移到 IntelliJ IDEA。Scene Builder 先别忙关掉，留着我们待会还要用。
 
 ## 小成果
 
-+ **Ctrl+Shift+Alt+S**，打开项目设置(Project Structure)，选择这个绿色的”+“符号。
++ <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>，打开项目设置(Project Structure)，选择这个绿色的”+“符号。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javafx1/10.png)
 

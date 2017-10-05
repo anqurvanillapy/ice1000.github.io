@@ -118,7 +118,7 @@ System.out.println("");
 
 ### 再次注意
 
-千万不要忘记编译！！！**Ctrl+F9**！！！
+千万不要忘记编译！！！<kbd>Ctrl</kbd>+<kbd>F9</kbd>！！！
 
 我在写教程的时候就忘了， Orz。
 

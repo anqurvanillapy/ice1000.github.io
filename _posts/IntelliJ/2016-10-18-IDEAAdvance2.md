@@ -52,12 +52,14 @@ IDE 是[Project Rider](https://www.jetbrains.com/rider)， JetBrains 系列的 C
 不好意思没图，我已经关了 IDE 了，现在寝室里面电力是个问题 Orz。
 
 首先<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>打开设置。在搜索栏输入**Set Background Image**，
-在 Keymaps 里面找到唯一的搜索结果。然后给这个搜索结果增加一个快捷键。增加一个尽可能复杂的、你平时不会用的快捷键。我选择的是**Ctrl+Shift+Alt+Q**。然后保存设置退出。
+在 Keymaps 里面找到唯一的搜索结果。然后给这个搜索结果增加一个快捷键。增加一个尽可能复杂的、你平时不会用的快捷键。
+我选择的是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Q</kbd>。然后保存设置退出。
 ### 方法一
 
 首先<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>打开设置。在搜索栏输入**Set Background Image**，
 在 Keymaps 里面找到唯一的搜索结果。然后给这个搜索结果增加一个快捷键。
-增加一个尽可能复杂的、你平时不会用的快捷键。我选择的是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Q</kbd>。然后保存设置退出。
+增加一个尽可能复杂的、你平时不会用的快捷键。我选择的是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Q</kbd>。
+然后保存设置退出。
 
 在编辑器里面按下你刚才设置的快捷键。弹出一个窗口。这时已经是属于那种是个人都会的操作了。设置一张图片。
 然后可以看到预览。点击确定，就可以看到你的自定义 IDE 了。

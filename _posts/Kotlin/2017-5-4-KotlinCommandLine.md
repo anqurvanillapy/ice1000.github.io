@@ -88,7 +88,7 @@ Hey boy, Kotlin is awesome!
 
 ## 退出 REPL
 
-很明显不能 `exit` 。不过**Ctrl+C**比较粗野，请文艺地使用 `System.exit(0)` 。
+很明显不能 `exit` 。不过<kbd>Ctrl</kbd>+<kbd>C</kbd>比较粗野，请文艺地使用 `System.exit(0)` ，或者 `:quit` 。
 
 ```batch
 C:\>kotlinc
