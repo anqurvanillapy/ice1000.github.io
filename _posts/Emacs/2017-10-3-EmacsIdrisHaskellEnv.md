@@ -74,8 +74,8 @@ Idris 用户请确保完成这一步。
 直接输指令就行：
 
 ```shell
-cabal-1.24 update
-cabal-1.24 install idris
+$ cabal-1.24 update
+$ cabal-1.24 install idris
 ```
 
 ## 搞懂啥是 emacsclient
@@ -109,7 +109,7 @@ $ ecw [你要打开的文件路径]
 
 ```
 $ pkill emacs
-$ emacs --daemon
+$ emacs25 --daemon
 ```
 
 这时候你的 Emacs 还是裸的，现在我们来配置它。
