@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="/assets/css/posts/index.css">
 	<!-- Latest compiled and minified CSS -->
 	{% for css in page.css %}
-	<link rel="stylesheet" href="/assets/css/{{ css }}">
+	<link rel="stylesheet" href="/assets/css/{{css}}">
 	{% endfor %}
 
 	{% if site.ios_app_name %}
@@ -71,7 +71,11 @@
 	<script type="text/javascript">
 		function toggleMenu() {
 			var nav = document.getElementsByClassName("site-header-nav")[0];
-			nav.style.display = nav.style.display === "inline-flex" ? "none" : "inline-flex";
+			if (nav.style.display == "inline-flex") {
+				nav.style.display = "none";
+			} else {
+				nav.style.display = "inline-flex";
+			}
 		}
 	</script>
 </head>
@@ -86,10 +90,8 @@
 		</button>
 		<nav class="site-header-nav" role="navigation">
 			{% for nav in site.navs %}
-			<a href="{{ nav.href }}"
-			   class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item"
-			   target="{{ nav.target | default: _self }}"
-			   title="{{ nav.label }}">{{ nav.label }}</a>
+			<a href="{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item"
+			   target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
 			{% endfor %}
 		</nav>
 	</div>
