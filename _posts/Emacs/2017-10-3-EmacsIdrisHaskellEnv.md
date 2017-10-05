@@ -116,7 +116,7 @@ $ emacs25 --daemon
 
 哦，差点忘了，为了防止一些悲剧发生，请在杀死 Emacs 前终止所有正在运行的 emacsclient 。
 
-为了防止另一些悲剧的发生，请记下退出 Emacs 的快捷键： `Ctrl+X Ctrl+S` 。按法：按住 `Ctrl` 不放，然后分别按 `X` 和 `S` 。
+为了防止另一些悲剧的发生，请记下退出 Emacs 的快捷键： `Ctrl+X Ctrl+C` 。按法：按住 `Ctrl` 不放，然后分别按 `X` 和 `C` 。
 
 你打开你的 Emacs 之后应该看到它是这样的：
 
@@ -251,7 +251,7 @@ M-x package-list-packages
 Type C-x 1 to delete the help window, C-M-v to scroll help.
 ```
 
-用 `Ctrl+O` 切到这半个屏幕，然后把光标移动到 `[Install]` 上（上面就没有，因为我已经装好了），回车安装。
+用 `Ctrl+X O` 切到这半个屏幕，然后把光标移动到 `[Install]` 上（上面就没有，因为我已经装好了），回车安装。
 
 按理说安装是很快的，然后用 `Ctrl+0` 关掉这半个窗口。
 你会发现原本的插件列表界面变成了一些编译信息。用 `Ctrl+X K` (输完这快捷键它会让你确认一下，这时回车就好)关掉它，回到原本的插件列表。
