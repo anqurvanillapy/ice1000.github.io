@@ -137,7 +137,7 @@ MPS 中，语言是由很多**Concept**组成的，这些**Concept**有各自的
 
 ### 导入一些东西
 
-对左边 Logical View 的**VerboseLang**使用**Alt+Enter**，
+对左边 Logical View 的**VerboseLang**使用<kbd>Alt</kbd>+<kbd>Enter</kbd>，
 然后按 Dependency 选项卡下的绿色加号的导入 JDK 这个 Dependency ：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/1/8.png)
@@ -191,7 +191,7 @@ PrintlnSet:
 
 设置它对应的 Concept 为 PrintlnSet。
 
-然后对那个红色的 No Template 使用**Alt+Enter**，然后**选择 class**，
+然后对那个红色的 No Template 使用<kbd>Alt</kbd>+<kbd>Enter</kbd>，然后**选择 class**，
 让它~~怀疑人生~~创建一个新的 class 的 Template ：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/1/7.png)

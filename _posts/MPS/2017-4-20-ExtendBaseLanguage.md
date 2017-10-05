@@ -92,7 +92,7 @@ references:
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/1.png)
 
-然后在右边的那个红光满面的地方**Alt+Enter**，选择新建一个模板。
+然后在右边的那个红光满面的地方<kbd>Alt</kbd>+<kbd>Enter</kbd>，选择新建一个模板。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/2.png)
 
@@ -169,7 +169,7 @@ public class BaseLanguageClassUsedForTesting {
 ## 在 BaseLanguage 里面使用我们刚才定义的东西
 
 注意，我们之前写`Println`这个 Concept 的时候，曾经为它起过一个 alias 叫`p`。
-我们要记住它，然后在`<no statement>`处，**Alt+Enter**，输入这个 alias （我是`p`所以就输了`p`）：
+我们要记住它，然后在`<no statement>`处，<kbd>Alt</kbd>+<kbd>Enter</kbd>，输入这个 alias （我是`p`所以就输了`p`）：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/4/10.png)
 

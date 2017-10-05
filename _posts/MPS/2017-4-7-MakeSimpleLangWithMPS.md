@@ -98,7 +98,7 @@ System.out.println("");
 表达式|没分号|有“返回值”
 语句|有分号|没有“返回值”，或者说返回 Unit
 
-然后我们这里是选中一个语句！对它使用**Alt+Enter**，选择**LOOP 开头 clause 结尾**的那个。
+然后我们这里是选中一个语句！对它使用<kbd>Alt</kbd>+<kbd>Enter</kbd>，选择**LOOP 开头 clause 结尾**的那个。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/2/2.png)
 
@@ -106,7 +106,7 @@ System.out.println("");
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/2/3.png)
 
-然后我们选中那个字符串的内容，**不包含双引号**，使用**Alt+Enter**，选择 content 结尾的那个：
+然后我们选中那个字符串的内容，**不包含双引号**，使用<kbd>Alt</kbd>+<kbd>Enter</kbd>，选择 content 结尾的那个：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/2/4.png)
 
@@ -150,7 +150,7 @@ public class map_PrintlnSet {
 
 而不仅仅是需要有 main 函数。
 
-我们对左边 logical view 的 VerboseLang 那个地方进行**Alt+Enter**，找到上篇博客提到过的“Dependency”，再添加这个叫
+我们对左边 logical view 的 VerboseLang 那个地方进行<kbd>Alt</kbd>+<kbd>Enter</kbd>，找到上篇博客提到过的“Dependency”，再添加这个叫
 
 ``` jetbrains.mps.execution.util ```
 

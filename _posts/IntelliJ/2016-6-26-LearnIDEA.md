@@ -7,7 +7,7 @@ keywords: Java,IDEA,IntelliJ,PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,
 description: IntelliJ IDEA for beginners chapter 1, About IDEA
 ---
 
-经过长期的考虑，冰封小可爱决定写一篇自己的 IntelliJ IDEA 教程，希望能帮到大多数想用 IDEA 编程的同学们～
+经过长期的考虑，我决定写一篇自己的 IntelliJ IDEA 教程，希望能帮到大多数想用 IDEA 编程的同学们～
 
 本篇教程同样适用于任何 JetBrains 公司出品的其他 IDE ，包括 PhpStorm ， WebStorm ， PyCharm ， Rider ， RubyMine ， CLion 等。
 
@@ -19,11 +19,11 @@ description: IntelliJ IDEA for beginners chapter 1, About IDEA
 
 找到[JetBrains 的官网](https://www.jetbrains.com)，找到 IntelliJ IEDA ，并下载免费的 community 版本。
 
-<img src="https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea_on_web.png" align="center">
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea_on_web.png)
 
 当然 JetBrains 也是有[中文官网](http://www.jetbrains.com.cn)的，上面还有部分内容是我翻译的。如果你英语死得比较早或者只是单纯地喜欢冰封的话也可以上这里下载。
 
-截止本文发布， IDEA 最新版本是 2016.1.3。
+截止本文发布， IDEA 最新版本是 2016.1.3。(2017.10 更新： 现在是 2017.2.4)
 
 因为仅仅是个下载安装，不需要具体说明了，人类都会的，对吧。
 
@@ -48,7 +48,7 @@ description: IntelliJ IDEA for beginners chapter 1, About IDEA
 
 (我写这段的时候一直觉得自己是在侮辱读者智商。。大家都是 Java 程序员。。。哈哈。)
 
-接着，**Alt+1**，你会在左边看到文件目录树。
+接着，<kbd>Alt</kbd>+<kbd>1</kbd>，你会在左边看到文件目录树。
 
 然后随便在 src 里面右键，选 New -> Java Class。
 
@@ -69,5 +69,5 @@ description: IntelliJ IDEA for beginners chapter 1, About IDEA
 1. IntelliJ IDEA 的下载与安装。
 1. IntelliJ IDEA 的打开与关闭。
 1. 如何使用 IDEA 创建项目。
-1. 快捷键*Alt+1*，用于打开或者关闭文件目录树。
+1. 快捷键<kbd>Alt</kbd>+<kbd>1</kbd>，用于打开或者关闭文件目录树。
 

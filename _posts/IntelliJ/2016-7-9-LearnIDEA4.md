@@ -29,13 +29,15 @@ description: IDEA for beginners chapter 4
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/1.png)
 
-请忽略我诡异的线条……之前都是用的 QQ 截图，今天学校把机房的网断了，我就只有用 Windows 自带的截图工具，那东西比较猥琐，博客的 push 和 commit 都是靠的手机……心疼流量。
+请忽略我诡异的线条……之前都是用的 QQ 截图，今天学校把机房的网断了，我就只有用 Windows 自带的截图工具，
+那东西比较猥琐，博客的 push 和 commit 都是靠的手机……心疼流量。
 
-**Ctrl+Alt+S**，打开设置。找到这个玩意，你需要它来设置你的 Git 路径。如图所示。
+**<kbd>Ctrl</kbd>+Alt+S**，打开设置。找到这个玩意，你需要它来设置你的 Git 路径。如图所示。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/2.png)
 
-在图中标出来 Test 按钮左边的输入框输入你的 Git 的安装路径。然后点击 Test 按钮。如果弹出一个成功的对话框，那么恭喜你，你配置成功了。
+在图中标出来 Test 按钮左边的输入框输入你的 Git 的安装路径。然后点击 Test 按钮。
+如果弹出一个成功的对话框，那么恭喜你，你配置成功了。
 
 接下来配置 GitHub。
 
@@ -47,7 +49,8 @@ description: IDEA for beginners chapter 4
 
 ## 开始使用
 
-+ 你可以将你的一个本地项目直接推送到你的 GitHub 上。在这里可以找到这个选项。然后在弹出的窗口输入仓库名和介绍。
++ 你可以将你的一个本地项目直接推送到你的 GitHub 上。在这里可以找到这个选项。
+然后在弹出的窗口输入仓库名和介绍。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea4/4.png)
 
@@ -57,9 +60,9 @@ description: IDEA for beginners chapter 4
 
 快捷键 | 功能
 :---|---:
-Ctrl+Shift+K| push （推送）
-Ctrl+K | commit （提交）
-Ctrl+T | pull （拉取）
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | push （推送）
+<kbd>Ctrl</kbd>+<kbd>K</kbd> | commit （提交）
+<kbd>Ctrl</kbd>+<kbd>T</kbd> | pull （拉取）
 
 <br/>
 + 你可以直接从 GitHub 上的仓库创建一个项目。

@@ -131,14 +131,14 @@ ShapeLang 是等会我们用来编程的东西， baseLanguage 是 Java 的 MPS 
 
 快捷键|功能
 :---|---:
-Ctrl+Space|补全（有些东西必须靠这个才能输入）
-Alt+Enter|查看提示、建议
-Ctrl+W|扩散选中
-Ctrl+Shift+W|反扩散选中
-Tab|进入 AST 下一个节点
-Shift+Tab|进入 AST 上一个节点
-Ctrl+F9|构建项目。是增量的
-Shift+F10|运行刚才运行过的文件
+<kbd>Ctrl</kbd>+<kbd>Space</kbd>|补全（有些东西必须靠这个才能输入）
+<kbd>Alt</kbd>+<kbd>Enter</kbd>|查看提示、建议
+<kbd>Ctrl</kbd>+W|扩散选中
+<kbd>Ctrl</kbd>+Shift+W|反扩散选中
+<kbd>Tab</kbd>|进入 AST 下一个节点
+<kbd>Shift</kbd>+Tab|进入 AST 上一个节点
+<kbd>Ctrl</kbd>+F9|构建项目。是增量的
+<kbd>Shift</kbd>+F10|运行刚才运行过的文件
 
 可以试试`Ctrl+Space`的功能：弹出补全。
 

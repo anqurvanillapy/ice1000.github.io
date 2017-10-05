@@ -8,7 +8,8 @@ description: IDEA advance chapter 5
 ---
 
 我真的太久没发 IntelliJ 的教程了，最近 Sakura 同学找我帮他配 IntelliJ ，~~我秀了一下技术，假装自己是老司机~~。
-然后发现 Language Injection 这个非常好用的功能我居然没写教程（很明显，一堆人不知道这个东西），于是我又开始写教程了。
+然后发现 Language Injection 这个非常好用的功能我居然没写教程（很明显，一堆人不知道这个东西），
+于是我又开始写教程了。
 
 本文多图。
 
@@ -35,10 +36,12 @@ description: IDEA advance chapter 5
 （现已被永久封号）说过他为了验证*21 天学通 Erlang*里代码的正确性，写了个程序把书里面的代码抠出来，
 然后分别验证运行结果和书上说的是否一致。
 
-嘛，这差不多就是文学编程了（其实这只是很偏颇的理解，详情请看[Wikipedia](https://en.wikipedia.org/wiki/Literate_programming)，
+嘛，这差不多就是文学编程了（其实这只是很偏颇的理解，详情请看
+[Wikipedia](https://en.wikipedia.org/wiki/Literate_programming)，
 但是和本文关系不大），那么为什么我要说这个呢？
 
-因为 IntelliJ IDEA 有一个功能，可以讲代码检查**注入**到一些常量当中。这些常量在大部分情况下，是代码里的注释和字符串常量。
+因为 IntelliJ IDEA 有一个功能，可以讲代码检查**注入**到一些常量当中。
+这些常量在大部分情况下，是代码里的注释和字符串常量。
 
 举个例子，我们在 IntelliJ 里面写：
 
@@ -58,20 +61,21 @@ object Main {
 }
 ```
 
-我写在注释里面的是一段等效于下面的 Kotlin 代码的 Java 代码，我这时只能通过大脑编译它。万一写错了，读者找你撕逼可是很麻烦的呀。
+我写在注释里面的是一段等效于下面的 Kotlin 代码的 Java 代码，我这时只能通过大脑编译它。
+万一写错了，读者找你撕逼可是很麻烦的呀。
 
 #### 步骤
 
 所以说 IntelliJ IDEA 提供了一个很方便的功能叫 Language Injection。操作步骤：
 
-0. 在要注入的地方（注释，字符串， etc.） Alt+Enter
+0. 在要注入的地方（注释，字符串， etc.） <kbd>Alt</kbd>+<kbd>Enter</kbd>
 0. 选择 Inject Language or Reference
 0. 选择要注入的语言
 0. Enjoy
 
 #### 例子
 
-我们来看看这个例子，首先在上面的注释里面 Alt+Enter ：
+我们来看看这个例子，首先在上面的注释里面 <kbd>Alt</kbd>+<kbd>Enter</kbd> ：
 
 ![Alt+Enter](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/7/0.png)
 
@@ -112,13 +116,13 @@ Live Template 也有了：
 
 顺带一提，上面的代码其实是错的，下文再解释。
 
-如果你的代码有伪代码成分，可以取消语言注入。直接 Alt+Enter 然后选 Uninject Language 开头的那个就好啦。
+如果你的代码有伪代码成分，可以取消语言注入。直接 <kbd>Alt</kbd>+<kbd>Enter</kbd> 然后选 Uninject Language 开头的那个就好啦。
 
 那么运行呢？我想运行代码看看效果怎么办？
 
 #### 运行
 
-在 Inject 了的代码块中 Alt+Enter ，选 Edit [语言] Fragment ，
+在 Inject 了的代码块中 <kbd>Alt</kbd>+<kbd>Enter</kbd> ，选 Edit [语言] Fragment ，
 
 ![Edit Fragment](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/7/7.png)
 
@@ -158,7 +162,7 @@ Live Template 也有了：
 
 **而且这个正则表达式的支持真的太方便了！**
 
-先对正则表达式 Alt+Enter ，选 Check ：
+先对正则表达式 <kbd>Alt</kbd>+<kbd>Enter</kbd> ，选 Check ：
 
 ![Reg1](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/7/14.png)
 

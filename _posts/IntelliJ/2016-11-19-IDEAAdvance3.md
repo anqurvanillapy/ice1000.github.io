@@ -14,7 +14,8 @@ description: IDEA advance chapter 3
 
 ## 和 AS 的不同
 
-AS 是 IJ 的 Android 魔改版，钦定了 Gradle 作为构建工具，因此弱化了 IDEA 中的工程概念（破事情都让你自己写 Gradle 脚本去， AS 甩锅）。事实上， IntelliJ 的工程还是比较复杂的。
+AS 是 IJ 的 Android 魔改版，钦定了 Gradle 作为构建工具，因此弱化了 IDEA 中的工程概念
+（破事情都让你自己写 Gradle 脚本去， AS 甩锅）。事实上， IntelliJ 的工程还是比较复杂的。
 
 对于每一个工程(Project)， IDEA 会在开启界面显示：
 
@@ -22,17 +23,22 @@ AS 是 IJ 的 Android 魔改版，钦定了 Gradle 作为构建工具，因此�
 
 红框中的都是 Project。右边的 Create New Project 就是创建一个新工程，这个过程是使用 IDEA 的第一关。
 
-随便打开一个工程，可以看到左边的文件树。IDEA 根据对不同文件类型的支持情况会显示不同的图标，比如你安装了各种语言的插件支持之后，文件树就会变得五颜六色。如果看不到文件树，那么请使用召唤术**Alt + 1**。
+随便打开一个工程，可以看到左边的文件树。IDEA 根据对不同文件类型的支持情况会显示不同的图标，
+比如你安装了各种语言的插件支持之后，文件树就会变得五颜六色。如果看不到文件树，那么请使用召唤术<kbd>Alt</kbd>+<kbd>1</kbd>。
 
 ### Project
 
-一个 IDEA 窗口只能打开一个 Project ，可以理解为工作区，管理一个 Project 是通过操作 Project Structure 实现的，快捷键**Ctrl + Alt + Shift + S**。记住它，它非常、非常常用。
+一个 IDEA 窗口只能打开一个 Project ，可以理解为工作区，管理一个 Project 是通过操作 Project Structure 实现的，
+快捷键<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>。记住它，它非常、非常常用。
 
-如图所示是一个什么都没有的文件树，这就是一个一无所有的 Project。（其实是“几乎”一无所有，因为有一个 LICENSE 文件和一个 dll ，和一个 gitignore。这是一个还未进行导入的 Project ，下文将导入它）
+如图所示是一个什么都没有的文件树，这就是一个一无所有的 Project。
+（其实是“几乎”一无所有，因为有一个 LICENSE 文件和一个 dll ，和一个 gitignore。
+这是一个还未进行导入的 Project ，下文将导入它）
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea7/1.jpg)
 
-然后我们平时的工作是基于 Module 这一概念的。一个 Module 相当于是 Project 的元素，一个 Project 是 Module 的集合。小型项目或者结构相对简单的项目，一般情况下都是一个 Project 对应一个 Module。
+然后我们平时的工作是基于 Module 这一概念的。一个 Module 相当于是 Project 的元素，
+一个 Project 是 Module 的集合。小型项目或者结构相对简单的项目，一般情况下都是一个 Project 对应一个 Module。
 
 ### Module
 
@@ -42,11 +48,16 @@ AS 是 IJ 的 Android 魔改版，钦定了 Gradle 作为构建工具，因此�
 + 每次运行一个 Module 中的 main 方法，将对这个 Module 的 Makefile 进行一次构建————也就是增量编译。 如果你一个 Module 中有未完成的代码（比如一个表达式只写了一半），那么就会错误，无法运行。不同 Module 中的代码如果不能编译，不会影响当前 Module。
 + 同一个 Module 编译生成的内容将会被放到一起，并一视同仁（即在打包 jar 之类的时候，同一个 Module 的目标文件将会被当做一个整体）。
 
-于是我们来导入一个 Module。首先根据上文的介绍，打开 Project Structure ，并打开 Modules 选项卡，点击绿色的加号，选择 New Module。
+于是我们来导入一个 Module。首先根据上文的介绍，打开 Project Structure ，并打开 Modules 选项卡，
+点击绿色的加号，选择 New Module。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea7/2.png)
 
-在弹出界面选择 Java ，然后下面的啥也别选。这个创建的文件最少，也是最适合拿来新建一个高度定制的 Module 的。上面还会根据你的插件显示其他的 Module 选项，选择这些选项之后 IDEA 会根据插件进行一些默认的配置。比如 Java 的话就会给你创建一个 src ，并选好 SDK 什么的。Kotlin 的话就会导入一个 Kotlin-runtime.jar 等三个标配包， Rust 会新建 main.rs 和 Cargo 文件，还会顺便开启 Git 支持（还给你 git init 了）。可以看到我的 IDEA 是有很多插件的。。。
+在弹出界面选择 Java ，然后下面的啥也别选。这个创建的文件最少，也是最适合拿来新建一个高度定制的 Module 的。
+上面还会根据你的插件显示其他的 Module 选项，选择这些选项之后 IDEA 会根据插件进行一些默认的配置。
+比如 Java 的话就会给你创建一个 src ，并选好 SDK 什么的。
+Kotlin 的话就会导入一个 Kotlin-runtime.jar 等三个标配包， Rust 会新建 main.rs 和 Cargo 文件，
+还会顺便开启 Git 支持（还给你 git init 了）。可以看到我的 IDEA 是有很多插件的。。。
 
 可以看到我的 IDEA 是有很多插件的。。。但是啥也别勾，直接下一步。
 
@@ -54,11 +65,13 @@ AS 是 IJ 的 Android 魔改版，钦定了 Gradle 作为构建工具，因此�
 
 然后让你输文件路径，直接选择项目根目录，这里是 JniMath 。
 
-然后选择那个被你创建出的 Module 。可以看到，它已经非常聪明地根据 src 目录的名称识别出了这个目录就是存放源码的目录，并且使用蓝色标记出来了。
+然后选择那个被你创建出的 Module 。可以看到，
+它已经非常聪明地根据 src 目录的名称识别出了这个目录就是存放源码的目录，并且使用蓝色标记出来了。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea7/4.jpg)
 
-选中 src ，可以看到上面的 Mark as 这一栏中的 Sources 被标出来了。取消选中它， src 就会变得和别的目录一样————栗色。还有别的几个目录类型：
+选中 src ，可以看到上面的 Mark as 这一栏中的 Sources 被标出来了。取消选中它，
+src 就会变得和别的目录一样————栗色。还有别的几个目录类型：
 
 类型|作用
 :---|---:
@@ -75,9 +88,14 @@ Excluded|目标文件，测试代码和源码的目标文件在这个目录下�
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea7/6.jpg)
 
-然后回到刚才的 Modules ，看到上面的选项卡，选择 Paths ， compile output 选择 Inherit from Project output ，这样你的编译输出就重定向到了刚才设置的 out 里面。在 Dependencies 里面可以设置依赖，这次先不讲。
+然后回到刚才的 Modules ，看到上面的选项卡，选择 Paths ，
+compile output 选择 Inherit from Project output ，这样你的编译输出就重定向到了刚才设置的 out 里面。
+在 Dependencies 里面可以设置依赖，这次先不讲。
 
-选择 OK ，保存设置，然后你就会发现它在 Indexing ，过一会就能看到你设置好的 Module 了。我安装了一个 gitignore 的插件，可以智能管理被 Git 忽略的文件。没有加入 Git 监控的文件它会提示你加入 gitignore ，被 gitignore 忽略的文件它会在文件树中灰色标记。可以看到我的 out 目录就是被灰色标记的，作为一个使用 GitHub 的程序员的基本素质就是不把目标文件上传，对吧。
+选择 OK ，保存设置，然后你就会发现它在 Indexing ，过一会就能看到你设置好的 Module 了。
+我安装了一个 gitignore 的插件，可以智能管理被 Git 忽略的文件。
+没有加入 Git 监控的文件它会提示你加入 gitignore ，被 gitignore 忽略的文件它会在文件树中灰色标记。
+可以看到我的 out 目录就是被灰色标记的，作为一个使用 GitHub 的程序员的基本素质就是不把目标文件上传，对吧。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea7/7.jpg)
 

@@ -71,11 +71,13 @@ public static void main(String[] args) {
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea3/5.png)·
 
-愉快吗？再敲一次回车，确定迭代变量名。我随手打了个输出的代码，然后我们看到聪明的 IDEA 这时有话要说了。黄色的波浪下划线，这是 IDEA 对你的代码有意见的证明。这其实是我在写博客时的小插曲，不过这也顺便成为了本篇博客的内容。
+愉快吗？再敲一次回车，确定迭代变量名。我随手打了个输出的代码，然后我们看到聪明的 IDEA 这时有话要说了。黄色的波浪下划线，
+这是 IDEA 对你的代码有意见的证明。这其实是我在写博客时的小插曲，不过这也顺便成为了本篇博客的内容。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/idea3/6.png)
 
-还记得我[之前的博客](http://ice1000.github.io/2016/06/26/LearnIDEA2.html)里提到的快捷键吗？将你的光标移到 IDEA 有意见的地方，按下**Alt+Enter**快捷键。
+还记得我[之前的博客](http://ice1000.github.io/2016/06/26/LearnIDEA2.html)里提到的快捷键吗？将你的光标移到 IDEA 有意见的地方，
+按下<kbd>Alt</kbd>+<kbd>Enter</kbd>快捷键。
 
 > IntelliJ IDEA ，有什么意见就告诉我吧！
 

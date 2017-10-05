@@ -233,7 +233,7 @@ set: text: Fuck you ZhiHu Editor!!!!
 
 ### 其他 Editor 功能
 
-比如我们想把那些 text 换到下一行去，可以在 `(\` 上使用**Alt+Enter**，然后选择“Add On New Line”：
+比如我们想把那些 text 换到下一行去，可以在 `(\` 上使用<kbd>Alt</kbd>+<kbd>Enter</kbd>，然后选择“Add On New Line”：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/mps/3/15.png)
 
