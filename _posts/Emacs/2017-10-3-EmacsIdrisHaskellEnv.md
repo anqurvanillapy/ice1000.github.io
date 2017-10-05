@@ -118,6 +118,35 @@ $ emacs --daemon
 
 为了防止另一些悲剧的发生，请记下退出 Emacs 的快捷键： `Ctrl+X Ctrl+S` 。按法：按住 `Ctrl` 不放，然后分别按 `X` 和 `S` 。
 
+你打开你的 Emacs 之后应该看到它是这样的：
+
+```
+File Edit Options Buffers Tools Help
+Welcome to GNU Emacs, one component of the GNU/Linux operating system.
+
+Get help           C-h  (Hold down CTRL and press h)
+Emacs manual       C-h r        Browse manuals     C-h i
+Emacs tutorial     C-h t        Undo changes       C-x u
+Buy manuals        C-h RET      Exit Emacs         C-x C-c
+Activate menubar   M-`
+(‘C-’ means use the CTRL key.  ‘M-’ means use the Meta (or Alt) key.
+If you have no Meta key, you may instead type ESC followed by the character.)
+Useful tasks:
+Visit New File                  Open Home Directory
+Customize Startup               Open *scratch* buffer
+
+GNU Emacs 25.3.50.2 (x86_64-pc-linux-gnu, GTK+ Version 3.18.9)
+ of 2017-09-16
+Copyright (C) 2017 Free Software Foundation, Inc.
+
+GNU Emacs comes with ABSOLUTELY NO WARRANTY; type C-h C-w for full details.
+Emacs is Free Software--Free as in Freedom--so you can redistribute copies
+of Emacs and modify it; type C-h C-c to see the conditions.
+Type C-h C-o for information on getting the latest version.
+-UUU:%%--F1  *GNU Emacs*    Top of 1.0k (1,0)      (Fundamental) ---------------
+For information about GNU Emacs and the GNU system, type C-h C-a.
+```
+
 ## 配置 Emacs
 
 把下面的东西原封不动地抄进 `~/.emacs` 里面。
@@ -165,12 +194,64 @@ $ emacs --daemon
 配置节选自[我的 .emacs](https://github.com/ice1000/xjb-config/blob/master/.emacs) ，原本还有一些其他内容，与 Haskell Idris 无关我就删了。
 
 这时候重启 Emacs ，你会发现你的配置可能加载不起，因为你没装对应的插件。
-我们首先在 Emacs 里按下 `Alt+X` ，然后这时你的光标出现在最下面。
-输入 `package-list-package` ，等一会(这时开始下载 tuna 上的 elpa/gnu 源的内容)，然后你会发现出现了插件列表。
+我们首先在 Emacs 里按下 `Alt+X` ，然后这时你的光标出现在最下面。  
+输入 `package-list-package` ，然后它应该是这样的：
+
+```
+-UUU:%%--F1  *GNU Emacs*    Top of 1.0k (1,0)      (Fundamental) ---------------
+M-x package-list-packages
+```
+
+等一会(这时开始下载 tuna 上的 elpa/gnu 源的内容)，然后你会发现出现了插件列表。
+
+大概是这样的：
+
+```
+  1  ace-window         0.9.0         available  Quickly switch windows.
+  2  ack                1.5           available  interface to ack-like tools
+  3  ada-mode           5.3.1         available  major-mode for editing Ada sou$
+  4  ada-ref-man        2012.3        available  Ada Reference Manual 2012
+  5  adaptive-wrap      0.5.1         available  Smart line-wrapping with wrap-$
+  6  adjust-parens      3.0           available  Indent and dedent Lisp code, a$
+  7  aggressive-indent  1.8.3         available  Minor mode to aggressively kee$
+  8  ahungry-theme      1.5.0         available  Ahungry color theme for Emacs.$
+  9  all                1.0           available  Edit all lines matching a give$
+ 10  ampc               0.2           available  Asynchronous Music Player Cont$
+ 11  arbitools          0.71          available  Package for chess tournaments $
+ 12  ascii-art-to-un... 1.11          available  a small artist adjunct
+ 13  async              1.9.2         available  Asynchronous processing in Ema$
+ 14  auctex             11.91.0       available  Integrated environment for *Te$
+ 15  aumix-mode         7             available  run the aumix program in a buf$
+ 16  auto-correct       1.1           available  Remembers and automatically fi$
+ 17  auto-overlays      0.10.9        available  Automatic regexp-delimited ove$
+ 18  beacon             1.3.2         available  Highlight the cursor whenever $
+ 19  bug-hunter         1.3.1         available  Hunt down errors by bisecting $
+ 20  caps-lock          1.0           available  Caps-lock as a minor mode
+-UUU:%%--F1  *Packages*     Top of 25k  (1,0)      (Package Menu) --------------
+```
 
 使用快捷键 `Ctrl+S` 进入搜索，这时你的光标在最下面。
 输入 `auto-complete` ，找到叫这个名字的插件。搜索结果之间用 `Ctrl+S` 切换。  
-蓝后对它按下回车，看到半个屏幕变成了它的安装说明。用 `Ctrl+O` 切到这半个屏幕，然后把光标移动到 `[Install]` 上，回车安装。
+蓝后对它按下回车，看到半个屏幕变成了它的安装说明。  
+我的是安装好了的，看起来和你们的会不大一样，不过基本上是这样的：
+
+```
+-UUU:%%--F1  *Packages*     65% of 25k  (199,9)    (Package Menu) --------------
+ 1auto-complete is a dependency package.
+ 2
+ 3     Status: Installed in ‘auto-complete-20170124.1845/’ (unsigned).
+ 4    Version: 20170124.1845
+ 5    Summary: Auto Completion for GNU Emacs
+ 6   Requires: popup-0.5.0, cl-lib-0.5
+ 7Required by: ac-c-headers-20151021.134
+ 8
+ 9This extension provides a way to complete with popup menu like:
+10
+-UU-:%%--F1  *Help*         Top of 618  (1,0)      (Help) ----------------------
+Type C-x 1 to delete the help window, C-M-v to scroll help.
+```
+
+用 `Ctrl+O` 切到这半个屏幕，然后把光标移动到 `[Install]` 上（上面就没有，因为我已经装好了），回车安装。
 
 按理说安装是很快的，然后用 `Ctrl+0` 关掉这半个窗口。
 你会发现原本的插件列表界面变成了一些编译信息。用 `Ctrl+X K` (输完这快捷键它会让你确认一下，这时回车就好)关掉它，回到原本的插件列表。
@@ -183,7 +264,7 @@ $ emacs --daemon
 
 你可以使用 Tab 键来调整缩进(而不是输入 Tab)， Haskell 插件会自动告诉你可以用哪些缩进，不会让你吃缩进的亏。
 
-这个插件很牛逼。你会发现，只有开启了 TypeFamilies 插件后，
+这个插件很牛逼。比如，你会发现，只有开启了 TypeFamilies 插件后，
 
 ```haskell
 type family Xxx
