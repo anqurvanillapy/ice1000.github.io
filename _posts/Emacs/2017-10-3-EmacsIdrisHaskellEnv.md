@@ -116,7 +116,7 @@ $ emacs25 --daemon
 
 哦，差点忘了，为了防止一些悲剧发生，请在杀死 Emacs 前终止所有正在运行的 emacsclient 。
 
-为了防止另一些悲剧的发生，请记下退出 Emacs 的快捷键： `Ctrl+X Ctrl+C` 。按法：按住 `Ctrl` 不放，然后分别按 `X` 和 `C` 。
+为了防止另一些悲剧的发生，请记下退出 Emacs 的快捷键： <kbd>Ctrl</kbd>+<kbd>X</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>。按法：按住 <kbd>Ctrl</kbd> 不放，然后分别按 <kbd>X</kbd> 和 <kbd>C</kbd> 。
 
 你打开你的 Emacs 之后应该看到它是这样的：
 
@@ -154,8 +154,8 @@ For information about GNU Emacs and the GNU system, type C-h C-a.
 ```elisp
 (require 'package)
 (setq package-archives
-			'(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-				("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+      '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+        ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 (package-initialize)
 (custom-set-variables
@@ -165,16 +165,17 @@ For information about GNU Emacs and the GNU system, type C-h C-a.
  ;; If there is more than one, they won't work right.
  '(ac-auto-show-menu 0.1)
  '(ac-modes
-	 (quote
-		(emacs-lisp-mode lisp-mode lisp-interaction-mode slime-repl-mode nim-mode c-mode cc-mode c++-mode objc-mode
-                     swift-mode go-mode java-mode malabar-mode clojure-mode clojurescript-mode scala-mode
-                     scheme-mode ocaml-mode tuareg-mode coq-mode haskell-mode agda-mode agda2-mode perl-mode
-                     cperl-mode python-mode ruby-mode lua-mode tcl-mode ecmascript-mode javascript-mode
-                     js-mode js-jsx-mode js2-mode js2-jsx-mode coffee-mode php-mode css-mode scss-mode
-                     less-css-mode elixir-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode
-                     sgml-mode web-mode ts-mode sclang-mode verilog-mode qml-mode apples-mode
-                     haskell-mode fundamental-mode
-                     idris-mode ; 这一行仅 Idris 用户添加
+   (quote
+    (emacs-lisp-mode
+     lisp-mode lisp-interaction-mode slime-repl-mode nim-mode c-mode cc-mode c++-mode objc-mode
+     swift-mode go-mode java-mode malabar-mode clojure-mode clojurescript-mode scala-mode
+     scheme-mode ocaml-mode tuareg-mode coq-mode haskell-mode agda-mode agda2-mode perl-mode
+     cperl-mode python-mode ruby-mode lua-mode tcl-mode ecmascript-mode javascript-mode
+     js-mode js-jsx-mode js2-mode js2-jsx-mode coffee-mode php-mode css-mode scss-mode
+     less-css-mode elixir-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode
+     sgml-mode web-mode ts-mode sclang-mode verilog-mode qml-mode apples-mode
+     haskell-mode fundamental-mode
+     idris-mode ; 这一行仅 Idris 用户添加
   )))
  '(blink-cursor-mode t)
  '(column-number-mode t)
@@ -194,7 +195,7 @@ For information about GNU Emacs and the GNU system, type C-h C-a.
 配置节选自[我的 .emacs](https://github.com/ice1000/xjb-config/blob/master/.emacs) ，原本还有一些其他内容，与 Haskell Idris 无关我就删了。
 
 这时候重启 Emacs ，你会发现你的配置可能加载不起，因为你没装对应的插件。
-我们首先在 Emacs 里按下 `Alt+X` ，然后这时你的光标出现在最下面。  
+我们首先在 Emacs 里按下 <kbd>Alt</kbd>+<kbd>X</kbd> ，然后这时你的光标出现在最下面。  
 输入 `package-list-package` ，然后它应该是这样的：
 
 ```
@@ -224,14 +225,11 @@ M-x package-list-packages
  15  aumix-mode         7             available  run the aumix program in a buf$
  16  auto-correct       1.1           available  Remembers and automatically fi$
  17  auto-overlays      0.10.9        available  Automatic regexp-delimited ove$
- 18  beacon             1.3.2         available  Highlight the cursor whenever $
- 19  bug-hunter         1.3.1         available  Hunt down errors by bisecting $
- 20  caps-lock          1.0           available  Caps-lock as a minor mode
 -UUU:%%--F1  *Packages*     Top of 25k  (1,0)      (Package Menu) --------------
 ```
 
-使用快捷键 `Ctrl+S` 进入搜索，这时你的光标在最下面。
-输入 `auto-complete` ，找到叫这个名字的插件。搜索结果之间用 `Ctrl+S` 切换。  
+使用快捷键 <kbd>Ctrl</kbd>+<kbd>S</kbd> 进入搜索，这时你的光标在最下面。
+输入 `auto-complete` ，找到叫这个名字的插件。搜索结果之间用 <kbd>Ctrl</kbd>+<kbd>S</kbd> 切换。  
 蓝后对它按下回车，看到半个屏幕变成了它的安装说明。  
 我的是安装好了的，看起来和你们的会不大一样，不过基本上是这样的：
 
@@ -251,10 +249,10 @@ M-x package-list-packages
 Type C-x 1 to delete the help window, C-M-v to scroll help.
 ```
 
-用 `Ctrl+X O` 切到这半个屏幕，然后把光标移动到 `[Install]` 上（上面就没有，因为我已经装好了），回车安装。
+用 <kbd>Ctrl</kbd>+<kbd>X</kbd> <kbd>0</kbd> 切到这半个屏幕，然后把光标移动到 `[Install]` 上（上面就没有，因为我已经装好了），回车安装。
 
-按理说安装是很快的，然后用 `Ctrl+0` 关掉这半个窗口。
-你会发现原本的插件列表界面变成了一些编译信息。用 `Ctrl+X K` (输完这快捷键它会让你确认一下，这时回车就好)关掉它，回到原本的插件列表。
+按理说安装是很快的，然后用 <kbd>Ctrl</kbd>+<kbd>0</kbd> 关掉这半个窗口。
+你会发现原本的插件列表界面变成了一些编译信息。用 <kbd>Ctrl</kbd>+<kbd>X</kbd> <kbd>K</kbd> (输完这快捷键它会让你确认一下，这时回车就好)关掉它，回到原本的插件列表。
 
 按照同样的步骤搜索并安装 `haskell-mode` 。 Idris 用户请安装 `idris-mode` 。
 
@@ -262,9 +260,9 @@ Type C-x 1 to delete the help window, C-M-v to scroll help.
 
 ## 快乐生活每一天
 
-你可以使用 Tab 键来调整缩进(而不是输入 Tab)， Haskell 插件会自动告诉你可以用哪些缩进，不会让你吃缩进的亏。
+你可以使用 <kbd>Tab</kbd> 键来调整缩进(而不是输入 Tab)， Haskell 插件会自动告诉你可以用哪些缩进，不会让你吃缩进的亏。
 
-这个插件很牛逼。比如，你会发现，只有开启了 TypeFamilies 插件后，
+这个插件很牛逼。比如，你会发现，只有开启了 TypeFamilies 扩展后，
 
 ```haskell
 type family Xxx
@@ -274,9 +272,9 @@ type family Xxx
 
 ### 对于 Idris
 
-一样的，只是可以用 `Ctrl+C Ctrl+L` 自动进行 type check ，而且报错时还会把报错那一行高亮出来。
+一样的，只是可以用 <kbd>Ctrl</kbd>+<kbd>C</kbd> <kbd>Ctrl</kbd>+<kbd>L</kbd> 自动进行 type check ，而且报错时还会把报错那一行高亮出来。
 
-填 hole 请用 `Ctrl+C Ctrl+A` 。
+填 hole 请用 <kbd>Ctrl</kbd>+<kbd>C</kbd> <kbd>Ctrl</kbd>+<kbd>A</kbd> 。
 
 ## 健康生活一辈子
 
