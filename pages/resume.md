@@ -13,7 +13,7 @@ permalink: /resume/
 + [__Download pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume.pdf)
 + [LaTeX source](https://raw.githubusercontent.com/ice1000/resume/master/resume.tex)
 
-I'm available for intern at the moment, emails are welcomed.
+I'm currently not available for intern at the moment, emails are welcomed.
 
 ## Application Resume
 
