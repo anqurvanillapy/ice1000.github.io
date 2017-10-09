@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradle 其实是很好用的
-category: Java
+category: Gradle
 tags: Java,Gradle
 keywords: Java,Gradle
 description: Gradle is actually a nice tool

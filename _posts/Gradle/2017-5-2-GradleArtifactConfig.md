@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradle 定制 artifact
-category: Java
+category: Gradle
 tags: Java,Gradle
 keywords: Java,Gradle
 description: Gradle customizing artifacts
