@@ -10,6 +10,8 @@ permalink: /resume-cn/
 
 [English](../resume/)
 
+## 选项
+
 + [__下载 pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume-cn.pdf)
 + [LaTeX 源码](https://raw.githubusercontent.com/ice1000/resume/master/resume-cn.tex)
 

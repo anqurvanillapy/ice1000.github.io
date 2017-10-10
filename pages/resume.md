@@ -10,12 +10,14 @@ permalink: /resume/
 
 [简体中文](../resume-cn/)
 
+## Options
+
 + [__Download pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume.pdf)
 + [LaTeX source](https://raw.githubusercontent.com/ice1000/resume/master/resume.tex)
 
 I'm currently not available for intern at the moment, emails are welcomed.
 
-## Application Resume
+### Application Resume
 
 + [__Download pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume-ap.pdf)
 + [LaTeX source](https://raw.githubusercontent.com/ice1000/resume/master/resume-ap.tex)
