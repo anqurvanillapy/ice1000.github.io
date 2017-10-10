@@ -32,7 +32,7 @@ permalink: /about-cn/
 [![](https://gamedev.stackexchange.com/users/flair/106607.png)](https://gamedev.stackexchange.com/users/106607/ice1000 "profile for ice1000 at Game Development Stack Exchange, Q&A for professional and independent game developers")
 [![](https://codegolf.stackexchange.com/users/flair/70943.png)](https://codegolf.stackexchange.com/users/70943/ice1000 "profile for ice1000 at Programming Puzzles & Code Golf Stack Exchange, Q&A for programming puzzle enthusiasts and code golfers")
 [![](https://askubuntu.com/users/flair/721173.png)](https://askubuntu.com/users/721173/ice1000 "profile for ice1000 at Ask Ubuntu, Q&A for Ubuntu users and developers")
-
+[![](https://tex.stackexchange.com/users/flair/145304.png)](https://tex.stackexchange.com/users/145304/ice1000 "profile for ice1000 at TeX - LaTeX Stack Exchange, Q&amp;A for users of TeX, LaTeX, ConTeXt, and related typesetting systems")
 
 ## Awesome Kotlin
 
