@@ -5,19 +5,19 @@ baseurl:
 url: http://ice1000.org
 date_format: "ordinal"
 name: "ice1000's Blog"
-title: ice1000 >>= akiris
+title: ice1000 >>= akirina
 subtitle: "知其变，守其恒，为天下式"
 description: "ice1000's blog"
-keywords: ice1000, Akiris, blog
+keywords: ice1000, AkirinaWu, blog
 favicon: /favicon.ico
-# timezone: Asia/ChengDu
+timezone: Asia/BeiJing
 encoding: "utf-8"
 side_bar_repo_limit: 6
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Tesla Ice Zhang >>= Akiris Wu
+author: Tesla Ice Zhang >>= AkirinaWu
 github_username: ice1000
 github_username2: AkimotoAkari
 organization: Working Together
@@ -62,9 +62,21 @@ subscribe_rss: /feed.xml
 # ---------------- #
 markdown: kramdown
 kramdown:
-    input: GFM
+  input: GFM
+  syntax_highlighter: rouge
+
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
 highlighter: rouge
-paginate: 8
+paginate: 10
 lsi: false
 quiet: false
 auto: true
