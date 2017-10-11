@@ -11,7 +11,9 @@ permalink: /gists/
 fp-dfs
 func-compose
 posgen-gradle
-music-map-gen" | split: "
+music-map-gen
+eebnf-lisp
+lice-haskell-impl" | split: "
 " %}
 {% for gist in gists %}
 0. [{{ gist }}](../gist/{{ gist }}/)
