@@ -7,5 +7,13 @@ menu: Gist
 permalink: /gists/
 ---
 
-0. [emacs](./emacs)
-0. [fp_dfs](./fp_dfs)
+{% assign gists = "emacs
+fp-dfs
+func-compose
+posgen-gradle
+music-map-gen" | split: "
+" %}
+{% for gist in gists %}
+0. [{{ gist }}](../gist/{{ gist }}/)
+
+{% endfor %}
