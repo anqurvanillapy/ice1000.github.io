@@ -1,5 +1,9 @@
+---
+layout: gist
+title: 音游生成器
+---
 
-
+[Project URL](https://github.com/ice1000/MusicGameGen)
 
 ```kotlin
 import org.frice.game.Game
