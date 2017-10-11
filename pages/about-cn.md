@@ -58,3 +58,9 @@ permalink: /about-cn/
 ## 特别感谢
 
 + [mzlogin](https://mzlogin.github.io)
+
+## 友情链接
+
+{% for link in site.data.links_cn %}
+* [{{ link.name }}]({{ link.url }})
+{% endfor %}

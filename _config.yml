@@ -41,8 +41,8 @@ navs:
     label: Resume
 
   -
-    href: /links-cn/
-    label: Links
+    href: /gists/
+    label: Gists
 
   -
     href: /projects/

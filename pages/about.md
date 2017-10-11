@@ -58,3 +58,9 @@ Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Generic License</a>.
 ## Special Thanks
 
 + [mzlogin](https://mzlogin.github.io)
+
+## Friends
+
+{% for link in site.data.links %}
+* [{{ link.name }}]({{ link.url }})
+{% endfor %}
