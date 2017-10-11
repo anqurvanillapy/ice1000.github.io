@@ -67,7 +67,7 @@ eval (Nod (Sym fist) param) =
        then Err
        else fromMaybe Err $ ($ ps') <$> lookup fist preludeFunctions
   where
-    ps' = fmap eval param
+    ps' = eval <$> param
     err = any (\case Err -> True; _ -> False) ps'
 eval (Nod _ _) = Err
 eval x = x
@@ -99,7 +99,7 @@ preludeFunctions =
   where
     checkErr f ps = if err then Err else f ps'
       where
-        ps' = fmap eval ps
+        ps' = eval <$> ps
         err = any (\case Err -> True; _ -> False) ps'
     op f [] = Err
     op f ps = if any (\case I32 x -> False; _ -> True ) prs
