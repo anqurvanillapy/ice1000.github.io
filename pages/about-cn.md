@@ -29,6 +29,7 @@ permalink: /about-cn/
 ## StackExchange 网站
 
 [![](https://img.shields.io/badge/StackOverflow-Developer%20Story-lightgrey.svg)](http://stackoverflow.com/story/ice1000)
+
 [![](http://stackoverflow.com/users/flair/7083401.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 [![](https://gamedev.stackexchange.com/users/flair/106607.png)](https://gamedev.stackexchange.com/users/106607/ice1000 "profile for ice1000 at Game Development Stack Exchange, Q&A for professional and independent game developers")
 [![](https://codegolf.stackexchange.com/users/flair/70943.png)](https://codegolf.stackexchange.com/users/70943/ice1000 "profile for ice1000 at Programming Puzzles & Code Golf Stack Exchange, Q&A for programming puzzle enthusiasts and code golfers")

@@ -119,6 +119,14 @@ Sub projects:
 
 <br/><br/>
 
+## [A8Translate](https://github.com/ice1000/A8Translate)
+
+[![JetBrains plugins](https://img.shields.io/jetbrains/plugin/d/9630-a8translate.svg)](https://plugins.jetbrains.com/plugin/9630-a8translate)
+
+A plugin for English-Chinese translating, supports caching and case insensitiveness.
+
+<br/><br/>
+
 ## [map-gen](https://github.com/ice1000/map-gen)
 
 [![GitHub stars](https://img.shields.io/github/stars/ice1000/map-gen.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/map-gen)
