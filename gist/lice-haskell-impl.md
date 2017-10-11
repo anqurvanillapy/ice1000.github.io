@@ -3,7 +3,7 @@ layout: gist
 title: Lice 的 Haskell 子集实现
 ---
 
-+ [来源](https://zhuanlan.zhihu.com/p/29970283)
++ [来源](https://www.codewars.com/kata/598a82f07bad362e1d000003/)
 
 ```haskell
 {-# LANGUAGE LambdaCase #-}
