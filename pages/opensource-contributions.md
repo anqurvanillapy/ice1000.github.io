@@ -46,4 +46,4 @@ permalink: /opensource-contributions/
 	+ Helped fix Travis CI deployment
 	+ Migrate old LLVM API to new and change to .Net Core 2.0 from Mono
 	+ Fix compilation error
-
++ Merged
