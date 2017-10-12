@@ -121,7 +121,9 @@ Sub projects:
 
 ## [A8Translate](https://github.com/ice1000/A8Translate)
 
+[![GitHub stars](https://img.shields.io/github/stars/ice1000/A8Translate.svg?style=social&label=Star&style=plastic)](https://github.com/ice1000/A8Translate)
 [![JetBrains plugins](https://img.shields.io/jetbrains/plugin/d/9630-a8translate.svg)](https://plugins.jetbrains.com/plugin/9630-a8translate)
+[![License: GPL v3](https://img.shields.io/github/license/ice1000/A8Translate.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 A plugin for English-Chinese translating, supports caching and case insensitiveness.
 
