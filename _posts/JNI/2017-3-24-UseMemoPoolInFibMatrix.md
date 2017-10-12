@@ -28,6 +28,61 @@ description: JNI Tutorial
 + [知乎：矩阵乘法加速斐波那契数列求值原理](https://www.zhihu.com/question/23582123)
 + [博客园：矩阵乘法加速斐波那契数列求值原理](http://www.cnblogs.com/xudong-bupt/archive/2013/03/19/2966954.html)
 
+其实就是由于 Fib 的性质
+
+$$
+Fib(0) := 0 \\
+Fib(1) := 1 \\
+Fib(x) := Fib(x-1) + Fib(x-2)
+$$
+
+我们可以得到这个式子成立
+
+$$
+\begin{bmatrix}
+Fib(n+1) \\
+Fib(n)
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 1 \\
+1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+Fib(n) \\
+Fib(n-1)
+\end{bmatrix}
+$$
+
+而上面的式子可以被归纳为
+
+$$
+\begin{bmatrix}
+Fib(n+1) \\
+Fib(n)
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 1 \\
+1 & 0
+\end{bmatrix}^n
+\begin{bmatrix}
+Fib(0) \\
+Fib(1)
+\end{bmatrix}
+$$
+
+因此我们只需要快速计算
+
+$$
+\begin{bmatrix}
+1 & 1 \\
+1 & 0
+\end{bmatrix}^n
+$$
+
+就可以达到原本的目的，而这一过程时间复杂度是线性的，因此才被广为使用。
+
 ## 内存池是啥
 
 内存池就是一个内存管理器，负责分配内存（就是通过它来管理矩阵对象的 new 和 delete ）。
