@@ -50,3 +50,14 @@ permalink: /opensource-contributions/
 	+ Migrate old LLVM API to new and change to .Net Core 2.0 from Mono
 	+ Fix compilation error
 + Merged
+
+## badges/shields\#1164
+
+[![GitHub issue state](https://img.shields.io/github/issues/detail/s/badges/shields/1164.svg)](https://github.com/badges/shields/pull/1164)
+[![GitHub pull request check contexts](https://img.shields.io/github/status/contexts/pulls/badges/shields/1164.svg)](https://github.com/badges/shields/pull/1164)
+
++ Related
+	+ A related issue [![GitHub issue state](https://img.shields.io/github/issues/detail/s/badges/shields/1162.svg)](https://github.com/badges/shields/pull/1162)
++ Fixes
+	+ Added a new badge: JetBrains Plugin version
+	+ Added tests for it
