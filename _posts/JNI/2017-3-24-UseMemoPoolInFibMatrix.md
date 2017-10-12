@@ -31,17 +31,18 @@ description: JNI Tutorial
 其实就是由于 Fib 的性质
 
 $$
-Fib(0) := 0 \\
-Fib(1) := 1 \\
-Fib(x) := Fib(x-1) + Fib(x-2)
+\DeclareMathOperator{Fib}{Fib}
+\Fib(0) := 0 \\
+\Fib(1) := 1 \\
+\Fib(x) := \Fib(x-1) + \Fib(x-2)
 $$
 
 我们可以得到这个式子成立
 
 $$
 \begin{bmatrix}
-Fib(n+1) \\
-Fib(n)
+\Fib(n+1) \\
+\Fib(n)
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -49,8 +50,8 @@ Fib(n)
 1 & 0
 \end{bmatrix}
 \begin{bmatrix}
-Fib(n) \\
-Fib(n-1)
+\Fib(n) \\
+\Fib(n-1)
 \end{bmatrix}
 $$
 
@@ -58,8 +59,8 @@ $$
 
 $$
 \begin{bmatrix}
-Fib(n+1) \\
-Fib(n)
+\Fib(n+1) \\
+\Fib(n)
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -67,8 +68,8 @@ Fib(n)
 1 & 0
 \end{bmatrix}^n
 \begin{bmatrix}
-Fib(0) \\
-Fib(1)
+\Fib(0) \\
+\Fib(1)
 \end{bmatrix}
 $$
 
