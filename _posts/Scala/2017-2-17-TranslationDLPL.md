@@ -190,7 +190,13 @@ DDF-min 基于 Call By Value Simply Typed Lambda Calculus ，带有 Real ， Sum
 
 然后有个 logical relation ，对于函数外的东西，都是 trivial 的定义，或者简单的 recurse 进去。
 
-对于 A -> B ，除了普通的‘对所有符合 logical relation 的 A ， application 满足 logical relation’外，还有：如果 `A -> B = Real -> Real` ，这个函数的 with_grad 加点 wrapper 就是这个函数的 Denotational Semantic 的导数函数。
+对于 A -> B ，除了普通的‘对所有符合 logical relation 的 A ， application 满足 logical relation’外，还有：如果
+
+$$
+A \rightarrow B = Real \rightarrow Real
+$$
+
+，这个函数的 with_grad 加点 wrapper 就是这个函数的 Denotational Semantic 的导数函数。
 
 另：这根[MarisaKirisame/DDFADC](https://github.com/MarisaKirisame/DDFADC)中描述的有一定出入。
 
@@ -209,7 +215,7 @@ $$
 并且想知道
 
 $$
-(x+y)*z
+(x+y) \times z
 $$
 
 对于 x, z 的导，
@@ -218,11 +224,11 @@ $$
 可以写出
 
 $$
-((x, (1, 0)) + (y, (0, 0))) * (z, (0, 1)) = \\
+((x, (1, 0)) + (y, (0, 0))) \times (z, (0, 1)) = \\
 
-(x + y,(1, 0)) * (z, (0, 1)) = \\
+(x + y,(1, 0)) \times (z, (0, 1)) = \\
 
-((x + y) * z, (z, x + y)) \\
+((x + y) \times z, (z, x + y)) \\
 $$
 
 在这里面， pair 的第 0 项就是表达式的值， pair 的第 1 项就是另一个 pair ，其中第 0,1 ，项分别是表达式对于 x ， y 的导。
@@ -242,7 +248,7 @@ DDF 可以很简单的给出有递归/循环的函数的高阶导。这点 tenso
 能不能给个例子？[这](https://github.com/ThoughtWorksInc/DeepDarkFantasy/blob/master/doc/poly.md) 是一个用梯度下降解
 
 $$
-x*x+2x+3=27
+x \times x+2x+3=27
 $$
 
 的例子。
