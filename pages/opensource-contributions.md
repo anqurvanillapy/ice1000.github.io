@@ -61,3 +61,4 @@ permalink: /opensource-contributions/
 + Fixes
 	+ Added a new badge: JetBrains Plugin version
 	+ Added tests for it
++ Merged
