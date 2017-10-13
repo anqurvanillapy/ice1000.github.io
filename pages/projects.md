@@ -204,7 +204,7 @@ A simple music player (supports mp3/wav and more), materially designed.
 <br/><br/><br/><br/>
 
 {% if site.github.public_repositories != null %}
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse %}
+{% assign sorted_repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
 
 <section class="container">
     <header class="text-center">
