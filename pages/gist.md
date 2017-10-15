@@ -13,7 +13,8 @@ func-compose
 posgen-gradle
 music-map-gen
 eebnf-lisp
-lice-haskell-impl" | split: "
+lice-haskell-impl
+bool-array" | split: "
 " %}
 {% for gist in gists %}
 0. [{{ gist }}](../gist/{{ gist }}/)
