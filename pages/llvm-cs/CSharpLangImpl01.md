@@ -4,7 +4,7 @@ permalink: /llvm-cs/en/CSharpLangImpl01/
 title: "Kaleidoscope: Implementing a Language with LLVM in CSharp"
 ---
 
-# 1. Kaleidoscope: Implementing a Language with LLVM in CSharp
+# 1. Kaleidoscope: Tutorial Introduction and the Lexer
 
 ## 1.1. Tutorial Introduction
 
@@ -81,18 +81,39 @@ namespace Kaleidoscope
     NUMBER = -5,
   }
 
-  private static string identifier;
-  private static double numVal;
-}
+  public class Lexer {
+    private string identifier;
+    private double numVal;
 ```
 Each token returned by our lexer will either be one of the Token enum values or it will be an 'unknown' character like '+', which is returned as its ASCII value. If the current token is an identifier, the IdentifierStr global variable holds the name of the identifier. If the current token is a numeric literal (like 1.0), NumVal holds its value. Note that we use global variables for simplicity, this is not the best choice for a real language implementation :).
 
-The actual implementation of the lexer is a single function named `GetNextToken`. The `GetNextToken` function is called to return the next token from standard input. Its definition starts as:
+The actual implementation of the lexer is a single function named `GetNextTokenImpl`. The `GetNextTokenImpl` function is called to return the next token from standard input. Its definition starts as:
 
 ```c#
-public int GetNextToken()
+private const int EOF = -1;
+
+private readonly TextReader reader;
+
+private readonly StringBuilder identifierBuilder = new StringBuilder();
+
+private readonly StringBuilder numberBuilder = new StringBuilder();
+
+private readonly Dictionary<char, int> binopPrecedence;
+
+public string GetLastIdentifier()
 {
-// Skip any whitespace.
+  return this.identifier;
+}
+
+public double GetLastNumber()
+{
+  return this.numVal;
+}
+
+public int GetNextTokenImpl()
+{
+  int c = ' ';
+  // Skip any whitespace.
   while (char.IsWhiteSpace((char) c))
   {
     c = this.reader.Read();
@@ -104,7 +125,7 @@ public int GetNextToken()
 The next thing `GetNextToken` needs to do is recognize identifiers and specific keywords like "def". Kaleidoscope does this with this simple loop:
 
 ```c#
-if (char.IsLetter((char)c)) // identifier: [a-zA-Z][a-zA-Z0-9]*
+if (char.IsLetter((char) c)) // identifier: [a-zA-Z][a-zA-Z0-9]*
 {
   this.identifierBuilder.Append((char) c);
   while (char.IsLetterOrDigit((char) (c = this.reader.Read())))
@@ -117,18 +138,16 @@ if (char.IsLetter((char)c)) // identifier: [a-zA-Z][a-zA-Z0-9]*
 
   if (string.Equals(identifier, "def", StringComparison.Ordinal))
   {
-    this.CurrentToken = (int) Token.DEF;
+    return (int) Token.DEF;
   }
   else if (string.Equals(identifier, "extern", StringComparison.Ordinal))
   {
-    this.CurrentToken = (int) Token.EXTERN;
+    return (int) Token.EXTERN;
   }
   else
   {
-    this.CurrentToken = (int) Token.IDENTIFIER;
+    return (int) Token.IDENTIFIER;
   }
-
-  return this.CurrentToken;
 }
 ```
 
@@ -136,7 +155,7 @@ Note that this code sets the `identifierBuilder` global whenever it lexes an ide
 
 ```c#
 // Number: [0-9.]+
-if (char.IsDigit((char)c) || c == '.')
+if (char.IsDigit((char) c) || c == '.')
 {
   do
   {
@@ -145,8 +164,7 @@ if (char.IsDigit((char)c) || c == '.')
   } while (char.IsDigit((char) c) || c == '.');
   this.numVal = double.Parse(this.numberBuilder.ToString());
   this.numberBuilder.Clear();
-  this.CurrentToken = (int) Token.NUMBER;
-  return this.CurrentToken;
+  return (int) Token.NUMBER;
 }
 ```
 
@@ -163,7 +181,7 @@ if (c == '#')
 
   if (c != EOF)
   {
-    return this.GetNextToken();
+    return this.GetNextTokenImpl();
   }
 }
 ```
@@ -171,16 +189,15 @@ if (c == '#')
 We handle comments by skipping to the end of the line and then return the next token. Finally, if the input doesn't match one of the above cases, it is either an operator character like `+` or the end of the file. These are handled with this code:
 
 ```c#
-  // Check for end of file.  Don't eat the EOF.
-  if (c == EOF)
-  {
-    this.CurrentToken = c;
-    return (int) Token.EOF;
+      // Check for end of file.  Don't eat the EOF.
+      if (c == EOF)
+      {
+        return (int) Token.EOF;
+      }
+    
+      return this.reader.Read();
+    }
   }
-
-  this.CurrentToken = c;
-  c = this.reader.Read();
-  return this.c;
 }
 ```
 
