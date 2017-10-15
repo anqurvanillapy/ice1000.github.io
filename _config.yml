@@ -79,6 +79,17 @@ highlighter: rouge
 
 paginate: 10
 
+# pagination:
+#   enabled: true
+#   per_page: 10
+#   permalink: '/page:num/'
+#   title_suffix: ' - page:num'
+#   sort_field: 'date'
+#   sort_reverse: true
+#   limit: 0
+#   category: 'posts'
+#   locale: 'zh_CN'
+
 lsi: false
 quiet: false
 auto: true
