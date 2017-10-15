@@ -5,6 +5,7 @@ category: Scala
 tags: Scala,NN,ML,DL,PLT
 keywords: DeepLearning,Scala,Kotlin,Java
 description: (Translation) See DL from PL's point of view
+inline_latex: true
 ---
 
 [原文传送门](https://zhuanlan.zhihu.com/p/24941985)
@@ -206,22 +207,7 @@ Forward Mode AD 会不会有性能问题？
 
 解决办法是，我们对 Dual Number 做一次 Generalization ： Dual Number 并不一定是`(Double, Double)`，也可以是`(Double, (Double, Double))`。用后者，可以运行一次，算出两个导数。
 
-比如说，给定
-
-$$
-x, y, z
-$$
-
-并且想知道
-
-$$
-(x+y) \times z
-$$
-
-对于 x, z 的导，
-
-
-可以写出
+比如说，给定 $ x, y, z $ 并且想知道 $ (x+y) \times z $ 对于 x, z 的导，可以写出
 
 $$
 ((x, (1, 0)) + (y, (0, 0))) \times (z, (0, 1)) = \\
@@ -245,13 +231,8 @@ DDF 可以很简单的给出有递归/循环的函数的高阶导。这点 tenso
 
 除了写神经网络以外，我们也希望可以写任意普通的算法，程序（但是带有未知变量），然后用 DDF 自动求导，以找出最优的这些变量。
 
-能不能给个例子？[这](https://github.com/ThoughtWorksInc/DeepDarkFantasy/blob/master/doc/poly.md) 是一个用梯度下降解
-
-$$
-x \times x+2x+3=27
-$$
-
-的例子。
+能不能给个例子？[这](https://github.com/ThoughtWorksInc/DeepDarkFantasy/blob/master/doc/poly.md)
+是一个用梯度下降解 $ x \times x+2x+3=27 $ 的例子。
 
 ## 没了
 
