@@ -1,11 +1,11 @@
 .home .banner,
 .home .site-header {
-    background: #774dba;
-    color: #fff
+    background: rgba(125, 123, 125, 0.62);
+    color: #000000;
 }
 
 .home .banner .collection-head {
-    color: #fff;
+    color: rgba(256, 256, 256, .8);
     background: 0 0;
     box-shadow: none;
     -webkit-box-shadow: none
@@ -27,13 +27,12 @@
     color: #fff
 }
 
+@media (max-width: 50em) {
+    .home .collapsed .icon-bar {
+        background-color: white;
+    }
 
-@media (max-width:50em) {
-  .home .collapsed .icon-bar {
-    background-color: white;
-  }
-
-  .home .collection-head .collection-header {
-    font-size: 1.25em;
-  }
+    .home .collection-head .collection-header {
+        font-size: 1.25em;
+    }
 }
