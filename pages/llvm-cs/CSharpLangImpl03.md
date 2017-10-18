@@ -133,17 +133,25 @@ protected override ExprAST VisitBinaryExprAST(BinaryExprAST node)
 
 Binary operators start to get more interesting. The basic idea here is that we recursively emit code for the left-hand side of the expression, then the right-hand side, then we compute the result of the binary expression. In this code, we do a simple switch on the opcode to create the right LLVM instruction.
 
-In the example above, the LLVM `builder` class is starting to show its value. `LLVMBuilderRef` knows where to insert the newly created instruction, all you have to do is specify what instruction to create (e.g. with CreateFAdd), which operands to use (L and R here) and optionally provide a name for the generated instruction.
+In the example above, the LLVM `builder` class is starting to show its value. `LLVMBuilderRef` knows where to insert the newly created instruction, all you have to do is speicecify what instruction to create (e.g. with `CreateFAdd`), which operands to use (L and R here) and optionally provide a name for the generated instruction.
 
 One nice thing about LLVM is that the name is just a hint. For instance, if the code above emits multiple `addtmp` variables, LLVM will automatically provide each one with an increasing, unique numeric suffix. Local value names for instructions are purely optional, but it makes it much easier to read the IR dumps.
 
 [LLVM instructions](http://releases.llvm.org/5.0.0/docs/LangRef.html#instruction-reference)
-are constrained by strict rules: for example, the Left and Right operators of an [add instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#add-instruction)
-must have the same type, and the result type of the add must match the operand types. Because all values in Kaleidoscope are doubles, this makes for very simple code for add, sub and mul.
+are constrained by strict rules:
+for example, the Left and Right operators of an
+[add instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#add-instruction)
+must have the same type, and the result type of the add must match the operand types.
+Because all values in Kaleidoscope are doubles,
+this makes for very simple code for add, sub and mul.
 
-On the other hand, LLVM specifies that the [fcmp instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#fcmp-instruction)
-always returns an `i1` value (a one bit integer). The problem with this is that Kaleidoscope wants the value to be a 0.0 or 1.0 value. In order to get these semantics, we combine the fcmp instruction with a [uitofp instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#uitofp-to-instruction)
-. This instruction converts its input integer into a floating point value by treating the input as an unsigned value. In contrast, if we used the [sitofp instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#sitofp-to-instruction)
+On the other hand, LLVM specifies that the
+[fcmp instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#fcmp-instruction)
+always returns an `i1` value (a one bit integer).
+The problem with this is that Kaleidoscope wants the value to be a 0.0 or 1.0 value. In order to get these semantics, we combine the fcmp instruction with a
+[uitofp instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#uitofp-to-instruction)
+. This instruction converts its input integer into a floating point value by treating the input as an unsigned value. In contrast, if we used the
+[sitofp instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#sitofp-to-instruction)
 , the Kaleidoscope `<` operator would return 0.0 and -1.0, depending on the input value.
 
 
@@ -178,10 +186,15 @@ protected override ExprAST VisitCallExprAST(CallExprAST node)
 Code generation for function calls is quite straightforward with LLVM. The code above initially does a function name lookup in the LLVM Module's symbol table. Recall that the LLVM Module is the container that holds the functions we are JIT'ing.
 By giving each function the same name as what the user specifies, we can use the LLVM symbol table to resolve function names for us.
 
-Once we have the function to call, we recursively codegen each argument that is to be passed in, and create an LLVM [call instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#call-instruction).
-Note that LLVM uses the native C calling conventions by default, allowing these calls to also call into standard library functions like `sin` and `cos`, with no additional effort.
+Once we have the function to call, we recursively codegen each argument that is to be passed in, and create an LLVM
+[call instruction](http://releases.llvm.org/5.0.0/docs/LangRef.html#call-instruction).
+Note that LLVM uses the native C calling conventions by default,
+allowing these calls to also call into standard library functions like `sin` and `cos`,
+with no additional effort.
 
-This wraps up our handling of the four basic expressions that we have so far in Kaleidoscope. Feel free to go in and add some more. For example, by browsing the [LLVM language reference](http://releases.llvm.org/5.0.0/docs/LangRef.html)
+This wraps up our handling of the four basic expressions that we have so far in Kaleidoscope. Feel free to go in and add some more.
+For example, by browsing the
+[LLVM language reference](http://releases.llvm.org/5.0.0/docs/LangRef.html)
 you'll find several other interesting instructions that are really easy to plug into our basic framework.
 
 ## 3.4. Function Code Generation
@@ -192,7 +205,7 @@ Code generation for prototypes and functions must handle a number of details, wh
 protected override ExprAST VisitPrototypeAST(PrototypeAST node)
 {
   // Make the function type:  double(double,double) etc.
-  var argumentCount = (uint)node.Arguments.Count;
+  var argumentCount = (uint) node.Arguments.Count;
   var arguments = new LLVMTypeRef[Math.Max(argumentCount, 1)];
 
   var function = LLVM.GetNamedFunction(this.module, node.Name);
@@ -225,9 +238,9 @@ protected override ExprAST VisitPrototypeAST(PrototypeAST node)
   }
 ```
 
-This code packs a lot of power into a few lines. Note first that this function creates a `Function*` on C++ site instead of a `LLVMValueRef`. Because a `prototype` really talks about the external interface for a function (not the value computed by an expression), it makes sense for it to return the LLVM Function it corresponds to when codegen'd.
+This code packs a lot of power into a few lines. Note first that this function creates a `LLVMTypeRef` instead of a `LLVMValueRef`. Because a `prototype` really talks about the external interface for a function (not the value computed by an expression), it makes sense for it to return the LLVM Function it corresponds to when codegen'd.
 
-The call to `FunctionType` creates the `FunctionType` that should be used for a given Prototype. Since all function arguments in Kaleidoscope are of type double, the first line creates a vector of "N" LLVM double types. It then uses the `Functiontype` method to create a function type that takes "N" doubles as arguments, returns one double as a result, and that is not vararg (the false parameter indicates this). Note that Types in LLVM are uniqued just like Constants are, so you don’t `new` a type, you `get` it.
+The call to `FunctionType` creates the `LLVMTypeRef` that should be used for a given Prototype. Since all function arguments in Kaleidoscope are of type double, the first line creates a vector of "N" LLVM double types. It then uses the `Functiontype` method to create a function type that takes "N" doubles as arguments, returns one double as a result, and that is not vararg (the false parameter indicates this).
 
 The final line above actually creates the IR Function corresponding to the Prototype. This indicates the type, linkage and name to use, as well as which module to insert into. "external linkage" means that the function may be defined outside the current module and/or that it is callable by functions outside the module. The Name passed in is the name the user specified: since `module` is specified, this name is registered in `module`s symbol table.
 
@@ -257,7 +270,7 @@ protected override ExprAST VisitFunctionAST(FunctionAST node)
   LLVMValueRef function = this.valueStack.Pop();
 ```
 
-For function definitions, we start by searching module's symbol table for an existing version of this function, in case one has already been created using an `extern` statement. If `Module.GetFunction` returns null then no previous version exists, so we'll codegen one from the Prototype. In either case, we want to assert that the function is empty (i.e. has no body yet) before we start.
+For function definitions, we start by searching module's symbol table for an existing version of this function, in case one has already been created using an `extern` statement. If `Module.GetNamedFunction` returns null reference (this happens in `VisitPrototypeAST`) then no previous version exists, so we'll codegen one from the Prototype. In either case, we want to assert that the function is empty (i.e. has no body yet) before we start.
 In C\#, we use `this.valueStack.Pop()` directly.
 
 ```c#
@@ -279,7 +292,7 @@ In C\#, we use `this.valueStack.Pop()` directly.
   }
 ```
 
-Now we get to the point where the `builder` is set up. The first line creates a new basic block (named "entry"), which is inserted into `function`. The second line then tells the builder that new instructions should be inserted into the end of the new basic block. Basic blocks in LLVM are an important part of functions that define the Control Flow Graph. Since we don't have any control flow, our functions will only contain one block at this point. We'll fix this in Chapter 5 :).
+Now we get to the point where the `builder` is set up. The 6th line creates a new basic block (named "entry"), which is inserted into `function`. Then it tells the builder that new instructions should be inserted into the end of the new basic block. Basic blocks in LLVM are an important part of functions that define the Control Flow Graph. Since we don't have any control flow, our functions will only contain one block at this point. We'll fix this in Chapter 5 :).
 
 Next we add the function arguments to the `namedValues` map (after first clearing it out) so that they're accessible to `VariableExprAST` nodes.
 
