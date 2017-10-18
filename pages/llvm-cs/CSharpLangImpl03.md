@@ -36,7 +36,8 @@ namespace Kaleidoscope.AST
 }
 ```
 
-The `VisitChildren()` method says to emit IR for that AST node along with all the things it depends on, and they all return an LLVM Value object. "Value" is the class used to represent a "[Static Single Assignment](http://en.wikipedia.org/wiki/Static_single_assignment_form) (SSA) register" or "SSA value" in LLVM. The most distinct aspect of SSA values is that their value is computed as the related instruction executes, and it does not get a new value until (and if) the instruction re-executes. In other words, there is no way to "change" an SSA value. For more information, please read up on Static Single Assignment - the concepts are really quite natural once you grok them.
+The `Visit()` method says to emit IR for that AST node along with all the things it depends on, and they all return an LLVM Value object.
+"LLVMValueRef" is the class used to represent a "[Static Single Assignment](http://en.wikipedia.org/wiki/Static_single_assignment_form) (SSA) register" or "SSA value" in LLVM. The most distinct aspect of SSA values is that their value is computed as the related instruction executes, and it does not get a new value until (and if) the instruction re-executes. In other words, there is no way to "change" an SSA value. For more information, please read up on Static Single Assignment - the concepts are really quite natural once you grok them.
 
 Note that instead of adding virtual methods to the `ExprAST` class hierarchy, it could also make sense to use a visitor pattern or some other way to model this. Again, this tutorial won't dwell on good software engineering practices: for our purposes, adding a virtual method is simplest.
 
@@ -52,9 +53,9 @@ private readonly Stack<LLVMValueRef> valueStack = new Stack<LLVMValueRef>();
 
 The static variables will be used during code generation.
 
-The `builder` object is a helper object that makes it easy to generate LLVM instructions. Instances of the IRBuilder class template keep track of the current place to insert instructions and has methods to create new instructions.
+The `builder` object is a helper object that makes it easy to generate LLVM instructions. Instances of the `LLVMBuilderRef` class template keep track of the current place to insert instructions and has methods to create new instructions.
 
-`module` is an LLVM construct that contains functions and global variables. In many ways, it is the top-level structure that the LLVM IR uses to contain code. It will own the memory for all of the IR that we generate, which is why the `VisitChildren()` method returns a raw Value\*, rather than a unique_ptr<Value>.
+`module` is an LLVM construct that contains functions and global variables. In many ways, it is the top-level structure that the LLVM IR uses to contain code. It will own the memory for all of the IR that we generate.
 
 The `namedValues` map keeps track of which values are defined in the current scope and what their LLVM representation is. (In other words, it is a symbol table for the code). In this form of Kaleidoscope, the only things that can be referenced are function parameters. As such, function parameters will be in this map when generating code for their function body.
 
@@ -72,7 +73,7 @@ protected override ExprAST VisitNumberExprAST(NumberExprAST node)
 }
 ```
 
-In the LLVM IR, numeric constants are represented with the `ConstantReal` class, which holds the numeric value in an `APFloat` internally (`APFloat` has the capability of holding floating point constants of Arbitrary Precision). This code basically just creates and returns a ConstantFP. Note that in the LLVM IR that constants are all uniqued together and shared. For this reason, the API uses the `foo.get(...)` idiom instead of `new foo(..)` or `foo.Create(..)`.
+In the LLVM IR, numeric constants are represented with a `LLVMValueRef` instance too. This code basically just creates and pushes a `LLVMValueRef`.
 
 ```c#
 protected override ExprAST VisitVariableExprAST(VariableExprAST node)
@@ -93,7 +94,7 @@ protected override ExprAST VisitVariableExprAST(VariableExprAST node)
 }
 ```
 
-References to variables are also quite simple using LLVM. In the simple version of Kaleidoscope, we assume that the variable has already been emitted somewhere and its value is available. In practice, the only values that can be in the NamedValues map are function arguments. This code simply checks to see that the specified name is in the map (if not, an unknown variable is being referenced) and returns the value for it. In future chapters, we'll add support for loop induction variables in the symbol table, and for local variables.
+References to variables are also quite simple using LLVM. In the simple version of Kaleidoscope, we assume that the variable has already been emitted somewhere and its value is available. In practice, the only values that can be in the `namedValues` map are function arguments. This code simply checks to see that the specified name is in the map (if not, an unknown variable is being referenced) and returns the value for it. In future chapters, we'll add support for loop induction variables in the symbol table, and for local variables.
 
 ```c#
 protected override ExprAST VisitBinaryExprAST(BinaryExprAST node)
@@ -132,7 +133,7 @@ protected override ExprAST VisitBinaryExprAST(BinaryExprAST node)
 
 Binary operators start to get more interesting. The basic idea here is that we recursively emit code for the left-hand side of the expression, then the right-hand side, then we compute the result of the binary expression. In this code, we do a simple switch on the opcode to create the right LLVM instruction.
 
-In the example above, the LLVM builder class is starting to show its value. IRBuilder knows where to insert the newly created instruction, all you have to do is specify what instruction to create (e.g. with CreateFAdd), which operands to use (L and R here) and optionally provide a name for the generated instruction.
+In the example above, the LLVM `builder` class is starting to show its value. `LLVMBuilderRef` knows where to insert the newly created instruction, all you have to do is specify what instruction to create (e.g. with CreateFAdd), which operands to use (L and R here) and optionally provide a name for the generated instruction.
 
 One nice thing about LLVM is that the name is just a hint. For instance, if the code above emits multiple `addtmp` variables, LLVM will automatically provide each one with an increasing, unique numeric suffix. Local value names for instructions are purely optional, but it makes it much easier to read the IR dumps.
 
@@ -224,7 +225,7 @@ protected override ExprAST VisitPrototypeAST(PrototypeAST node)
   }
 ```
 
-This code packs a lot of power into a few lines. Note first that this function returns a `Function*` instead of a `Value*`. Because a `prototype` really talks about the external interface for a function (not the value computed by an expression), it makes sense for it to return the LLVM Function it corresponds to when codegen'd.
+This code packs a lot of power into a few lines. Note first that this function creates a `Function*` on C++ site instead of a `LLVMValueRef`. Because a `prototype` really talks about the external interface for a function (not the value computed by an expression), it makes sense for it to return the LLVM Function it corresponds to when codegen'd.
 
 The call to `FunctionType` creates the `FunctionType` that should be used for a given Prototype. Since all function arguments in Kaleidoscope are of type double, the first line creates a vector of "N" LLVM double types. It then uses the `Functiontype` method to create a function type that takes "N" doubles as arguments, returns one double as a result, and that is not vararg (the false parameter indicates this). Note that Types in LLVM are uniqued just like Constants are, so you don’t `new` a type, you `get` it.
 
@@ -324,7 +325,7 @@ entry:
 }
 ```
 
-Note how the parser turns the top-level expression into anonymous functions for us. This will be handy when we add JIT support in the next chapter. Also note that the code is very literally transcribed, no optimizations are being performed except simple constant folding done by `IRBuilder`. We will add optimizations explicitly in the next chapter.
+Note how the parser turns the top-level expression into anonymous functions for us. This will be handy when we add JIT support in the next chapter. Also note that the code is very literally transcribed, no optimizations are being performed except simple constant folding done by `LLVMBuilderRef`. We will add optimizations explicitly in the next chapter.
 
 ```llvm
 ; ready> def foo(a b) a*a + 2*a*b + b*b;
