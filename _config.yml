@@ -4,15 +4,15 @@
 baseurl:
 url: http://ice1000.org
 date_format: "ordinal"
-name: "ice1000's Blog"
-title: "知其变，守其恒，为天下式"
-#subtitle: "知其变，守其恒，为天下式"
+name: "知其变，守其恒，为天下式"
+title: "中间表示"
+# subtitle: "知其变，守其恒，为天下式"
 description: "ice1000's blog"
 keywords: ice1000, AkirinaWu, blog
 favicon: /favicon.ico
 timezone: Asia/BeiJing
 encoding: "utf-8"
-side_bar_repo_limit: 7
+side_bar_repo_limit: 8
 
 # ---------------- #
 #      Author      #
@@ -92,11 +92,10 @@ paginate: 10
 
 lsi: false
 quiet: false
-auto: true
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 
-gems:
+plugins:
   - jekyll-github-metadata
   - rouge
   # - jekyll-html-pipeline
