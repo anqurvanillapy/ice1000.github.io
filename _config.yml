@@ -77,7 +77,7 @@ kramdown:
 
 highlighter: rouge
 
-paginate: 10
+paginate: 12
 
 # pagination:
 #   enabled: true
