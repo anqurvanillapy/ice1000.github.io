@@ -4,8 +4,12 @@ title: 我的 Emacs 配置
 ---
 
 ```elisp
+;;; package --- .emacs
+
+;;; Code:
+;;; Commentary:
+
 (setq tab-width 2)
-(setq default-tab-width 2)
 (setq kotlin-tab-width 2)
 (setq java-tab-width 2)
 
@@ -36,38 +40,36 @@ title: 我的 Emacs 配置
  '(ispell-program-name "aspell")
  '(package-selected-packages
    (quote
-    (latex-extra auctex yaml-mode zone-select
-    zone-rainbow zone-nyan scala-mode sbt-mode
-    rust-mode ruby-test-mode mode-icons
-    markdown-preview-mode markdown-mode+ llvm-mode
-    kotlin-mode jekyll-modes j-mode indent-guide
-    idris-mode ibuffer-git haskell-mode groovy-mode
-    go-mode gited elm-mode dart-mode d-mode
-    csharp-mode bing-dict ace-flyspell ac-c-headers)))
+    (flycheck-kotlin flycheck-julia flycheck-haskell flycheck-color-mode-line flycheck-clang-tidy flycheck-clang-analyzer flycheck-ocaml flycheck-rust zone-sl latex-extra auctex yaml-mode zone-rainbow zone-nyan scala-mode sbt-mode rust-mode ruby-test-mode mode-icons markdown-preview-mode markdown-mode+ llvm-mode kotlin-mode jekyll-modes j-mode indent-guide idris-mode ibuffer-git haskell-mode groovy-mode go-mode gited elm-mode dart-mode d-mode csharp-mode bing-dict ace-flyspell ac-c-headers)))
  '(show-paren-mode t)
  '(size-indication-mode t))
 
 ;;; Fira code
-;; This works when using emacs --daemon + emacsclient
-(add-hook 'after-make-frame-functions
-          (lambda (frame)
-            (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
-;; This works when using emacs without server/client
-(set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
-;; I haven't found one statement that makes both of the above situations work, so I use both for now
+(add-hook
+ 'after-make-frame-functions
+ (lambda (frame)
+   (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
 
-(when (window-system)
-  (set-default-font "Fira Code"))
+(set-fontset-font
+ t
+ '(#Xe100 . #Xe16f) "Fira Code Symbol")
 
 (defconst fira-code-font-lock-keywords-alist
   (mapcar
    (lambda (regex-char-pair)
      `(,(car regex-char-pair)
        (0 (prog1 ()
-            (compose-region (match-beginning 1)
-                            (match-end 1)
-                            ;; The first argument to concat is a string containing a literal tab
-                            ,(concat "  " (list (decode-char 'ucs (cadr regex-char-pair)))))))))
+            (compose-region
+             (match-beginning 1)
+             (match-end 1)
+             ;; The first argument to concat is a
+             ;; string containing a literal tab
+             ,(concat
+               "        "
+               (list
+                (decode-char
+                 'ucs
+                 (cadr regex-char-pair)))))))))
    '(("\\(www\\)"                   #Xe100)
      ("[^/]\\(\\*\\*\\)[^/]"        #Xe101)
      ("\\(\\*\\*\\*\\)"             #Xe102)
@@ -175,26 +177,47 @@ title: 我的 Emacs 配置
      ("[^<]\\(~~\\)"                #Xe168)
      ("\\(~~>\\)"                   #Xe169)
      ("\\(%%\\)"                    #Xe16a)
-     ;; ("\\(x\\)"                     #Xe16b) ;; This ended up being hard to do properly so i'm leaving it out.
      ("[^:=]\\(:\\)[^:=]"           #Xe16c)
      ("[^\\+<>]\\(\\+\\)[^\\+<>]"   #Xe16d)
      ("[^\\*/<>]\\(\\*\\)[^\\*/<>]" #Xe16f))))
 
-(defun add-fira-code-symbol-keywords ()
-  (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))
+;; (when (window-system)
+;;   (set-frame-font "Fira Code")
+;;   (set-language-environment "UTF-8")
+;;   (set-default-coding-systems 'utf-8))
 
-(add-hook 'prog-mode-hook
-          #'add-fira-code-symbol-keywords)
+(when (window-system)
+  (defun add-fira-code-symbol-keywords ()
+    "Add Fira Code Symbols."
+    (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))
 
-(set-language-environment "UTF-8")
-(set-default-coding-systems 'utf-8)
+  (add-hook 'prog-mode-hook
+            #'add-fira-code-symbol-keywords))
 
 ;; (load-path "/home/ice1000/.emacs.d/")
 
-(global-set-key (kbd "C-c C-d") 'bing-dict-brief)
+(global-set-key (kbd "C-c d") 'bing-dict-brief)
 (setq bing-dict-save-search-result t)
-;; (setq zone-when-idle t 90)
 (setq gitter-token "")
+
+(require 'zone)
+(zone-when-idle 30)
+(defun zone-choose (pgm)
+  "Choose a PGM to run for `zone'."
+  (interactive
+   (list
+    (completing-read
+     "Program: "
+     (mapcar 'symbol-name zone-programs))))
+  (let ((zone-programs (list (intern pgm))))
+    (zone)))
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; (eval-after-load 'flycheck
+;;   (progn
+;;     (require 'flycheck-kotlin)
+;;     (flycheck-kotlin-setup)))
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (autoload 'ibuffer "ibuffer" "List buffers." t)
