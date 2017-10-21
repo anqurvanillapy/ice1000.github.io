@@ -13,13 +13,13 @@ permalink: /about-cn/
 你好，欢迎来到我的博客「中间表示」，我是千里冰封。  
 我是一个学生，因兴趣而编程。
 
-+ [![](https://img.shields.io/badge/QQ%20群-ProgramLeague-yellowgreen.svg)](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
-+ [![](https://img.shields.io/badge/联系-电子邮件-orange.svg)](mailto:ice1000@kotliner.cn)
-+ [![](https://img.shields.io/badge/简历-下载-brightgreen.svg)](../resume-cn/)
-+ [![](https://img.shields.io/badge/订阅-多途径-ff69b4.svg)](../subscribe-cn/)
-+ [![](https://img.shields.io/badge/订阅-RSS-ff69b4.svg)](../feed.xml)
-
-+ [**我在开源社区的贡献**](../opensource-contributions/)
++ [QQ 群 ProgramLeague](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
++ [电子邮件](mailto:ice1000@kotliner.cn)
++ [简历](../resume-cn/)
++ [订阅](../subscribe-cn/)
++ [RSS](../feed.xml)
++ [**开源社区贡献**](../opensource-contributions/)
++ [我在 CodeWars 上的一些踪迹](../codewars-cn/)
 
 ### 这个博客的名字的含义
 
@@ -30,12 +30,6 @@ permalink: /about-cn/
 > 如果你对知识进行了彻底的分析而非某种机械的套弄，在你脑中生成的概念与生硬的文字之间已经没有很强的相似性，我们就认为这个概念是被理解的。彻底的分析和非凡的变换，是获得真知的标志性特征。
 
 -- 我的一个朋友
-
-## CodeWars 相关
-
-+ [![](https://www.codewars.com/users/ice1000/badges/large)](https://www.codewars.com/users/ice1000)
-
-+ [我在 CodeWars 上的一些踪迹](../codewars-cn/)
 
 ## StackExchange 网站
 
