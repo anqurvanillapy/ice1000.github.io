@@ -10,7 +10,7 @@ permalink: /about/
 
 [简体中文](../about-cn/)
 
-Hi there, welcome to my blog *intermediate representation* (中间表示).  
+Hi there, welcome to my blog *intermediate representation* (IR).  
 This is ice1000 (千里冰封).  
 I am a student, programming for interest.
 

@@ -14,7 +14,7 @@ Please note: the code in this chapter and later require LLVM 3.7 or later. LLVM 
 
 ## 3.2. Code Generation Setup
 
-In order to generate LLVM IR, we want some simple setup to get started. First we define virtual code generation (VisitChildren) methods in each AST class:
+In order to generate LLVM IR, we want some simple setup to get started. First we define virtual code generation (`VisitChildren`) methods in each AST class:
 
 ```c#
 namespace Kaleidoscope.AST
@@ -310,15 +310,22 @@ Next we add the function arguments to the `namedValues` map (after first clearin
 }
 ```
 
-Once the insertion point has been set up and the `namedValues` map populated, we call the `VisitChildren()` method for the root expression of the function. If no error happens, this emits code to compute the expression into the entry block and returns the value that was computed. Assuming no error, we then create an LLVM ret instruction, which completes the function. Once the function is built, we call `VerifyFunction`, which is provided by LLVM. This function does a variety of consistency checks on the generated code, to determine if our compiler is doing everything right. Using this is important: it can catch a lot of bugs. Once the function is finished and validated, we return it.
+Once the insertion point has been set up and the `namedValues` map populated, we call the `VisitChildren()` method for the root expression of the function.
+If no error happens, this emits code to compute the expression into the entry block and returns the value that was computed.
+Assuming no error, we then create an LLVM ret instruction, which completes the function. Once the function is built, we call `VerifyFunction`, which is provided by LLVM.
+This function does a variety of consistency checks on the generated code, to determine if our compiler is doing everything right.
+Using this is important: it can catch a lot of bugs.
+Once the function is finished and validated, we return it.
 
 ```c#
 LLVM.DeleteFunction(function);
 ```
 
-The only piece left here is handling of the error case. For simplicity, we handle this by merely deleting the function we produced with the eraseFromParent method. This allows the user to redefine a function that they incorrectly typed in before: if we didn't delete it, it would live in the symbol table, with a body, preventing future redefinition.
+The only piece left here is handling of the error case. For simplicity, we handle this by merely deleting the function we produced with the eraseFromParent method.
+This allows the user to redefine a function that they incorrectly typed in before: if we didn't delete it, it would live in the symbol table, with a body, preventing future redefinition.
 
-This code does have a bug, though: If the `VisitFunctionAST()` method finds an existing IR Function, it does not validate its signature against the definition's own prototype. This means that an earlier `extern` declaration will take precedence over the function definition's signature, which can cause codegen to fail, for instance if the function arguments are named differently. There are a number of ways to fix this bug, see what you can come up with! Here is a testcase:
+This code does have a bug, though: If the `VisitFunctionAST()` method finds an existing IR Function, it does not validate its signature against the definition's own prototype.
+This means that an earlier `extern` declaration will take precedence over the function definition's signature, which can cause codegen to fail, for instance if the function arguments are named differently. There are a number of ways to fix this bug, see what you can come up with! Here is a testcase:
 
 ```python
 extern foo(a); # ok, defines foo.
@@ -327,7 +334,8 @@ def foo(b) b;  # Error: Unknown variable name. (decl using 'a' takes precedence)
 
 ## 3.5. Driver Changes and Closing Thoughts
 
-For now, code generation to LLVM doesn't really get us much, except that we can look at the pretty IR calls. The sample code inserts calls to codegen into the `HandleDefinition`, `HandleExtern` etc functions, and then dumps out the LLVM IR. This gives a nice way to look at the LLVM IR for simple functions. For example:
+For now, code generation to LLVM doesn't really get us much, except that we can look at the pretty IR calls.
+The sample code inserts calls to codegen into the `HandleDefinition`, `HandleExtern` etc functions, and then dumps out the LLVM IR. This gives a nice way to look at the LLVM IR for simple functions. For example:
 
 ```llvm
 ; ready> 4+5;
@@ -338,7 +346,8 @@ entry:
 }
 ```
 
-Note how the parser turns the top-level expression into anonymous functions for us. This will be handy when we add JIT support in the next chapter. Also note that the code is very literally transcribed, no optimizations are being performed except simple constant folding done by `LLVMBuilderRef`. We will add optimizations explicitly in the next chapter.
+Note how the parser turns the top-level expression into anonymous functions for us. This will be handy when we add JIT support in the next chapter.
+Also note that the code is very literally transcribed, no optimizations are being performed except simple constant folding done by `LLVMBuilderRef`. We will add optimizations explicitly in the next chapter.
 
 ```llvm
 ; ready> def foo(a b) a*a + 2*a*b + b*b;
@@ -369,7 +378,8 @@ entry:
 }
 ```
 
-This shows some function calls. Note that this function will take a long time to execute if you call it. In the future we'll add conditional control flow to actually make recursion useful :).
+This shows some function calls. Note that this function will take a long time to execute if you call it.
+In the future we'll add conditional control flow to actually make recursion useful :).
 
 ```llvm
 ; ready> extern cos(x);
@@ -427,7 +437,8 @@ entry:
 
 When you quit the current demo (by sending an EOF via <kbd>Ctrl</kbd>+<kbd>D</kbd> on Linux or <kbd>Ctrl</kbd>+<kbd>Z</kbd> and <kbd>Enter</kbd> on Windows), it dumps out the IR for the entire module generated. Here you can see the big picture with all the functions referencing each other.
 
-This wraps up the third chapter of the Kaleidoscope tutorial. Up next, we'll describe how to add JIT codegen and optimizer support to this so we can actually start running code!
+This wraps up the third chapter of the Kaleidoscope tutorial.
+Up next, we'll describe how to add JIT codegen and optimizer support to this so we can actually start running code!
 
 ## 3.6. Full Code Listing
 

@@ -74,7 +74,10 @@ Lets dive into the implementation of this language!
 
 ## 1.3. The Lexer
 
-When it comes to implementing a language, the first thing needed is the ability to process a text file and recognize what it says. The traditional way to do this is to use a "[lexer](http://en.wikipedia.org/wiki/Lexical_analysis)" (aka 'scanner') to break the input up into "tokens". Each token returned by the lexer includes a token code and potentially some metadata (e.g. the numeric value of a number). First, we define the possibilities:
+When it comes to implementing a language, the first thing needed is the ability to process a text file and recognize what it says.
+The traditional way to do this is to use a "[lexer](http://en.wikipedia.org/wiki/Lexical_analysis)" (aka 'scanner') to break the input up into "tokens".
+Each token returned by the lexer includes a token code and potentially some metadata (e.g. the numeric value of a number).
+First, we define the possibilities:
 
 ```c#
 namespace Kaleidoscope
@@ -92,9 +95,15 @@ namespace Kaleidoscope
     private string identifier;
     private double numVal;
 ```
-Each token returned by our lexer will either be one of the Token enum values or it will be an 'unknown' character like '+', which is returned as its ASCII value. If the current token is an identifier, the IdentifierStr global variable holds the name of the identifier. If the current token is a numeric literal (like 1.0), NumVal holds its value. Note that we use global variables for simplicity, this is not the best choice for a real language implementation :).
 
-The actual implementation of the lexer is a single function named `GetNextTokenImpl`. The `GetNextTokenImpl` function is called to return the next token from standard input. Its definition starts as:
+Each token returned by our lexer will either be one of the Token enum values or it will be an 'unknown' character like `+`, which is returned as its ASCII value.
+If the current token is an identifier, the IdentifierStr global variable holds the name of the identifier.
+If the current token is a numeric literal (like `1.0`), `numVal` holds its value.
+Note that the C\+\+ version is using global variables for simplicity, which is not the best choice for a real language implementation, but this C\# version doesn't :).
+
+The actual implementation of the lexer is a single function named `GetNextTokenImpl`.
+The `GetNextTokenImpl` function is called to return the next token from standard input.
+Its definition starts as:
 
 ```c#
 private const int EOF = -1;
@@ -129,7 +138,7 @@ public int GetNextTokenImpl()
 
 `GetNextToken` works by calling the C\# `reader.Read()` function to read characters one at a time from standard input. It eats them as it recognizes them and stores the last character read, but not processed, in LastChar. The first thing that it has to do is ignore whitespace between tokens. This is accomplished with the loop above.
 
-The next thing `GetNextToken` needs to do is recognize identifiers and specific keywords like "def". Kaleidoscope does this with this simple loop:
+The next thing `GetNextToken` needs to do is recognize identifiers and specific keywords like `def`. Kaleidoscope does this with this simple loop:
 
 ```c#
 if (char.IsLetter((char) c)) // identifier: [a-zA-Z][a-zA-Z0-9]*
@@ -158,7 +167,9 @@ if (char.IsLetter((char) c)) // identifier: [a-zA-Z][a-zA-Z0-9]*
 }
 ```
 
-Note that this code sets the `identifierBuilder` global whenever it lexes an identifier. Also, since language keywords are matched by the same loop, we handle them here inline. Numeric values are similar:
+Note that this code sets the `identifierBuilder` field whenever it lexes an identifier.
+Also, since language keywords are matched by the same loop, we handle them here inline.
+Numeric values are similar:
 
 ```c#
 // Number: [0-9.]+
@@ -175,7 +186,11 @@ if (char.IsDigit((char) c) || c == '.')
 }
 ```
 
-This is all pretty straight-forward code for processing input. When reading a numeric value from input, we use the C\# `double.Parse` function to convert it to a numeric value that we store in NumVal. Note that this isn't doing sufficient error checking: it will incorrectly read "1.23.45.67" and handle it as if you typed in "1.23". Feel free to extend it :). Next we handle comments:
+This is all pretty straight-forward code for processing input.
+When reading a numeric value from input, we use the C\# `double.Parse` function to convert it to a numeric value that we store in `numVal`.
+Note that this isn't doing sufficient error checking: it will incorrectly read `1.23.45.67` and handle it as if you typed in `1.23`.
+Feel free to extend it :).
+Next we handle comments:
 
 ```c#
 if (c == '#')
@@ -193,7 +208,9 @@ if (c == '#')
 }
 ```
 
-We handle comments by skipping to the end of the line and then return the next token. Finally, if the input doesn't match one of the above cases, it is either an operator character like `+` or the end of the file. These are handled with this code:
+We handle comments by skipping to the end of the line and then return the next token.
+Finally, if the input doesn't match one of the above cases, it is either an operator character like `+` or the end of the file.
+These are handled with this code:
 
 ```c#
       // Check for end of file.  Don't eat the EOF.

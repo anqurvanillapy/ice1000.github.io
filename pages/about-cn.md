@@ -10,7 +10,7 @@ permalink: /about-cn/
 
 [English](../about/)
 
-你好，欢迎来到我的博客「中间表示」，我是千里冰封。  
+你好，欢迎来到我的博客「中间表示 (IR) 」，我是千里冰封。  
 我是一个学生，因兴趣而编程。
 
 + [QQ 群 ProgramLeague](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
