@@ -19,4 +19,4 @@ This tutorial is using [Microsoft/LLVMSharp](https://github.com/Microsoft/LLVMSh
 9. <!-- [ --> Kaleidoscope: Adding Debug Information <!-- ](./CSharpLangImpl09/) -->
 10. <!-- [ --> Kaleidoscope: Conclusion and other useful LLVM tidbits <!-- ](./CSharpLangImpl10/) -->
 
-Chapter 5 to 10 is not available due to the difference between the language C\# and C\+\+ themselves and the API.
+Chapter 5 to 10 are not available due to the difference between the language C\# and C\+\+ themselves and the API.

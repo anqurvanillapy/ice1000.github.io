@@ -34,7 +34,7 @@ The structure of the tutorial is:
 <!-- + [Chapter #9](../CSharpLangImpl09/): Extending the Language: Debug Information - Having built a decent little programming language with control flow, functions and mutable variables, we consider what it takes to add debug information to standalone executables. This debug information will allow you to set breakpoints in Kaleidoscope functions, print out argument variables, and call functions - all from within the debugger! -->
 <!-- + [Chapter #10](../CSharpLangImpl10/): Conclusion and other useful LLVM tidbits - This chapter wraps up the series by talking about potential ways to extend the language, but also includes a bunch of pointers to info about "special topics" like adding garbage collection support, exceptions, debugging, support for "spaghetti stacks", and a bunch of other tips and tricks. -->
 
-Chapter 5 to 10 is not available due to the difference between the language C\# and C\+\+ themselves and the API.
+Chapter 5 to 10 are not available due to the difference between the language C\# and C\+\+ themselves and the API.
 
 By the end of the tutorial, we'll have written a bit less than 1000 lines of non-comment, non-blank, lines of code. With this small amount of code, we'll have built up a very reasonable compiler for a non-trivial language including a hand-written lexer, parser, AST, as well as code generation support with a JIT compiler. While other systems may have interesting "hello world" tutorials, I think the breadth of this tutorial is a great testament to the strengths of LLVM and why you should consider it if you're interested in language or compiler design.
 
