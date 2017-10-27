@@ -8,7 +8,7 @@ title: "Kaleidoscope: Implementing a Language with LLVM in CSharp"
 
 ## 2.1. Chapter 2 Introduction
 
-Welcome to Chapter 2 of the "[Implementing a language with LLVM](../index.md)" tutorial. This chapter shows you how to use the lexer, built in [Chapter 1](../CSharpLangImpl01), to build a full [parser](http://en.wikipedia.org/wiki/Parsing) for our Kaleidoscope language.
+Welcome to Chapter 2 of the "[Implementing a language with LLVM](../)" tutorial. This chapter shows you how to use the lexer, built in [Chapter 1](../CSharpLangImpl01/), to build a full [parser](http://en.wikipedia.org/wiki/Parsing) for our Kaleidoscope language.
 Once we have a parser, we'll define and build an Abstract Syntax Tree (AST).
 
 The parser we will build uses a combination of
