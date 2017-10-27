@@ -169,6 +169,9 @@ LLVM.InitializeX86TargetInfo();
 LLVM.InitializeX86Target();
 LLVM.InitializeX86TargetMC();
 
+LLVM.InitializeX86AsmParser();
+LLVM.InitializeX86AsmPrinter();
+
 var binopPrecedence = new Dictionary<char, int>
 {
   ['<'] = 10,
@@ -177,6 +180,8 @@ var binopPrecedence = new Dictionary<char, int>
   ['*'] = 40
 };
 
+LLVMMCJITCompilerOptions options = new LLVMMCJITCompilerOptions { NoFramePointerElim = 1 };
+LLVM.InitializeMCJITCompilerOptions(options);
 if (LLVM.CreateExecutionEngineForModule(out var engine, module, out var errorMessage).Value == 1)
 {
   Console.WriteLine(errorMessage);
@@ -194,15 +199,18 @@ scanner.GetNextToken();
 
 // Run the main "interpreter loop" now.
 MainLoop(scanner, parser);
+
+LLVM.DisposeBuilder(builder);
+LLVM.DisposeExecutionEngine(engine);
 ```
 
-We also need to setup the data layout for the JIT:
+<!-- We also need to setup the data layout for the JIT: -->
 
-```c#
-// Set up the optimizer pipeline.  Start with registering info about how the
-// target lays out data structures.
-LLVM.DisposeTargetData(LLVM.GetExecutionEngineTargetData(engine));
-```
+<!-- ```c# -->
+<!-- // Set up the optimizer pipeline.  Start with registering info about how the -->
+<!-- // target lays out data structures. -->
+<!-- LLVM.DisposeTargetData(LLVM.GetExecutionEngineTargetData(engine)); -->
+<!-- ``` -->
 
 We use a `LLVMExecutionEngineRef` (the type of `engine`) to do execution.
 
@@ -232,7 +240,7 @@ If parsing and codegen succeeed, the next step is to add the module containing t
 We do this by calling `visitor.Visit(data)`, which triggers code generation for the function we need, and `visitor.ResultStack.Pop()` returns the function (`ResultStack` is just an alias of `valueStack`) as a `LLVMValueRef`.
 `GetPointerToGlobal` gets the pointer to the function holds by the `LLVMValueRef`.
 
-In this way we get the JITed function easily and safely, much better than the approach introduced in the official C\+\+ document.
+In this way we get the JITed function easily and safely, much better than the approach introduced in the official C\+\+ document. :)
 
 At last we call the returned `dFunc`, and we see the result.
 
@@ -274,18 +282,81 @@ entry:
 Evaluated to 24.000000
 
 ready> testfunc(5, 10);
-ready> LLVM ERROR: Program used external function 'testfunc' which could not be resolved!
+
+Unhandled Exception: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Exception: Unknown function referenced
 ```
 
 Function definitions and calls also work, but something went very wrong on that last line.
 The call looks valid, so what happened?
 As you may have guessed from the the API a Module is a unit of allocation for the JIT, and `testfunc` was part of the same module that contained anonymous expression.
-When we removed that module from the JIT to free the memory for the anonymous expression, we deleted the definition of testfunc along with it. Then, when we tried to call testfunc a second time, the JIT could no longer find it.
+When we removed that module from the JIT to free the memory for the anonymous expression, we deleted the definition of `testfunc` along with it.
+Then, when we tried to call testfunc a second time, the JIT could no longer find it.
 
-The easiest way to fix this is to put the anonymous expression in a separate module from the rest of the function definitions. The JIT will happily resolve function calls across module boundaries, as long as each of the functions called has a prototype, and is added to the JIT before it is called. By putting the anonymous expression in a different module we can delete it without affecting the rest of the functions.
+The easiest way to fix this is to put the anonymous expression in a separate module from the rest of the function definitions.
+The JIT will happily resolve function calls across module boundaries, as long as each of the functions called has a prototype, and is added to the JIT before it is called.
+By putting the anonymous expression in a different module we can delete it without affecting the rest of the functions.
 
-In fact, we're going to go a step further and put every function in its own module. Doing so allows us to exploit a useful property of the KaleidoscopeJIT that will make our environment more REPL-like: Functions can be added to the JIT more than once (unlike a module where every function must have a unique definition). When you look up a symbol in KaleidoscopeJIT it will always return the most recent definition:
+In fact, we're going to go a step further and put every function in its own module. Doing so allows us to exploit a useful property of the KaleidoscopeJIT that will make our environment more REPL-like: Functions can be added to the JIT more than once (unlike a module where every function must have a unique definition).
+When you look up a symbol in KaleidoscopeJIT it will always return the most recent definition:
 
+```
+ready> def foo(x) x + 1;
+Read function definition:
+define double @foo(double %x) {
+entry:
+  %addtmp = fadd double %x, 1.000000e+00
+  ret double %addtmp
+}
 
+ready> foo(2);
+Evaluated to 3.000000
 
+ready> def foo(x) x + 2;
+define double @foo(double %x) {
+entry:
+  %addtmp = fadd double %x, 2.000000e+00
+  ret double %addtmp
+}
 
+ready> foo(2);
+Evaluated to 4.000000
+```
+
+To allow each function to live in its own module we'll need a way to re-generate previous function declarations into each new module we open:
+
+```
+
+```
+
+In the future we'll see how tweaking this symbol resolution rule can be used to enable all sorts of useful features, from security (restricting the set of symbols available to JIT'd code), to dynamic code generation based on symbol names, and even lazy compilation.
+
+One immediate benefit of the symbol resolution rule is that we can now extend the language by writing arbitrary C\+\+ code to implement operations.
+For example, if we add:
+
+```c++
+#ifdef LLVM_ON_WIN32
+#define DLLEXPORT __declspec(dllexport)
+#else
+#define DLLEXPORT
+#endif
+
+/// putchard - putchar that takes a double and returns 0.
+extern "C" DLLEXPORT double putchard(double x) {
+  fputc((char) x, stderr);
+  return 0;
+}
+```
+
+Note, that for Windows we need to actually export the functions because the dynamic symbol loader will use `GetProcAddress` to find the symbols.
+
+Now we can produce simple output to the console by using things like: `extern putchard(x); putchard(120);`, which prints a lowercase `x` on the console (120 is the ASCII code for `x`).
+Similar code could be used to implement file I/O, console input, and many other capabilities in Kaleidoscope.
+
+This completes the JIT and optimizer chapter of the Kaleidoscope tutorial.
+At this point, we can compile a non-Turing-complete programming language, optimize and JIT compile it in a user-driven way.
+Next up we'll look into extending the [language with control flow constructs](../CSharpLangImpl05/), tackling some interesting LLVM IR issues along the way.
+
+## 4.5. Full Code Listing
+
+[Here](https://github.com/Microsoft/LLVMSharp/blob/master/KaleidoscopeTutorial/Chapter4/KaleidoscopeLLVM/)
+is the complete code listing for our running example, enhanced with the LLVM JIT and optimizer.

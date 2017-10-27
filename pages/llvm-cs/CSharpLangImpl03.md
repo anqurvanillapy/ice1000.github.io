@@ -170,7 +170,7 @@ protected override ExprAST VisitCallExprAST(CallExprAST node)
   }
 
   var argumentCount = (uint) node.Arguments.Count;
-  var argsV = new LLVMValueRef[Math.Max(argumentCount, 1)];
+  var argsV = new LLVMValueRef[argumentCount];
   for (int i = 0; i < argumentCount; ++i)
   {
     this.Visit(node.Arguments[i]);
@@ -206,7 +206,7 @@ protected override ExprAST VisitPrototypeAST(PrototypeAST node)
 {
   // Make the function type:  double(double,double) etc.
   var argumentCount = (uint) node.Arguments.Count;
-  var arguments = new LLVMTypeRef[Math.Max(argumentCount, 1)];
+  var arguments = new LLVMTypeRef[argumentCount];
 
   var function = LLVM.GetNamedFunction(this.module, node.Name);
 
