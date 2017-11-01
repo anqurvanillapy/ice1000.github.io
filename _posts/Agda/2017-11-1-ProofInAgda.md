@@ -177,7 +177,7 @@ _⇆_ refl refl= refl -- 编译通过！
 $$
 \begin{eqnarray}
 \_{\leftrightarrows}_1\_\ ab\ bc \with ab\ &|&bc \\
-... \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \refl\ &|&\refl = \refl
+... \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \ \refl\ &|&\refl = \refl
 \end{eqnarray}
 $$
 
@@ -222,7 +222,7 @@ refl ⇆₀ refl = refl
 $$
 \begin{eqnarray}
 ab\ {\leftrightarrows}_1\ ab \with ab\ &|&bc \\
-... \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \refl\ &|&\refl = \refl
+... \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \ \refl\ &|&\refl = \refl
 \end{eqnarray}
 $$
 
