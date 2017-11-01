@@ -13,7 +13,9 @@ inline_latex: true
 我一开始就没有搞懂这句话在说什么。
 在我自认为搞懂的时候，我把我以前没有搞懂的原因归结为我看的教程太垃圾了。
 
-理解这个问题的同时我也理解了之前一个 Haskell 关于 `IO Monad` 的问题。
+一开始我理解这个问题的同时，我以为我也理解了之前一个 Haskell 关于 `IO Monad` 的问题，但实际上不是我想的那样。
+[Haskell 的 `IO Monad` 的实现](https://hackage.haskell.org/package/base-4.10.0.0/docs/src/GHC.Base.html#line-1173)
+比我想象的要复杂一些，因此本文不谈 Haskell 。
 
 ## 前置知识
 
@@ -79,6 +81,10 @@ p → q → r
 
 > 如果 p 和 q 成立，那么 r 成立
 
+，或者说，
+
+> $ p\ \&\&\ q \Rightarrow r $
+
 这个命题的证明。
 
 这就是 "类型则命题，程序则证明" 的含义。
@@ -100,21 +106,28 @@ proof : {p q r : Set} → p → q → r
 之所以我没有再学习 Idris 就是因为那些教程没说 Refl 是啥 (Idris 叫 `Refl` ， Agda 叫 `refl`) 就直接在代码里面用了，我看的时候就一脸蒙蔽，还以为是我智商太低没看懂他 implicit 的东西。
 但是好在我看了一坨很友好的 Agda 代码后民白了。
 
-首先，我们可以定义这样一个用来表示相等关系的 GADT ，用 $ \equiv $ 表示他（标准库的定义在
+首先，我们可以定义这样一个用来表示相等关系的 GADT ，它对于任何一个 Level 的任何一个实例都成立。
+这里我们用了 Universal Polymorphism 表达这个 "对于任何一个 Level " 的概念。
+
+然后我们使用 `refl` 这个类型构造器表达 "这个相等关系成立" 这一事实。
+
+我们用 $ \equiv $ 表示他（标准库的定义在
 [`Agda.Builtin.Equality`](http://agda.readthedocs.io/en/v2.5.3/language/built-ins.html#equality)
-中（不需要完全看懂类型签名，只需要看懂"这个 GADT 只有一个类型构造器"这一事实））：
+中）：
 
 $$
 \begin{align*}
-& \data\ \_{\equiv}\_ : \{a\} \{A : \Set a\} (x : A) : A \rightarrow \Set a\where \\
+& \data\ \_{\equiv}\_\ \{a\} \{A : \Set a\} (x : A) : A \rightarrow \Set a\where \\
 &\ \ \refl : x \equiv x
 \end{align*}
 $$
 
 ```agda
-data _≡_ : {a} {A : Set a} (x : A) : A → Set a where
+data _≡_ {a} {A : Set a} (x : A) : A → Set a where
   refl : x ≡ x
 ```
+
+如果你看不懂这个类型签名也没有关系，只需要接受"这个 GADT 只有一个叫 `refl` 的类型构造器"这一事实就好了。
 
 然后我们可以用它进行一些证明。比如我们来证明相等性的传递性，也就是
 
@@ -135,7 +148,7 @@ _⇆_ : {A : Set} {a b c : A} → a ≡ b → b ≡ c → a ≡ c
 我一开始写下了这样的东西：
 
 $$
-\_{\leftrightarrows}\_\ ab\ bc =\ ?
+\_{\leftrightarrows}\_\ ab\ bc = ?
 $$
 
 ```agda
@@ -171,8 +184,8 @@ _⇆_ refl refl = refl -- 编译通过！
 
 这就回到了我们原本的需求，我们原本就是需要写出一个 $ a \equiv b\ \&\&\ b \equiv c \Rightarrow a \equiv c $ 的变换。
 
-如果要变换的话，可以使用 `with` 语句（就是 Agda 的 `case of`）把这两个变量模式匹配出来，然后直接得证。
-这里给出一个强行实现的方法。
+如果要用变换强行实现的话，可以使用 `with` 语句（就是 Agda 的 `case of`）把这两个变量模式匹配出来，然后直接得证。
+这里给出一个代码实现。
 
 $$
 \begin{eqnarray}
@@ -231,6 +244,9 @@ ab ⇆₁ bc with ab   | bc
 ...         | refl | refl = refl
 ```
 
-### 结束
+## 结束
+
+这个证明太简单了，只有一步，没有什么实际意义，仅用于入门理解。
+下一篇文章我们将会进行一个关于自然数和差的奇偶性的证明。
 
 我说完了。
