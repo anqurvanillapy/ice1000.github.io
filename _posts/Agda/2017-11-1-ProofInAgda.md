@@ -157,7 +157,7 @@ $$
 $$
 
 ```agda
-_⇆_ refl refl= refl -- 编译通过！
+_⇆_ refl refl = refl -- 编译通过！
 ```
 
 这是为什么呢？我们来分别看下这两种写法的含义。
@@ -198,7 +198,7 @@ _⇆₁_ ab bc with ab   | bc
 利用这一点，我们直接使用 `refl` 是没有问题的。
 
 $$
-\_{\leftrightarrows}_0\_\refl \refl = \refl
+\_{\leftrightarrows}_0\_\ \refl\ \refl = \refl
 $$
 
 ```agda
