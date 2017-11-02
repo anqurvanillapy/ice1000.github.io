@@ -260,25 +260,25 @@ ab ⇆₁ bc with ab   | bc
 现在你肯定有点感觉了，但是这个例子太 trivial 你又感觉自己有点没懂，
 那么我们再来看看这个例子帮你加深一下理解。
 
-考虑一个很常见的类型里带长度的数组 `Vect` 的定义，我们有：
+考虑两个元组，我们有：
 
 $$
 \begin{align*}
-& | {\equiv} | : \forall\ \{a\ n\ m\}\ (xs : \Vect n\ a)\ (ys : \Vect m\ a) \rightarrow n \equiv m \rightarrow xs \equiv ys \\
-& \ | {\equiv} |\ x\ y\ \refl = \refl
+& | {\equiv} | : \forall\ \{a\ b\ c\ d\}\ \rightarrow a \equiv c \rightarrow b \equiv d \rightarrow (a,\ b) \equiv (c,\ d) \\
+& \ | {\equiv} |\ \refl \refl = \refl
 \end{align*}
 $$
 
 ```agda
-|≡| : ∀ {a n m} (xs : Vect n a) (ys : Vect m a) → n ≡ m → xs ≡ ys
-|≡| x y refl = refl
+|≡| : ∀ {a b c d} → a ≡ c → b ≡ d → (a, b) ≡ (c, d)
+|≡| refl refl = refl
 ```
 
-和上面一样，在建立了 $ n \equiv m $ 的基础上，可以直接用 `refl` 表达 $ xs \equiv ys $ 。
+和上面一样，在建立了 $ a \equiv c $ 和 $ b \equiv d $ 的基础上，可以直接用 `refl` 表达这两个元组相等。
 
 ## 结束
 
 这个证明太简单了，只有一步，没有什么实际意义，仅用于入门理解。
-下一篇文章我们将会进行一个关于自然数和积的奇偶性的证明。
+下一篇文章我们将会进行一个关于与或关系的证明。
 
 我说完了。
