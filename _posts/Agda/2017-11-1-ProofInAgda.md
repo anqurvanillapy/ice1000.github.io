@@ -265,13 +265,13 @@ ab ⇆₁ bc with ab   | bc
 $$
 \begin{align*}
 & | {\equiv} | : \forall\ \{a\ n\ m\}\ (xs : \Vect n\ a)\ (ys : \Vect m\ a) \rightarrow n \equiv m \rightarrow xs \equiv ys \\
-& | {\equiv} |\ a\ b \refl = \refl
+& \ | {\equiv} |\ x\ y\ \refl = \refl
 \end{align*}
 $$
 
 ```agda
 |≡| : ∀ {a n m} (xs : Vect n a) (ys : Vect m a) → n ≡ m → xs ≡ ys
-|≡| a b refl = refl
+|≡| x y refl = refl
 ```
 
 和上面一样，在建立了 $ n \equiv m $ 的基础上，可以直接用 `refl` 表达 $ xs \equiv ys $ 。
