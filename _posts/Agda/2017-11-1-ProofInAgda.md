@@ -54,6 +54,7 @@ $$
 \DeclareMathOperator{data}{data}
 \DeclareMathOperator{where}{where}
 \DeclareMathOperator{with}{with}
+\DeclareMathOperator{Vect}{Vect}
 p \rightarrow q
 $$
 
@@ -253,6 +254,27 @@ $$
 ab ⇆₁ bc with ab   | bc
 ...         | refl | refl = refl
 ```
+
+## 另一个例子
+
+现在你肯定有点感觉了，但是这个例子太 trivial 你又感觉自己有点没懂，
+那么我们再来看看这个例子帮你加深一下理解。
+
+考虑一个很常见的类型里带长度的数组 `Vect` 的定义，我们有：
+
+$$
+\begin{align*}
+& | {\equiv} | : \forall \{a\ m\ n\} (xs : \Vect n\ a) (ys : \Vect m\ a) \rightarrow n \equiv m \rightarrow xs \equiv ys \\
+& | {\equiv} | \_ \_ \refl = \refl
+\end{align*}
+$$
+
+```agda
+|≡| : ∀ {a n m} (xs : Vect n a) (ys : Vect m a) → n ≡ m → xs ≡ ys
+|≡| _ _ refl = refl
+```
+
+和上面一样，在建立了 $ n \equiv m $ 的基础上，可以直接用 `refl` 表达 $ xs \equiv ys $ 。
 
 ## 结束
 
