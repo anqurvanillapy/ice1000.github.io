@@ -114,7 +114,7 @@ proof : {p q r : Set} → p → q → r
 
 ## refl 与相等性
 
-之所以我没有再学习 Idris 就是因为那些教程没说 Refl 是啥 (Idris 叫 `Refl` ， Agda 叫 `refl`) 就直接在代码里面用了，我看的时候就一脸蒙蔽，还以为是我智商太低没看懂他 implicit 的东西。
+之所以我没有再学习 Idris 就是因为那些教程没说 `Refl` 是啥 (Idris 叫 `Refl` ， Agda 叫 `refl`) 就直接在代码里面用了，我看的时候就一脸蒙蔽，还以为是我智商太低没看懂他 implicit 的东西。
 但是好在我看了一坨很友好的 Agda 代码后民白了。
 
 首先，我们可以定义这样一个用来表示相等关系的 GADT ，它对于任何一个 Level 的任何一个实例都成立。
@@ -258,27 +258,39 @@ ab ⇆₁ bc with ab   | bc
 ## 另一个例子
 
 现在你肯定有点感觉了，但是这个例子太 trivial 你又感觉自己有点没懂，
-那么我们再来看看这个例子帮你加深一下理解。
+那么我们再来看看这个稍微复杂点的例子帮你加深一下理解。
 
-考虑两个元组，我们有：
+首先：
+
+$$
+\forall\ \{ a \}\ \{ A : \Set a \}
+$$
+
+表示 Universal Polymorphism 。然后考虑一个函数，我们有：
 
 $$
 \begin{align*}
-& | {\equiv} | : \forall\ \{a\ b\ c\ d\}\ \rightarrow a \equiv c \rightarrow b \equiv d \rightarrow (a,\ b) \equiv (c,\ d) \\
-& \ | {\equiv} |\ \refl \refl = \refl
+& \ggg : \forall\ \{a\ b\}\ \{A : \Set a\}\ \{B : \Set b\} \{m\ n\} \{f : A \rightarrow B\} \rightarrow m \equiv n \rightarrow f\ m \equiv f\ n \\
+& \ggg \refl = \refl
 \end{align*}
 $$
 
 ```agda
-|≡| : ∀ {a b c d} → a ≡ c → b ≡ d → (a, b) ≡ (c, d)
-|≡| refl refl = refl
+⋙ : ∀ {a b} {A : Set a} {B : Set b} {m n} {f : A → B} → m ≡ n → f m ≡ f n
+⋙ refl = refl
 ```
 
-和上面一样，在建立了 $ a \equiv c $ 和 $ b \equiv d $ 的基础上，可以直接用 `refl` 表达这两个元组相等。
+和上面一样，在建立了 $ m \equiv n $ 的基础上，可以直接用 `refl` 表达他们对于同一个函数应用的结果相等。
+
+我是在
+[这个 StackOverflow 问题](https://stackoverflow.com/questions/27091668/refl-in-agda-explaining-congruence-property)
+里看到这个代码的，唯一的回答里面还有更多的解释。
+
+这个我就暂时不作过多讲解了，以后再说。
 
 ## 结束
 
 这个证明太简单了，只有一步，没有什么实际意义，仅用于入门理解。
-下一篇文章我们将会进行一个关于与或关系的证明。
+下一篇文章我们将会进行一个稍微复杂点的关于与或关系的证明。
 
 我说完了。
