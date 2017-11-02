@@ -264,8 +264,8 @@ ab ⇆₁ bc with ab   | bc
 
 $$
 \begin{align*}
-& | {\equiv} | : \forall \{a\ n\ m\} (xs : \Vect n\ a) (ys : \Vect m\ a) \rightarrow n \equiv m \rightarrow xs \equiv ys \\
-& | {\equiv} | a\ b \refl = \refl
+& | {\equiv} | : \forall\ \{a\ n\ m\}\ (xs : \Vect n\ a)\ (ys : \Vect m\ a) \rightarrow n \equiv m \rightarrow xs \equiv ys \\
+& | {\equiv} |\ a\ b \refl = \refl
 \end{align*}
 $$
 
