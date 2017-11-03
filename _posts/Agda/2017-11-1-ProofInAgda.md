@@ -284,7 +284,7 @@ $$
 
 我是在
 [这个 StackOverflow 问题](https://stackoverflow.com/questions/27091668/refl-in-agda-explaining-congruence-property)
-里看到这个代码的，唯一的回答里面还有更多的解释。
+里看到这个代码的，下面唯一的回答里面还有更多的解释。
 
 这个我就暂时不作过多讲解了，以后再说。
 
