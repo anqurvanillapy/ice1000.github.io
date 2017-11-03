@@ -94,9 +94,9 @@ p → q → r
 
 其实我们原本想表达的意思是
 
-> $ p\ \&\&\ q\rightarrow r $
+> $ p\ \land q\rightarrow r $
 
-但是这个 $ \&\& $ 关系暂时没讲所以先就这样。
+但是这个 $ \land $ 关系暂时没讲所以先就这样。
 
 这就是 "类型则命题，程序则证明" 的含义。
 
@@ -193,7 +193,7 @@ _⇆_ refl refl = refl -- 编译通过！
 
 在这个时候，编译器并没有把 $ a \equiv b $ 和 $ b \equiv c $ 当成既成条件，而是当成了 "变量" 。
 
-这就回到了我们原本的需求，我们原本就是需要写出一个 $ a \equiv b\ \&\&\ b \equiv c \Rightarrow a \equiv c $ 的变换。
+这就回到了我们原本的需求，我们原本就是需要写出一个 $ a \equiv b \land b \equiv c \rightarrow a \equiv c $ 的变换。
 
 如果要用变换强行实现的话，可以使用 `with` 语句（就是 Agda 的 `case of`）把这两个变量模式匹配出来，然后直接得证。
 这里给出一个代码实现。
