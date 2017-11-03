@@ -94,7 +94,7 @@ p → q → r
 
 其实我们原本想表达的意思是
 
-> $ p\ \land q\rightarrow r $
+> $ p \land q\rightarrow r $
 
 但是这个 $ \land $ 关系暂时没讲所以先就这样。
 
