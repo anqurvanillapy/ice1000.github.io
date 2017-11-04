@@ -23,7 +23,7 @@ description: Make image a textify
 
 ### 选择一张图片
 
-我选择出自[这篇博客](http://ice1000.org/2017/03/24/UseMemoPoolInFibMatrix/)
+我选择出自[这篇博客](../../../../2017/03/24/UseMemoPoolInFibMatrix/)
 的这个图片：
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/4/1.png)

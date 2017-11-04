@@ -22,8 +22,8 @@ description: make a simple language with MPS
 
 ## 准备工作
 
-+ 阅读[上上篇博客](http://ice1000.org/2017/04/06/MakeSimpleLangWithMPS/)并完成对应的工作
-+ 阅读[上一篇博客](http://ice1000.org/2017/04/07/MakeSimpleLangWithMPS/)并完成对应的任务
++ 阅读[上上篇博客](../../../../2017/04/06/MakeSimpleLangWithMPS/)并完成对应的工作
++ 阅读[上一篇博客](../../../../2017/04/07/MakeSimpleLangWithMPS/)并完成对应的任务
 + 英文输入法（就是<kbd>Ctrl</kbd>+<kbd>Space</kbd>没有被占用的输入法）
 
 ## 本文主要内容
@@ -253,7 +253,7 @@ text: I'm a performance artist.
 真的是篇幅所限！我其实很想把这些都说完的。
 
 + 类似括号配对的效果，可以对你指定的两种（任意！不一定是括号！可以是 begin end 这种） Editor 元素进行高亮配对
-+ 改变前景/背景颜色（可以参考我[之前的那个 ShapeLang](http://ice1000.org/2017/03/18/TryShapeWithMPS/)里面的效果）
++ 改变前景/背景颜色（可以参考我[之前的那个 ShapeLang](../../../../2017/03/18/TryShapeWithMPS/)里面的效果）
 + 根据 AST 节点属性的情况，按需显示 Editor 元素
 + 显示表格
 + 奇怪的对齐方式

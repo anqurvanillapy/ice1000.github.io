@@ -21,7 +21,7 @@ description: extending java in mps
 
 在这篇教程中，我们将模块化我们的 Generator ，并使我们能在`BaseLanguage`当中写我们的语言的代码。
 
-如果你做了[上一篇博客的作业](http://ice1000.org/2017/04/12/MakeSimpleLangWithMPS/#还能这么玩)
+如果你做了[上一篇博客的作业](../../../../2017/04/12/MakeSimpleLangWithMPS/#还能这么玩)
 的话，你就可以体验一把`在 Java 里面写 C#`的感觉了。虽然这么有点不好（估计会引发一场巨大巨大的战争），
 但是你看懂了这篇教程并跟着来了一波之后，你就已经可以任意地扩展`BaseLanguage`的语法了。
 

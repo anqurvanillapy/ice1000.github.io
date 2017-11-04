@@ -14,10 +14,10 @@ description: A zhihu answer
 谢题主邀请，我的文章目前只有很少的人看而且大多数都是我的好朋友，他们跟我说我写的还不错。
 
 那么我说下我写文章的路子。
-首先要有一个想写的东西，这种东西有可能是义务性地写(我博客的[Kotlin/IntelliJ系列文章](http://ice1000.org/categories/#IntelliJ))，
-有可能是突然有了新发现而写([矩阵快速幂斐波那契的矩阵数量与参数的谜之函数关系](http://ice1000.org/2017/03/24/UseMemoPoolInFibMatrix/)等)
-有可能是总结经验和踩坑记录，记录思想而写([解释型语言作用域实现](http://ice1000.org/2017/03/10/DifferenceBetweenMeAndDragonBook/)等)，
-有可能是自己写出了优雅有趣的东西而写([函数式 dfs ](http://ice1000.org/2017/05/26/UseMonadInDfs/)等)。
+首先要有一个想写的东西，这种东西有可能是义务性地写(我博客的[Kotlin/IntelliJ系列文章](../../../../categories/#IntelliJ))，
+有可能是突然有了新发现而写([矩阵快速幂斐波那契的矩阵数量与参数的谜之函数关系](../../../../2017/03/24/UseMemoPoolInFibMatrix/)等)
+有可能是总结经验和踩坑记录，记录思想而写([解释型语言作用域实现](../../../../2017/03/10/DifferenceBetweenMeAndDragonBook/)等)，
+有可能是自己写出了优雅有趣的东西而写([函数式 dfs ](../../../../2017/05/26/UseMonadInDfs/)等)。
 
 这基本就是我写文章的全部契机，可以看到我不会为了观众写文章，我是出于自己开心的目的而写，然后才是让读者能够看懂。不然写着写着就不想写了。
 

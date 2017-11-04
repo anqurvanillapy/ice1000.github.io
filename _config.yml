@@ -63,7 +63,7 @@ subscribe_rss: /feed.xml
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter: rouge # pygments
 
   # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
   syntax_highlighter_opts:
@@ -98,6 +98,7 @@ permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-github-metadata
   - rouge
+  - pygments
   # - jekyll-html-pipeline
   - jekyll-paginate-v2
   - jekyll-sitemap

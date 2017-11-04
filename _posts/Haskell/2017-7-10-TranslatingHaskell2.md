@@ -16,7 +16,7 @@ description: Translating Haskell into various languages
 
 # 前情提要
 
-+ [讲了 Rust Java Dart](http://ice1000.org/2017/07/05/TranslatingHaskell)
++ [讲了 Rust Java Dart](../../../../2017/07/05/TranslatingHaskell)
 
 前文曾经说过，
 

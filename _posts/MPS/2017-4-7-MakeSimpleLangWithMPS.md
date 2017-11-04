@@ -12,7 +12,7 @@ description: make a simple language with MPS
 
 ## 准备工作
 
-+ 阅读并跟随[上一篇博客](http://ice1000.org/2017/04/06/MakeSimpleLangWithMPS/)完成之前的工作。
++ 阅读并跟随[上一篇博客](../../../../2017/04/06/MakeSimpleLangWithMPS/)完成之前的工作。
 + 学会用 Java 写 Hello World
 
 ## 本文主要内容
@@ -67,7 +67,7 @@ description: make a simple language with MPS
 + MPS 的 Generator 非常强大，不过这个教程里的例子暂时体现不出来
 
 我们来编写最基本的部分，先写个 main 函数，里面写个输出语句。
-请记得使用[Live Template](http://ice1000.org/2016/06/29/LearnIDEA3/)哦。
+请记得使用[Live Template](../../../../2016/06/29/LearnIDEA3/)哦。
 
 （上面的链接指向的博客是我还不知道 Live Template 可以定制的时候写的，所以没往深处讲，不过内容是正确的）
 

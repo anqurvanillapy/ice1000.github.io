@@ -17,7 +17,7 @@ description: Learn kotlin 2 Hello World
 
 ## 环境搭建
 
-请参考我[另一篇博客](http://ice1000.org/2016/6/26/LearnIDEA/)，下载安装 IntelliJ IDEA （我本来打算自己先做一个比较简单的 Kotlin IDE ，不过后来发现这个轮子好像很难制造。。QAQ ）。
+请参考我[另一篇博客](../../../../2016/6/26/LearnIDEA/)，下载安装 IntelliJ IDEA （我本来打算自己先做一个比较简单的 Kotlin IDE ，不过后来发现这个轮子好像很难制造。。QAQ ）。
 
 然后根据那篇博客的内容，创建一个新工程。只不过这次我们创建的新工程是一个 Kotlin 工程，所以要在创建工程的时候选择“Kotlin”。
 
@@ -39,7 +39,7 @@ description: Learn kotlin 2 Hello World
 然后我们要在里面写代码了。这里说一下，任何 Kotlin 程序都是从一个 main 函数开始的。至于什么是 main 函数，你不用管。看完下文后你就会知道你该怎么做。至于为什么，要留到后期的学习中。
 
 等等，我们现在是要插入一个 main 函数，那么此时我们遇到的问题就是，每次都要输入一次 main 函数，很麻烦。
-还记得我在[另一篇博客](http://ice1000.org/2016/06/29/LearnIDEA3/)中讲到的一个 IDEA 黑科技吗？此时你只需要输入**main**，第一个提示就是插入 main 函数。
+还记得我在[另一篇博客](../../../../2016/06/29/LearnIDEA3/)中讲到的一个 IDEA 黑科技吗？此时你只需要输入**main**，第一个提示就是插入 main 函数。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt1/5.png)
 

@@ -35,7 +35,7 @@ description: make a simple language with MPS
 
 + MPS 2017.1
 + 编译原理相关知识（起码你得知道啥是 AST ， Abstract Syntax Tree ）
-+ 阅读[上篇博客](http://ice1000.org/2017/03/18/TryShapeWithMPS/)
++ 阅读[上篇博客](../../../../2017/03/18/TryShapeWithMPS/)
 
 上篇博客里使用的还是 2017.1 RC ， 现在已经出了正式版啦。
 
@@ -224,7 +224,7 @@ PrintlnSet:
 
 欧耶\~ 现在我们的语言的最小组成部分已经完成了一大半了。
 
-你已经可以像编辑上次介绍的[ShapeLanguage](http://ice1000.org/2017/03/18/TryShapeWithMPS/)那样进行破界神编辑了。
+你已经可以像编辑上次介绍的[ShapeLanguage](../../../../2017/03/18/TryShapeWithMPS/)那样进行破界神编辑了。
 
 ## 下次讲什么
 

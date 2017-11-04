@@ -80,7 +80,7 @@ BennyHuo 霍大的 QQ 群人数，在一个上午之间，从 300 人左右，�
 我很好奇他们的月薪。
 
 我以后应该不需要再写什么 Kotlin 教程之类的了，[知乎专栏](https://zhuanlan.zhihu.com/ice1k)和
-[博客](http://ice1000.org/categories/#Kotlin)都写了那么多了，培训班想必要开 Kotlin 课程了吧。
+[博客](../../../../categories/#Kotlin)都写了那么多了，培训班想必要开 Kotlin 课程了吧。
 
 而且 Kotlin 能玩的黑魔法我基本都玩过了，而且也在博客里面写了。你们想看就去看吧。
 
