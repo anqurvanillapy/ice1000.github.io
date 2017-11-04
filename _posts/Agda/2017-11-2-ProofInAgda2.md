@@ -201,7 +201,7 @@ $$
 ∧-comm : ∀ {P Q} → (P ∧ Q) ⇔ (Q ∧ P)
 ```
 
-这里我们就已经使用到之前的代码—— $ \Leftrightarrow $ 啦。
+这里我们就已经使用到之前的定义—— $ \Leftrightarrow $ 啦。
 
 如何证明它呢？
 
@@ -264,7 +264,8 @@ $$
 
 ### 例三：结合律
 
-这个我就不详细讲了（因为思路和交换律差不多），我就只给出类型签名就可以了。
+这个结合律（ Associative Law ）的例子其实已经不是例子了（因为我不想详细讲
+（因为思路和交换律差不多）），我就只给出类型签名就可以了。
 
 $$
 {\land}{-}{\assoc} : \forall \{P\ Q\ R\} \rightarrow (P \land (Q \land R)) \Leftrightarrow ((P \land Q) \land R)
