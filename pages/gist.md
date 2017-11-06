@@ -15,6 +15,7 @@ music-map-gen
 eebnf-lisp
 lice-haskell-impl
 a-plus-b
+rev-rev-id
 bool-array" | split: "
 " %}
 {% for gist in gists %}
