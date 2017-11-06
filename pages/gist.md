@@ -14,6 +14,7 @@ posgen-gradle
 music-map-gen
 eebnf-lisp
 lice-haskell-impl
+a-plus-b
 bool-array" | split: "
 " %}
 {% for gist in gists %}
