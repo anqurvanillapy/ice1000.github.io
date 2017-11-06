@@ -131,7 +131,7 @@ $$
 然后考虑 `Q` 成立的情况，我们有：
 
 $$
-{\lor}{-}{\elim}\ \_ \qr ({\lor}{-}{\elim}_1 \ q) = \qr q
+{\lor}{-}{\elim}\ \_ \qr \ ({\lor}{-}{\elim}_1 \ q) = \qr q
 $$
 
 ```agda
