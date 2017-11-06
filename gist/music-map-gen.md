@@ -6,26 +6,26 @@ title: 音游生成器
 [Project URL](https://github.com/ice1000/MusicGameGen)
 
 ```kotlin
-import org.frice.game.Game
-import org.frice.game.Game.Initializer.launch
-import org.frice.game.anim.move.SimpleMove
-import org.frice.game.obj.button.SimpleText
-import org.frice.game.obj.sub.ImageObject
-import org.frice.game.obj.sub.ShapeObject
-import org.frice.game.resource.graphics.ColorResource
-import org.frice.game.resource.image.ImageResource
-import org.frice.game.resource.image.FileImageResource
-import org.frice.game.utils.audio.play
-import org.frice.game.utils.data.Preference
-import org.frice.game.utils.graphics.shape.FRectangle
-import org.frice.game.utils.message.FDialog
-import org.frice.game.utils.time.*
-import org.frice.game.Game.Initializer.launch
+package org.ice1000.mgg
 
+import org.frice.Game
+import org.frice.anim.move.SimpleMove
+import org.frice.launch
+import org.frice.obj.button.SimpleText
+import org.frice.obj.sub.ImageObject
+import org.frice.obj.sub.ShapeObject
+import org.frice.resource.graphics.ColorResource
+import org.frice.resource.image.FileImageResource
+import org.frice.resource.image.ImageResource
+import org.frice.utils.audio.play
+import org.frice.utils.data.Preference
+import org.frice.utils.message.FDialog
+import org.frice.utils.shape.FRectangle
+import org.frice.utils.time.*
 import java.awt.event.KeyEvent
 
-fun main(args: Array<String>) = launch(MusicGame::class.java)
-const val STRIKES = "ASDFJKL;"
+fun main(vararg args: String) = launch(MusicGame::class.java)
+val STRIKES = "ASDFJKL;"
 val IMAGES = mapOf(*STRIKES.map { it to FileImageResource("res/img/VK_$it.png") }.toTypedArray())
 fun pos(any: Any) = STRIKES.indexOf("$any"[0])
 val KEYS = mapOf(KeyEvent.VK_A to "A", KeyEvent.VK_S to "S", KeyEvent.VK_D to "D", KeyEvent.VK_F to "F",
@@ -46,14 +46,13 @@ class MusicGame : Game(3) {
   override fun onLastInit() {
     when (FDialog(this).confirm("Are you player?", "Confirm", FDialog.YES_NO_OPTION)) {
       FDialog.NO_OPTION -> Preference("data.db").let { db ->
-        addKeyListener(pressed = { if (it.keyCode in KEYS) db.insert("${Clock.current - 3000}", "${KEYS[it.keyCode]}") })
+        addKeyListener(pressed = { if (it.keyCode in KEYS) db.insert("${FClock.current - 3000}", "${KEYS[it.keyCode]}") })
       }
       FDialog.YES_OPTION -> Preference("data.db").list().let {
         val res = ColorResource.BLUE
         val resultImages = listOf("Perfect", "Good", "Bad", "Miss").map { ImageResource.fromPath("res/img/$it.png") }
         val wall = ShapeObject(ColorResource.COLORLESS, FRectangle(700, 10), -10.0, 590.0)
-        var scoreC = 0
-        var comboC = 0
+        var (scoreC, comboC) = 0 to 0
         val show = SimpleText(ColorResource.BLACK, "score", 20.0, 20.0)
         val updateShow = { show.text = "score: $scoreC, combo: $comboC" }
         addObject(1, ShapeObject(res, FRectangle(700, 10), -10.0, 480.0),
@@ -96,7 +95,5 @@ class MusicGame : Game(3) {
       else -> System.exit(0)
     }
   }
-
-  override fun onRefresh() { if (seconds.ended() && count >= 0) println("${count--}") }
 }
 ```
