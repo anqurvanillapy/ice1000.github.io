@@ -22,7 +22,7 @@ permalink: /about-cn/
 + [我在 CodeWars 上的一些踪迹](../codewars-cn/)
 + [StackOverflow developer story](http://stackoverflow.com/story/ice1000)
 
-[![](http://stackoverflow.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
+[![](http://stackexchange.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 
 ### 这个博客的名字的含义
 
