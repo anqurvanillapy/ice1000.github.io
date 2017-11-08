@@ -19,7 +19,7 @@ permalink: /about-cn/
 + [订阅](../subscribe-cn/)
 + [RSS](../feed.xml)
 + [**开源社区贡献**](../opensource-contributions/)
-+ [我在 CodeWars 上的一些踪迹](../codewars-cn/)
++ [CodeWars](../codewars-cn/)
 + [StackOverflow developer story](http://stackoverflow.com/story/ice1000)
 
 [![](http://stackexchange.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")

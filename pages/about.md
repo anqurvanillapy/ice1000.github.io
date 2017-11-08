@@ -19,7 +19,7 @@ I am a student, programming for interest.
 + [Resume](../resume)
 + [Subscribe](../subscribe)
 + [Feed with RSS](../feed.xml)
-+ [About me on CodeWars](../codewars/)
++ [CodeWars](../codewars/)
 + [**Opensource Contributions**](../opensource-contributions/)
 + [StackOverflow developer story](http://stackoverflow.com/story/ice1000)
 
