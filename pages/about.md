@@ -23,7 +23,7 @@ I am a student, programming for interest.
 + [**Opensource Contributions**](../opensource-contributions/)
 + [StackOverflow developer story](http://stackoverflow.com/story/ice1000)
 
-[![](http://stackoverflow.com/users/flair/7083401.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
+[![](http://stackoverflow.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 
 ### Meaning of the blog's name
 
