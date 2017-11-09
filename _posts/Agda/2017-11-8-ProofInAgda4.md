@@ -109,7 +109,7 @@ fun absurd(a: Nothing): Any = a
 def absurd(a: Nothing): Any = a
 ```
 
-在 Agda 中，假命题不能推出除了它自身是假命题之外的命题（这种就是吃饱了撑的），而很多其他类型在经过各种组合下可以被推为假命题。
+在 Agda 中，假命题不能推出除了它自身是假命题之外的命题（而这种就是一个吃饱了撑的证明），而很多其他类型在经过各种组合下可以被推为假命题。
 也就是说，在一般情况下，它只能作为证明的结论。
 
 所以我们一般在函数的返回值里看到它（而不是参数）。
@@ -145,17 +145,17 @@ absurd ()
 
 好， it checks 。
 
-### 其他例子
-
 这个 `()` 就是 absurd pattern 了。
 在匹配的模式中，如果使用了 absurd pattern ，那么就不需要，也不能写对应的函数体了。
 它的名字也可以说是借鉴了 Haskell 中的这个函数名。
+
+### 其他例子
 
 同理，我们可以写一些类似的代码（关于 $ \land $ 和 $ \lor $ 的定义请参考前文），练习一下对 absurd pattern 的使用：
 
 $$
 \begin{align*}
-& \absurd _0 : \forall \{A\} \rightarrow \bot \land A \rightarrow \bot \\
+& \proof _0 : \forall \{A\} \rightarrow \bot \land A \rightarrow \bot \\
 & \proof _0 \ ({\land}{-}{\intro}\ ()\ \_) \\
 \\
 & \proof _1 : \forall \{A\} \rightarrow \bot \lor A \rightarrow A \\
