@@ -231,7 +231,7 @@ $$
 
 $$
 \begin{align*}
-& 9{\neq}4{\times}2 : 8 \ {\is}{-}{\double}{-}{\of} \ 4 \\
+& 9{\neq}4{\times}2 : 9 \ {\is}{-}{\double}{-}{\of} \ 4 \\
 & 9{\neq}4{\times}2 \ (\intro \ ())
 \end{align*}
 $$
