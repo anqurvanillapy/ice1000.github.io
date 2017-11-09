@@ -200,7 +200,7 @@ $$
 \begin{align*}
 & \data \_{\is}{-}{\double}{-}{\of}\_ : \Bbb{N} \rightarrow \Bbb{N}
   \rightarrow \Set \where \\
-& \ \ \intro : \forall \{n \ m\} \rightarrow n + m \equiv m
+& \ \ \intro : \forall \{n \ m\} \rightarrow n + n \equiv m
   \rightarrow m \ {\is}{-}{\double}{-}{\of} \ n
 \end{align*}
 $$
