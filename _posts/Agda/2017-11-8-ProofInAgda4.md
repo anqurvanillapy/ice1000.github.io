@@ -34,9 +34,7 @@ inline_latex: true
 
 在 Rust 中，这个类型叫 `!` 。
 
-在 Haskell 中（其实这个并不是严格意义上的，只是功能类似，要是把它真当成 Haskell 的 Bottom Type 会被喷的），这个类型叫 `Void` ，在 `Data.Void` 里。
-
-在 Java 或者 C\# 中，这个类型没有名字，只能通过写出这个类型的表达式来隐式使用它（垃圾语言，这都不支持）。
+在 Haskell 中（其实这个并不是严格意义上的，只是功能类似，类型上并不是，要是把它真当成 Haskell 的 Bottom Type 会被喷的），这个类型叫 `Void` ，在 `Data.Void` 里。
 
 这类类型的统称就是 Bottom Type 。
 在证明中，它对应的命题是假命题。
