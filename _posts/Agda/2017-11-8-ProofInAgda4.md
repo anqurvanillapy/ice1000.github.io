@@ -27,7 +27,7 @@ inline_latex: true
 
 想必写过 Scala 或者 Kotlin 的同学都很熟悉 Bottom Type 的概念，在前面两个语言当中有一个特殊的类型 `Nothing`，它是所有类型的子类型。
 
-这些类型有一个共同的特征，就是他们__没有实例__，只有那些在求值时会导致程序中止或者死循环的表达式才会属于这个类型。
+这些类型有一个共同的特征，就是他们**没有实例**，只有那些在求值时会导致程序中止或者死循环的表达式才会属于这个类型。
 
 这就是为什么他们可以放在任何地方的原因，因为执行到他们这里就会异常退出或者永远无法继续，因此它的返回值根本就不存在，不需要处理。
 根据它这样的特征，在支持 subtyping 的语言中，这个类型就成了所有类型的子类型。
@@ -109,7 +109,7 @@ fun absurd(a: Nothing): Any = a
 def absurd(a: Nothing): Any = a
 ```
 
-在 Agda 中，假命题不能推出除了它自身是假命题之外的命题（这种就是吃饱了撑的），而很多其他类型在经过各种组合下可以被推为假命题。
+在 Agda 中，假命题不能推出除了它自身是假命题之外的命题（而这种就是一个吃饱了撑的证明），而很多其他类型在经过各种组合下可以被推为假命题。
 也就是说，在一般情况下，它只能作为证明的结论。
 
 所以我们一般在函数的返回值里看到它（而不是参数）。
@@ -145,17 +145,17 @@ absurd ()
 
 好， it checks 。
 
-### 其他例子
-
 这个 `()` 就是 absurd pattern 了。
 在匹配的模式中，如果使用了 absurd pattern ，那么就不需要，也不能写对应的函数体了。
 它的名字也可以说是借鉴了 Haskell 中的这个函数名。
+
+### 其他例子
 
 同理，我们可以写一些类似的代码（关于 $ \land $ 和 $ \lor $ 的定义请参考前文），练习一下对 absurd pattern 的使用：
 
 $$
 \begin{align*}
-& \absurd _0 : \forall \{A\} \rightarrow \bot \land A \rightarrow \bot \\
+& \proof _0 : \forall \{A\} \rightarrow \bot \land A \rightarrow \bot \\
 & \proof _0 \ ({\land}{-}{\intro}\ ()\ \_) \\
 \\
 & \proof _1 : \forall \{A\} \rightarrow \bot \lor A \rightarrow A \\
@@ -200,7 +200,7 @@ $$
 \begin{align*}
 & \data \_{\is}{-}{\double}{-}{\of}\_ : \Bbb{N} \rightarrow \Bbb{N}
   \rightarrow \Set \where \\
-& \ \ \intro : \forall \{n \ m\} \rightarrow n + m \equiv m
+& \ \ \intro : \forall \{n \ m\} \rightarrow n + n \equiv m
   \rightarrow m \ {\is}{-}{\double}{-}{\of} \ n
 \end{align*}
 $$
