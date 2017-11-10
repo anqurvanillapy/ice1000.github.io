@@ -192,7 +192,7 @@ rev$v:a=a:rev$v a (x ∷ xs) with rev (xs ∷ʳ a) | rev$v:a=a:rev$v a xs
 $$
 \begin{align*}
 & \proof _0 \params \with \lhs | \proof _0 \params \\
-& ... \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ | {.}\rhs \ | \refl = \proof _1 \params
+& ... \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ | {.}\rhs \ | \refl = \proof _1 \params
 \end{align*}
 $$
 
