@@ -195,7 +195,7 @@ _⇆_ refl refl = refl -- 编译通过！
 
 这就回到了我们原本的需求，我们原本就是需要写出一个 $ a \equiv b \land b \equiv c \rightarrow a \equiv c $ 的变换。
 
-如果要用变换强行实现的话，可以使用 `with` 语句（就是 Agda 的 `case of`）把这两个变量模式匹配出来，然后直接得证。
+如果要用变换强行实现的话，可以使用 `with` 语句（就是 Agda 的 `case of` ，但是和 Haskell 那个又不一样）把这两个变量模式匹配出来，然后直接得证。
 这里给出一个代码实现。
 
 $$
