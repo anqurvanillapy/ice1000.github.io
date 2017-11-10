@@ -13,7 +13,7 @@ inline_latex: true
 
 这篇文章主要讲 `rewrite` 。
 
-注意，本文的函数命名依旧骚如白肥猪，请非 Agda / Lisp 用户不要在家里进行模仿，谢谢【
+注意，本文的函数命名依旧骚如白皮猪，请非 Agda / Lisp 用户不要在家里进行模仿，谢谢【
 
 ## 前置知识
 
@@ -52,7 +52,7 @@ $$
 & \ \ \ff : (n : \Bbb{N}) \rightarrow F \ n \\
 \\
 & \proof _0 : \{n : \Bbb{N}\} \rightarrow F\ n \rightarrow F\ n \rightarrow F\ n \\
-& \proof _0 \ (\ff n) \ (\ff \ {.}n) = \ff\ n
+& \proof _0 \ (\ff \ n) \ (\ff \ {.}n) = \ff\ n
 \end{align*}
 $$
 
@@ -79,7 +79,7 @@ $$
 & \rev : \forall \{n \ m\} \{A : \Set n\} \rightarrow \Vec A \ m
          \rightarrow \Vec A \ m \\
 & \rev \ [] = [] \\
-& \rev \ (x\ {:}{:} \ xs) = \rev \ xs \ {:}{:} ^r x
+& \rev \ (x\ {:}{:} \ \xs) = \rev \ \xs \ {:}{:} ^r x
 \end{align*}
 $$
 
