@@ -45,6 +45,7 @@ $$
 \DeclareMathOperator{with}{with}
 \DeclareMathOperator{lhs}{lhs}
 \DeclareMathOperator{rhs}{rhs}
+\DeclareMathOperator{xs}{xs}
 
 \begin{align*}
 & \data F : \Bbb{N} \rightarrow \Set \where \\
@@ -126,7 +127,7 @@ rev$v:a=a:rev$v : ∀ {n m} {A : Set n} (a : A) (v : Vec A m) →
 $$
 \begin{align*}
 & {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ [] = \ ? \\
-& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ xs) = \ ?
+& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ \xs) = \ ?
 \end{align*}
 $$
 
@@ -143,17 +144,17 @@ rev$v:a=a:rev$v a (x ∷ xs) = ?
 我们可以用这个思路来证明（为了方便看，我在此处就直接使用 `lemma` 代替上文的 $ {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v $ 了）：
 
 $$
-\forall a, x, xs \rightarrow \lemma (a, xs) \rightarrow \rev (xs \ {:}{:} \ a) \equiv (a \ {:}{:}^r \rev(xs))
-    \rightarrow \lemma(a, x \ {:}{:} \ xs)
+\forall a, x, xs \rightarrow \lemma (a, \xs) \rightarrow \rev (\xs \ {:}{:} \ a) \equiv (a \ {:}{:}^r \rev(\xs))
+    \rightarrow \lemma(a, x \ {:}{:} \ \xs)
 $$
 
 这个逻辑放在我们正常人眼中就是一个看起来有点点流氓但实际上非常有道理的逻辑。
 
 首先，我们摆出了这样一个事实：
 既然我们这个证明是归纳证明，而且我们已经证明了第一种情况（就是上面那个即得易见平凡），
-因此我们可以在后面的证明中引用前面的情况，在上面的例子中，就是 $ \lemma(a, xs) $ 这种情况。
+因此我们可以在后面的证明中引用前面的情况，在上面的例子中，就是 $ \lemma(a, \xs) $ 这种情况。
 
-由于 $ \lemma(a, xs) $ 成立，我们可以知道 $ \rev (xs \ {:}{:} \ a) \equiv (a \ {:}{:}^r \rev(xs)) $ ，从而得出 $ \lemma(a, x \ {:}{:} \ xs) $ 。
+由于 $ \lemma(a, xs) $ 成立，我们可以知道 $ \rev (\xs \ {:}{:} \ a) \equiv (a \ {:}{:}^r \rev(\xs)) $ ，从而得出 $ \lemma(a, x \ {:}{:} \ \xs) $ 。
 
 这就是我们的证明过程。
 
@@ -169,8 +170,8 @@ $$
     (a : A) (v : \Vec A \ m) \rightarrow
     \rev (v \ {:}{:} ^r a) \equiv a \ {:}{:}\rev v \\
 & {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ \_ \ [] = \refl \\
-& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ xs) \with \ \rev (xs \ {:}{:}^r \ a) \ | \ {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ xs \\
-& ... \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ | {.}(a \ {:}{:} \rev xs) \ | \refl = \refl
+& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ \xs) \with \ \rev (\xs \ {:}{:}^r \ a) \ | \ {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ \xs \\
+& ... \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ | \ {.}(a \ {:}{:} \rev \xs) \ | \refl = \refl
 \end{align*}
 $$
 
@@ -184,15 +185,15 @@ rev$v:a=a:rev$v a (x ∷ xs) with rev (xs ∷ʳ a) | rev$v:a=a:rev$v a xs
 
 可以看到，我们使用模式匹配摆出了前面的证明成立的事实，然后使用了一个 dot pattern 来把前面的证明所说明的东西给摆出来。
 
-这个前面的证明，指 $ {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ xs $ 。<br/>
-这个证明所说明的，是 $ \rev (xs \ {:}{:}^r \ a) $ 可以用 $ {.}(a \ {:}{:} \rev xs) $ 给匹配出来。
+这个前面的证明，指 $ {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ \xs $ 。<br/>
+这个证明所说明的，是 $ \rev (\xs \ {:}{:}^r \ a) $ 可以用 $ {.}(a \ {:}{:} \rev \xs) $ 给匹配出来。
 
 我们可以发现，这个证明写成一个通用的形式，就是这个形状：
 
 $$
 \begin{align*}
 & \proof _0 \params \with \lhs | \proof _0 \params \\
-& ... \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ | {.}\rhs \ | \refl = \proof _1 \params
+& ... \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ | \ {.}\rhs \ | \refl = \proof _1 \params
 \end{align*}
 $$
 
@@ -211,16 +212,16 @@ proof₀ params with lhs | proof₀ params
 
 $$
 \begin{align*}
-& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ xs) \\
-& \ \ \rewrite {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ xs \\
-& \ \ \ \ \ \ \ \ = \refl
+& \proof _0 \params \\
+& \ \ \rewrite \proof _0 \ \params \\
+& \ \ \ \ \ \ \ \ = \proof _1 \params
 \end{align*}
 $$
 
 ```agda
-rev$v:a=a:rev$v a (_ ∷ xs)
-  rewrite rev$v:a=a:rev$v a xs
-          = refl
+proof₀ params
+  rewrite proof₀ params
+          = proof₁ params
 ```
 
 最后使用 `rewrite` 的完整带签名版本就是这样啦：
@@ -231,8 +232,8 @@ $$
     (a : A) (v : \Vec A \ m) \rightarrow
     \rev (v \ {:}{:} ^r a) \equiv a \ {:}{:}\rev v \\
 & {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ \_ \ [] = \refl \\
-& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ xs) \\
-& \ \ \rewrite {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ xs \\
+& {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ (\_ \ {:}{:} \ \xs) \\
+& \ \ \rewrite {\rev}{\$}v{:}a{=}a{:}{\rev}{\$}v \ a \ \xs \\
 & \ \ \ \ \ \ \ \ = \refl
 \end{align*}
 $$
