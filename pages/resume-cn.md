@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: clean_post
 title: 简历
 description: Resume
 keywords: Resume, resume, CV
