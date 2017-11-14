@@ -111,4 +111,5 @@ collections:
     permalink: /:collection/:path/
 
 repository: ice1000/ice1000.github.io
+repository_name: ice1000.github.io
 
