@@ -5,6 +5,29 @@
     padding-right: 20px
 }
 
+#comments {
+}
+
+#comments a {
+    font-size: 85%;
+}
+
+#comments img {
+    /*padding-bottom: 20px;*/
+    /*padding-top: 10px;*/
+    /*padding-left: 10px;*/
+    height: 100px;
+    width: 100px;
+}
+
+#comments p {
+    color: #000;
+    background-color: #f2f2f2;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .mobile-visible {
     display: none
 }
