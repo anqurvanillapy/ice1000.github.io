@@ -5,6 +5,7 @@ category: Kotlin
 tags: Essay
 keywords: Kotlin
 description: Kotlin without variables
+issue_id: 4
 ---
 
 说到写代码，一般人都是会使用变量的。比如说：
