@@ -1,22 +1,5 @@
 {% if page.issue_id %}
 
-<div class="wrapper">
-	<div id=comments>
-		<h2>评论/Comments</h2>
-		<div id="header">
-			Want to leave a comment? Leave your comment at <a
-				href="https://github.com/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issue_id}}#new_comment_field">
-			this post's issue page</a>.
-			<br/>
-			如果您想留下一条评论，请在 <a
-				href="https://github.com/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issue_id}}#new_comment_field">
-			这篇博客对应的 issue </a>下留言。
-			<br/>
-			<br/>
-		</div>
-	</div>
-</div>
-
 <script>
 	var getJSON = function (url, successHandler, errorHandler) {
 		var xhr = typeof XMLHttpRequest !== 'undefined'
@@ -49,10 +32,29 @@
 				//add comment
 				comments += '<p>' + data[i].body + '</p>';
 			}
+			comments += `
+		<div id="header">
+			Want to leave a comment? Leave your comment at <a
+				href="https://github.com/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issue_id}}#new_comment_field">
+			this post's issue page</a>.
+			<br/>
+			如果您想留下一条评论，请在 <a
+				href="https://github.com/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issue_id}}#new_comment_field">
+			这篇博客对应的 issue </a>下留言。
+			<br/>
+			<br/>
+		</div>`
 			document.getElementById('comments').innerHTML += comments;
 		}
 	);
 
 </script>
+
+
+<div class="wrapper">
+	<div id=comments>
+		<h2>评论/Comments</h2>
+	</div>
+</div>
 
 {% endif %}
