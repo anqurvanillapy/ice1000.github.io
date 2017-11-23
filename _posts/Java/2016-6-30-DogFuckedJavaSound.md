@@ -7,17 +7,8 @@ keywords: Java, JavaSound
 description: How to use JavaSound to play mp3
 ---
 
-> JavaSound is so f#cking terrible ！！
-
-这是我在完成了[Dekoder](https://github.com/ice1000/Dekoder)第五个版本——v1.3 之后唯一想说的话。
-
-因为 JavaSound 真的是太猥琐了……我都不知道该怎么形容。而那个 JMF ， Java Media Framework ，竟然是使用的 JNI 和 C++完成的解码。这还能再猥琐一点吗？
-
-> 简直是狗日的 JavaSound ！！
-
-#### 推荐大家先去看看[Dekoder](https://github.com/ice1000/Dekoder)，了解一下冰封的音乐播放器作品。
-
-为了让大家少走弯路，冰封在这里特地写出一份教程，告诉大家如何使用 Java 进行音频的播放。
+个人项目 [Dekoder](https://github.com/ice1000/Dekoder) 到了第五个版本——v1.3 。
+在使用 Java 做音乐播放的时候走了不少弯路。留下一篇文章警醒后人（误）。
 
 ## 播放 wav
 
@@ -71,7 +62,7 @@ javax.sound.sampled.UnsupportedAudioFileException:
   could not get audio input stream from input file
 ```
 
-这样的报错。冰封在这个问题上起码纠结了接近一个月，中间还跑去学了 Lua 和 C#，最终才得以解决这个~~本来怎么看都应该是甲骨文的错的~~问题。
+这样的报错。我在这个问题上起码纠结了接近一个月，中间还跑去学了 Lua 和 C#，最终才得以解决这个~~本来怎么看都应该是甲骨文的错的~~问题。
 
 ## 播放 mp3
 
@@ -79,9 +70,9 @@ javax.sound.sampled.UnsupportedAudioFileException:
 
 [这个项目](http://www.javazoom.net/mp3spi/sources.html)简直堪称业界良心，虽然文档还是简陋了点，虽然它还是有 bug （总时长获取失败）。
 
-这是一个非常优秀的项目，它不需要 JMF ，不需要 JNI ，不需要 C++，就完成了 Java 对于 MP3 的解码。而且最重要的是，你只需要导入它帮助文档中所说的三个 jar 包到你的项目内之后，你就能愉快地播放 MP3 了——就是原来的 wav 播放代码，不需要修改！
+这是一个非常优秀的项目，它不需要 JMF ，不需要 JNI ，不需要 C\+\+，就完成了 Java 对于 MP3 的解码。而且最重要的是，你只需要导入它帮助文档中所说的三个 jar 包到你的项目内之后，你就能愉快地播放 MP3 了——就是原来的 wav 播放代码，不需要修改！
 
-mp3spi 目前的最新版本是 1.9.5 ，不要被那些早就 deprecated 的博客给骗了——当然，要是冰封的博客什么时候也 deprecated 了，请务必邮件通知我！我一定修改！
+mp3spi 目前的最新版本是 1.9.5 ，不要被那些早就 deprecated 的博客给骗了——当然，要是我的博客什么时候也 deprecated 了，请务必邮件通知我！我一定修改！
 
 然后别动你上面的代码。试试用它打开一个 MP3 文件。
 
@@ -89,7 +80,7 @@ mp3spi 目前的最新版本是 1.9.5 ，不要被那些早就 deprecated 的博
 
 打开了，高兴吧？
 
-没错，当时冰封心里也是这样的感受。
+没错，当时我心里也是这样的感受。
 
 其实，我现在心里也是这样的感受。
 
@@ -97,4 +88,4 @@ mp3spi 目前的最新版本是 1.9.5 ，不要被那些早就 deprecated 的博
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/javasound/1.png)
 
-我还能再吸。。。吸。。girigiri 爱。。
+我说完了
