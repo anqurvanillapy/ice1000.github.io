@@ -55,14 +55,15 @@ infix fun Range.step(step: Int): Range {
 }
 ```
 
-这段代码定义了一个方法，这个方法属于 Range 类，参数是一个 Int。infix 表示该方法可以写成中缀表达式的形式。调用的话就能这样调用了：
+这段代码定义了一个方法，这个方法属于 `Range` 类，参数是一个 `Int`。`infix` 表示该方法可以写成中缀表达式的形式。调用的话就能这样调用了：
 
 ```kotlin
 (0..width step 2).forEach { i ->
 }
 ```
 
-这个给类添加方法的语言特性看起来神奇到爆，就像 Ruby 的打开类一样。这是在元编程吗？显然不是的， JVM 字节码不可能干这种事。又不是 Groovy。这种写法可比 Groovy 的 Gradle 简单啊。
+这个给类添加方法的语言特性看起来神奇到爆，就像 Ruby 的打开类一样。这是在元编程吗？显然不是的， JVM 字节码不可能干这种事，又不是 Groovy。
+这种写法可比 Groovy 的 Gradle 简单啊。
 
 因此我作为一个追求真理的人，写了一段 extension 之后自行逆向字节码+使用 Java 成功调用，发现并证实了其中的奥秘。这段代码被编译到 JVM 后变成了这样：
 
@@ -109,11 +110,12 @@ if (1000.elapsed()) {
 }
 ```
 
-嗯，差不多就是这样。而且由于方法是扩展方法，方法内部的上下文是被扩展的类。什么意思呢？考虑如上代码。在 elapsed 函数内部使用 this ，得到的是 Int ，而不是 Game。因此，扩展方法是可以修改局部上下文的。这为 DSL 的构建提供了方便。
+嗯，差不多就是这样。而且由于方法是扩展方法，方法内部的上下文是被扩展的类。什么意思呢？考虑如上代码。在 `elapsed` 函数内部使用 `this` ，得到的是 `Int` ，而不是 `Game`。
+因此，扩展方法是可以修改局部上下文的。这为 DSL 的构建提供了方便。
 
-下次讲代码块、inline、crossinline、noinline。预计三篇能把 Kotlin 这特性说完。
+下次讲代码块、`inline`、`crossinline`、`noinline`。预计三篇能把 Kotlin 这特性说完。
 
-嘛，就这样啦。欢迎围观寒冰 Frice 全家桶：
+嘛，就这样啦。欢迎围观 Frice 全家桶：
 
 + [Frice-JVM](https://github.com/icela/FriceEngine)
 + [Frice-CLR](https://github.com/icela/FriceEngine-CSharp)

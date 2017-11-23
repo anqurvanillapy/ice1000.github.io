@@ -15,11 +15,16 @@ description: Kotlin DSL 2 inline
 
 ## 何为 inline
 
-相信写过 C 系列语言的同学应该都十分熟悉 inline 这个修饰符了吧——而且好像不止 C 系列有 inline。没事这里我继续说说 Kotlin 的 inline。本文篇幅非常短，因为 inline 是个很简单的东西。
+相信写过 C 系列语言的同学应该都十分熟悉 `inline` 这个修饰符了吧——而且好像不止 C 系列有 `inline`。
+没事这里我继续说说 Kotlin 的 `inline`。本文篇幅非常短，因为 `inline` 是个很简单的东西。
 
-inline 修饰符其实就是告诉编译器，把这个方法的调用行为优化掉。怎么优化呢？就是直接省掉调用行为，直接把方法的内容写到调用的地方。但是 Kotlin 中的 inline 有所不同是， inline 只能修饰含有单个 block 参数的方法。别的方法也可以用 inline 修饰，语法上不会报错，但是如果你使用的 IDE 是 IntelliJ IDEA ，它会告诉你“nothing to inline”，并高亮提示。
+`inline` 修饰符其实就是告诉编译器，把这个方法的调用行为优化掉。
+怎么优化呢？就是直接省掉调用行为，直接把方法的内容写到调用的地方。
+但是 Kotlin 中的 `inline` 有所不同是， `inline` 一般只修饰含有单个 block 参数的方法。
+别的方法也可以用 inline 修饰，语法上不会报错，但是如果你使用的 IDE 是 IntelliJ IDEA 
+，它会告诉你“nothing to inline”，并高亮提示。
 
-然后这就是 inline 了。。你可以使用 inline 做这样的事情：
+然后这就是 `inline` 了。。你可以使用 `inline` 做这样的事情：
 
 ```kotlin
 // inline 方法调用
@@ -37,7 +42,8 @@ finally {
 
 是不是挺好的。。。
 
-为什么这种事情要 inline 来做呢？因为函数调用传递参数是需要消耗时间的。。。而且需要一层函数调用栈。。但是 inline 就把这些都省去了呢。。。
+为什么这种事情要 `inline` 来做呢？因为函数调用传递参数是需要消耗时间的。。。
+而且需要一层函数调用栈。。但是 `inline` 就把这些都省去了呢。。。
 
 有个破孩子看了上面那段话，不明白啥意思，我补个例子：
 
@@ -54,7 +60,7 @@ fuck ()
 // 没有函数调用了
 ```
 
-当然以上代码并不是正确的，因为 Kotlin 的 inline 不是随随便便就能 inline 的。
+当然以上代码并不是正确的，因为 Kotlin 的 `inline` 不是随随便便就能 `inline` 的。
 
 原本 lambda 开销就大，你需要专门搞个匿名内部类，再传递它的实例，其实你只是想丢个 lambda。
 
@@ -89,7 +95,7 @@ fun foo() {
 
 以上代码在 [try kotlin](http://try.kotlinlang.org) 上编译通过。
 
-所以啊， inline 博大精深。
+所以啊， `inline` 博大精深。
 
 ## noinline 和 crossinline
 

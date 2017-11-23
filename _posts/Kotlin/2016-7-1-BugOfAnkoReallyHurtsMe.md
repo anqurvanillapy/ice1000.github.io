@@ -63,7 +63,8 @@ description: I met a greate bug of anko
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/java/kt2/3.png)
 
-我这都出车祸了，哪还敢选 Early Access Program。只有老老实实选 Stable。不过我平时倒是有选 EAP 的习惯，我的 Android Studio、Android SDK 和 IntelliJ IDEA 都是 EAP。所以出车祸是必不可少的，因此也经常遇到问题。不过这次这个问题几乎是无解的，因为 Kotlin 本身就是小众的技术，要想找到哪个冷门 bug 的帮助，恐怕是难上加难啊。
+我这都出车祸了，哪还敢选 Early Access Program。只有老老实实选 Stable。
+不过我平时倒是有选 EAP 的习惯，我的 Android Studio、Android SDK 和 IntelliJ IDEA 都是 EAP。所以出车祸是必不可少的，因此也经常遇到问题。不过这次这个问题几乎是无解的，因为 Kotlin 本身就是小众的技术，要想找到哪个冷门 bug 的帮助，恐怕是难上加难啊。
 
 在科学上网的帮助下，我顺利下载了 1.0.3 版本的 Kotlin 编译器，顺手打开了 Genymotion 准备在编译之后顺利运行。
 
@@ -135,8 +136,6 @@ buildscript {
 1. 遇到报错，保持冷静
 1. 任何情况下你的工具应该是最新版本的
 1. 也就是上文的结论。没有征服不了的编译器，只有懒得思考、懒得动手的失败者。
-
-冰封与大家共勉。
 
 ## 2017 年更新
 

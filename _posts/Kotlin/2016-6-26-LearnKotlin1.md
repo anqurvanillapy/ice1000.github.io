@@ -13,9 +13,9 @@ description: The way to learn kotlin
 
 不要想太多，本文完全原创。我蹲在宿舍里面写的。(*´ڡ`●)
 
-## 冰封是怎么认识 Kotlin 的
+## 我是怎么认识 Kotlin 的
 
-冰封作为一个 JetBrains 的脑残粉，时常拜访 JetBrains 的官网，偶尔会在一些神秘的角落发现一些很有趣的东西。ლ(´ڡ`ლ)
+我作为一个 JetBrains 的脑残粉，时常拜访 JetBrains 的官网，偶尔会在一些神秘的角落发现一些很有趣的东西。ლ(´ڡ`ლ)
 
 首页的“Language”选项卡下就有两个选项，我都有涉猎， MPS 是一个比较复杂的系统，以后的博客有一定概率会讲到。而 Kotlin 就是本文的主角了。
 
@@ -23,22 +23,22 @@ description: The way to learn kotlin
 
 Kotlin 是一门基于 JVM 的编程语言，支持编译成 Java 平台的.class 目标文件和 JavaScript 文件。支持 Java 字节码是因为这门语言本身基于 Java ，不过为了方便 web 开发和独立于 JVM 的运行， Kotlin 团队也引入了 JavaScript 的编译。
 
-那么， Kotlin 作为一门编程语言，有哪些特点呢？（；\^ω\^）
+那么， Kotlin 作为一门编程语言，有哪些特点呢？（；^ω^）
 
-首先，它是一门采用面向对象(Object-Oriented)风格的语言。它和它的亲爸爸 Java 除了反射(Reflection)之外完美地兼容。也就是说，如果你曾经使用 Java 编写过一个工具类，不过你现在却更喜欢使用 Kotlin 编程，那么你完全可以在 Kotlin 里面像调用一个 Kotlin 类那样调用你曾经写过的 Java 类。反过来，你也可以让你那些仍然在使用 Java 的同事直接调用你通过 Kotlin 编写的类。
+首先，它是一门采用面向对象 (Object-Oriented) 风格的语言。
+它和它的~~隔壁老王~~亲爸爸 Java 除了反射 (Reflection) 之外完美地兼容。也就是说，如果你曾经使用 Java 编写过一个工具类，不过你现在却更喜欢使用 Kotlin 编程，那么你完全可以在 Kotlin 里面像调用一个 Kotlin 类那样调用你曾经写过的 Java 类。
+反过来，你也可以让你那些仍然在使用 Java 的同事直接调用你通过 Kotlin 编写的类。
 
 至于 Kotlin 和 Java 所不那么友好的地方，大概有以下几处：
 
 + 反射机制不同。
 + Kotlin 支持把函数直接写在文件里(就如 C 语言一样)，而 Java 的一切的一切都在类中。
 + Kotlin 没有静态方法这个概念，却引入了`object`和`companion`的概念（就是 OO 的 based on object 形式）。
-+ Kotlin 目标文件的运行需要一个单独的 jar 包的支持，叫`kotlin-runtime.jar`，不过这个不大，体积不到 1MB。而如果要使用反射的话，还需要包含另一个 jar 包，叫`kotlin-reflection.jar`，这个就比较大了， 2MB 左右。
++ Kotlin 其实还是有运行时的，是一个叫`kotlin-runtime.jar`的东西，不过这个不大，体积不到 1MB。而如果要使用反射的话，还需要包含另一个 jar 包，叫`kotlin-reflection.jar`，这个就比较大了， 2MB 左右。
 
 不过就如 Java8 引入了 lambda 一样，这门语言同样注重对于函数式编程的支持。它的优点是向下兼容到 Java6 ，也就是说 Kotlin 目标文件可以直接在原生的 mac 电脑上运行(OS X 预装 JDK6)，并且你可以在里面使用 lambda。
 
-它和 Swift 一样，拥有空指针保护(Null-Safety)的特性。每个变量必须保证时刻为非`Null`，否则需要用问号来标记。在与 Java 的互相继承中， Kotlin 中被声明为非 Null 的变量在 Java 的参数表里会有@NotNull 标记。
-
-插一句， Kotlin 的语法和 Swift 其实特别像。只不过 Swift 的原生 API 的啰嗦程度又把原本的简洁给破坏了。。。这只是我个人观点。抛开鄙视链不谈我还是很喜欢 Swift 的。
+它和 Swift 一样，拥有空指针保护 (Null-Safety) 的特性。每个变量必须保证时刻为非`Null`，否则需要用问号来标记。在与 Java 的互相继承中， Kotlin 中被声明为非 Null 的变量在 Java 的参数表里会有`@NotNull` 标记。
 
 Kotlin 也是一门开源的语言，源代码可以在[JetBrains 对应的 GitHub 仓库](https://github.com/JetBrains/Kotlin)找到。
 
@@ -56,7 +56,6 @@ Kotlin 也是一门开源的语言，源代码可以在[JetBrains 对应的 GitH
 1. 数据库程序员
 1. 厌倦 Java 啰嗦的人
 1. 想学习新技术的 JVM 工作者
-1. 认为冰封可爱的人
 1. JetBrains 的粉丝
 
 另外，十分建议在学习 Kotlin 之前先学习 Java。
@@ -67,17 +66,18 @@ Kotlin 团队为用户考虑得非常周到，不仅仅出品了 IDEA 插件，�
 
 独立编译器是为命令行爱好者提供的，不过其实冰封个人认为最良心的是免费的[web IDE]( http://try.kotlinlang.org)，他们称之为“try kotlin”。这个 web IDE 是开源的，也可以在 GitHub 上面找到。
 
-而 JetBrains 出品的 IntelliJ IDEA 从 15 开始就原生支持 Kotlin。至于业界公认最强大的 IDE ， IDEA 提供的编程环境自然是有着非常好的体验。关于如何安装 IDEA 我已在另一篇博客中说明。
+而 JetBrains 出品的 IntelliJ IDEA 从 15 开始就原生支持 Kotlin。至于业界公认最强大的 IDE ， IntelliJ Renamer （误）提供的编程环境自然是有着非常好的体验。关于如何安装 IDEA 我已在另一篇博客中说明。
 
 下载链接官网都有提供，下文有链接，请随意点击。
 
 ## 为什么选择 Kotlin
 
-它是一门非常复杂的语言，拥有非常多的语法糖。这让它的语法变得非常简洁，写起代码来代码量也是少得可怜，比起 Java 那一言不合就上千行的毛病， Kotlin 要好得多。如果你对 Kotlin 足够熟练，那么你可以将更多精力放在实现逻辑上，而不是具体的“写代码”上，从而提高你的工作效率。
+有很多语法糖啊。
+这让它的语法变得非常简洁，比起 Java 那一言不合就上千行的毛病， Kotlin 要好得多。如果你对 Kotlin 足够熟练，那么你可以将更多精力放在实现逻辑上，而不是具体的“写代码”上，从而提高你的工作效率。
 
 ## 如何让孩子爱上 Kotlin
 
-首先，了解任何东西都应该先跑到人家[华丽丽的官网]( http://kotlinlang.org)逛一逛。你可以在这里找到一些关于 Kotlin 的基本信息，以及前文所提到的编译器下载，还有说明文档和 web IDE 的传送门。
+首先，了解任何东西都应该先跑到人家[华丽丽的官网](http://kotlinlang.org)逛一逛。你可以在这里找到一些关于 Kotlin 的基本信息，以及前文所提到的编译器下载，还有说明文档和 web IDE 的传送门。
 
 官网有一个非常漂亮的 Hello World 程序。
 
@@ -93,7 +93,7 @@ Kotlin 团队为用户考虑得非常周到，不仅仅出品了 IDEA 插件，�
 
 顺带一提，我的项目[Dekoder]( https://github.com/ice1000/Dekoder)也被收录其中。(*´ڡ`●)
 
-另外，我知道有很多英语困难的朋友们，贴心的小可爱冰封也为你们准备了一个[经过自己一节计算机课粗糙翻译的 awesome-kotlin](https://github.com/KotlinCN/awesome-kotlin)，目前还在翻译中，不过我有多懒你是知道的，况且我还有太多别的坑，所以欢迎志愿者参与维护，以及协助翻译。欢迎 pull request。
+另外，我知道有很多英语困难的朋友们，于是我也为你们准备了一个[经过自己一节计算机课粗糙翻译的 awesome-kotlin](https://github.com/KotlinCN/awesome-kotlin)，目前还在翻译中，不过我有多懒你是知道的，况且我还有太多别的坑，所以欢迎志愿者参与维护，以及协助翻译。欢迎 pull request。
 
 另外欢迎大家参考[我的知乎回答: Android 开发 Kotlin 你目前遇到过哪些坑？](http://www.zhihu.com/question/36735834/answer/105409238)，里面有着我的血泪史，希望大家不要重蹈我的覆辙｡･ﾟ･(ﾉД\`)･ﾟ･｡
 
