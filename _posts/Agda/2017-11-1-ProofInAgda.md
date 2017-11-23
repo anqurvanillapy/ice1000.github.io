@@ -25,8 +25,8 @@ inline_latex: true
 给出一些参考资料：
 
 + [一个比较简单的 Haskell 入门教程 *Learn you a Haskell*](http://learnyouahaskell.com/chapters)
-+ [虎哥介绍的 GADT](https://www.zhihu.com/question/67043774/answer/249019401)
-+ [介绍 GADT 的 CodeWars Kata: Singletons](https://www.codewars.com/kata/singletons)
++ [虎哥介绍的 GADT](https://colliot.me/zh/2017/11/what-is-gadt-in-haskell/) ，讲的很精彩
++ [介绍 GADT 和 dependent type 的 CodeWars Kata: Singletons](https://www.codewars.com/kata/singletons)
 + [介绍 GADT 的 CodeWars Kata: Scott Encoding](https://www.codewars.com/kata/scott-encoding)
 
 ## 声明在前面
