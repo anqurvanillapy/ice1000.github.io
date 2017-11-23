@@ -96,10 +96,10 @@ when(a) {
 }
 ```
 
-smart cast 同样可用，还能对重载了 contains 操作符的类型进行 in 的判断。
+smart cast 同样可用，还能对重载了 `contains` 操作符的类型进行 `in` 的判断。
 
-对于 Enum 或者常量的 when 语句就是一个 switch 。
-而出现了 Java 所不允许的情况时，它将变成 if else.
+对于 Enum 或者常量的 when 语句就是一个 `switch` 。
+而出现了 Java 所不允许的情况时，它将变成 `if else`.
 
-如果你还想继续深入了解这些 JVM Languages 之间的区别，可以看看[Kotlin-discussion 的这个帖子](https://discuss.kotlinlang.org/t/will-be-kotlin-more-suitable-for-develop-than-scala-in-future/2222)。
+如果你还想继续深入了解这些 JVM Languages 之间的区别，可以看看 [Kotlin-discussion 的这个帖子](https://discuss.kotlinlang.org/t/will-be-kotlin-more-suitable-for-develop-than-scala-in-future/2222)。
 
