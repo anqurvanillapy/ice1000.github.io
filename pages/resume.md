@@ -12,6 +12,8 @@ permalink: /resume/
 
 ## Options
 
+[![GitHub top language](https://img.shields.io/github/languages/top/ice1000/resume.svg)](https://github.com/ice1000/resume/)
+
 + [__Download pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume.pdf)
 + [LaTeX source](https://raw.githubusercontent.com/ice1000/resume/master/resume.tex)
 
