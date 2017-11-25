@@ -5,6 +5,7 @@ category: IntelliJ
 tags: Java, IntelliJ IDEA
 keywords: Java,IDEA, PhpStorm,WebStorm,PyCharm,Rider,RubyMine,CLion,Android Studio
 description: IDEA advance chapter 2
+issue_id: 7
 ---
 
 今天在 openjudge 上 AC 了不少水题，想颓一会，于是打开[https://www.jetbrains.com](https://www.jetbrains.com)去看看自己的信仰。然后就发现了这个，关于自定义 IDE 背景的事情。
