@@ -1,14 +1,14 @@
 {% if page.issue_id %}
 
 <script>
-	var getJSON = function (url, successHandler, errorHandler) {
-		var xhr = typeof XMLHttpRequest !== 'undefined'
+	let getJSON = function (url, successHandler, errorHandler) {
+		const xhr = typeof XMLHttpRequest !== 'undefined'
 			? new XMLHttpRequest()
 			: new ActiveXObject('Microsoft.XMLHTTP');
 		xhr.open('get', url, true);
 		xhr.onreadystatechange = function () {
-			var status;
-			var data;
+			let status;
+			let data;
 			if (xhr.readyState === 4) {
 				status = xhr.status;
 				if (status === 200) {
@@ -20,10 +20,9 @@
 		xhr.send();
 	};
 
-
 	getJSON('https://api.github.com/repos/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issue_id}}/comments',
 		function (data) {
-			var comments = "";
+			let comments = "";
 			for (i = 0; i < data.length; i++) {
 				//add avatar
 				comments += '<a href="' + data[i].user.html_url + '" target="_blank"><img src="' + data[i].user.avatar_url + '"></a>';
