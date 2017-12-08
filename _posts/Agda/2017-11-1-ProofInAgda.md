@@ -45,6 +45,9 @@ inline_latex: true
 命题中的基本元素一般是值的类型(而且很多时候都是代数数据类型)，也就是 $ p \rightarrow q $ 的那个 $ p $ 或者 $ q $ 。
 而这个 $ \rightarrow $ 对应的就是 "函数" 这一概念，它组合了两个类型，表达了 "蕴含" 这一数理逻辑中的概念。
 
+但是这是为什么呢？  
+因为，当 $ p \rightarrow q $ 存在后，**只要你有一个 $ p $，你就能通过这个 $ p \rightarrow q $ 拿到一个 $ q $** 。
+
 比如，我实现了一个这样的类型的函数：
 
 $$
@@ -55,20 +58,20 @@ $$
 \DeclareMathOperator{where}{where}
 \DeclareMathOperator{with}{with}
 \DeclareMathOperator{Vect}{Vect}
-p \rightarrow q
+(p_0 \equiv q_0) \rightarrow (q_1 \equiv p_1)
 $$
 
 ```agda
-p → q
+(p₀ ≡ q₀) → (q₁ ≡ p₁)
 ```
 
 那么这个函数的实现就是
 
-> 如果 p 成立，则 q 成立
+> 如果 $ (p_0 \equiv q_0) $ ，则 $ (q_1 \equiv p_1) $
 
 ，或者说，
 
-> $ p \rightarrow q $
+> $ (p_0 \equiv q_0) \rightarrow (q_1 \equiv p_1) $
 
 这个命题的证明。
 
