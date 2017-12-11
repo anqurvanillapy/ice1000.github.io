@@ -63,6 +63,7 @@ Swing and JavaFX are both supported.
 + Demos (for various languages)
 
 [![GitHub stars](https://img.shields.io/github/stars/icela/FriceDemo.svg?style=social&label=Star&style=plastic)](https://github.com/icela/FriceDemo)
+[![GitHub language count](https://img.shields.io/github/languages/count/icela/FriceDemo.svg)](https://github.com/icela/FriceDemo)
 [![License: GPL v3](https://img.shields.io/github/license/icela/FriceDemo.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 + Designer
