@@ -11,14 +11,16 @@ issue_id: 7
 今天在 openjudge 上 AC 了不少水题，想颓一会，于是打开[https://www.jetbrains.com](https://www.jetbrains.com)去看看自己的信仰。然后就发现了这个，关于自定义 IDE 背景的事情。
 
 话说 IDE 自定义背景是 VS 不知道多少年以前玩的了，估计是 JetBrains 看不惯了，
-自己也在 JetBrains 系列产品的 2016.2 系列中加入了这个叫**Set Background Image**的功能。
+自己也在 JetBrains 系列产品的 2016.2 系列中加入了这个叫 **Set Background Image** 的功能。
 在这之前，我是通过一个插件来实现 IDE 自定义背景的。
 
-## 12 月 15 日更新
+## 2016 年 12 月 15 日更新
 我才发现我的截图全部都是 Sexy Editor 和自带插件混用的效果。。。可以看到两张图片重叠的痕迹。。。<br/>
 被自己蠢哭。。。另附一张最近截的没有重叠的图片。。。
 
 ![image without error](https://coding.net/u/ice1000/p/Images/git/raw/master/test1.png)
+
+下面是原文 - -
 
 ## 依赖
 + JetBrains 系列 IDE 的 2016.2 以上的版本
@@ -52,14 +54,11 @@ IDE 是[Project Rider](https://www.jetbrains.com/rider)， JetBrains 系列的 C
 
 不好意思没图，我已经关了 IDE 了，现在寝室里面电力是个问题 Orz。
 
-首先<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>打开设置。在搜索栏输入**Set Background Image**，
-在 Keymaps 里面找到唯一的搜索结果。然后给这个搜索结果增加一个快捷键。增加一个尽可能复杂的、你平时不会用的快捷键。
-我选择的是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Q</kbd>。然后保存设置退出。
 ### 方法一
 
-首先<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>打开设置。在搜索栏输入**Set Background Image**，
-在 Keymaps 里面找到唯一的搜索结果。然后给这个搜索结果增加一个快捷键。
-增加一个尽可能复杂的、你平时不会用的快捷键。我选择的是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Q</kbd>。
+首先<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>打开设置。在搜索栏输入 **Set Background Image**，
+在 Keymaps 里面找到唯一的搜索结果。然后给这个搜索结果增加一个尽可能复杂的、你平时不会用的快捷键。
+我选择的是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Q</kbd>。
 然后保存设置退出。
 
 在编辑器里面按下你刚才设置的快捷键。弹出一个窗口。这时已经是属于那种是个人都会的操作了。设置一张图片。
@@ -69,10 +68,9 @@ IDE 是[Project Rider](https://www.jetbrains.com/rider)， JetBrains 系列的 C
 
 按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd>，你会看到弹出了一个框框，
 在里面输入一些操作的名字可以跳转到相应的操作界面（你可以通过这个方法找到你猜测 IntelliJ 可能会有的黑科技），
-输入**Set Background Image**，弹出一个窗口，根据窗口的提示进行操作即可。还有实时预览哦。
+输入 **Set Background Image** ，弹出一个窗口，根据窗口的提示进行操作即可。还有实时预览哦。
 
 
 快去给你的 IDE 添加一些~~奇怪~~有趣的图片吧。
-
 
 
