@@ -11,6 +11,39 @@ description: Kotlin cross-platfrom
 
 多 U 瓦 ke 蝶，我们来看看 Kotlin 1.2 Beta 的跨平台模块是怎么回事吧。
 
+## 2017 年 12 月的更新
+
+Kotlin 1.2 正式版发布啦。现在同学们可以把下面的代码中的（使用 Kotlin beta 的）
+
+```gradle
+buildscript {
+  ext.kotlin_version = '1.2.0-beta-31'
+
+  repositories {
+    maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.2' }
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
+}
+```
+
+全部替换成（使用稳定版的）
+
+```gradle
+buildscript {
+  ext.kotlin_version = '1.2.0'
+
+  repositories { mavenCentral() }
+  dependencies { classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" }
+}
+```
+
+啦（并且推荐这么做）。
+
+下面是原文 - -
+
 ## 官方的说明
 
 英语好的同学可以去
