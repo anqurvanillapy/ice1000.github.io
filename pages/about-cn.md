@@ -63,6 +63,10 @@ permalink: /about-cn/
 
 ## 友情链接
 
-{% for link in site.data.links_cn %}
+{% for link in site.data.links %}
+{% if link.name_cn == nil %}
 * [{{ link.name }}]({{ link.url }})
+{% else %}
+* [{{ link.name_cn }}]({{ link.url }})
+{% endif %}
 {% endfor %}

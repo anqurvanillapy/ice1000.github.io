@@ -8,60 +8,75 @@
   url: https://ljason.cn
 
 - name: Frice Engine
+  name_cn: Frice Engine 游戏引擎
   url: https://icela.github.io
 
 - name: The CovScript Programming Language
+  name_cn: CovScript 程序设计语言
   url: http://covscript.org
 
 - name: sxysxy
   url: http://sxysxy.org
 
 - name: Fyd_H
+  name_cn: 冰果冻
   url: https://fydui.github.io
 
 - name: Marisa
+  name_cn: 魔理沙
   url: https://zhuanlan.zhihu.com/p/2475619
 
 - name: Night Farmer
   url: https://nightfarmer.github.io
 
 - name: fan hua
+  name_cn: 繁花
   url: https://blog.fhyun.top/
 
 - name: exyui
+  name_cn: 悠理酱
   url: http://exyui.com/
 
 - name: ling
+  name_cn: 依依
   url: http://shyling.com
 
 - name: inszva
+  name_cn: 自乐
   url: http://blog.csdn.net/inszva
 
 - name: xdd
+  name_cn: 孜然麻辣熊
   url: https://xdd.io
 
 - name: dramforever
   url: http://dram.cf
 
 - name: lfkdsk
+  name_cn: 刘丰恺
   url: https://lfkdsk.github.io
 
 - name: colliot
+  name_cn: 长信宫灯
   url: http://colliot.me
 
 - name: ZJU-snbct
+  name_cn: 浙大少年编程团
   url: https://blog.snbct.org
 
 - name: hex
+  name: 16 进制
   url: http://nyanblog.net
 
-- name: BennyHuo/KotlinCN
+- name: BennyHuo / KotlinCN
+  name_cn: "BennyHuo / Kotlin 中文站"
   url: https://www.kotliner.cn
 
 - name: Snakes
   url: http://snakes.moe
 
 - name: GloomyGhost
+  name_cn: 酸辣粉
   url: http://www.gloomyghost.com
 
 - name: DemoJameson
@@ -71,4 +86,9 @@
   url: https://kircute.github.io
 
 - name: lgzh1215
+  name_cn: 萌夜雀
   url: https://lgzh1215.github.io
+
+- name: Eliseos
+  name_cn: 净土社区
+  url: https://www.eliseos.org/
