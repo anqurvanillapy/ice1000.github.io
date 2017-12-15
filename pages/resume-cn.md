@@ -18,3 +18,8 @@ permalink: /resume-cn/
 + [LaTeX 源码](https://raw.githubusercontent.com/ice1000/resume/master/resume-cn.tex)
 
 现在暂时不接受实习。欢迎来信（电子邮件）。
+
+## 开发者故事
+
++ [在线观看](http://stackoverflow.com/story/ice1000)
++ [保存为 pdf](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf)

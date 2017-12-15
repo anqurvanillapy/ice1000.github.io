@@ -19,9 +19,9 @@ I am a student, programming for interest.
 + [Resume](../resume)
 + [Subscribe](../subscribe)
 + [Feed with RSS](../feed.xml)
-+ [CodeWars](../codewars/)
 + [**Opensource Contributions**](../opensource-contributions/)
-+ [StackOverflow developer story](http://stackoverflow.com/story/ice1000)
++ [CodeWars](../codewars/)
++ [**StackOverflow developer story**](http://stackoverflow.com/story/ice1000) ([save as PDF](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf))
 
 [![](http://stackexchange.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 
