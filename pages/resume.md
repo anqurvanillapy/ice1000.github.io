@@ -19,9 +19,4 @@ permalink: /resume/
 
 I'm currently not available for intern at the moment, emails are welcomed.
 
-### Application Resume
-
-+ [__Download pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume-ap.pdf)
-+ [LaTeX source](https://raw.githubusercontent.com/ice1000/resume/master/resume-ap.tex)
-
 It's unfinished yet. I'm still working on it.
