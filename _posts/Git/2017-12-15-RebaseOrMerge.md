@@ -8,6 +8,8 @@ description: Why merge not rebase
 inline_latex: true
 ---
 
+这是针对虎哥在[净土社区](https://www.eliseos.org/)的[一个问题](https://www.eliseos.org/en/water/post/23)的回答。
+
 首先把题主批判一番，搜索都不会，来来来帮你搜索一下。
 
 + [https://www.zhihu.com/question/36509119](https://www.zhihu.com/question/36509119)
