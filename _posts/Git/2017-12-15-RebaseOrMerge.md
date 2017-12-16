@@ -10,8 +10,8 @@ inline_latex: true
 
 首先把题主批判一番，搜索都不会，来来来帮你搜索一下。
 
-+ https://www.zhihu.com/question/36509119
-+ https://www.atlassian.com/git/tutorials/merging-vs-rebasing
++ [https://www.zhihu.com/question/36509119](https://www.zhihu.com/question/36509119)
++ [https://www.atlassian.com/git/tutorials/merging-vs-rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 然后我正式回答问题：我不是说"要用 merge 替代 rebase"，而是我"不赞成别人使用 rebase 替代 merge"。
 
@@ -70,4 +70,5 @@ force push 工作流程是：
 针对第一条，我并不在意，毕竟我大多数时间都在命令行下工作。非常复杂的分支视图，我反而觉得很酷炫。  
 针对第二条，这些操作，在没有 IDE 的时候我也可以用命令行完成，我个人认为这都是非常简单的工作。
 
-综上所述，我使用 merge 而不是 rebase 。如果你觉得那两个危害确实是危害，那两个缺陷并不令人在意，你也应该很清楚你的选择。
+综上所述，我使用 merge 而不是 rebase 。
+如果你觉得那两个危害确实是危害，那两个缺陷并不令人在意，你也应该很清楚你的选择。
