@@ -1,3 +1,9 @@
+<div class="wrapper">
+	<div id=comments>
+		<h2>评论/Comments</h2>
+	</div>
+</div>
+
 {% if page.issue_id %}
 
 <script>
@@ -49,18 +55,16 @@
 
 </script>
 
-
-<div class="wrapper">
-	<div id=comments>
-		<h2>评论/Comments</h2>
-	</div>
-</div>
-
 {% else %}
-
 <div class="wrapper">
 	<div id=comments>
-		<h2>本文无法评论。<br/>You can't leave comments in this post.</h2>
+		<a href="https://github.com/{{site.github_username}}/{{site.repository_name}}/issues/new">
+			创建一个 issue </a>
+		以申请评论<br/>
+		<a href="https://github.com/{{site.github_username}}/{{site.repository_name}}/issues/new">
+			Create an issue
+		</a>
+		to apply for commentary
 	</div>
 </div>
 
