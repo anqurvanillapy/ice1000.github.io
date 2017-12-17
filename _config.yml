@@ -105,13 +105,10 @@ plugins:
   - jekyll-feed
   - jemoji
   # - jekyll-mentions
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-  gist:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+  # gist:
+    # output: true
+    # permalink: /:collection/:path/
 
 repository: ice1000/ice1000.github.io
 repository_name: ice1000.github.io
