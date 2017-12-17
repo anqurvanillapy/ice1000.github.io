@@ -106,6 +106,9 @@ plugins:
   - jemoji
   # - jekyll-mentions
 collections:
+  pages:
+    output: true
+    permalink: /:path/
   gist:
     output: true
     permalink: /:collection/:path/
