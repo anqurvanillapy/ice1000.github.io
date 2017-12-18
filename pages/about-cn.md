@@ -13,11 +13,13 @@ permalink: /about-cn/
 你好，欢迎来到我的博客「中间表示 (IR) 」，我是千里冰封。  
 我是一个学生，因兴趣而编程。
 
-+ [QQ 群 ProgramLeague](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
++ [泛向 QQ 群](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
++ [编译原理向 QQ 群]()
 + [电子邮件](mailto:ice1000@kotliner.cn)
 + [简历](../resume-cn/)
 + [订阅](../subscribe-cn/)
-+ [RSS](../feed.xml)
++ [RSS 订阅](../feed.xml)
++ [GitHub 用户分析](https://github-profile-summary.com/user/ice1000)
 + [**开源社区贡献**](../opensource-contributions/)
 + [CodeWars](../codewars-cn/)
 + [**StackOverflow 开发者故事**](http://stackoverflow.com/story/ice1000) ([保存为 pdf](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf))

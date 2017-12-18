@@ -14,11 +14,11 @@ Hi there, welcome to my blog *intermediate representation* (IR).
 This is ice1000 (千里冰封).  
 I am a student, programming for interest.
 
-+ [QQ Group: ProgramLeague](http://shang.qq.com/wpa/qunwpa?idkey=b75f6d506820d00cd5e7fc78fc5e5487a3444a4a6af06e9e6fa72bccf3fa9d1a)
 + [E-mail](mailto:ice1000@kotliner.cn)
 + [Resume](../resume)
 + [Subscribe](../subscribe)
-+ [Feed with RSS](../feed.xml)
++ [Subscribe with RSS](../feed.xml)
++ [GitHub profile analysis](https://github-profile-summary.com/user/ice1000)
 + [**Opensource Contributions**](../opensource-contributions/)
 + [CodeWars](../codewars/)
 + [**StackOverflow developer story**](http://stackoverflow.com/story/ice1000) ([save as PDF](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf))
