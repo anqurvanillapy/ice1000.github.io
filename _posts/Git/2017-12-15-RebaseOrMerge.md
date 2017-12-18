@@ -58,7 +58,16 @@ force push 工作流程是：
 因此，原本的远端数据就没有了。如果你在手动产生这个"你觉得"合并的时候，一不小心在合并前就提交了，并且在没有注意到这一事实的时候进行了 force push ，那么你将永远失去被你提换掉的远端分支。  
 **这是危害一。**
 
-你还有可能正在编辑一个很大的 git 仓库（比如 [intellij-community](https://github.com/jetbrains/intellij-community): [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/jetbrains/intellij-community.svg)](https://github.com/jetbrains/intellij-community))，那么"上传完整的本地分支"这一过程，所花掉的时间会要了你的命。（还不如拿这时间打几百把东方星莲船）  
+你还有可能正在编辑一个很大的 git 仓库（比如
+[intellij-community](https://github.com/jetbrains/intellij-community):
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/jetbrains/intellij-community.svg)](https://github.com/jetbrains/intellij-community),
+或者
+[linux 内核](https://github.com/torvalds/linux):
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/torvalds/linux.svg)](https://github.com/torvalds/linux),
+或者
+[emacs](https://github.com/emacs-mirror/emacs):
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/emacs-mirror/emacs.svg)](https://github.com/emacs-mirror/emacs)
+)，那么"上传完整的本地分支"这一过程，所花掉的时间会要了你的命。（还不如拿这时间打几百把东方星莲船）  
 **这是危害二。**
 
 针对危害一： merge 之后两个分支在 merge commit 前的完整记录都是有保留的。因此，你可以随时 checkout 回去改。  
