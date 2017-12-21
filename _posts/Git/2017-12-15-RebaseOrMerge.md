@@ -22,7 +22,7 @@ merge 的存在目的是合并分支，包括但不限于合并开发分支和�
 
 它的工作流程是什么？以你 pull 了一个和本地进度不同的分支为例。
 
-+ $ \operatorname{let \ commit = if} $ 两个需要合并的分支是否同时更改了同一个文件的同样几行
++ $ \operatorname{let \ commit = unless} $ 两个需要合并的分支是否同时更改了同一个文件的同样几行
   + $ \operatorname{then \ do} $
     + 直接把两份 diff 以补丁的形式打到这两个分支的最近公共 commit 里
     + 自动产生一个叫做 merge commit 的特殊 commit
