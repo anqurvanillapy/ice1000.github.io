@@ -155,7 +155,7 @@ interface Node { Val eval(); }
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/18/3.png)
 
-然后我们 **把 `Val` 重命名为 `Object` 并直接删除** ，这样剩下的代码中用到 `Val` 的地方也就全部变成了 `Object` ，
+然后我们 **把 `Val` 重命名为 `Object` ，然后直接删除** ，这样剩下的代码中用到 `Val` 的地方也就全部变成了 `Object` ，
 也就是我们所期望使用的那个类型啦。
 
 <!--
