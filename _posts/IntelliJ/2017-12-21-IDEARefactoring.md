@@ -12,7 +12,11 @@ description: IDEA refactoring
 
 ## 复习一下快捷键
 
-先复习一下快捷键吧，我们这次就看一个就好，叫 `inline` : <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd>。  
+先复习一下快捷键吧，我们这次就看两个就好。
+
+### inline
+
+这个叫 `inline` 的东西快捷键是 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd>。  
 这个东西的作用是把当前光标上的东西，在代码级别内联掉。
 
 按下这个快捷键后，会看到一个弹窗（这个是 `inline` 一个 Kotlin 方法的弹窗，对于 Java 还多几个选项。
@@ -24,6 +28,10 @@ description: IDEA refactoring
 如果你是在调用处而不是定义处这么搞，第三个选项就可以选，是只 `inline` 这一处。
 
 我们一般不管，使用第一个。
+
+### rename
+
+这个我就不多介绍了，应该是最常用的快捷键之一了: <kbd>Shift</kbd>+<kbd>F6</kbd> 。
 
 ## 删除一个被多次引用的空函数
 
@@ -147,9 +155,53 @@ interface Node { Val eval(); }
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/18/3.png)
 
+然后我们 **把 `Val` 重命名为 `Object` 并直接删除** ，这样剩下的代码中用到 `Val` 的地方也就全部变成了 `Object` ，
+也就是我们所期望使用的那个类型啦。
+
+<!--
 类似的对于 `inline` 功能的使用还有很多（比如你可以把 `getO()` 的 `return this` 改成 return 其他的东西，
 比如调用某个 `static` 函数的返回值），
 但都是一个道理。
+-->
+
+## 另一种情况
+
+上面说的，是针对 "批量删除对于一个方法的调用" 的解决方案。  
+但我们有时不是想删除，而是增加。这怎么办嘞？
+
+比如，我们现在有上面那段重构完了代码（which 没有 `getO()` ）。  
+我们现在要把每一处 `eval()` 后面加上 `toString()` （反正就是需要加一层方法调用）。
+
+这个也很好解决，我们只需要先把 `eval()` 随便改成（不是重命名，是直接改）另外一个名字（比如 `rua`）：
+
+```java
+// code 0
+interface Node { Object rua(); }
+```
+
+然后我们可以看到业务代码全红了：
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/18/4.png)
+
+然后我们再写一个叫 `eval` 的方法，里面返回这个 `rua` 的调用结果再 `toString()` （就是加上你要的那个方法调用）：
+
+```java
+// code 0
+interface Node {
+  default Object eval() {
+    return rua().toString();
+  }
+
+  Object rua();
+}
+```
+
+这时业务代码已经不报错了。  
+我们再对这个 `eval()` 进行 `inline()` ，之后就是这个样子的了：
+
+![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/18/5.png)
+
+然后再把 `rua()` 使用 IntelliJ 的重命名功能改成之前的 `eval()` ，就一切照旧啦。
 
 ## 本文完
 
