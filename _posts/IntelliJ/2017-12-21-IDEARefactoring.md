@@ -203,6 +203,12 @@ interface Node {
 
 然后再把 `rua()` 使用 IntelliJ 的重命名功能改成之前的 `eval()` ，就一切照旧啦。
 
+## 推荐阅读的相关文章
+
++ [IntelliJ 中工程的基本概念](../../../../2016/11/19/IDEAAdvance3/)
++ [IntelliJ 中测试框架的使用](../../../../2016/12/11/IDEAAdvance4/)
++ [IntelliJ 中的文学编程](../../../04/01/IDEALanguageInjection/)
+
 ## 本文完
 
 祝大家圣诞节快乐。
