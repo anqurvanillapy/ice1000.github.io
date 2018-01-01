@@ -46,7 +46,7 @@ description: How Decompile Android Applications
 
 我马上声明了自己要做的事。
 
-虽然我手机上没有可以用的逆向工具（ Show Java 和 ApkTool 都罢工了，不知道为什么）不过反编译 apk 本身很简单，我用 ES 解压之后就看到了……
+虽然我手机上没有可以用的逆向工具（ Show Java 和 ApkTool 都罢工了，不知道为什么）不过解包 apk 本身很简单，我用 ES 解压之后就看到了……
 
 当天晚上，我半夜把解包后的音频文件声音放出来，当时我想的是把声音开到最小应该没问题吧，结果声音本来就巨大，差点吵醒我那学数学竞赛的室友……
 
@@ -54,7 +54,7 @@ description: How Decompile Android Applications
 
 我回击了那个发 apk 的人。
 
-然后后来我实在忍不住，就去反编译了代码。这是解包出来的文件目录。
+然后后来我实在忍不住，就去逆向了代码。这是解包出来的文件目录。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/5.png)
 
@@ -62,7 +62,7 @@ description: How Decompile Android Applications
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/6.png)
 
-勇敢地逆向。至于我的逆向工具是什么，其实我不是特别想放出来，以后可能会有教程吧。长期关注博客，可能就会看到喔。
+然后逆向一波。
 
 ![](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/old/andr/decode/7.png)
 
@@ -76,7 +76,7 @@ description: How Decompile Android Applications
 
 源代码。我对这个开发者有点无语，包名很奇怪啊……
 
-下面是 p 目录下的代码。R 文件大家都知道是什么东西，我就不放出来了。
+下面是 p 目录下的代码。`R` 文件大家都知道是什么东西，我就不放出来了。
 
 ```java
 package com.p;
@@ -129,12 +129,10 @@ public class 后台服务操作
 }
 ```
 
-可以看出，真的是个垃圾开发者。
+可以看出，呃。
 
-+ Java 的规范是大括号不换行，他换行。**辣鸡**。
-+ 字符串硬编码，意义不明。
-
-至于 e4a 里面的内容，我也简略看了一下，封装得不错，确实是为垃圾开发者提供了便利。不过，一个拿易语言开发 Android 的人，你又能对他报什么希望呢？
+至于 e4a 里面的内容，我也简略看了一下，封装得不错，确实是为萌新提供了便利。
+不过，一个拿易语言开发 Android 的人。。。呃。。。。。
 
 下面是简要截图。
 
