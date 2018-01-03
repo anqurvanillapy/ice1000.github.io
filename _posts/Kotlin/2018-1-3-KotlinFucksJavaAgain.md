@@ -5,6 +5,7 @@ category: Kotlin
 tags: Kotlin
 keywords: Kotlin
 description: Kotlin fucks Java again
+issue_id: 9
 ---
 
 夜雀的 [Kotlin 的华点](https://lgzh1215.github.io/2017/10/18/huadian/)一文可能会引起我们一个沉重的思考——"这语言到底能不能用？"。但这个人对 Kotlin 的了解到了如此的程度，说明他起码也是 Kotlin 的一个粉丝，而且对 Kotlin 是爱的深沉啊！
