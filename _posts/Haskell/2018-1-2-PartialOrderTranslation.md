@@ -175,7 +175,7 @@ class Lattice t => BoundedLattice t where
 
 ## 完备格
 
-如果一个格 $ (L, \sqsubseteq) $ 的 $ L $ 的所有（有可能有无穷多个）子集 $ S $ 都同时具有最大下界($ \mathit{sup}(S) $)和最小下界($ \mathit{inf}(S) $)，那么我们可以称之为一个**完备格**。
+如果一个格 $ (L, \sqsubseteq) $ 的 $ L $ 的所有（有可能有无穷多个）子集 $ S $ 都同时具有最大下界($ \mathit{sup}(S) $)和最小上界($ \mathit{inf}(S) $)，那么我们可以称之为一个**完备格**。
 
 所有完备格 $ (L, \sqsubseteq) $ 都是有界格：
 
