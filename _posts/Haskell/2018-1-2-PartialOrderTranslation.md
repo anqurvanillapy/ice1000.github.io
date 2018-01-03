@@ -25,7 +25,7 @@ inline_latex: true
 
 本文话题包含前序(preorders)、等价关系(equivalence relations)、全序(total orders)、偏序(partial orders)、半格(semilattices)、格(lattices)、有界格(bounded lattices)和完备格(complete lattices)、 Scott 连续性(Scott-continuity)、单调性、不动点和 Kleene 不动点定理(Kleene's fixed point theorem)。
 
-在本文最后，你会看到偏序与格在幂集上的自然提升(natural liftings)、笛卡尔积、序列(sequences)和函数空间。
+在本文最后，你会看到偏序与格在幂集上的自然升格(natural liftings)、笛卡尔积、序列(sequences)和函数空间。
 
 形式定义会在可能的情况下会给出对应的 Haskell 代码表示。
 
