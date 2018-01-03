@@ -56,7 +56,7 @@ type k :-> v = Map.Map k v
 
 如果二元关系 $ \mathrel{R} $ 满足 $ \forall x . x \mathrel{R} x $ ，我们可以说 $ \mathrel{R} $ 满足**自反性**(reflexive)。
 
-如果二元关系 $ \mathrel{R} $ 满足 $ a \mathrel{R} b $ 和 $ b \mathrel{R} c $ 蕴含 $ a \mathrel{R} c $，我们可以说 $ \mathrel{R} $ 满足**传递性**(transitive)。
+如果二元关系 $ \mathrel{R} $ 满足 $ a \mathrel{R} b $ 且 $ b \mathrel{R} c $ 蕴含 $ a \mathrel{R} c $，我们可以说 $ \mathrel{R} $ 满足**传递性**(transitive)。
 
 当且仅当集合 $ \mathrel{X} $ 上的二元关系 $ \sqsubseteq $ 同时满足自反性和传递性，我们称 $ \sqsubseteq $ 为一个**前序**。
 
