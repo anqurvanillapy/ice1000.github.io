@@ -25,4 +25,11 @@ Lice 现在的存在目的是作为一个依附于 JVM 语言的脚本语言，�
 + [基于 IntelliJ IDEA 的 IDE](https://plugins.jetbrains.com/plugin/10319-lice)
 + [命令行 REPL](https://github.com/lice-lang/ldk)（支持彩色输出和代码补全）
 + [Android 上的 RPEL](https://github.com/lice-lang/lice-android)
++ [语言参考](https://github.com/lice-lang/lice-reference)
++ [解释器源码](https://github.com/lice-lang/lice)
++ [解释器，微缩版](https://github.com/lice-lang/lice-tiny)
+
+# CovScript
+
+这是我的朋友李登淳创造的一门编程语言
 
