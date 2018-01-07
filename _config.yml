@@ -5,10 +5,10 @@ baseurl:
 url: http://ice1000.org
 date_format: "ordinal"
 name: "知其变，守其恒，为天下式"
-title: "IR"
+title: "Intermediate Representation"
 # subtitle: "知其变，守其恒，为天下式"
 description: "ice1000's blog"
-keywords: ice1000, AkirinaWu, blog
+keywords: ice1000, Akirina, blog
 favicon: /favicon.ico
 timezone: Asia/BeiJing
 encoding: "utf-8"
@@ -17,7 +17,7 @@ side_bar_repo_limit: 8
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Tesla Ice Zhang >>= AkirinaWu
+author: Tesla Ice Zhang >>= Akirina Wu
 github_username: ice1000
 github_username2: AkimotoAkari
 organization: Working Together
@@ -41,8 +41,8 @@ navs:
     label: Resume
 
   -
-    href: /gists/
-    label: Gists
+    href: /languages-cn/
+    label: Languages
 
   -
     href: /projects/

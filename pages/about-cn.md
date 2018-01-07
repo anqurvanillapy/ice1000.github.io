@@ -23,6 +23,7 @@ permalink: /about-cn/
 + [**开源社区贡献**](../opensource-contributions/)
 + [CodeWars](../codewars-cn/)
 + [**StackOverflow 开发者故事**](http://stackoverflow.com/story/ice1000) ([保存为 pdf](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf))
++ [一些有趣的代码片段](../gists/)
 
 [![](http://stackexchange.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 
