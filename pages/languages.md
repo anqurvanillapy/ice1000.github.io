@@ -37,19 +37,15 @@ The AST Editor, code formater appeared with the first version are all lost along
 
 # CovScript
 
-This is a programming language created by my friend Michael Lee, written in C++.
+This is a programming language created by my friend Michael Lee, written in C++. The detailed description is on it's website so I'll just put some comments here. 
+This is a C-like language (at least the function call syntax is of C style), while functions, structs, namespaces are ends with `end` like Ruby, and it has the concepts of `package` `import` `using` (the module system).  
+Its parser is hand-written (very complex, although parsers are trivial), which impressed me (I didn't even think of that when working on Lice, I just wrote an AST evaluator).  
+This language supports invoking functions written in C++, like JNI.
 
-这是我的朋友李登淳创造的一门编程语言，用 C++ 实现，具体介绍在官网还是比较详细的，我在这里就只写点我自己的看法吧。  
-首先我不评价老李拿这门语言教别人编程的做法，这门语言本身是类 C 的（至少表达式和函数调用是 C 风格），
-而函数、结构体、命名空间定义等是 Ruby 风格的 `end` 结尾，并有 `package` `import` `using` 的概念（也就是模块系统）。  
-老李的 Parser 是手写的（可以说复杂度很高了，虽然 Parser 是很 trivial 的），让我对他的耐力很佩服（同为高二学生，
-我在写 Lice 的时候就没有这份心思，只是做了个很灵活的 AST evaluator 而已）。  
-这门语言支持调用 C++ 实现的函数，形式类似 JNI 。
+CovScript mostly features its powerful standard library, which has database, GUI, web access, regular expressions.
 
-最大的特色应该是它功能齐全的标准库，有数据库、 GUI 、网络编程、正则等库，感觉写程序很方便啊。
+### Related Links
 
-### 相关链接
-
-+ [基于 IntelliJ IDEA 的 IDE](https://plugins.jetbrains.com/plugin/10326-covscript/) ，这是我送给老李的 2018 新年礼物
-+ [解释器源码](https://github.com/covscript/covscript)
-+ [官网](http://covscript.org)
++ [IntelliJ IDEA-based IDE](https://plugins.jetbrains.com/plugin/10326-covscript/) ，这是我送给老李的 2018 新年礼物
++ [Interpreter Source](https://github.com/covscript/covscript)
++ [Website](http://covscript.org)
