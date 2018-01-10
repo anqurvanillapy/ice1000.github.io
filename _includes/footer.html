@@ -4,7 +4,7 @@
 		<div class="copyright left mobile-block">
 			© 2017
 			<span title="{{ site.author }}">{{ site.author }}</span>
-			<a id="gototop" href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+			<a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
 		</div>
 		<br/>
 		<ul class="site-footer-links right mobile-hidden">
@@ -41,9 +41,42 @@
 		</ul>
 	</div>
 	<!-- / footer -->
+	<script src="/assets/vendor/share.js/dist/js/share.min.js"></script>
 	<script src="/assets/js/geopattern.js"></script>
 	<script src="/assets/js/prism.js"></script>
 	<link rel="stylesheet" href="/assets/css/globals/prism.css">
+	<script>
+		jQuery(document).ready(function ($) {
+			// geopattern
+			$('.geopattern').each(function () {
+				$(this).geopattern($(this).data('pattern-id'));
+			});
+			// hljs.initHighlightingOnLoad();
+		});
+	</script>
+
+	{% if page.mermaid %}
+	<script src="/assets/js/mermaid.min.js"></script>
+	<script>mermaid.initialize({startOnLoad: true});</script>
+	{% endif %}
+
+	{% if page.sequence %}
+	<script src="/assets/js/webfont.js"></script>
+	<script src="/assets/js/snap.svg-min.js"></script>
+	<script src="/assets/js/underscore-min.js"></script>
+	<script src="/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.js"></script>
+	<link rel="stylesheet" href="/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.css">
+	<script>
+		$(".language-sequence").sequenceDiagram({theme: 'simple'});
+	</script>
+	{% endif %}
+
+	{% if page.flow %}
+	<script src="/assets/js/raphael.min.js"></script>
+	<script src="/assets/vendor/flowchart.js/dist/flowchart.min.js"></script>
+	<script src="/assets/js/flow.js"></script>
+	{% endif %}
+
 </footer>
 </body>
 </html>
