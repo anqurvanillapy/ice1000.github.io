@@ -5,6 +5,7 @@ category: Kotlin
 tags: Essay
 keywords: Kotlin
 description: Learn kotlin 4 Variables
+issue_id: 10
 ---
 
 好了我们继续学习 Kotlin 吧。
@@ -74,9 +75,11 @@ println(100 / 30)
 println(100.0 / 30)
 println(100 / 30.0)
 ```
+
 输出的结果是你想要的吗？
 
-想想为什么，读者可以通过阅读[这篇文章](http://www.educity.cn/it/sun/200912291014511906.htm)来了解原因。文章质量可能不高，我花了 40 秒随手找的。
+想想为什么，读者可以通过阅读[这个帖子](http://bbs.csdn.net/topics/90101529)来了解原因。
+帖子质量可能不高，我花了 40 秒随手找的。
 
 ## 你学到了什么
 
