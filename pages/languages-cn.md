@@ -26,7 +26,7 @@ Lice 现在的存在目的是作为一个依附于 JVM 语言的脚本语言，�
 
 ### 相关链接
 
-+ [基于 IntelliJ IDEA 的 IDE](https://plugins.jetbrains.com/plugin/10319-lice)
++ [基于 IntelliJ IDEA 的 IDE](https://plugins.jetbrains.com/plugin/10319-lice) 和对应的[视频教程](http://www.bilibili.com/video/av18223568/)
 + [命令行 REPL](https://github.com/lice-lang/ldk)（支持彩色输出和代码补全）
 + [Android 上的 RPEL](https://github.com/lice-lang/lice-android)
 + [语言参考](https://github.com/lice-lang/lice-reference)

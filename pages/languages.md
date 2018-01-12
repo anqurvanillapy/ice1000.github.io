@@ -35,6 +35,10 @@ The worst point of Lice is it's name -- it means a kind of insect, but I didn't 
 
 The AST Editor, code formater appeared with the first version are all lost along with the change of my working environment.
 
+Here's a video about Lice:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c-l9bZmT-ow?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 # CovScript
 
 This is a programming language created by my friend Michael Lee, written in C++. The detailed description is on it's website so I'll just put some comments here. 
