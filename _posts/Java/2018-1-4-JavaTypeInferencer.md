@@ -9,7 +9,7 @@ description: Java type inferencer
 
 看看我刚刚脑子里闪出了什么！
 
-刚刚发了[这篇文章](../KotlinFucksJavaAgain)，突然发现我说的那个 "Java 没有类型推导" 是错的。
+刚刚发了[这篇文章](../../03/KotlinFucksJavaAgain)，突然发现我说的那个 "Java 没有类型推导" 是错的。
 
 于是我就写出了这样的代码。这玩意正确地推导了这个匿名类的准确的类型：
 
