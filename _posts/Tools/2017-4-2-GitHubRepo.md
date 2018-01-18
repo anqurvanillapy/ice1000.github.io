@@ -68,9 +68,10 @@ Gradle 用户把 build 目录和.gradle 目录加入 gitignore 吧。
 
 如果确实有这个需求怎么办呢？
 
-举个例子，我要部署我的项目到某个 CI （持续集成）上去，然而我的项目用到了 JNI ，
-原本两部分（ CMake 和 Gradle ）是我手动分别编译，而且考虑到 CMake 设置编译器等各种猥琐流程，
-考虑种种因素，我觉得最好的 Solution 是把 JNI 的 dll/so/jnilib 分别上传到 Git 远端仓库，这样就只需要让 CI 自动构建 Gradle 的部分就好了（因为 CI 涉及测试的自动化）。
+举个例子，我要部署我的项目到某个CI（持续集成）上去，然而我的项目用到了JNI， 原本两部分（CMake和Gradle）是我手动分别编译。
+
+所以我最后还是想办法让CI编译了JNI部分。。。
+
 
 事实上我已经成功地把 JNI 项目的构建部署到了 CI ，详见 [algo4j](https://github.com/ice1000/algo4j) 。
 
