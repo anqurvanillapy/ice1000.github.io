@@ -1,5 +1,5 @@
 ---
-layout: post  
+layout: post
 title: 连字及其在 IDE 中的使用
 category: Tools
 tags: Misc
