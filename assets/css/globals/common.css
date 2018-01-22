@@ -39,6 +39,29 @@
 	margin: 5px
 }
 
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 8px 19px;
+	background: #f1f1f1;
+	border: 0;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: 70ms linear;
+	transition: 70ms linear;
+	cursor: pointer
+}
+
 .site-header {
 	padding-top: 20px;
 	padding-bottom: 20px;
