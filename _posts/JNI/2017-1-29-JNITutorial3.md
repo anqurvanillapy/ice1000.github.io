@@ -58,8 +58,8 @@ root:
 JNIEXPORT auto JNICALL Java_jni_MathUtils_gcd(
     JNIEnv *env,
     jclass,
-    jint a,
-    jint b
+    jint n,
+    jint m
 ) -> jint {
   jint c;
   for (; m > 0; c = n % m, n = m, m = c);
