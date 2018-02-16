@@ -1,6 +1,6 @@
 ---
-layout: post  
-title: 突然经历好几个第一次
+layout: post
+title: Ruby 的 Tk 库的一个 bug
 category: Ruby
 tags: Ruby
 keywords: ruby, ruby/tk, tk, stackoverflow
