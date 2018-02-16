@@ -72,7 +72,7 @@ description: Greetings, Travis
 + 触发慢
 
 每次 push [algo4j](https://github.com/ice1000/algo4j) 后都能感受到 Travis CI 满满的恶意，
-一般得等个一分钟才能看到它开始编译。
+一般得等个一分钟才能看到它开始编译（这是因为需要 `sudo`）。
 
 不过它编译本身速度还是可以的，还有 CI 上下载各种源啊， clone 各种仓库啊也都是快到没朋友。
 
