@@ -41,7 +41,7 @@ public static final class DefaultImpls {
 然后生成的子类中还是会有这些抽象方法的实现，
 只是实现都会调用这个 `DefaultImpls` 里的方法（也就是说，
 它对 Java8 的 default 一无所知
-![rubbish-kotlin](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/rubbish-kotlin.png)）。
+![rubbish-kotlin](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/rubbish-kotlin.jpg)）。
 
 因此，如果有一个 Java 的子类实现这个接口，
 那么这些在 Kotlin 里有默认实现的方法其实都还是抽象的，
@@ -109,6 +109,6 @@ The root cause was thrown at: InlineCodegen.kt:529
 希望这些 bug 都早日得到修复。
 
 最后再唾弃一次：
-![rubbish-kotlin](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/rubbish-kotlin.png)
+![rubbish-kotlin](https://coding.net/u/ice1000/p/Images/git/raw/master/blog-img/rubbish-kotlin.jpg)
 
 第二次用 Emacs 写这么多中文，感觉好不习惯【x
