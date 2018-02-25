@@ -97,10 +97,10 @@ class MapClass : Mapper<LongWritable, Text, Text, IntWritable>() {
 
   override fun map(
       key: LongWritable?,
-      value: Text?,
-      context: Context?) {
-    value!!.toString().split(" ").forEach { str ->
-      context?.write(word.apply { set(str) }, one)
+      value: Text,
+      context: Context) {
+    value.toString().split(" ").forEach { str ->
+      context.write(word.apply { set(str) }, one)
     }
   }
 }
@@ -134,9 +134,9 @@ public class ReduceClass extends Reducer {
 class ReduceClass : Reducer<Text, IntWritable, Text, IntWritable>() {
   override fun reduce(
       key: Text?,
-      values: MutableIterable<IntWritable>?,
-      context: Context?) {
-    context?.write(key, IntWritable(values?.fold(0) { sum, int -> sum + int.get() } ?: 0))
+      values: MutableIterable<IntWritable>,
+      context: Context) {
+    context.write(key, IntWritable(values.fold(0) { sum, int -> sum + int.get() }))
   }
 }
 ```
@@ -189,36 +189,31 @@ files\n", getClass().getSimpleName());
 
 ```kotlin
 class WordCounter : Configured(), Tool {
-  override fun run(args: Array<out String>?): Int {
-    args?.let {
-      if (args.size != 2) {
-        println("fuck you!")
-        return -1
-      }
-      Job().apply {
-        setJarByClass(WordCounter::class.java)
-        jobName = "WordCounter"
-        FileInputFormat.addInputPath(this@apply, Path(args[0]))
-        FileOutputFormat.setOutputPath(this@apply, Path(args[1]))
-        outputKeyClass = Text::class.java
-        outputValueClass = IntWritable::class.java
-        outputFormatClass = FileOutputFormat::class.java
-        mapperClass = MapClass::class.java
-        reducerClass = ReduceClass::class.java
-        waitForCompletion(true).run {
-          if (isSuccessful) println("success!") else println("failed!")
-          return if (this) 0 else 1
-        }
+  override fun run(args: Array<out String>): Int {
+    if (args.size != 2) {
+      println("fuck you!")
+      return -1
+    }
+    return Job().apply {
+      setJarByClass(WordCounter::class.java)
+      jobName = "WordCounter"
+      FileInputFormat.addInputPath(this@apply, Path(args[0]))
+      FileOutputFormat.setOutputPath(this@apply, Path(args[1]))
+      outputKeyClass = Text::class.java
+      outputValueClass = IntWritable::class.java
+      outputFormatClass = FileOutputFormat::class.java
+      mapperClass = MapClass::class.java
+      reducerClass = ReduceClass::class.java
+      waitForCompletion(true).run {
+        if (isSuccessful) println("success!") else println("failed!")
+        return if (this) 0 else 1
       }
     }
-    return -2
   }
-
 }
 
 fun main(args: Array<String>) = System.exit(ToolRunner.run(WordCounter(), args))
 ```
-
 
 而且原文贴的代码充满了行末空格和 Tab ，猥琐死了，果然 Eclipse 写的东西就是辣鸡。
 
