@@ -92,9 +92,9 @@ $$
 
 ## 偏序
 
-如果二元关系 $ \mathrel{R} $ 满足 $ a \mathrel{R} b $ 和 $ b \mathrel{R} a $ 蕴含 $ a = b $，我们可以说 $ \mathrel{R} $ 是**不对称**(antisymmetric)的。
+如果二元关系 $ \mathrel{R} $ 满足 $ a \mathrel{R} b $ 和 $ b \mathrel{R} a $ 蕴含 $ a = b $，我们可以说 $ \mathrel{R} $ 是**反对称**(antisymmetric)的。
 
-不对称的前序被称为**偏序**。
+反对称的前序被称为**偏序**。
 
 具有偏序 $ \sqsubseteq $ 集合 $ \mathrel{X} $ 被称为**偏序集**(partial order set / poset)，一般被表示为 $ (\mathrel{X}, \sqsubseteq) $。
 
@@ -109,7 +109,7 @@ class PartialOrder t where
 
 如果二元关系 $ \mathrel{R} $ 满足 $ \forall a \ b. a \mathrel{R} b $ 或 $ b \mathrel{R} a $，那么我们可以说 $ \mathrel{R} $ 是**完全**(total)的。
 
-如果二元关系 $ \leq $ 不对称、完全，并具有传递性，那么我们称 $ \leq $ 为一个**全序**。
+如果二元关系 $ \leq $ 反对称、完全，并具有传递性，那么我们称 $ \leq $ 为一个**全序**。
 
 完全的性质蕴含了自反性，也就是说所有的全序都是偏序。
 
