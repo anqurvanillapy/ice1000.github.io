@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: page
 permalink: /llvm-cs/en/CSharpLangImpl04/
 title: "Kaleidoscope: Implementing a Language with LLVM in CSharp"
 ---

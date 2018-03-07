@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: page
 title: Open Source Contributions
 description: Open Source Contributions
 keywords: ice1000

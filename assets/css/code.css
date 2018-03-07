@@ -1,0 +1,12 @@
+.hll { background-color: #2B2B2B }
+.c { color: rgb(128,128,128); font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { /*color: rgb(204,120,50);*/ font-weight: bold } /* Keyword */
+.kt { color: rgb(51, 56, 60); font-weight: bold } /* Keyword.Type */
+.kc { color: rgb(68, 137, 128); font-weight: bold } /* Keywords.Constant */
+.o { color: rgb(51, 56, 60); } /* Operator */
+.m { color: rgb(104,151,187); } /* Literal.Number */
+.s { color: rgb(73, 180, 69); } /* Literal.String */
+.cm { color: rgb(128,128,128); font-style: italic } /* Comment.Multiline */
+.cp { color: rgb(98,151,85); } /* Comment.Preproc */
+.cs { color: rgb(98,151,85); font-style: italic } /* Comment.Special */

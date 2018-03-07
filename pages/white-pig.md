@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: page
 title: 怀特·皮格 简介
 description: 怀特·皮格 介绍，生涯经历，特别成就，相关作品
 keywords: white-pig

@@ -177,6 +177,7 @@ BTW，`ctx.query`和`ctx.request.query`在获取到的内容上是等价的。
 
 ```javascript
 router.get('/pnova', (ctx) => ctx.throw(426) );
+
 ```
 
 很好……试一下。好了居然被接中了。  
@@ -192,6 +193,7 @@ router.get('/verify/:token', (ctx) => {
     console.log('decoded', decoded);
   } );
 });
+
 ```
 
 这个是原代码。看来还是得花一些心思啊。
@@ -205,6 +207,7 @@ router.get('/verify/:token', async (ctx) => {
   let decoded = JWTVerify( ctx.params.token, 'key' );
   console.log('decoded: ', decoded);
 });
+
 ```
 
 试一下。  
@@ -255,6 +258,7 @@ let buildStackTrace = ( stack, type ) =>
     arr => arr.map( result => `<li>&nbsp;&nbsp;&nbsp;&nbsp;at <b>${result[0]}</b> ${result[1]}</li>`).join('\n'),
     arr => JSON.stringify(arr)
   );
+
 
 module.exports = {
   buildStackTrace: buildStackTrace

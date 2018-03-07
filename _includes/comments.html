@@ -1,10 +1,10 @@
+{% if page.issue_id %}
+
 <div class="wrapper">
 	<div id=comments>
 		<h2>评论/Comments</h2>
 	</div>
 </div>
-
-{% if page.issue_id %}
 
 <script>
 	let getJSON = function (url, successHandler, errorHandler) {
@@ -29,13 +29,13 @@
 	getJSON('https://api.github.com/repos/{{site.github_username}}/{{site.repository_name}}/issues/{{page.issue_id}}/comments',
 		function (data) {
 			let comments = "";
-			for (i = 0; i < data.length; i++) {
+			for (let i = 0; i < data.length; i++) {
 				//add avatar
-				comments += '<a href="' + data[i].user.html_url + '" target="_blank"><img src="' + data[i].user.avatar_url + '"></a>';
+				comments += '<a href="' + data[i].user.html_url + '" target="_blank"><img class="comment" src="' + data[i].user.avatar_url + '"></a>';
 				//add username and link to profile page
 				comments += '  <a href="' + data[i].html_url + '" target="_blank">' + data[i].user.login + ' - ' + data[i].updated_at + '</a>';
 				//add comment
-				comments += '<p>' + data[i].body + '</p>';
+				comments += '<p>' + data[i].body.replace('\n', '<br/>') + '</p>';
 			}
 			comments += `
 		<div id="header">
@@ -48,7 +48,7 @@
 			这篇博客对应的 issue </a>下留言。
 			<br/>
 			<br/>
-		</div>`
+		</div>`;
 			document.getElementById('comments').innerHTML += comments;
 		}
 	);
