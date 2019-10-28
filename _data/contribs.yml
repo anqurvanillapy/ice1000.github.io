@@ -1,0 +1,328 @@
+- user: ruby
+  repo: tk
+  num: 8
+  ref: >-
+    [Backport request](https://bugs.ruby-lang.org/issues/13484) <br/>
+    A [StackOverflow question](https://stackoverflow.com/a/43476737/7083401) <br/>
+    An [abandoned bug report](https://bugs.ruby-lang.org/issues/12156)
+  content: Fixed a fatal bug, provided a monkey patch solution for the StackOverflow asker
+  res: Rejected because it\'s also fixed in the newest version
+  lang: Ruby
+
+- user: pingerone
+  repo: a8translate
+  num: 1
+  ref: >-
+      The [JetBrains IDE Plugin](https://plugins.jetbrains.com/plugin/9630-a8translate) <br/>
+      The [original JetBrains IDE Plugin](https://plugins.jetbrains.com/plugin/9346-a8translate)
+  content: Add icon, refactor using Kotlin, add local caching and case insensitiveness
+  lang: Java, Kotlin
+
+- user: microsoft
+  repo: llvmsharp
+  num: 58
+  content: >-
+    Migrate sample projects according to the newest LLVMSharp API and .Net Core 2.0 <br/>
+    Fix Travis CI deployment
+  ref: >-
+    [![](https://camo.githubusercontent.com/9e070aa860b7e8f0eea5de1ae7a10f43ddb8e5ca/68747470733a2f2f636c612e6f70656e736f757263652e6d6963726f736f66742e636f6d2f70756c6c2f62616467652f7369676e6564)](https://cla.opensource.microsoft.com/Microsoft/LLVMSharp?pullRequest=58) <br/>
+    The project doesn\'t work on Travis CI since [Sep 2, 2015](https://github.com/Microsoft/LLVMSharp/commit/859f01a9783da477d0fe6a69d990c947eebfe7bf)
+  lang: C#
+
+# - user: microsoft
+  # repo: llvmsharp
+  # num: 62
+  # content: >-
+    # Added link to my C# translation of the official doc <br/>
+    # execution bug fix
+  # lang: C#
+
+- user: badges
+  repo: shields
+  num: 1164
+  content: >-
+    Added a new badge (with corresponding tests): JetBrains Plugin version
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/badges/shields/1162.svg)](https://github.com/badges/shields/pull/1162)
+  lang: JavaScript
+
+- user: jetbrains
+  repo: intellij-sdk-docs
+  num: 75
+  content: >-
+    Created instructions for `SdkType`,
+    tell plugin developers how to create custom "SDK"
+  lang: Markdown
+
+- user: jetbrains
+  repo: intellij-sdk-docs
+  num: 87
+  content: >-
+    Improve SDK descriptions, <br/>
+    add Gradle Kotlin DSL introductions, <br/>
+    migrate some <code>https://</code>-based links to <code>upsource:///</code>
+  lang: Markdown
+
+- user: intellij-solidity
+  repo: intellij-solidity
+  num: 69
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/intellij-solidity/intellij-solidity/68.svg)](https://github.com/intellij-solidity/intellij-solidity/issues/68)
+
+  content: >-
+    Fixed compilation errors under IDEA 2018.1, <br/>
+    migrate toolchain versions, <br/>
+    support \"constructor\" syntax, <br/>
+    added corresponding parser unit test
+  lang: Kotlin
+
+- user: ocornut
+  repo: imgui
+  num: 1827
+  ref: >-
+    [imgui Java binding](https://github.com/ice1000/jimgui)
+
+  content: >-
+    Make subsequent window creation possible
+  lang: C++
+
+- user: dropbox
+  repo: djinni
+  num: 363
+  content: >-
+    Fix IntelliJ IDEA plugin compatibility, <br/>
+    Add brace matcher and highlightings for keywords
+  lang: Java
+
+- user: emmylua
+  repo: intellij-emmylua
+  num: 181
+  content: >-
+    Fix build.gradle non-Windows compatibility, <br/>
+    Add bug reporter
+  lang: Groovy, Kotlin
+
+- user: ocornut
+  repo: imgui
+  num: 2088
+  content: >-
+    Remove unnecesasry device invalidation and creation
+  lang: C++
+
+- user: agda
+  repo: agda
+  num: 3313
+  ref: >-
+    Related issue: [![Issue](https://img.shields.io/github/issues/detail/s/agda/agda/3137.svg)](https://github.com/agda/agda/issues/3137)
+  content: >-
+    Implemented a feature request about HTML-backend of Agda,
+    by introducing a new command-line flag and modifying the
+    code generation process
+  lang: Haskell
+
+- user: agda
+  repo: agda
+  num: 3367
+  ref: >-
+    Related issue: [![Issue](https://img.shields.io/github/issues/detail/s/agda/agda/3366.svg)](https://github.com/agda/agda/issues/3366)
+  content: >-
+    Support automatically determine output file extension by
+    adding a command line option and modify the internal AST
+    representation
+  lang: Haskell
+
+- user: agda
+  repo: agda
+  num: 3384
+  ref: >-
+    Related issue: [![Issue](https://img.shields.io/github/issues/detail/s/agda/agda/3373.svg)](https://github.com/agda/agda/issues/3373)
+  content: >-
+    Update code generation for reStructuredText backend by
+    wrapping all HTML contents inside a raw directive
+  lang: Haskell
+
+- user: rikvdkleij
+  repo: intellij-haskell
+  num: 330
+  ref: >-
+    [Related issue comment](https://github.com/rikvdkleij/intellij-haskell/issues/329#issuecomment-441117025)
+  content: >-
+    Add syntax highlighting for soft keywords (contextual keywords)
+    by adding an annotator
+  lang: Scala
+
+- user: rikvdkleij
+  repo: intellij-haskell
+  num: 331
+  content: >-
+    Add live template contexts and some default live templates
+    for pragmas and global declarations
+  lang: Scala
+
+- user: rikvdkleij
+  repo: intellij-haskell
+  num: 334
+  ref: >-
+    Related issue: [![Issue](https://img.shields.io/github/issues/detail/s/rikvdkleij/intellij-haskell/332.svg)](https://github.com/rikvdkleij/intellij-haskell/issues/332)
+  content: >-
+    Improve pragma, function name highlighting by improving the
+    annotator added in my [previous PR](#rikvdkleijintellij-haskell330),
+    improve color settings page, move configuration section
+  lang: Scala
+
+- user: pingcap
+  repo: grpc-rs
+  num: 238
+  content: >-
+    Eliminate twice memory copies when sending data,
+    achieving zero-copy
+  lang: Rust
+
+- user: pingcap
+  repo: grpc-rs
+  num: 222
+  content: >-
+    Reduce one memory copy when receiving data,
+    achieving zero-copy
+  lang: Rust
+
+- user: tikv
+  repo: protobuf-build
+  num: 2
+  content: >-
+    Support suppressing the generation of certain functions
+  lang: Rust
+
+- user: rikvdkleij
+  repo: intellij-haskell
+  num: 387
+  ref: >-
+    Fixed issue: [![](https://img.shields.io/github/issues/detail/s/rikvdkleij/intellij-haskell/382.svg)](https://github.com/rikvdkleij/intellij-haskell/issues/382)
+  content: >-
+    Implement a brand new pragma parser, fixed a bunch of issues
+  lang: Scala
+
+- user: pingcap
+  repo: kvproto
+  num: 358
+  content: >-
+    Rewrite a shell script with rust codes (which is type safe and
+    faster)
+  lang: Rust
+
+- user: agda
+  repo: cubical
+  num: 57
+  content: >-
+    Add coinductive natural number and its properties (like infinity plus one is still infinity,
+    bisimulation on coinductive naturals and coinductive proof principle)
+  lang: Agda
+
+- user: agda
+  repo: cubical
+  num: 27
+  content: >-
+    Added basic operations (suc, pred) of higher-inductively defined integer and an
+    equality relation on it
+  lang: Agda
+
+- user: agda
+  repo: cubical
+  num: 32
+  content: >-
+    Added basic operations (even, odd) of coinductive infinite stream and proved an
+    equality relation on it
+  lang: Agda
+
+- user: rikvdkleij
+  repo: intellij-haskell
+  num: 349
+  content: >-
+    Support alex files (Haskell lexer generator), add completion, rename adn goto
+    definition for alex lexer rules
+  lang: Scala
+
+- user: rikvdkleij
+  repo: intellij-haskell
+  num: 358
+  content: >-
+    Support language injection for String literals
+  lang: Scala
+
+- user: badges
+  repo: shields
+  num: 3295
+  content: >-
+    Enhance status badge for PRs in `GithubIssueDetail` by
+    showing "merged" and "rejected" as detail for pull requeste
+  lang: JavaScript
+
+- user: pingcap
+  repo: raft-rs
+  num: 201
+  content: >-
+    Replace the Protobuf library "rust-protobuf" with "prost"
+  lang: Rust
+
+- user: katex
+  repo: katex
+  num: 1953
+  content: >-
+    Added support for double-square curly braces, using LaTeX
+    command `\lBrace` and `\rBrace`
+  lang: JavaScript
+
+- user: intellij-rust
+  repo: intellij-rust
+  num: 3745
+  content: >-
+    Added support for code folding for `macro_rules!` definitions,
+    `macro` definitions and macro clauses
+  lang: Kotlin
+
+- user: tikv
+  repo: protobuf-build
+  num: 7
+  content: >-
+    Support optionally generate protobuf wrappers
+  lang: Rust
+
+- user: intellij-rust
+  repo: intellij-rust
+  num: 3759
+  content: >-
+    Support folding the `r#` prefix in raw-identifiers
+  lang: Kotlin
+
+# - user: Hannah-Sten
+#   repo: TeXiFy-IDEA
+#   num: 957
+#   content: >-
+#     Improve code insight performance by replacing arrays with
+#     lazy sequences
+#   lang: Kotlin
+
+- user: Hannah-Sten
+  repo: TeXiFy-IDEA
+  num: 935
+  content: >-
+    Some bug fixes, reduce nullability assertions
+  lang: Kotlin
+
+- user: Hannah-Sten
+  repo: TeXiFy-IDEA
+  num: 932
+  content: >-
+    Added some `{ pin=1 }` or `{ pin=2 }` to proper BNF rules
+    to improve parsing performance and fault tolerance.
+  lang: Kotlin
+
+- user: rust-analyzer
+  repo: rust-analyzer
+  num: 1924
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/rust-analyzer/rust-analyzer/1908.svg)](https://github.com/rust-analyzer/rust-analyzer/pull/1908)
+  content: >-
+    Support resolution and completion for `Self` type reference
+    in enums, traits and unions.
+  lang: Rust

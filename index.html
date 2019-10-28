@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section class="container">
+	<p>
+		<span class="big">Intermediate Representation</span><br/>
+		<span style="font-size: medium; margin: .5em 0 ">
+		We say that a language is compiled if the translator analyzes it thoroughly (rather than effecting some
+		"mechanical" transformation), and if the intermediate program does not bear a strong resemblance to the source.
+		These two characteristics—thorough analysis and nontrivial transformation—are the hallmarks of compilation.
+		<br/>
+
+		We say that a knowledge point is comprehended if the you analyze it thoroughly (rather than echoing
+		what the books say), and if the concept generated in your brain does not bear a strong resemblance to the text.
+		These two characteristics—thorough analysis and nontrivial transformation—are the hallmarks of comprehension.
+		</span>
+	</p>
+</section>
+<div style="border-top: 1px solid #000; padding-bottom: 20px; display: block"></div>
+<section class="container">
+	<ol class="posts-list">
+		{% for post in site.posts %}
+		<li class="posts-list-item">
+			<span class="posts-list-meta">{{ post.date | date:"%Y/%m/%d" }} - {{ post.category }}</span>
+			<a class="posts-list-name" href="{{ post.url }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ol>
+</section>

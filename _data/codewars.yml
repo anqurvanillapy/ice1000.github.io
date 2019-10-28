@@ -1,0 +1,75 @@
+- title: Theorem Proving
+  katas:
+    - name: Just Be Injective
+      hash: 5c8bd0997f1f6c5a24f48371
+
+    - name: Left, left! Right, right! Comp! Symmetric! Q!E!D!
+      hash: 5c878cc8a2fc6d10eff4b691
+
+    - name: Pattern in the mirror and bisimulation for real
+      hash: 5c867173a2fc6d5263f4b4ea
+
+    - name: A+A=B+B so A=B? Prove it!
+      hash: 5c8531a820089d04385a7faa
+
+    - name: Nat in the mirror
+      hash: 5c84a95c71c5210f2930c481
+
+    - name: Tear me apart and merge the pieces together
+      hash: 5c82b661562a2074bbeac980
+
+    - name: I~ transport lemmas so right, proving the wrong thing
+      hash: 5c88365acab0b90014f24f8c
+
+    - name: Coinduction Proof Principle
+      hash: 5c8feaf38cf201351776dd99
+
+- title: Dependently-Typed Programming
+  katas:
+    - name: String formatting, type-safely
+      hash: 5c7fe5c859036f142eccaabb
+
+    - name: Typeclass is garbage
+      hash: 5c87e641a2fc6d2b42f4b610
+
+    - name: Reach the size that lies across this new divide
+      hash: 5c88f7c01131b81217fdaa6e
+
+    - name: Simply typed lambda calculus type checker
+      hash: 5c8bc557802fcd5a53b3c75c
+
+- title: Parsing and Evaluation
+  katas:
+    - name: Expression Transpiler
+      hash: 597ccf7613d879c4cb00000f
+
+    - name: Type Transpiler
+      hash: 59a6949d398b5d6aec000007
+
+    - name: I love Lisp
+      hash: 598a82f07bad362e1d000003
+
+- title: Algorithms
+  katas:
+    - name: Faberge easter eggs crush test [linear]
+      hash: 5976c5a5cd933a7bbd000029
+
+    - name: Naive subarray
+      hash: 595a1cd5ae807b48d7000034
+
+    - name: Guess the array
+      hash: 59392ff00203d9686a0000c6
+
+    - name: Escape the Mines or die!
+      hash: 5933d213cff4acb19300006c
+
+- title: Java and Kotlin
+  katas:
+    - name: Throw without throwing
+      hash: 5943db60800cebe12000003d
+
+    - name: Tricky Kotlin #6: Reified generic argument for classes
+      hash: 5a50a20fd39ec527b2000011
+
+    - name: Tricky Kotlin #5: go into a class
+      hash: 59eb8739fc3c49b67a00007d

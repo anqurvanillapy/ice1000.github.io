@@ -1,0 +1,16 @@
+_site/
+*.swp
+*.~vsd
+\#*\#
+*~
+.DS_Store
+Gemfile.lock
+.idea/
+.jekyll-metadata
+app.css
+assets/lagda/html
+*.agdai
+Gemfile
+.sass-cache
+pic-wordcloud.png
+.vscode
