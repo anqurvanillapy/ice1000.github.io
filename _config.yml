@@ -19,5 +19,4 @@ exclude:
   - '.vscode'
   - '_posts/_build'
 highlighter: rouge
-# paginate: 12
 repository_name: ice1000.github.io
