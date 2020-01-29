@@ -63,11 +63,11 @@ Assuming we can overload semicolons as a binary operator,
 we defined semicolons like the following psuedo code:
 
 ```cpp
-template <typename R, typename E>
+template <typename R>
 R operator;(codeblock before, codeblock after) {
-  before.run();
+  R result = before.run();
   if (hasException()) goToCatchBlock();
-  else return after.run();
+  else return after.run(result);
 }
 ```
 
