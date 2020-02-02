@@ -66,7 +66,7 @@ header {
 .big {
 	color: #222;
 	text-align: left;
-	font: normal normal bold 2em 'Merriweather', "华文中宋", "方正小标宋", "方正中标宋", serif;
+	font: normal normal bold 2em 'Merriweather', serif;
 	margin: .5em 0;
 	word-break: break-all;
 	hyphens: auto;
@@ -280,7 +280,6 @@ nav li {
 }
 
 nav li a {
-	font-weight: 200;
 	border: 0;
 	display: inline-block;
 }
