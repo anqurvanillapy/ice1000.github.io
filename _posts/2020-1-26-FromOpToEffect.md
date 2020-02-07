@@ -24,7 +24,6 @@ There was a piece of code that uses exceptions.
 int shrink(long i) {
   int j;
   if (i <= INT_MAX && i >= INT_MIN) {
-    using namespace std;
     j = (int) i;
   }
   else throw i;
@@ -58,7 +57,7 @@ In the `main` function, we invoke `shrink` in a try-block,
 print its return value if it returns a value or print an error message if it
 throws an exception.
 
-Let try to implement exceptions.
+Let's try to implement exceptions.
 Assuming we can overload semicolons as a binary operator,
 we defined semicolons like the following psuedo code:
 
@@ -128,7 +127,7 @@ and it's a regular return.
 
 This is good because if we call a function who throws an exception,
 the statement of the function call will still be treated as exception-throwing,
-so the exception can be speaded out to outer functions.
+so the exception can be spread out to outer functions.
 
 We can actually achieve this in C++ by writing each line of code as a lambda expression,
 so we can call the lambda to execute a code block (in the semicolon operator).
@@ -161,9 +160,9 @@ We can implement a compiler with exceptions support by this strategy.
 
 ### General idea
 
-What we've did just now is that we use a function (namely `bind`)
+What we've done just now is that we use a function (namely `bind`)
 to control the execution of statements.
-The `bind` function passes the result of each statements right along their execution,
+The `bind` function passes the result of each statement right along its execution,
 so latter statements can depend on the result of prior ones.
 
 We may've seen similar things before.
@@ -191,7 +190,7 @@ let script2 = await loadScriptAsync('2.js');
 let script3 = await loadScriptAsync('3.js');
 ```
 
-Here's some commonly seen similar structures:
+Here are some commonly seen similar structures:
 
 + The simplest `bind` just execute statements one by one, we call it `IO`.
 + If the `bind` function stops the execution when an exception is thrown,
