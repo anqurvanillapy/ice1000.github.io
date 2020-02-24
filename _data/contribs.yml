@@ -326,3 +326,42 @@
     Support resolution and completion for `Self` type reference
     in enums, traits and unions.
   lang: Rust
+
+- user: github
+  repo: linguist
+  num: 4777
+  content: >-
+    Support Arend language's syntax highlighting on GitHub.
+  lang: tmLanguage
+
+- user: jetbrains
+  repo: arend
+  num: 110
+  content: >-
+    Add infrastructure for accessing corresponded subexpression in
+    isomorphic concrete and core terms.
+  lang: Java
+
+- user: jetbrains
+  repo: arend
+  num: 133
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/111.svg)](https://github.com/JetBrains/Arend/pull/133)
+  content: >-
+    Fix the bug where projecting the zero-th element of a sigma inhabitant.
+  lang: Java
+
+- user: jetbrains
+  repo: arend-lib
+  num: 9
+  content: >-
+    Define Torus, prove its equivalence to two 1-spheres,
+    and prove Omega Torus is equivalent to two integers.
+  lang: Arend
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 97
+  content: >-
+    Add action to show the type of a selected expression.
+  lang: Kotlin

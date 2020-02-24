@@ -16,6 +16,8 @@ not familiar with.
 That does not mean I do not submit typo-fixing pull requests.
 Instead, I usually submit pull requests like that, but I do not call this "contributions" and I do not list them here as well.
 
+There are {{ site.data.contribs.size }} contributions listed here in total.
+
 ## Overview
 
 <table>
@@ -56,15 +58,13 @@ Instead, I usually submit pull requests like that, but I do not call this "contr
 {% for con in site.data.contribs %}
 ## {{ con.user }}/{{ con.repo }}\#{{ con.num }}
 
-+ [pull request](https://github.com/{{ con.user }}/{{ con.repo }}/pull/{{ con.num }}/)
-+ Programming Language: {{ con.lang }}
+[pull request](https://github.com/{{ con.user }}/{{ con.repo }}/pull/{{ con.num }}/)
+ in {{ con.lang }}.
 
 {% if con.ref == nil %}
 {% else %}
-+ Reference  
-{{ con.ref }}
++ {{ con.ref }}
 {% endif %}
 
-+ Content:  
-{{ con.content }}
++ {{ con.content }}
 {% endfor %}
