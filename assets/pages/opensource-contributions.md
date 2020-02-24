@@ -26,7 +26,6 @@ There are {{ site.data.contribs.size }} contributions listed here in total.
       <th style="text-align: left">Repo</th>
       <th style="text-align: left">Language</th>
       <th style="text-align: right">Status</th>
-      <th style="text-align: right">Checks</th>
     </tr>
   </thead>
   <tbody>
@@ -44,12 +43,6 @@ There are {{ site.data.contribs.size }} contributions listed here in total.
                alt="GitHub issue state" />
         </a>
       </td>
-      <td style="text-align: right">
-        <a href="https://github.com/{{ con.user }}/{{ con.repo }}/pull/{{ con.num }}/">
-          <img src="https://img.shields.io/github/status/contexts/pulls/{{ con.user }}/{{ con.repo }}/{{ con.num }}.svg?label="
-               alt="GitHub pull request check state" />
-        </a>
-      </td>
     </tr>
     {% endfor %}
   </tbody>
@@ -58,6 +51,7 @@ There are {{ site.data.contribs.size }} contributions listed here in total.
 {% for con in site.data.contribs %}
 ## {{ con.user }}/{{ con.repo }}\#{{ con.num }}
 
+[![](https://img.shields.io/github/status/contexts/pulls/{{ con.user }}/{{ con.repo }}/{{ con.num }}.svg?label=)](https://github.com/{{ con.user }}/{{ con.repo }}/pull/{{ con.num }})
 [pull request](https://github.com/{{ con.user }}/{{ con.repo }}/pull/{{ con.num }}/)
  in {{ con.lang }}.
 
