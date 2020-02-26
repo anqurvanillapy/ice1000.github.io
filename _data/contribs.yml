@@ -327,6 +327,13 @@
     in enums, traits and unions.
   lang: Rust
 
+- user: rust-analyzer
+  repo: rust-analyzer
+  num: 2474
+  content: >-
+    Address a FIXME, prepare for local items resolution.
+  lang: Rust
+
 - user: github
   repo: linguist
   num: 4777
@@ -341,6 +348,13 @@
     Add infrastructure for accessing corresponded subexpression in
     isomorphic concrete and core terms.
   lang: Java
+
+- user: jetbrains
+  repo: arend
+  num: 112
+  content: >-
+    Handle version comparison properly & unify code generation.
+  lang: Java, Kotlin
 
 - user: jetbrains
   repo: arend
@@ -364,4 +378,38 @@
   num: 97
   content: >-
     Add action to show the type of a selected expression.
+  lang: Kotlin
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 98
+  content: >-
+    Add option to control the pretty-printing options in the
+    "show expression type" action.
+  lang: Kotlin
+
+- user: jetbrains
+  repo: arend
+  num: 146
+  content: >-
+    Take binding names into account when showing type if expressions,
+    say, show the type of bindings if a binding is selected.
+  lang: Java
+
+- user: mamoe
+  repo: mirai
+  num: 85
+  content: >-
+    Replace a hand-written list class' cliche operations with
+    a single serious `asSequence` and invocations to its utilities.
+  lang: Kotlin
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 120
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/118.svg)](https://github.com/JetBrains/intellij-arend/pull/120)
+  content: >-
+    Support schema-based completion & validation for arend.yaml,
+    support path-based completion.
   lang: Kotlin
