@@ -413,3 +413,34 @@
     Support schema-based completion & validation for arend.yaml,
     support path-based completion.
   lang: Kotlin
+
+- user: jetbrains
+  repo: arend
+  num: 152
+  content: >-
+    A continued work of [110](#jetbrainsarend110), but for definitions.
+  lang: Java
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 134
+  content: >-
+    Normalize the selected expression in background.
+  lang: Kotlin
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 137
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/135.svg)](https://github.com/JetBrains/intellij-arend/pull/137)
+  content: >-
+    Added intention action that replaces an expression with its normal form.
+  lang: Kotlin
+
+- user: jetbrains
+  repo: arend-lib
+  num: 13
+  content: >-
+    Define Set-Truncation and its eliminators (A lemma in HoTT Book).
+    Closed because it's actually a specialization of an existing construct.
+  lang: Arend

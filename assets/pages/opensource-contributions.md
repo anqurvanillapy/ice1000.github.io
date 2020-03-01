@@ -29,7 +29,7 @@ There are {{ site.data.contribs.size }} contributions listed here in total.
     </tr>
   </thead>
   <tbody>
-    {% for con in site.data.contribs %}
+    {% for con in site.data.contribs reversed %}
     <tr>
       <td style="text-align: left">
         <a href="#{{ con.user }}{{ con.repo }}{{ con.num }}">
