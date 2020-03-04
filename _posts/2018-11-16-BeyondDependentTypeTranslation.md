@@ -5,7 +5,6 @@ category: PLT
 tags: PLT Agda
 keywords: PLT
 katex: true
-description: How to improve dependent type
 ---
 
 This was originally an answer to a Q&A website question.
