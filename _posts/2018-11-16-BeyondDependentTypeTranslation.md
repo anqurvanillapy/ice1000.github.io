@@ -2,7 +2,7 @@
 layout: post
 title: The World Over Dependent Types
 category: PLT
-tags: PLT, Agda
+tags: PLT Agda
 keywords: PLT
 katex: true
 description: How to improve dependent type

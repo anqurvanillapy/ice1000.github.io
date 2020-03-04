@@ -2,8 +2,8 @@
 layout: post
 title: Effects as operator overloading
 category: Haskell
-tags: Haskell, Effects
-keywords: Haskell, Effects
+tags: Haskell Effects
+keywords: Haskell Effects
 description: Overload semicolons
 ---
 
