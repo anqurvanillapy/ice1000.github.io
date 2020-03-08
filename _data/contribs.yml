@@ -321,7 +321,7 @@
   repo: rust-analyzer
   num: 1924
   ref: >-
-    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/rust-analyzer/rust-analyzer/1908.svg)](https://github.com/rust-analyzer/rust-analyzer/pull/1908)
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/rust-analyzer/rust-analyzer/1908.svg)](https://github.com/rust-analyzer/rust-analyzer/issues/1908)
   content: >-
     Support resolution and completion for `Self` type reference
     in enums, traits and unions.
@@ -360,7 +360,7 @@
   repo: arend
   num: 133
   ref: >-
-    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/111.svg)](https://github.com/JetBrains/Arend/pull/133)
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/111.svg)](https://github.com/JetBrains/Arend/issues/111)
   content: >-
     Fix the bug where projecting the zero-th element of a sigma inhabitant.
   lang: Java
@@ -408,7 +408,7 @@
   repo: intellij-arend
   num: 120
   ref: >-
-    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/118.svg)](https://github.com/JetBrains/intellij-arend/pull/120)
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/118.svg)](https://github.com/JetBrains/intellij-arend/issues/118)
   content: >-
     Support schema-based completion & validation for arend.yaml,
     support path-based completion.
@@ -422,6 +422,14 @@
   lang: Java
 
 - user: jetbrains
+  repo: arend
+  num: 155
+  content: >-
+    A continued work of [152](#jetbrainsarend152), but for
+    instance declarations, pattern matching clauses and `\cowith` declarations.
+  lang: Java
+
+- user: jetbrains
   repo: intellij-arend
   num: 134
   content: >-
@@ -432,7 +440,7 @@
   repo: intellij-arend
   num: 137
   ref: >-
-    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/135.svg)](https://github.com/JetBrains/intellij-arend/pull/137)
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/135.svg)](https://github.com/JetBrains/intellij-arend/issues/135)
   content: >-
     Added intention action that replaces an expression with its normal form.
   lang: Kotlin
@@ -444,3 +452,36 @@
     Define Set-Truncation and its eliminators (A lemma in HoTT Book).
     Closed because it's actually a specialization of an existing construct.
   lang: Arend
+
+- user: jetbrains
+  repo: arend
+  num: 162
+  content: >-
+    Make the `GenerateVersionTask` gradle task incremental.
+  lang: Groovy
+
+- user: jetbrains
+  repo: arend
+  num: 158
+  content: >-
+    A continued work of [155](#jetbrainsarend155), but for case-expressions.
+  lang: Java
+
+- user: jetbrains
+  repo: arend
+  num: 166
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/150.svg)](https://github.com/JetBrains/intellij-arend/issues/150)
+  content: >-
+    A continued work of [158](#jetbrainsarend158),
+    but for let-clauses' result type when they're pi-type.
+  lang: Java
+
+- user: jetbrains
+  repo: arend
+  num: 167
+  ref: >-
+    A related issue [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/150.svg)](https://github.com/JetBrains/intellij-arend/issues/150)
+  content: >-
+    A continued work of [166](#jetbrainsarend166), but for class-call expressions.
+  lang: Java
