@@ -485,3 +485,21 @@
   content: >-
     A continued work of [166](#jetbrainsarend166), but for class-call expressions.
   lang: Java
+
+- user: jetbrains
+  repo: arend
+  num: 175
+  content: >-
+    A continued work of [167](#jetbrainsarend167), but added error messages when the action failed.
+  lang: Java
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 156
+  ref: >-
+    Related issues:
+    [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/154.svg)](https://github.com/JetBrains/intellij-arend/issues/154)
+    [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/intellij-arend/113.svg)](https://github.com/JetBrains/intellij-arend/issues/113)
+  content: >-
+    Add a button that controls whether to normalize the pop-up expression or not.
+  lang: Java
