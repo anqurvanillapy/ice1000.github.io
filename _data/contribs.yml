@@ -503,3 +503,23 @@
   content: >-
     Add a button that controls whether to normalize the pop-up expression or not.
   lang: Java
+
+- user: jetbrains
+  repo: arend
+  num: 177
+  ref: >-
+    Related issues:
+    [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/169.svg)](https://github.com/JetBrains/Arend/issues/169)
+  content: >-
+    Modularize Arend.
+    This also introduce extra flexibility in the future.
+    Say, when we want a literate programming mode/documentation generator/linting tool for Arend,
+    we can add 'em as another gradle subproject.
+  lang: Gradle Kotlin DSL
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 157
+  content: >-
+    Use gradle composite build to connect to modularized Arend.
+  lang: Kotlin
