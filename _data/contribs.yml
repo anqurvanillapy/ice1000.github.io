@@ -523,3 +523,11 @@
   content: >-
     Use gradle composite build to connect to modularized Arend.
   lang: Kotlin
+
+- user: andreasabel
+  repo: miniagda
+  num: 7
+  content: >-
+    Update docs to demonstrate latest Cabal commands,
+    remove unused rules during parser generation.
+  lang: Happy
