@@ -3,20 +3,12 @@ a:visited {
 	text-decoration: none;
 }
 
-article a,
-article a:visited {
-	padding-bottom: 1px;
-	border-bottom: 1px dashed #009492;
-}
-
 article a:hover,
 article a:visited:hover {
 	padding-bottom: 1px;
 	border-bottom: 1px solid #009492;
 }
 
-footer a,
-footer a:visited,
 p a,
 p a:visited {
 	color: #800080;

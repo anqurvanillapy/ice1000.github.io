@@ -276,16 +276,13 @@ kbd {
 
 .container {
 	padding: 0 2%;
-	line-height: 1.75em;
+	line-height: 1.5em;
 	& > ul {
-		// list-style: none;
-		// padding: 0;
-      margin-top: 0;
-      margin-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	li {
 		font-weight: 300;
-		padding: .2em 0;
 	}
 }
 
@@ -301,16 +298,6 @@ blockquote {
 	text-overflow: ellipsis;
 	// white-space: nowrap;
 }
-
-//.container > ul {
-//	list-style: none;
-//	padding: 0;
-//}
-//
-//.container li {
-//	font-weight: 200;
-//	padding: .5em 0;
-//}
 
 .blog {
 	list-style: none;
