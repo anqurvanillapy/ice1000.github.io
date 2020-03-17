@@ -8,6 +8,7 @@ url: "https://ice1000.org"
 favicon: /favicon.ico
 twitter: ice1000kotlin
 github_username: ice1000
+stackoverflow_username: ice1000
 permalink: /:year/:month-:day-:title.html
 domain: ice1000.org
 # Build settings

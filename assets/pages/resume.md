@@ -19,5 +19,5 @@ I'm currently not available for intern at the moment, but emails are still welco
 <br/>
 
 + StackOverflow Developer story (not very well-maintained)
-  + [View online](http://stackoverflow.com/story/ice1000)
+  + [View online](http://stackoverflow.com/story/{{ site.stackoverflow_username }})
   + [Download pdf](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf)

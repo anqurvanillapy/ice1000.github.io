@@ -42,7 +42,7 @@ and subscribe this blog by [RSS](/feed.xml).
  [bt]: https://bintray.com/ice1000
  [so]: http://stackoverflow.com/users/7083401
  [secs]: https://cs.stackexchange.com/users/79971
- [so ds]: http://stackoverflow.com/story/ice1000
+ [so ds]: http://stackoverflow.com/story/{{ site.stackoverflow_username }}
  [so ds pdf]: https://stackoverflow.com/users/story/pdf/7083401?View=Pdf
  [cw]: http://www.codewars.com/users/{{ site.github_username }}
  [yt]: https://youtrack.jetbrains.com/issues?q=by:%20ice1000
