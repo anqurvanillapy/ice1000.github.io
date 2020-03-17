@@ -35,8 +35,19 @@
     - name: Reach the size that lies across this new divide
       hash: 5c88f7c01131b81217fdaa6e
 
+    - name: Remember all the guardedness and termination, and let it sized
+      hash: 5ce5b742035e19001425ec7c
+
     - name: Simply typed lambda calculus type checker
       hash: 5c8bc557802fcd5a53b3c75c
+
+- title: Agda reflection
+  katas:
+    - name: Join until impossible
+      hash: 5d173a78c193ae000d8031a4
+
+    - name: Uneval your Agda expression
+      hash: 5d172f6bc193ae00117c914c
 
 - title: Parsing and Evaluation
   katas:

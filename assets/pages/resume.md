@@ -9,8 +9,8 @@ permalink: /pages/resume.html
 
 My resume is on this page, you can:
 
-+ [__Download pdf__](https://raw.githubusercontent.com/ice1000/resume/master/resume.pdf)
-+ [LaTeX source](https://raw.githubusercontent.com/ice1000/resume/master/resume.tex)
++ [__Download pdf (simplified one-page version)__](https://raw.githubusercontent.com/ice1000/resume/master/resume.pdf)
++ [__Download pdf (complete version)__](https://raw.githubusercontent.com/ice1000/resume/master/resume-elab.pdf)
 
 [![GitHub top language](https://img.shields.io/github/languages/top/ice1000/resume.svg)](https://github.com/ice1000/resume/)
 
@@ -18,6 +18,6 @@ I'm currently not available for intern at the moment, but emails are still welco
 <br/>
 <br/>
 
-+ StackOverflow Developer story
++ StackOverflow Developer story (not very well-maintained)
   + [View online](http://stackoverflow.com/story/ice1000)
   + [Download pdf](https://stackoverflow.com/users/story/pdf/7083401?View=Pdf)

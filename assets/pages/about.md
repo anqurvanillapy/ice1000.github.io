@@ -14,7 +14,7 @@ The corresponding object code is obviously the comprehension of the knowledge in
 readers' mind :).
 
 I am a student, programming for interest,
-Interested in code editor / programming language theory and type theory,
+Interested in code editor / programming language theory / mathematics (particularly algebra) / type theory,
 loves animals (like snakes), and sports (football, swimming and yoyo).
 
 Usually use *ice1000*, *千里冰封* or *Tesla Ice Zhang* as my ID.
@@ -38,13 +38,13 @@ and subscribe this blog by [RSS](/feed.xml).
 [![](http://stackexchange.com/users/flair/9532102.png)](http://stackoverflow.com/users/7083401/ice1000 "profile for ice1000 at Stack Overflow, Q&A for professional and enthusiast programmers")
 
  [gh]: https://github.com/{{ site.github_username }}
- [gh sum]: https://profile-summary-for-github.com/user/ice1000
+ [gh sum]: https://profile-summary-for-github.com/user/{{ site.github_username }}
  [bt]: https://bintray.com/ice1000
  [so]: http://stackoverflow.com/users/7083401
  [secs]: https://cs.stackexchange.com/users/79971
  [so ds]: http://stackoverflow.com/story/ice1000
  [so ds pdf]: https://stackoverflow.com/users/story/pdf/7083401?View=Pdf
- [cw]: http://www.codewars.com/users/ice1000
+ [cw]: http://www.codewars.com/users/{{ site.github_username }}
  [yt]: https://youtrack.jetbrains.com/issues?q=by:%20ice1000
  [cr]: https://crates.io/users/ice1000
  [mail]: mailto:ice1000kotlin@foxmail.com
