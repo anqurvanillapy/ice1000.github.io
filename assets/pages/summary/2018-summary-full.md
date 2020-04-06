@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: summary
 title: 2018 年的一些感受（完整）
 permalink: /pages/2018-summary.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: summary
 title: 2020 年 3 月末
 permalink: /pages/2020-summary-winter.html
 ---
