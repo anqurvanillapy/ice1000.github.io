@@ -5,7 +5,10 @@ description: PingCAP interview
 permalink: /interview/pingcap-tikv.html
 ---
 
-这曾经是一篇知乎回答，现在转载到我自己的博客里。
+这曾经是一篇[知乎回答](https://www.zhihu.com/answer/481452286)，
+现在转载到我自己的博客里。
+
+补充下：第一位面试官的[博客](http://www.zenlife.tk)非常精彩，推荐阅读。
 
 大概几个月前面了 PingCAP，现在入职了，想谈点面试的时候发生的事情。
 之所以要说这个，是因为在面试的时候面试官教了我很多东西。。
