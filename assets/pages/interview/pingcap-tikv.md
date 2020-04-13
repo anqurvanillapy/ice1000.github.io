@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: interview
 title: PingCAP 面试
 description: PingCAP interview
 permalink: /interview/pingcap-tikv.html

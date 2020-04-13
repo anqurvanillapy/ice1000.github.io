@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: interview
 title: Arend 组面试
 description: Arend team interview
 permalink: /interview/jetbrains-arend.html
