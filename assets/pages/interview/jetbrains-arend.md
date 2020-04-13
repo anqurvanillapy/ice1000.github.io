@@ -6,13 +6,46 @@ permalink: /interview/jetbrains-arend.html
 katex: true
 ---
 
+
+入职后的更新：
+
+0. 最后的作业被面试官找到了些 bug，不过最终还是顺利完成了，在
+   [这里](/pages/vitalyr-normalizer) 有个说明文档，代码实现可以在
+   [这里](https://github.com/owo-lang/intellij-dtlc/blob/master/src/org/ice1000/tt/editing/vitalyr/normalize.kt) 找到。
+   0. 编程语言的名字用了我的朋友的网名，当事人是数学大佬。
+0. Higher Coinductive Type 在去掉 guardedness 和 negativity 后剩下的核心的、
+   比普通的 Coinductive Type 多出的功能就是 field (projection) 的 path constraints。
+   这个在 Arend 里面已经有了，有 record with conditions。其中 `Path` 就是一个这样的类型
+   （而不是一个语言内建的类型——当然 Arend 还是把 Path 做成了 intrinsic 的）。
+0. 面试通过后，面试官变成了我的 mentor——和 PingCAP 时一样。
+0. 我又问了一个新的问题——为什么 JetBrains 要做 Arend？这又没有利益可寻。
+   0. mentor 说：JetBrains Research 的项目都是这样的。这些东西可能未来会有用。
+      开启这样的项目并不容易，只有 Sergey Dmitriev 那个级别的人才做得到。
+   0. 我问：我们开发 Arend 的目的是什么？
+   0. mentor 说：最大的目标是形式化所有的数学。但是这需要时间。我想从基本的部分开始，
+      比如基础代数、拓扑学、分析学，等等。搞这些证明很难不用 tactics，
+      所以我在这个版本开始支持 tactics。
+   0. 我追问：现在有很多定理证明器，为什么不去用其他的？
+   0. mentor 说：这些系统都有他们自己的缺陷，我们想在 Arend 里面解决这些缺陷。
+0. 我们又讨论了下形式化数学本身。mentor 说，HoTT 基本上就是为了让我们能在类型论里面更
+   “普通地” 做数学。比如你必须有 quotient，而其他类型论没有。
+   mentor 指出，我们在形式化一个代数结构的时候（比如 $\mathbb{Q}$），形式化的不仅仅是它的定义，
+   还有它上面的操作。$\mathbb{Q}$ 本身很好定义，但是证明它是一个域却比它的结构本身复杂的多
+   （虽然 $\mathbb{Q}$ 的操作也算是很好定义的了。反正我们得定义它）。
+0. 工作一切顺利，在我在职期间发布了 1.3.0 版本，其中有几个复杂的 IDE 功能是我做的。
+   在接下来的版本中我可能会做点语法糖什么的（其实已经做好了……只是我是在 feature freeze
+   阶段做的，所以得等下个版本再上线）。
+0. 吐槽一下：同事是真的不会用 Gradle 啊……
+
+更新结束，下面是原文。
+
 这算是个新鲜出炉的面经，因为我现在还不知道能不能拿到 offer。
 面试官是 Arend 编译器的（唯一）维护者，通过网络电话面试。
 一股浓浓的俄罗斯口音。我听着挺吃力的，但是基本上交流没问题，毕竟我也有中文口音也不好说什么哈哈。
 
 首先让我介绍了自己的经历。我讲述了我从 Haskell 入坑函数式编程，到后来入坑类型论，转而以 model mathematics 为目标做 PL 研究，以及期间给 Agda 的编译器和库贡献代码之类的二三事。
 我同时指出我很重视类型论的实现，面试官好像挺看重这个。
- 
+
 # 问题
 
 0. 给定 Haskell 代码 `fact 100000 + fact 100000`，问 `fact` 被执行了几次。
@@ -133,7 +166,7 @@ katex: true
    0. 面试官：其实已经在用了，用的不多而已
       0. 不过我觉得他在诓我，我连依赖都没看到（逃）
 0. CPT 和工资呢？面试官说等面试通过了会有人和你谈。
- 
+
 最后给了我一个作业，没给时间限制，让我尽可能做。
 大概是在 IntelliJ 里面写一个 untyped lambda calculus，然后要支持它的 normalization。
 遇到 non-terminating 的 term 要防止死循环，也就意味着我不能直接 eval。
