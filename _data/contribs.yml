@@ -531,3 +531,41 @@
     Update docs to demonstrate latest Cabal commands,
     remove unused rules during parser generation.
   lang: Happy
+
+- user: jetbrains
+  repo: arend
+  num: 199
+  ref: >-
+    Related issues:
+    [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/147.svg)](https://github.com/JetBrains/Arend/issues/147)
+  content: >-
+    Implement the partially applied syntax.
+  lang: Java
+
+- user: jetbrains
+  repo: arend-lib
+  num: 17
+  ref: >-
+    Related issue in Arend:
+    [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/147.svg)](https://github.com/JetBrains/Arend/issues/147)
+  content: >-
+    Use the partially applied syntax in the standard library extensively.
+  lang: Arend
+
+- user: jetbrains
+  repo: arend
+  num: 204
+  content: >-
+    Implement the partially applied syntax for `\case \elim` functions.
+    This is more complicated than other partially applied syntaxes.
+  lang: Java
+
+- user: agda
+  repo: agda
+  num: 4535
+  ref: >-
+    Prior discussion: https://twitter.com/i/status/1241631880388194304
+  content: >-
+    Implement a feature from Haddock that highlights all occurrences of some
+    symbols. It's the first possible "find usages" in Agda.
+  lang: Haskell, JavaScript
