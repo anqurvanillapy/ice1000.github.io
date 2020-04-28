@@ -569,3 +569,21 @@
     Implement a feature from Haddock that highlights all occurrences of some
     symbols. It's the first possible "find usages" in Agda.
   lang: Haskell, JavaScript
+
+- user: jetbrains
+  repo: arend
+  num: 210
+  ref: >-
+    Related issue in Arend:
+    [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/135.svg)](https://github.com/JetBrains/Arend/issues/135)
+  content: >-
+    Implement a general abstraction for REPLs and a console implementation.
+  lang: Java
+
+- user: jetbrains
+  repo: arend-lib
+  num: 19
+  content: >-
+    Define `BinNat` and its properties.
+    These proofs are ported from its original cubicaltt version.
+  lang: Arend
