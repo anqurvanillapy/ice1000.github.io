@@ -577,7 +577,8 @@
     Related issue in Arend:
     [![Issue](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/135.svg)](https://github.com/JetBrains/Arend/issues/135)
   content: >-
-    Implement a general abstraction for REPLs and a console implementation.
+    Implement a general abstraction for REPLs and provide two console implementations.
+    One is a plain REPL like python's, one has jline3-based completion.
   lang: Java
 
 - user: jetbrains
@@ -587,3 +588,13 @@
     Define `BinNat` and its properties.
     These proofs are ported from its original cubicaltt version.
   lang: Arend
+
+- user: jetbrains
+  repo: intellij-arend
+  num: 188
+  ref: >-
+    Related pull request in Arend:
+    [![PR](https://img.shields.io/github/issues/detail/s/JetBrains/Arend/210.svg)](https://github.com/JetBrains/Arend/issues/210)
+  content: >-
+    Implement in-IDE REPL for Arend.
+  lang: Kotlin
