@@ -34,7 +34,7 @@ Here's a simple table as a summary (converted from Excel via <https://thisdavej.
 | Startup     | Fast     | Fast        | Very slow      | Fast      | Fast        | Slow       | Fast         | Fast       |
 | Status      | Head     | Stable      | Stable         | Stable    | Abandoned   | Stable     | Experimental | Toy        |
 | Based on    | Nothing  | Nothing     | Project        | Nothing   | File        | Nothing    | Nothing      | File       |
-| Banner      | ×        | ×           | ×              | ×         | √           | √          | √            | ×          |
+| Banner      | √        | ×           | ×              | ×         | √           | √          | √            | ×          |
 | Candidates  | ×        | ×           | √              | ×         | ×           | ×          | ×            | ×          |
 | Syntax      | `{?A}`   | `_A`        | `?A`           | N/A       | `?`, `{!!}` | `?A`       | `?A`         | `?`        |
 | Named hole  | Optional | Optional    | Enforced       | ×         | ×           | Enforced   | Optional     | ×          |
@@ -48,13 +48,18 @@ Below is my experiment.
 
 ```
 λ> java -jar cli-1.3.0-full.jar -i
-Arend REPL 1.3.0: https://arend-lang.github.io   :? for help
-λ \open Nat
-λ 1 + {?}
+    ___                        __
+   /   |  _______  ____  ____/ /
+  / /| | / __/ _ \/ __ \/ __  /  Arend REPL 1.3.0
+ / ___ |/ / /  __/ / / / /_/ /   https://arend-lang.github.io
+/_/  |_/_/  \___/_/ /_/\__,_/    :? for help
+
+>\open Nat
+>1 + {?}
 [GOAL] Repl:1:5: Goal
   Expected type: Nat
   In: {?}
-λ :q
+>:q
 ```
 
 ## GHC Haskell
