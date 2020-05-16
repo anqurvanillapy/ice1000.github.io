@@ -54,9 +54,7 @@ So, here's a intro to Arend as a functional programming language.
    but it's not on our list yet.
 0. Arend supports Java FFI, namely "language extension" or "tactics".
 
-# Basic syntax
-
-## Functions
+# Functions
 
 To define a function in Arend, use the `\func` keyword with `=>` connecting the
 function body:
@@ -106,7 +104,7 @@ You may also explicitly annotate the return type of a function:
 
 Arend mostly follows Haskell's naming convention for functions.
 
-## Data types and pattern matching
+# Data types and pattern matching
 
 You can define data types using the `\data` keyword:
 
