@@ -4,7 +4,7 @@ email: ice1000kotlin@foxmail.com
 author: Tesla Ice Zhang
 description: The blog of Tesla Ice Zhang
 baseurl: ""
-url: "https://ice1000.org"
+url: https://ice1000.org
 favicon: /favicon.ico
 permalink: /:year/:month-:day-:title.html
 domain: ice1000.org
