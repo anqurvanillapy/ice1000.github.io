@@ -74,7 +74,8 @@ the `+` operator for `Nat` is not in scope):
 \func add (a : Nat) (b : Nat) => a + b
 ```
 
-Note that `a: Nat` will give you syntax error because `a:` is a valid Arend name.
+Note that `a: Nat` (without space between `a` and `:`)
+will give you syntax error because `a:` is a valid Arend name.
 
 If two continuous parameters have the same type, you may merge their bindings
 (it's a syntactic sugar):
@@ -155,9 +156,11 @@ or case expression. Both of which are similar to the one in Haskell.
 ```
 
 ```arend
-\func or (a b : Bool) : Bool => \case a \with
-  | true  => true
-  | false => b
+\func or (a b : Bool) : Bool =>
+  \case a \with {
+    | true  => true
+    | false => b
+  }
 ```
 
 Syntactic sugar for LambdaCase in Haskell: `\case __ \with`.
