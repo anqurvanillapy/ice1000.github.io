@@ -6,7 +6,7 @@ tags: Arend
 keywords: Small intro to Arend FFI
 ---
 
-[Last article](5-16-ArendLittleIntro.html) talked about basic
+[Last article](5-16-ArendLittleIntro.html) I talked about basic
 functionality of Arend.
 This time let's take a look at its Java FFI, aka language extension.
 I'm writing this because I didn't yet see any similar intros -- in the official
@@ -23,7 +23,8 @@ I'm writing this because I didn't yet see any similar intros -- in the official
 Well, neither examples nor demos.
 In the [tracking issue](https://github.com/JetBrains/Arend/issues/119) of Arend
 language extension, there is no description on the feature anywhere.
-Though the standard library has implemented a number of language extensions.
+Though the standard library has implemented a number of language extensions,
+which can serve as a great demo.
 I want to do this because there tends to be cloud-programmers(*) who want to know
 about Arend but were too busy to do so.
 
