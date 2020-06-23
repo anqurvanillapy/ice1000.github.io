@@ -79,6 +79,8 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Generic License</a>
 
 ## Friends
 
+Listed in random order.<br/>
+
 {% for link in site.data.links %}
 + [{{ link.name }}]({{ link.url }})
 {% endfor %}
