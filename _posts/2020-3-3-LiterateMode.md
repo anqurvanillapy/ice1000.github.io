@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Thoughts on literate programming tools
-category: Arend
-tags: Arend Agda
-keywords: Literate-Programming
+category: Tools
+keywords: Arend Agda Literate-Programming
 ---
 
 TL;DR:

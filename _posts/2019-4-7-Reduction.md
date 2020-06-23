@@ -2,8 +2,7 @@
 layout: post
 title: Fragmented Thoughts on Reducible Expressions
 category: PLT
-tags: Compilers Interpreters
-keywords: Dependent-Type Partial-Evaluation
+keywords: Compilers Interpreters Dependent-Type Partial-Evaluation
 description: A general structure of program analyzer
 katex: true
 ---

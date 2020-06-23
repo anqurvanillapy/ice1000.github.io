@@ -2,7 +2,6 @@
 layout: post
 title: New blog structure & I'll delete some pages
 category: Misc
-tags: Misc
 keywords: Blog
 description: New blog structure, deletions
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: Functional programming language -- Arend
 category: Arend
-tags: Arend
-keywords: Small intro to Arend
+keywords: Arend
+description: Small intro to Arend
 ---
 
 This article introduces Arend as a functional programming language,

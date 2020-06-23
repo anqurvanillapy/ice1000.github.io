@@ -2,8 +2,7 @@
 layout: post
 title: REPLs with Typed Holes
 category: Arend
-tags: Arend Agda Idris F#
-keywords: Repl Goals
+keywords: Repl Goals Arend Agda Idris F#
 ---
 
 I have made a comparison among several programming languages with REPL and

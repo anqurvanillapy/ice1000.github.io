@@ -2,8 +2,7 @@
 layout: post
 title: Different styles of equality reasoning
 category: PLT
-tags: PLT Agda
-keywords: PLT
+keywords: PLT Agda
 agda: true
 description: Different styles of equality reasoning
 ---

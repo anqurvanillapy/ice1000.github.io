@@ -2,7 +2,6 @@
 layout: post
 title: Tricks in using Kotlin `internal`
 category: Kotlin
-tags: Kotlin
 keywords: Kotlin
 description: Kotlin internal
 ---

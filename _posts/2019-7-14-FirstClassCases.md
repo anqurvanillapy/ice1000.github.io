@@ -2,7 +2,6 @@
 layout: post
 title: Structural typing and first-class case expressions
 category: PLT
-tags: Haskell ML MLPolyR
 keywords: Haskell ML MLPolyR Row-polymorphism
 ---
 

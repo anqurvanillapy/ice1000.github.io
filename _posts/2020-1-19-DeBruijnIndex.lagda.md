@@ -2,8 +2,7 @@
 layout: post
 title: Membership proofs and De Bruijn indices
 category: PLT
-tags: PLT Agda
-keywords: PLT
+keywords: PLT Agda
 agda: true
 ---
 

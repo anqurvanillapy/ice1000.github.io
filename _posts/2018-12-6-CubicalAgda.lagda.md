@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Cubical Agda
-category: Agda
-tags: Agda
-keywords: PLT
+category: Cubical
+keywords: Agda PLT
 agda: true
 ---
 

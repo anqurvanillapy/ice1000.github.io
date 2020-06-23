@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Interpreter without an AST
-category: Haskell
-tags: Haskell
+category: Parser
 keywords: Haskell Parser Interpreter
 description: Writing an interpreter without defining an AST
 ---

@@ -2,7 +2,6 @@
 layout: post
 title: Type inference under dependent type (meta variables)
 category: PLT
-tags: Haskell Agda Dependent-Type
 keywords: Haskell Agda Dependent-Type
 description: The simplest way of solving meta variables
 ---

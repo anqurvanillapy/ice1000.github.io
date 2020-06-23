@@ -2,8 +2,8 @@
 layout: post
 title: Language extensions of Arend
 category: Arend
-tags: Arend
-keywords: Small intro to Arend FFI
+keywords: Arend Java FFI
+description: Small intro to Arend FFI
 ---
 
 [Last article](5-16-ArendLittleIntro.html) I talked about basic

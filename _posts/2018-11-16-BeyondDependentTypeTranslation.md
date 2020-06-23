@@ -2,8 +2,7 @@
 layout: post
 title: The World Over Dependent Types
 category: PLT
-tags: PLT Agda
-keywords: PLT
+keywords: PLT Agda
 katex: true
 ---
 
