@@ -95,8 +95,8 @@
   # name_cn: 酸辣粉
   # url: http://gloomyghost.com
 
-# - name: DemoJameson
-  # url: http://www.demojameson.com
+- name: DemoJameson
+  url: https://www.demojameson.com
 
 # - name: KirCute
   # url: https://kircute.github.io
@@ -122,7 +122,7 @@
 
 - name: Himself65
   name_cn: 扩散性百万甜面包
-  url: http://himself65.com
+  url: https://www.himself65.com
 
 - name: Edward Elric
   url: https://edward40.com
@@ -137,7 +137,7 @@
   url: https://YeungKC.com
 
 - name: Yumiko
-  url: http://xn--i2r.xn--rhqv96g
+  url: https://xn--i2r.xn--rhqv96g
 
 # - name: Rabenda
   # name_cn: Rabenda的自言自语之地
