@@ -79,8 +79,16 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Generic License</a>
 
 ## Friends
 
-Listed in random order.<br/>
+Listed in random order (refresh this page to see it in a different order).<br/>
 
+<ul id="shuffle">
 {% for link in site.data.links %}
-+ [{{ link.name }}]({{ link.url }})
+<li><a href="{{ link.url }}">{{ link.name }}</a></li>
 {% endfor %}
+</ul>
+<script>
+var ul = document.getElementById('shuffle');
+for (var i = ul.children.length; i >= 0; i--) {
+  ul.appendChild(ul.children[Math.random() * i | 0]);
+}
+</script>
