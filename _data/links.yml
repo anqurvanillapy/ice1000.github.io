@@ -23,8 +23,8 @@
   # name_cn: 刘丰恺
   # url: https://lfkdsk.github.io
 
-# - name: Eldath
-  # url: https://ray-eldath.me
+- name: Ray Eldath
+  url: https://ray-eldath.me
 
 # - name: Glavo
   # url: https://www.glavo.org
@@ -36,9 +36,8 @@
   # name_cn: Frice Engine 图形引擎
   # url: https://icela.github.io
 
-# - name: The CovScript Programming Language
-  # name_cn: CovScript 程序设计语言
-  # url: https://covscript.org
+- name: CovScript
+  url: https://covscript.org
 
 # - name: sxysxy
   # url: http://sxysxy.org
@@ -71,9 +70,9 @@
   # name_cn: 孜然麻辣熊
   # url: https://xdd.io
 
-# - name: colliot
-  # name_cn: 长信宫灯
-  # url: http://colliot.me
+- name: colliot
+  name_cn: 长信宫灯
+  url: https://colliot.me
 
 # - name: ZJU-snbct
   # name_cn: 浙大少年编程团
@@ -87,9 +86,9 @@
   # name_cn: 16 进制
   # url: http://十六进制可能不.在线
 
-# - name: BennyHuo / KotlinCN
-  # name_cn: "BennyHuo / Kotlin 中文站"
-  # url: https://www.kotliner.cn
+- name: KotlinCN
+  name_cn: "BennyHuo / Kotlin 中文站"
+  url: https://www.kotliner.cn
 
 # - name: Snakes
   # url: http://snakes.moe
@@ -108,8 +107,8 @@
   # name_cn: 净土社区
   # url: https://www.eliseos.org
 
-# - name: babyJessica
-  # url: https://exp101t.blogspot.com
+- name: babyJessica
+  url: https://exp101t.blogspot.com
 
 # - name: ⑨BIE
   # url: https://ero.ink
