@@ -17,7 +17,8 @@ their semantics. You can't just ignore them during lexical analysis, like in Jav
 There are many known limitations in Python's layout syntax such as its lambdas can
 [only be one-linear](https://stackoverflow.com/q/1233448/7083401). However,
 Taine Zhao told me that it's her one-minute task to support multiline lambdas in
-Python. There are some other reasons where she can't remember.
+Python, so it's not because the Python team's lack of knowledge on parsing techniques.
+There are some other reasons where she can't remember.
 
 Imagine the following Python code:
 
@@ -47,16 +48,16 @@ If we transliterate it into Java:
 // First snippet
 if (a)
   if (b)
-    print('road roller da!!!');
+    print("road roller da!!!");
 else
-  print('ora ora ora!!!');
+  print("ora ora ora!!!");
 
 // Second one
 if (a)
   if (b)
-    print('road roller da!!!');
+    print("road roller da!!!");
   else
-    print('ora ora ora!!!');
+    print("ora ora ora!!!");
 ```
 
 Well, they are parsed the same way and will be compiled to identical bytecode.
