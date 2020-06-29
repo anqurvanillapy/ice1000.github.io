@@ -15,7 +15,7 @@ The problem on implementation is that whitespaces and EOLs (end-of-lines) now ha
 their semantics. You can't just ignore them during lexical analysis, like in Java.
 
 There are many known limitations in Python's layout syntax such as its lambdas can
-[only be one-linear](https://stackoverflow.com/q/1233448/7083401). However,
+[only be one-liner](https://stackoverflow.com/q/1233448/7083401). However,
 Taine Zhao told me that it's her one-minute task to support multiline lambdas in
 Python, so it's not because the Python team's lack of knowledge on parsing techniques.
 There are some other reasons where she can't remember.
@@ -129,9 +129,10 @@ We want our layouts to be:
 
 0. Optional, unlike Python
 0. Based on arbitrary number of whitespaces (works as long as the code is aligned),
-   unlike Python (enforced 4-spaces)
+   *like Python* (arbitrary number of spaces/tabs for indentation, able to
+   create a new layout everywhere, well done Guido)
 
-I'm not gonna talk about one linear `let`-`in` structure here,
+I'm not gonna talk about one-liner `let`-`in` structure here,
 because that requires the lexer to gain additional information from the parser.
 
 ## Implementation
@@ -332,7 +333,7 @@ and that's it.
 I have created a generalized layout lexer wrapper in my [intellij-dtlc] project --
 an intellij plugin supporting lots of PL research languages.
 A number of which are created with BNFC, and they enjoy the layout feature.
-The wrapper helps me parsing those BNFC-based languages.
+The wrapper helps me parse those BNFC-based languages a lot.
 
  [BNFC]: https://hackage.haskell.org/package/BNFC
  [intellij-dtlc]: https://github.com/owo-lang/intellij-dtlc/blob/master/src/org/ice1000/tt/psi/layout.kt
